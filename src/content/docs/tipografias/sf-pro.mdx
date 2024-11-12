@@ -1,0 +1,380 @@
+---
+title: 'San Francisco Pro'
+---
+
+import { Card, CardGrid, FileTree } from '@astrojs/starlight/components';
+import '../../../css/fonts.css';
+
+San Francisco Pro es una tipografía diseñada por Apple, hace que los texto sean consistentes, legibles
+y amigables asegurando una óptima legibilidad sin importar el tamaño y la resolución de pantalla.
+
+## Clasificación
+La tipografía San Francisco se divide en 3 familias que son las siguientes:
+- Display: Se usa típicamente para títulos.
+- Rounded: Se usa para texto o título donde las letras en sus extremos sean redondeadas.
+- Text: Se usa típicamente para textos.
+
+## Uso
+:::caution[¡No olvides!]
+    Para poder implementar las tipografías se tiene que hacer uso del archivo CSS llamado **fonts.css** y colocarlo
+    en el archivo raíz o en donde se desee usar. Ejemplo:
+    <FileTree>
+        - public
+            - css
+                - fonts.css
+        - index.astro
+    </FileTree>
+    Ya solo queda enlazar el archivo **fonts.css** mediante la etiqueta **link**.
+    ```html
+    <link rel="stylesheet" href="./css/fonts.css" />
+    ```
+:::
+
+Para implementar las tipografías San Francisco se tiene que hacer uso del atributo **class** de los elementos de texto
+en los que se desea utilizar, teniendo en cuenta la siguiente nomenclatura:
+- sfpd-*: Si se desea usar alguna tipografía de la familia Display.
+:::note[Ejemplo:]
+```html
+<p class="sfpd-bold">Texto Display Bold</p>
+```
+<p class="sfpd-bold">Texto Display Bold</p>
+:::
+- sfpt-*: Si se desea usar alguna tipografía de la familia Text.
+:::note[Ejemplo:]
+```html
+<p class="sfpt-bold">Texto Text Bold</p>
+```
+<p class="sfpt-bold">Texto Text Bold</p>
+:::
+- sfpr-*: Si se desea usar alguna tipografía de la familia Rounded.
+:::note[Ejemplo:]
+```html
+<p class="sfpr-bold">Texto Rounded Bold</p>
+```
+<p class="sfpr-bold">Texto Rounded Bold</p>
+:::
+
+## Tipos
+### SF Pro Display
+<hr />
+<CardGrid>
+    <Card title="SF Pro Display Black">
+        <p class="text-example sfpd-black">Lorem Itsum 123</p>
+        ```css
+            sfpd-black
+        ```
+    </Card>
+    <Card title="SF Pro Display Black Italic">
+        <p class="text-example sfpd-blacki">Lorem Itsum 123</p>
+        ```css
+            sfpd-blacki
+        ```
+    </Card>
+    <Card title="SF Pro Display Bold">
+        <p class="text-example sfpd-bold">Lorem Itsum 123</p>
+        ```css
+            sfpd-bold
+        ```
+    </Card>
+    <Card title="SF Pro Display Bold Italic">
+        <p class="text-example sfpd-boldi">Lorem Itsum 123</p>
+        ```css
+            sfpd-boldi
+        ```
+    </Card>
+    <Card title="SF Pro Display Heavy">
+        <p class="text-example sfpd-heavy">Lorem Itsum 123</p>
+        ```css
+            sfpd-heavy
+        ```
+    </Card>
+    <Card title="SF Pro Display Heavy Italic">
+        <p class="text-example sfpd-heavyi">Lorem Itsum 123</p>
+        ```css
+            sfpd-heavyi
+        ```
+    </Card>
+    <Card title="SF Pro Display Light">
+        <p class="text-example sfpd-light">Lorem Itsum 123</p>
+        ```css
+            sfpd-light
+        ```
+    </Card>
+    <Card title="SF Pro Display Light Italic">
+        <p class="text-example sfpd-lighti">Lorem Itsum 123</p>
+        ```css
+            sfpd-lighti
+        ```
+    </Card>
+    <Card title="SF Pro Display Medium">
+        <p class="text-example sfpd-medium">Lorem Itsum 123</p>
+        ```css
+            sfpd-medium
+        ```
+    </Card>
+    <Card title="SF Pro Display Medium Italic">
+        <p class="text-example sfpd-mediumi">Lorem Itsum 123</p>
+        ```css
+            sfpd-mediumi
+        ```
+    </Card>
+    <Card title="SF Pro Display Regular">
+        <p class="text-example sfpd-regular">Lorem Itsum 123</p>
+        ```css
+            sfpd-regular
+        ```
+    </Card>
+    <Card title="SF Pro Display Regular Italic">
+        <p class="text-example sfpd-regulari">Lorem Itsum 123</p>
+        ```css
+            sfpd-regulari
+        ```
+    </Card>
+    <Card title="SF Pro Display Semibold">
+        <p class="text-example sfpd-semibold">Lorem Itsum 123</p>
+        ```css
+            sfpd-semibold
+        ```
+    </Card>
+    <Card title="SF Pro Display Semibold Italic">
+        <p class="text-example sfpd-semiboldi">Lorem Itsum 123</p>
+        ```css
+            sfpd-semiboldi
+        ```
+    </Card>
+    <Card title="SF Pro Display thin">
+        <p class="text-example sfpd-thin">Lorem Itsum 123</p>
+        ```css
+            sfpd-thin
+        ```
+    </Card>
+    <Card title="SF Pro Display thin Italic">
+        <p class="text-example sfpd-thini">Lorem Itsum 123</p>
+        ```css
+            sfpd-thini
+        ```
+    </Card>
+    <Card title="SF Pro Display Ultra Light">
+        <p class="text-example sfpd-ultralight">Lorem Itsum 123</p>
+        ```css
+            sfpd-ultralight
+        ```
+    </Card>
+    <Card title="SF Pro Display Ultra Light Italic">
+        <p class="text-example sfpd-ultralighti">Lorem Itsum 123</p>
+        ```css
+            sfpd-ultralighti
+        ```
+    </Card>
+</CardGrid>
+
+### SF Pro Text
+<hr />
+<CardGrid>
+    <Card title="SF Pro Text Black">
+        <p class="text-example sfpt-black">Lorem Itsum 123</p>
+        ```css
+            sfpt-black
+        ```
+    </Card>
+    <Card title="SF Pro Text Black Italic">
+        <p class="text-example sfpt-blacki">Lorem Itsum 123</p>
+        ```css
+            sfpt-blacki
+        ```
+    </Card>
+    <Card title="SF Pro Text Bold">
+        <p class="text-example sfpt-bold">Lorem Itsum 123</p>
+        ```css
+            sfpt-bold
+        ```
+    </Card>
+    <Card title="SF Pro Text Bold Italic">
+        <p class="text-example sfpt-boldi">Lorem Itsum 123</p>
+        ```css
+            sfpt-boldi
+        ```
+    </Card>
+    <Card title="SF Pro Text Heavy">
+        <p class="text-example sfpt-heavy">Lorem Itsum 123</p>
+        ```css
+            sfpt-heavy
+        ```
+    </Card>
+    <Card title="SF Pro Text Heavy Italic">
+        <p class="text-example sfpt-heavyi">Lorem Itsum 123</p>
+        ```css
+            sfpt-heavyi
+        ```
+    </Card>
+    <Card title="SF Pro Text Light">
+        <p class="text-example sfpt-light">Lorem Itsum 123</p>
+        ```css
+            sfpt-light
+        ```
+    </Card>
+    <Card title="SF Pro Text Light Italic">
+        <p class="text-example sfpt-lighti">Lorem Itsum 123</p>
+        ```css
+            sfpt-lighti
+        ```
+    </Card>
+    <Card title="SF Pro Text Medium">
+        <p class="text-example sfpt-medium">Lorem Itsum 123</p>
+        ```css
+            sfpt-medium
+        ```
+    </Card>
+    <Card title="SF Pro Text Medium Italic">
+        <p class="text-example sfpt-mediumi">Lorem Itsum 123</p>
+        ```css
+            sfpt-mediumi
+        ```
+    </Card>
+    <Card title="SF Pro Text Regular">
+        <p class="text-example sfpt-regular">Lorem Itsum 123</p>
+        ```css
+            sfpt-regular
+        ```
+    </Card>
+    <Card title="SF Pro Text Regular Italic">
+        <p class="text-example sfpt-regulari">Lorem Itsum 123</p>
+        ```css
+            sfpt-regulari
+        ```
+    </Card>
+    <Card title="SF Pro Text Semibold">
+        <p class="text-example sfpt-semibold">Lorem Itsum 123</p>
+        ```css
+            sfpt-semibold
+        ```
+    </Card>
+    <Card title="SF Pro Text Semibold Italic">
+        <p class="text-example sfpt-semiboldi">Lorem Itsum 123</p>
+        ```css
+            sfpt-semiboldi
+        ```
+    </Card>
+    <Card title="SF Pro Text thin">
+        <p class="text-example sfpt-thin">Lorem Itsum 123</p>
+        ```css
+            sfpt-thin
+        ```
+    </Card>
+    <Card title="SF Pro Text thin Italic">
+        <p class="text-example sfpt-thini">Lorem Itsum 123</p>
+        ```css
+            sfpt-thini
+        ```
+    </Card>
+    <Card title="SF Pro Text Ultra Light">
+        <p class="text-example sfpt-ultralight">Lorem Itsum 123</p>
+        ```css
+            sfpt-ultralight
+        ```
+    </Card>
+    <Card title="SF Pro Text Ultra Light Italic">
+        <p class="text-example sfpt-ultralighti">Lorem Itsum 123</p>
+        ```css
+            sfpt-ultralighti
+        ```
+    </Card>
+</CardGrid>
+
+### SF Pro Rounded
+<hr />
+<CardGrid>
+    <Card title="SF Pro Rounded Black">
+        <p class="text-example sfpr-black">Lorem Itsum 123</p>
+        ```css
+            sfpr-black
+        ```
+    </Card>
+    <Card title="SF Pro Rounded Bold">
+        <p class="text-example sfpr-bold">Lorem Itsum 123</p>
+        ```css
+            sfpr-bold
+        ```
+    </Card>
+    <Card title="SF Pro Rounded Heavy">
+        <p class="text-example sfpr-heavy">Lorem Itsum 123</p>
+        ```css
+            sfpr-heavy
+        ```
+    </Card>
+    <Card title="SF Pro Rounded Light">
+        <p class="text-example sfpr-light">Lorem Itsum 123</p>
+        ```css
+            sfpr-light
+        ```
+    </Card>
+    <Card title="SF Pro Rounded Medium">
+        <p class="text-example sfpr-medium">Lorem Itsum 123</p>
+        ```css
+            sfpr-medium
+        ```
+    </Card>
+    <Card title="SF Pro Rounded Regular">
+        <p class="text-example sfpr-regular">Lorem Itsum 123</p>
+        ```css
+            sfpr-regular
+        ```
+    </Card>
+    <Card title="SF Pro Rounded Semibold">
+        <p class="text-example sfpr-semibold">Lorem Itsum 123</p>
+        ```css
+            sfpr-semibold
+        ```
+    </Card>
+    <Card title="SF Pro Rounded thin">
+        <p class="text-example sfpr-thin">Lorem Itsum 123</p>
+        ```css
+            sfpr-thin
+        ```
+    </Card>
+    <Card title="SF Pro Rounded Ultra Light">
+        <p class="text-example sfpr-ultralight">Lorem Itsum 123</p>
+        ```css
+            sfpr-ultralight
+        ```
+    </Card>
+</CardGrid>
+
+## Usando CSS
+Para usar las tipografías sin uso de clases, solo es necesario hacer uso de la propiedad **font-family: valor;** y poner como valor el tipo de fuente que
+se desea usar.
+:::note[Ejemplo:]
+```css
+h1 {
+    font-family: 'sf-pro-display-regular';
+}
+
+p {
+    font-family: 'sf-pro-text-light';
+}
+
+.mi-texto {
+    font-family: 'sf-pro-rounded-ultralight';
+}
+```
+:::
+|Familia Display|Familia Text|Familia Rounded|
+|-------|----|-------|
+|sf-pro-display-black|sf-pro-text-black|sf-pro-rounded-black|
+|sf-pro-display-blackitalic|sf-pro-text-blackitalic||
+|sf-pro-display-bold|sf-pro-text-bold|sf-pro-rounded-bold|
+|sf-pro-display-bolditalic|sf-pro-text-bolditalic||
+|sf-pro-display-heavy|sf-pro-text-heavy|sf-pro-rounded-heavy|
+|sf-pro-display-heavyitalic|sf-pro-text-heavyitalic||
+|sf-pro-display-light|sf-pro-text-light|sf-pro-rounded-light|
+|sf-pro-display-lightitalic|sf-pro-text-lightitalic||
+|sf-pro-display-medium|sf-pro-text-medium|sf-pro-rounded-medium|
+|sf-pro-display-mediumitalic|sf-pro-text-mediumitalic||
+|sf-pro-display-regular|sf-pro-text-regular|sf-pro-rounded-regular|
+|sf-pro-display-regularitalic|sf-pro-text-regularitalic||
+|sf-pro-display-semibold|sf-pro-text-semibold|sf-pro-rounded-semibold|
+|sf-pro-display-semibolditalic|sf-pro-text-semibolditalic||
+|sf-pro-display-thin|sf-pro-text-thin|sf-pro-rounded-thin|
+|sf-pro-display-thinitalic|sf-pro-text-thinitalic||
+|sf-pro-display-ultralight|sf-pro-text-ultralight|sf-pro-rounded-ultralight|
+|sf-pro-display-ultralightitalic|sf-pro-text-ultralightitalic||

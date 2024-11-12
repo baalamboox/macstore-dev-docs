@@ -1,0 +1,39 @@
+:root {
+    --sl-font: 'sf-pro';
+}
+
+/* .sl-flex:where(.astro-kmkmnagf) {
+    justify-content: center;
+} */
+
+.hero:where(.astro-jbfsktt5) {
+    grid-template-columns: auto;
+    justify-content: center;
+}
+
+.copy:where(.astro-jbfsktt5) {
+    align-items: center;
+}
+
+.actions:where(.astro-jbfsktt5) {
+    justify-content: center;
+}
+
+.card {
+    border-radius: 1rem;
+}
+
+.card .title {
+    font-size: 16px;
+    font-weight: 100;
+    justify-content: center;
+}
+
+.card .text-example {
+    text-align: center;
+    font-size: 24px;
+}
+
+.card .code {
+    text-align: center;
+}

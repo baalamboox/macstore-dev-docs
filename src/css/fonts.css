@@ -1,0 +1,573 @@
+/* Display fonts */
+@font-face {
+    font-family: 'sf-pro-display-black';
+    src: local('sf-pro-display-black'), url('../fonts/San-Francisco-Pro-Fonts/SF-Pro-Display-Black.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'sf-pro-display-blackitalic';
+    src: local('sf-pro-display-blackitalic'), url('../fonts/San-Francisco-Pro-Fonts/SF-Pro-Display-BlackItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'sf-pro-display-bold';
+    src: local('sf-pro-display-bold'), url('../fonts/San-Francisco-Pro-Fonts/SF-Pro-Display-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'sf-pro-display-bolditalic';
+    src: local('sf-pro-display-bolditalic'), url('../fonts/San-Francisco-Pro-Fonts/SF-Pro-Display-BoldItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'sf-pro-display-heavy';
+    src: local('sf-pro-display-heavy'), url('../fonts/San-Francisco-Pro-Fonts/SF-Pro-Display-Heavy.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'sf-pro-display-heavyitalic';
+    src: local('sf-pro-display-heavyitalic'), url('../fonts/San-Francisco-Pro-Fonts/SF-Pro-Display-HeavyItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'sf-pro-display-light';
+    src: local('sf-pro-display-heavy'), url('../fonts/San-Francisco-Pro-Fonts/SF-Pro-Display-Light.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'sf-pro-display-lightitalic';
+    src: local('sf-pro-display-heavyitalic'), url('../fonts/San-Francisco-Pro-Fonts/SF-Pro-Display-LightItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'sf-pro-display-medium';
+    src: local('sf-pro-display-medium'), url('../fonts/San-Francisco-Pro-Fonts/SF-Pro-Display-Medium.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'sf-pro-display-mediumitalic';
+    src: local('sf-pro-display-mediumitalic'), url('../fonts/San-Francisco-Pro-Fonts/SF-Pro-Display-MediumItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'sf-pro-display-regular';
+    src: local('sf-pro-display-regular'), url('../fonts/San-Francisco-Pro-Fonts/SF-Pro-Display-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'sf-pro-display-regularitalic';
+    src: local('sf-pro-display-regularitalic'), url('../fonts/San-Francisco-Pro-Fonts/SF-Pro-Display-RegularItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'sf-pro-display-semibold';
+    src: local('sf-pro-display-semibold'), url('../fonts/San-Francisco-Pro-Fonts/SF-Pro-Display-Semibold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'sf-pro-display-semibolditalic';
+    src: local('sf-pro-display-semibolditalic'), url('../fonts/San-Francisco-Pro-Fonts/SF-Pro-Display-SemiboldItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'sf-pro-display-thin';
+    src: local('sf-pro-display-thin'), url('../fonts/San-Francisco-Pro-Fonts/SF-Pro-Display-Thin.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'sf-pro-display-thinitalic';
+    src: local('sf-pro-display-thinitalic'), url('../fonts/San-Francisco-Pro-Fonts/SF-Pro-Display-ThinItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'sf-pro-display-ultralight';
+    src: local('sf-pro-display-ultralight'), url('../fonts/San-Francisco-Pro-Fonts/SF-Pro-Display-Ultralight.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'sf-pro-display-ultralightitalic';
+    src: local('sf-pro-display-ultralightitalic'), url('../fonts/San-Francisco-Pro-Fonts/SF-Pro-Display-UltralightItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Text fonts */
+@font-face {
+    font-family: 'sf-pro-text-black';
+    src: local('sf-pro-text-black'), url('../fonts/San-Francisco-Pro-Fonts/SF-Pro-Text-Black.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'sf-pro-text-blackitalic';
+    src: local('sf-pro-text-blackitalic'), url('../fonts/San-Francisco-Pro-Fonts/SF-Pro-Text-BlackItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'sf-pro-text-bold';
+    src: local('sf-pro-text-bold'), url('../fonts/San-Francisco-Pro-Fonts/SF-Pro-Text-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'sf-pro-text-bolditalic';
+    src: local('sf-pro-text-bolditalic'), url('../fonts/San-Francisco-Pro-Fonts/SF-Pro-Text-BoldItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'sf-pro-text-heavy';
+    src: local('sf-pro-text-heavy'), url('../fonts/San-Francisco-Pro-Fonts/SF-Pro-Text-Heavy.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'sf-pro-text-heavyitalic';
+    src: local('sf-pro-text-heavyitalic'), url('../fonts/San-Francisco-Pro-Fonts/SF-Pro-Text-HeavyItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'sf-pro-text-light';
+    src: local('sf-pro-text-heavy'), url('../fonts/San-Francisco-Pro-Fonts/SF-Pro-Text-Light.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'sf-pro-text-lightitalic';
+    src: local('sf-pro-text-heavyitalic'), url('../fonts/San-Francisco-Pro-Fonts/SF-Pro-Text-LightItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'sf-pro-text-medium';
+    src: local('sf-pro-text-medium'), url('../fonts/San-Francisco-Pro-Fonts/SF-Pro-Text-Medium.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'sf-pro-text-mediumitalic';
+    src: local('sf-pro-text-mediumitalic'), url('../fonts/San-Francisco-Pro-Fonts/SF-Pro-Text-MediumItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'sf-pro-text-regular';
+    src: local('sf-pro-text-regular'), url('../fonts/San-Francisco-Pro-Fonts/SF-Pro-Text-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'sf-pro-text-regularitalic';
+    src: local('sf-pro-text-regularitalic'), url('../fonts/San-Francisco-Pro-Fonts/SF-Pro-Text-RegularItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'sf-pro-text-semibold';
+    src: local('sf-pro-text-semibold'), url('../fonts/San-Francisco-Pro-Fonts/SF-Pro-Text-Semibold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'sf-pro-text-semibolditalic';
+    src: local('sf-pro-text-semibolditalic'), url('../fonts/San-Francisco-Pro-Fonts/SF-Pro-Text-SemiboldItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'sf-pro-text-thin';
+    src: local('sf-pro-text-thin'), url('../fonts/San-Francisco-Pro-Fonts/SF-Pro-Text-Thin.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'sf-pro-text-thinitalic';
+    src: local('sf-pro-text-thinitalic'), url('../fonts/San-Francisco-Pro-Fonts/SF-Pro-Text-ThinItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'sf-pro-text-ultralight';
+    src: local('sf-pro-text-ultralight'), url('../fonts/San-Francisco-Pro-Fonts/SF-Pro-Text-Ultralight.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'sf-pro-text-ultralightitalic';
+    src: local('sf-pro-text-ultralightitalic'), url('../fonts/San-Francisco-Pro-Fonts/SF-Pro-Text-UltralightItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Rounded fonts */
+@font-face {
+    font-family: 'sf-pro-rounded-black';
+    src: local('sf-pro-rounded-black'), url('../fonts/San-Francisco-Pro-Fonts/SF-Pro-Rounded-Black.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'sf-pro-rounded-bold';
+    src: local('sf-pro-rounded-bold'), url('../fonts/San-Francisco-Pro-Fonts/SF-Pro-Rounded-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'sf-pro-rounded-heavy';
+    src: local('sf-pro-rounded-heavy'), url('../fonts/San-Francisco-Pro-Fonts/SF-Pro-Rounded-Heavy.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'sf-pro-rounded-light';
+    src: local('sf-pro-rounded-heavy'), url('../fonts/San-Francisco-Pro-Fonts/SF-Pro-Rounded-Light.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'sf-pro-rounded-medium';
+    src: local('sf-pro-rounded-medium'), url('../fonts/San-Francisco-Pro-Fonts/SF-Pro-Rounded-Medium.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'sf-pro-rounded-regular';
+    src: local('sf-pro-rounded-regular'), url('../fonts/San-Francisco-Pro-Fonts/SF-Pro-Rounded-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'sf-pro-rounded-semibold';
+    src: local('sf-pro-rounded-semibold'), url('../fonts/San-Francisco-Pro-Fonts/SF-Pro-Rounded-Semibold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'sf-pro-rounded-thin';
+    src: local('sf-pro-rounded-thin'), url('../fonts/San-Francisco-Pro-Fonts/SF-Pro-Rounded-Thin.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'sf-pro-rounded-ultralight';
+    src: local('sf-pro-rounded-ultralight'), url('../fonts/San-Francisco-Pro-Fonts/SF-Pro-Rounded-Ultralight.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Pro Font */
+@font-face {
+    font-family: 'sf-pro';
+    src: local('sf-pro'), url('../fonts/San-Francisco-Pro-Fonts/SF-Pro.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Pro Italic Font */
+@font-face {
+    font-family: 'sf-pro-italic';
+    src: local('sf-pro-italic'), url('../fonts/San-Francisco-Pro-Fonts/SF-Pro-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Display fonts */
+.sfpd-black {
+    font-family: 'sf-pro-display-black';
+}
+
+.sfpd-blacki {
+    font-family: 'sf-pro-display-blackitalic';
+}
+
+.sfpd-bold {
+    font-family: 'sf-pro-display-bold';
+}
+
+.sfpd-boldi {
+    font-family: 'sf-pro-display-bolditalic';
+}
+
+.sfpd-heavy {
+    font-family: 'sf-pro-display-heavy';
+}
+
+.sfpd-heavyi {
+    font-family: 'sf-pro-display-heavyitalic';
+}
+
+.sfpd-light {
+    font-family: 'sf-pro-display-light';
+}
+
+.sfpd-lighti {
+    font-family: 'sf-pro-display-lightitalic';
+}
+
+.sfpd-medium {
+    font-family: 'sf-pro-display-medium';
+}
+
+.sfpd-mediumi {
+    font-family: 'sf-pro-display-mediumitalic';
+}
+
+.sfpd-regular {
+    font-family: 'sf-pro-display-regular';
+}
+
+.sfpd-regulari {
+    font-family: 'sf-pro-display-regularitalic';
+}
+
+.sfpd-semibold {
+    font-family: 'sf-pro-display-semibold';
+}
+
+.sfpd-semiboldi {
+    font-family: 'sf-pro-display-semibolditalic';
+}
+
+.sfpd-thin {
+    font-family: 'sf-pro-display-thin';
+}
+
+.sfpd-thini {
+    font-family: 'sf-pro-display-thinitalic';
+}
+
+.sfpd-utralight {
+    font-family: 'sf-pro-display-ultralight';
+}
+
+.sfpd-ultralighti {
+    font-family: 'sf-pro-display-ultralightitalic';
+}
+
+/* Text fonts */
+.sfpt-black {
+    font-family: 'sf-pro-text-black';
+}
+
+.sfpt-blacki {
+    font-family: 'sf-pro-text-blackitalic';
+}
+
+.sfpt-bold {
+    font-family: 'sf-pro-text-bold';
+}
+
+.sfpt-boldi {
+    font-family: 'sf-pro-text-bolditalic';
+}
+
+.sfpt-heavy {
+    font-family: 'sf-pro-text-heavy';
+}
+
+.sfpt-heavyi {
+    font-family: 'sf-pro-text-heavyitalic';
+}
+
+.sfpt-light {
+    font-family: 'sf-pro-text-light';
+}
+
+.sfpt-lighti {
+    font-family: 'sf-pro-text-lightitalic';
+}
+
+.sfpt-medium {
+    font-family: 'sf-pro-text-medium';
+}
+
+.sfpt-mediumi {
+    font-family: 'sf-pro-text-mediumitalic';
+}
+
+.sfpt-regular {
+    font-family: 'sf-pro-text-regular';
+}
+
+.sfpt-regulari {
+    font-family: 'sf-pro-text-regularitalic';
+}
+
+.sfpt-semibold {
+    font-family: 'sf-pro-text-semibold';
+}
+
+.sfpt-semiboldi {
+    font-family: 'sf-pro-text-semibolditalic';
+}
+
+.sfpt-thin {
+    font-family: 'sf-pro-text-thin';
+}
+
+.sfpt-thini {
+    font-family: 'sf-pro-text-thinitalic';
+}
+
+.sfpt-utralight {
+    font-family: 'sf-pro-text-ultralight';
+}
+
+.sfpt-ultralighti {
+    font-family: 'sf-pro-text-ultralightitalic';
+}
+
+/* Rounded fonts */
+.sfpr-black {
+    font-family: 'sf-pro-rounded-black';
+}
+
+.sfpr-bold {
+    font-family: 'sf-pro-rounded-bold';
+}
+
+.sfpr-heavy {
+    font-family: 'sf-pro-rounded-heavy';
+}
+
+.sfpr-light {
+    font-family: 'sf-pro-rounded-light';
+}
+
+.sfpr-medium {
+    font-family: 'sf-pro-rounded-medium';
+}
+
+.sfpr-regular {
+    font-family: 'sf-pro-rounded-regular';
+}
+
+.sfpr-semibold {
+    font-family: 'sf-pro-rounded-semibold';
+}
+
+.sfpr-thin {
+    font-family: 'sf-pro-rounded-thin';
+}
+
+.sfpr-utralight {
+    font-family: 'sf-pro-rounded-ultralight';
+}
+
+/* Pro font */
+.sf-pro {
+    font-family: 'sf-pro';
+}
+
+/* Pro Italic font */
+.sf-proi {
+    font-family: 'sf-pro-italic';
+}

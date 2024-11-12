@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'sf-pro';
+    src: url('./San-Francisco-Pro-Fonts/SF-Pro.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
