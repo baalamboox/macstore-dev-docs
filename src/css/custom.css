@@ -40,21 +40,18 @@
 
 /* :::::::::: Color palete :::::::::: */
 .color-palate .title {
-    color: var(--bblack);
     font-size: 14px;
 }
 
 .color-palate .color-container {
     height: 64px;
     width: 64px;
-    background-color: var(--gray4);
     border-radius: 50px;
     margin: 0 auto;
 }
 
 .color-palate .subtext {
     display: block;
-    color: var(--gray2);
     font-size: 12px;
     text-align: center;
 }

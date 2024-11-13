@@ -1,0 +1,67 @@
+.bg-bblue {
+    background-color: var(--bblue);
+}
+
+.bg-oorange {
+    background-color: var(--oorange);
+}
+
+.bg-ggreen {
+    background-color: var(--ggreen);
+}
+
+.bg-rred {
+    background-color: var(--rred);
+}
+
+.bg-wwhite {
+    background-color: var(--wwhite);
+}
+
+.bg-bblack {
+    background-color: var(--bblack);
+}
+
+.bg-gray-1 {
+    background-color: var(--gray1);
+}
+
+.bg-gray-2 {
+    background-color: var(--gray2);
+}
+
+.bg-gray-3 {
+    background-color: var(--gray3);
+}
+
+.bg-gray-4 {
+    background-color: var(--gray4);
+}
+
+.bg-new {
+    background-color: var(--oorange);
+}
+
+.bg-sale {
+    background-color: var(--ggreen);
+}
+
+.bg-special-offer {
+    background-color: var(--special-offer);
+}
+
+.bg-affordability {
+    background-color: var(--affordability);
+}
+
+.bg-order-related {
+    background-color: var(--order-related);
+}
+
+.bg-in-stock {
+    background-color: var(--in-stock);
+}
+
+.bg-store-related {
+    background-color: var(--store-related);
+}

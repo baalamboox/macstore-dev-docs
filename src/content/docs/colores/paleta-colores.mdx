@@ -2,18 +2,312 @@
 title: Paleta de colores
 ---
 
-import { CardGrid, Card } from '@astrojs/starlight/components';
+import { CardGrid, Card, Tabs, TabItem } from '@astrojs/starlight/components';
+import '/src/css/colors.css';
+
+Los colores son una parte fundamental le dan a cualquier elemento identidad única, la
+Web no se quedan afuera, para el proyecto CX MacStore se emplea los siguiente colores. 
 
 ## Colores principales
 
 <div class="color-palate">
     <CardGrid>
         <Card title="Azul primario">
-            <div class="color-container"></div>
+            <div class="color-container bg-bblue"></div>
             <small class="subtext">Fondos para botones, bordes, links</small>
+            <Tabs>
+                <TabItem label="CSS">
+                ```css
+                    --bblue
+                ```
+                </TabItem>
+                <TabItem label="Hex">
+                ```css
+                    #0071e3
+                ```
+                </TabItem>
+            </Tabs>
+        </Card>
+        <Card title="Naranja primario">
+            <div class="color-container bg-oorange"></div>
+            <small class="subtext">Texto promociones, nuevo, iconos</small>
+            <Tabs>
+                <TabItem label="CSS">
+                ```css
+                    --oorange
+                ```
+                </TabItem>
+                <TabItem label="Hex">
+                ```css
+                    #bf4800
+                ```
+                </TabItem>
+            </Tabs>
+        </Card>
+        <Card title="Verde primario">
+            <div class="color-container bg-ggreen"></div>
+            <small class="subtext">Tiempos, texto de éxito, iconos</small>
+            <Tabs>
+                <TabItem label="CSS">
+                ```css
+                    --oorange
+                ```
+                </TabItem>
+                <TabItem label="Hex">
+                ```css
+                    #008900
+                ```
+                </TabItem>
+            </Tabs>
+        </Card>
+        <Card title="Rojo primario">
+            <div class="color-container bg-rred"></div>
+            <small class="subtext">Iconos, texto de error, borders de elementos con error</small>
+            <Tabs>
+                <TabItem label="CSS">
+                ```css
+                    --oorange
+                ```
+                </TabItem>
+                <TabItem label="Hex">
+                ```css
+                    #008900
+                ```
+                </TabItem>
+            </Tabs>
+        </Card>
+        <Card title="Blanco">
+            <div class="color-container bg-wwhite"></div>
+            <small class="subtext">Fondo del sitio, botones</small>
+            <Tabs>
+                <TabItem label="CSS">
+                ```css
+                    --wwhite
+                ```
+                </TabItem>
+                <TabItem label="Hex">
+                ```css
+                    #ffffff
+                ```
+                </TabItem>
+            </Tabs>
+        </Card>
+        <Card title="Negro">
+            <div class="color-container bg-bblack"></div>
+            <small class="subtext">Iconos, texto primario</small>
+            <Tabs>
+                <TabItem label="CSS">
+                ```css
+                    --bblack
+                ```
+                </TabItem>
+                <TabItem label="Hex">
+                ```css
+                    #000000
+                ```
+                </TabItem>
+            </Tabs>
+        </Card>
+        <Card title="Gris 1">
+            <div class="color-container bg-gray-1"></div>
+            <small class="subtext">Módulos de descripción, PDP´s, configuración</small>
+            <Tabs>
+                <TabItem label="CSS">
+                ```css
+                    --gray1
+                ```
+                </TabItem>
+                <TabItem label="Hex">
+                ```css
+                    #424245
+                ```
+                </TabItem>
+            </Tabs>
+        </Card>
+        <Card title="Gris 2">
+            <div class="color-container bg-gray-2"></div>
+            <small class="subtext">Placeholder inputs, breadcumbs, texto tachado PDP's</small>
+            <Tabs>
+                <TabItem label="CSS">
+                ```css
+                    --gray2
+                ```
+                </TabItem>
+                <TabItem label="Hex">
+                ```css
+                    #6e6e73
+                ```
+                </TabItem>
+            </Tabs>
+        </Card>
+        <Card title="Gris 2">
+            <div class="color-container bg-gray-2"></div>
+            <small class="subtext">Placeholder inputs, breadcumbs, texto tachado PDP's</small>
+            <Tabs>
+                <TabItem label="CSS">
+                ```css
+                    --gray2
+                ```
+                </TabItem>
+                <TabItem label="Hex">
+                ```css
+                    #6e6e73
+                ```
+                </TabItem>
+            </Tabs>
+        </Card>
+        <Card title="Gris 3">
+            <div class="color-container bg-gray-3"></div>
+            <small class="subtext">Plecas banner, borders, divisores</small>
+            <Tabs>
+                <TabItem label="CSS">
+                ```css
+                    --gray3
+                ```
+                </TabItem>
+                <TabItem label="Hex">
+                ```css
+                    #d0d0d0
+                ```
+                </TabItem>
+            </Tabs>
+        </Card>
+        <Card title="Gris 4">
+            <div class="color-container bg-gray-4"></div>
+            <small class="subtext">Fondo secundario</small>
+            <Tabs>
+                <TabItem label="CSS">
+                ```css
+                    --gray4
+                ```
+                </TabItem>
+                <TabItem label="Hex">
+                ```css
+                    #f2f2f2
+                ```
+                </TabItem>
+            </Tabs>
         </Card>
     </CardGrid>
 </div>
 
 ## Colores insignia
 
+<div class="color-palate">
+    <CardGrid>
+        <Card title="Nuevo">
+            <div class="color-container bg-new"></div>
+            <small class="subtext">Etiquetas nuevos productos</small>
+            <Tabs>
+                <TabItem label="CSS">
+                ```css
+                    --oorage
+                ```
+                </TabItem>
+                <TabItem label="Hex">
+                ```css
+                    #bf4800
+                ```
+                </TabItem>
+            </Tabs>
+        </Card>
+        <Card title="Venta">
+            <div class="color-container bg-sale"></div>
+            <small class="subtext">Venta, disponibilidad</small>
+            <Tabs>
+                <TabItem label="CSS">
+                ```css
+                    --ggreen
+                ```
+                </TabItem>
+                <TabItem label="Hex">
+                ```css
+                    #008900
+                ```
+                </TabItem>
+            </Tabs>
+        </Card>
+        <Card title="Oferta especial">
+            <div class="color-container bg-special-offer"></div>
+            <small class="subtext">Promoción, descuento</small>
+            <Tabs>
+                <TabItem label="CSS">
+                ```css
+                    --special-offer
+                ```
+                </TabItem>
+                <TabItem label="Hex">
+                ```css
+                    #5856d6
+                ```
+                </TabItem>
+            </Tabs>
+        </Card>
+        <Card title="Financiamiento | Programas">
+            <div class="color-container bg-affordability"></div>
+            <small class="subtext">Trade In, for life, switches</small>
+            <Tabs>
+                <TabItem label="CSS">
+                ```css
+                    --affordability
+                ```
+                </TabItem>
+                <TabItem label="Hex">
+                ```css
+                    #0071bc
+                ```
+                </TabItem>
+            </Tabs>
+        </Card>
+        <Card title="Pedido | Opciones">
+            <div class="color-container bg-order-related"></div>
+            <small class="subtext">Notificaciones, preventa, compra rápida</small>
+            <Tabs>
+                <TabItem label="CSS">
+                ```css
+                    --order-related
+                ```
+                </TabItem>
+                <TabItem label="Hex">
+                ```css
+                    #336e7b
+                ```
+                </TabItem>
+            </Tabs>
+        </Card>
+        <Card title="In Stock">
+            <div class="color-container bg-in-stock"></div>
+            <small class="subtext">Stock, disponibilidad</small>
+            <Tabs>
+                <TabItem label="CSS">
+                ```css
+                    --in-stock
+                ```
+                </TabItem>
+                <TabItem label="Hex">
+                ```css
+                    #a3684e
+                ```
+                </TabItem>
+            </Tabs>
+        </Card>
+        <Card title="Tienda | Eventos">
+            <div class="color-container bg-store-related"></div>
+            <small class="subtext">Servicios, aperturas</small>
+            <Tabs>
+                <TabItem label="CSS">
+                ```css
+                    --store-related
+                ```
+                </TabItem>
+                <TabItem label="Hex">
+                ```css
+                    #707070
+                ```
+                </TabItem>
+            </Tabs>
+        </Card>
+    </CardGrid>
+</div>
+
+## Uso
