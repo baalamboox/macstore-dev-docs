@@ -1,0 +1,63 @@
+---
+title: Sweet Alert 2
+---
+
+import SweetAlert from './SweetAlert.astro';
+import { FileTree, Card } from '@astrojs/starlight/components';
+import SwalBasic from './sweetalert/SwalBasic.astro';
+
+:::tip[Versión: 11.14.0]
+:::
+
+Sweet Alert 2 es una librería de JavaScript para el manejo de ventanas flotantes, no importa en que tamaño
+de pantalla se muestre es totalmente responsivo y sin ninguna dependencia de terceros.
+
+## Uso
+
+La implementación de Sweet Alert 2 es sumamente fácil, solo hay que tener en cuenta
+algunos detalles de configuración de archivos como es el caso de las fuentes y los colores ya
+que Sweet Alert al ser una versión modificada para CX MacStore hace uso de estos archivos:
+- **root.css**
+- **fonts.css**
+
+:::caution[Ejemplo de uso]
+    <FileTree>
+        - public
+            - css
+                - root.css
+                - fonts.css
+            - vendor
+                - sweetalert
+                    - sweetalert2.min.css
+                    - sweetalert2.all.min.js
+        - index.html
+    </FileTree>
+
+    En el archivo **index.html** o donde se desea usar Sweet Alert se debe primero cargar el
+    archivo **root.css** y después **fonts.css**.
+
+    ```html
+        <!DOCTYPE>
+        <html>
+            <head>
+                <link rel="stylesheet" href="./public/css/root.css" />
+                <link rel="stylesheet" href="./public/css/fonts.css" />
+                <link rel="stylesheet" href="./public/vendor/sweetalert/sweetalert2.min.css" />
+                <script src="./public/vendor/sweetalert/sweetalert2.all.min.js"></script>
+            </head>
+        </html>
+    ```
+
+    **Nota:** Es recomendable hace uso de layouts para evitar llamar más de una vez el mismo archivo.
+:::
+
+## Ejemplos
+
+<Card title="Solo mensaje">
+    <SwalBasic />
+    ```js
+    Swal.fire('¡Genial!');
+    ```
+</Card>
+
+<SweetAlert />

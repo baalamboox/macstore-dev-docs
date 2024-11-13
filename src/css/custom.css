@@ -37,3 +37,47 @@
 .card .code {
     text-align: center;
 }
+
+/* CX icons gallery */
+
+.cx-icons-gallery .card-grid {
+    grid-template-columns: repeat(auto-fit, 120px);
+    justify-content: center;
+}
+
+.cx-icons-gallery .card {
+    align-items: center;
+    justify-content: center;
+    min-height: 120px;
+    min-width: 120px;
+    max-height: 120px;
+    max-width: 120px;
+    border: unset;
+    background-color: white;
+}
+
+.cx-icons-gallery img {
+    margin: 0 auto;
+}
+
+.cx-icons-gallery .actions-buttons {
+    display: flex;
+    column-gap: 1rem;
+}
+
+.cx-icons-gallery .title {
+    display: none;
+}
+
+.cx-icons-gallery .button-download,
+.cx-icons-gallery .button-copy {
+    all: unset;
+    cursor: pointer;
+    min-height: 20px;
+    min-width: 20px;
+    border: 1px dotted black;
+    border-radius: 4px;
+    padding: 2px;
+}
+
+

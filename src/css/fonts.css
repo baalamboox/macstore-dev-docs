@@ -1,4 +1,4 @@
-/* Display fonts */
+/* :::::::::: Display fonts :::::::::: */
 @font-face {
     font-family: 'sf-pro-display-black';
     src: local('sf-pro-display-black'), url('../fonts/San-Francisco-Pro-Fonts/SF-Pro-Display-Black.otf') format('opentype');
@@ -143,7 +143,7 @@
     font-display: swap;
 }
 
-/* Text fonts */
+/* :::::::::: Text fonts :::::::::: */
 @font-face {
     font-family: 'sf-pro-text-black';
     src: local('sf-pro-text-black'), url('../fonts/San-Francisco-Pro-Fonts/SF-Pro-Text-Black.otf') format('opentype');
@@ -288,7 +288,7 @@
     font-display: swap;
 }
 
-/* Rounded fonts */
+/* :::::::::: Rounded fonts :::::::::: */
 @font-face {
     font-family: 'sf-pro-rounded-black';
     src: local('sf-pro-rounded-black'), url('../fonts/San-Francisco-Pro-Fonts/SF-Pro-Rounded-Black.otf') format('opentype');
@@ -361,7 +361,7 @@
     font-display: swap;
 }
 
-/* Pro Font */
+/* :::::::::: Pro Font :::::::::: */
 @font-face {
     font-family: 'sf-pro';
     src: local('sf-pro'), url('../fonts/San-Francisco-Pro-Fonts/SF-Pro.ttf') format('truetype');
@@ -370,7 +370,7 @@
     font-display: swap;
 }
 
-/* Pro Italic Font */
+/* :::::::::: Pro Italic Font :::::::::: */
 @font-face {
     font-family: 'sf-pro-italic';
     src: local('sf-pro-italic'), url('../fonts/San-Francisco-Pro-Fonts/SF-Pro-Italic.ttf') format('truetype');
@@ -379,7 +379,7 @@
     font-display: swap;
 }
 
-/* Display fonts */
+/* :::::::::: Display fonts :::::::::: */
 .sfpd-black {
     font-family: 'sf-pro-display-black';
 }
@@ -452,7 +452,7 @@
     font-family: 'sf-pro-display-ultralightitalic';
 }
 
-/* Text fonts */
+/* :::::::::: Text fonts :::::::::: */
 .sfpt-black {
     font-family: 'sf-pro-text-black';
 }
@@ -525,7 +525,7 @@
     font-family: 'sf-pro-text-ultralightitalic';
 }
 
-/* Rounded fonts */
+/* :::::::::: Rounded fonts :::::::::: */
 .sfpr-black {
     font-family: 'sf-pro-rounded-black';
 }
@@ -562,12 +562,12 @@
     font-family: 'sf-pro-rounded-ultralight';
 }
 
-/* Pro font */
+/* :::::::::: Pro font :::::::::: */
 .sf-pro {
     font-family: 'sf-pro';
 }
 
-/* Pro Italic font */
+/* :::::::::: Pro Italic font :::::::::: */
 .sf-proi {
     font-family: 'sf-pro-italic';
 }

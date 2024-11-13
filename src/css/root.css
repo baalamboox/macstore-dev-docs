@@ -1,0 +1,26 @@
+@import url('./fonts.css');
+
+:root {
+    /* :::::::::: Colores base :::::::::: */
+    --wwhite: #ffffff;
+    --bblack: #000000;
+    --gray1: #424245;
+    --gray2: #6e6e73;
+    --gray3: #d0d0d0;
+    --gray4: #f2f2f2;
+    --oorange: #bf4800;
+    --bblue: #0071e3;
+    --ggreen: #008900;
+    --rred: #e30000;
+    /* :::::::::: Colores promociones :::::::::: */
+    --new: #bf4800;
+    --sale: #008900;
+    --special-offer: #5856d6;
+    --affordability: #0071bc;
+    --order-related: #336e7b;
+    --in-stock: #a3684e;
+    --store-related: #707070;
+    /* :::::::::: Colores estados de botones :::::::::: */
+    --button-primary-hover: #62bbfa;
+    --button-secondary: #d0d0d0;
+}
