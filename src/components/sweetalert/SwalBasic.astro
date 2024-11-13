@@ -1,8 +1,8 @@
 ---
 ---
 
-<link rel="stylesheet" href="/public/downloads/vendor/sweetalert/sweetalert2.min.css" />
-<script is:inline src="/public/downloads/vendor/sweetalert/sweetalert2.all.min.js"></script>
+<link rel="stylesheet" href="/downloads/vendor/sweetalert/sweetalert2.min.css" />
+<script is:inline src="/downloads/vendor/sweetalert/sweetalert2.all.min.js"></script>
 
 <button type="button" id="swalPlay">
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="#65a30d" d="M8 5.14v14l11-7z"/></svg>
@@ -10,7 +10,7 @@
 
 <script>
     const swalPlay = document?.querySelector('#swalPlay');
-    swalPlay.addEventListener('click', () => {
+    swalPlay?.addEventListener('click', () => {
         Swal.fire('¡Genial!');
     });
 </script>
