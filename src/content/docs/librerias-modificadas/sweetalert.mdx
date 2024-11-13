@@ -4,6 +4,9 @@ title: Sweet Alert 2
 
 import { FileTree, Card } from '@astrojs/starlight/components';
 import SwalBasic from '/src/components/sweetalert/SwalBasic.astro';
+import SwalIconTitleText from '/src/components/sweetalert/SwalIconTitleText.astro';
+import SwalConfirm from '/src/components/sweetalert/SwalConfirm.astro';
+import SwalClose from '/src/components/sweetalert/SwalClose.astro';
 
 :::tip[Versión: 11.14.0]
 :::
@@ -52,9 +55,52 @@ que Sweet Alert al ser una versión modificada para CX MacStore hace uso de esto
 
 ## Ejemplos
 
-<Card title="Solo mensaje">
-    <SwalBasic />
-    ```js
-    Swal.fire('¡Genial!');
-    ```
-</Card>
+<div class="sweet-container">
+    <Card title="Solo mensaje">
+            <SwalBasic />
+            ```js
+            Swal.fire('¡Genial!');
+            ```
+    </Card>
+    <Card title="Con icono, título y texto">
+            <SwalIconTitleText />
+            ```js
+            Swal.fire({
+                icon: 'success',
+                title: 'CX Macstore',
+                text: 'SweetAlert2 personalizado para CX MacStore.'
+            });
+            ```
+    </Card>
+    <Card title="Con botón de confirmación">
+            <SwalConfirm />
+            ```js
+            Swal.fire({
+                icon: "warning",
+                title: "¿Estás seguro?",
+                text: "No se podrá recuperar dicho proceso...",
+                showCancelButton: true,
+                confirmButtonText: "¡Sí!, de acuerdo."
+                }).then((result) => {
+                if (result.isConfirmed) {
+                    Swal.fire({
+                    icon: "success"    
+                    title: "¡Borrado con éxito!",
+                    text: "El proceso ha sido eliminado correctamente.",
+                    });
+                }
+            });
+            ```
+    </Card>
+    <Card title="Con botón de cierre">
+            <SwalClose />
+            ```js
+            Swal.fire({
+                icon: 'error',
+                title: '¡Ocurrio un error!',
+                text: 'Vuelve a intentarlo más tarde...',
+                showCloseButton: true,
+            });
+            ```
+    </Card>
+</div>

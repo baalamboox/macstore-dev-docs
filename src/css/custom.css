@@ -38,6 +38,27 @@
     text-align: center;
 }
 
+/* :::::::::: Color palete :::::::::: */
+.color-palate .title {
+    color: var(--bblack);
+    font-size: 14px;
+}
+
+.color-palate .color-container {
+    height: 64px;
+    width: 64px;
+    background-color: var(--gray4);
+    border-radius: 50px;
+    margin: 0 auto;
+}
+
+.color-palate .subtext {
+    display: block;
+    color: var(--gray2);
+    font-size: 12px;
+    text-align: center;
+}
+
 /* :::::::::: CX icons gallery :::::::::: */
 
 .cx-icons-gallery .card-grid {
@@ -52,8 +73,6 @@
     min-width: 120px;
     max-height: 120px;
     max-width: 120px;
-    border: unset;
-    background-color: white;
 }
 
 .cx-icons-gallery img {
@@ -79,3 +98,26 @@
     border-radius: 4px;
     padding: 2px;
 }
+
+
+/* :::::::::: Sweet Alert 2 :::::::::: */
+
+.sweet-container .card {
+    position: relative;
+}
+
+.sweet-container .title {
+    justify-content: flex-start;
+}
+
+.sweet-container .button-play {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    right: 1.1rem;
+}
+
+.sweet-container .code {
+    text-align: left;
+}
+

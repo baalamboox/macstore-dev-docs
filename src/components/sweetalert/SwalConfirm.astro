@@ -1,0 +1,30 @@
+---
+---
+
+<link rel="stylesheet" href="/downloads/vendor/sweetalert/sweetalert2.min.css" />
+<script is:inline src="/downloads/vendor/sweetalert/sweetalert2.all.min.js"></script>
+
+<button type="button" id="swalPlay3" class="button-play">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="#65a30d" d="M8 5.14v14l11-7z"/></svg>
+</button>
+
+<script>
+    const swalPlay = document?.querySelector('#swalPlay3');
+    swalPlay?.addEventListener('click', () => {
+        Swal.fire({
+            icon: "warning",
+            title: "¿Estás seguro?",
+            text: "No se podrá recuperar dicho proceso...",
+            showCancelButton: true,
+            confirmButtonText: "¡Sí!, de acuerdo."
+        }).then((result) => {
+            if (result.isConfirmed) {
+                Swal.fire({
+                icon: "success",    
+                title: "¡Borrado con éxito!",
+                text: "El proceso ha sido eliminado correctamente.",
+                });
+            }
+        });
+    });
+</script>

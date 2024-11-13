@@ -4,13 +4,17 @@
 <link rel="stylesheet" href="/downloads/vendor/sweetalert/sweetalert2.min.css" />
 <script is:inline src="/downloads/vendor/sweetalert/sweetalert2.all.min.js"></script>
 
-<button type="button" id="swalPlay1" class="button-play">
+<button type="button" id="swalPlay2" class="button-play">
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="#65a30d" d="M8 5.14v14l11-7z"/></svg>
 </button>
 
 <script>
-    const swalPlay = document?.querySelector('#swalPlay1');
+    const swalPlay = document?.querySelector('#swalPlay2');
     swalPlay?.addEventListener('click', () => {
-        Swal.fire('¡Genial!');
+        Swal.fire({
+            icon: 'success',
+            title: 'CX Macstore',
+            text: 'SweetAlert2 personalizado para CX MacStore.'
+        });
     });
 </script>
