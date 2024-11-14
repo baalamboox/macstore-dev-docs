@@ -1,0 +1,54 @@
+.boton {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: -.02em;
+    outline: 0;
+    border-radius: 50px;
+    padding: 15px 30px;
+    height: 50px;
+    white-space: nowrap;
+    text-transform: initial;
+    text-decoration: none !important;
+    cursor: pointer;
+    font-family: var(--sf-pro-display-medium);
+    letter-spacing: .6px;
+    border: none;
+    background-color: transparent;
+}
+
+.boton-primario {
+    background-color: var(--bblue);
+    color: var(--wwhite);
+}
+
+.boton-secundario {
+    color: var(--bblue);
+    background-color: transparent;
+    outline: solid 1px var(--bblue);
+}
+
+.boton-sin-stock {
+    background-color: var(--gray3);
+    color: var(--gray2);
+    pointer-events: none;
+}
+
+.boton-agregar {
+    padding: 10px 35px;
+    height: 40px;
+}
+
+.boton-primario:hover {
+    background-color: var(--button-primary-hover);
+    color: var(--wwhite) !important;
+}
+
+.boton-secundario:hover,
+.boton-secundario:focus {
+    color: var(--button-primary-hover);
+    background-color: transparent;
+    outline: solid 1px var(--button-primary-hover);
+}
+

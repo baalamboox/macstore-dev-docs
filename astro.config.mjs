@@ -18,6 +18,7 @@ export default defineConfig({
 				replacesTitle: true,
 			},
 			title: 'Dev Docs',
+			themes: ['light'],
 			sidebar: [
 				{
 					label: 'Empezando',

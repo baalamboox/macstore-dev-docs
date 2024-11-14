@@ -38,6 +38,26 @@
     text-align: center;
 }
 
+/* :::::::::: Buttons :::::::::: */
+.buttons .title {
+    display: none;
+}
+
+.buttons .code {
+    text-align: left;
+}
+
+.buttons .buttons-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+}
+
+.buttons a, .buttons a:hover {
+    color: unset;
+}
+
 /* :::::::::: Color palete :::::::::: */
 .color-palate .title {
     font-size: 14px;
@@ -117,4 +137,3 @@
 .sweet-container .code {
     text-align: left;
 }
-
