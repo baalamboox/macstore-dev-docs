@@ -13,8 +13,8 @@ export default defineConfig({
 				},
 			},
 			logo: {
-				light: './src/assets/logos/logo-macstore-dark.svg',
-				dark: './src/assets/logos/logo-macstore-light.svg',
+				light: '/src/assets/logos/logo-macstore-dark.svg',
+				dark: '/src/assets/logos/logo-macstore-light.svg',
 				replacesTitle: true,
 			},
 			title: 'Dev Docs',
@@ -67,6 +67,7 @@ export default defineConfig({
 				'./src/css/root.css',
 				'./src/css/custom.css',
 			],
+			lastUpdated: true,
 		}),
 	],
 });
