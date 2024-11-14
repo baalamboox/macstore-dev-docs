@@ -1,0 +1,23 @@
+
+
+
+<div class="entryarea w-100">
+    <input id="nws3" class="inputani" type="email"  required />
+    <label  id="labelnws3" class="labelline" for="">Confirmar correo</label>
+</div>
+
+<script>
+       
+    const textInput3 = document.getElementById('nws3');
+ textInput3.addEventListener('input', function () {
+     const inputValue2 = textInput3.value.trim();
+     var labelinput2 = document.getElementById("labelnws3");
+     if (inputValue2 !== '') {
+ 
+         labelinput2.classList.add('focusclassinputemail');
+     } else {
+ 
+         labelinput2.classList.remove('focusclassinputemail');
+     }
+ });  
+ </script>

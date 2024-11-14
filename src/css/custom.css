@@ -121,3 +121,27 @@
     text-align: left;
 }
 
+/* :::::::::: INPUTS :::::::::: */
+.inputs{
+    margin-top: 15px !important;
+    margin-bottom: 15px;
+}
+.inputs .code{
+    text-align: left;
+}
+/* :::::::::: LABEL INPUT :::::::::: */
+.inputs .divtext label{
+    margin-top:0;
+}
+.select .entryarea{
+    height: 45px;
+}
+.select .entryarea label{
+    margin-top:0;
+}
+/* :::::::::: RADIO INPUT :::::::::: */
+.radiobutton svg {
+    display: none;
+    max-width: 100%;
+    height: auto;
+}
