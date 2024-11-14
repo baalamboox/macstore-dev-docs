@@ -6,6 +6,7 @@ import { Card, CardGrid, Code, FileTree, Aside, Badge} from '@astrojs/starlight/
 
 import InputRadio from '/src/components/formularios/input-radio.astro';
 import InputEmail from '/src/components/formularios/input-email.astro';
+import InputPassword from '/src/components/formularios/input-password.astro';
 import '../../../css/input.css'
 import '../../../css/input-admin.css'
 
@@ -35,11 +36,11 @@ y el segundo es el input normal que se usa para formularios para el administrati
 <div class="inputs">
   <Card title="input Administrativo" icon="setting">
        <label for="fechaFinal" icon="setting"><i class="fa fa-search"></i>&nbsp; Nombre</label>
-      <input type="text" class="form-control" id="txtBusCP" maxlength="5" placeholder="Nombre"/>
+      <input type="text" class="form-control"  maxlength="5" placeholder="Nombre"/>
 
          ```html
            <label for="fechaFinal" icon="setting"><i class="fa fa-search"></i>&nbsp; Nombre</label>
-           <input type="text" class="form-control" id="txtBusCP" maxlength="5" placeholder="Nombre"/>
+           <input type="text" class="form-control"  maxlength="5" placeholder="Nombre"/>
             ```
             
   </Card>
@@ -104,6 +105,50 @@ y el segundo es el input normal que se usa para formularios para el administrati
      }
  }); 
             ```
+
+
+             <Aside>Para su correcta funcionalidad, es importante agregar el js referenciando el id del input y el label de forma correspondiente cada que se duplique este componente  </Aside>
+  </Card>
+
+</div>
+
+
+## Input Contraseña
+
+<div class="inputs">
+  <Card title="input Contraseña" icon="setting">
+   <InputPassword/>
+        ```html
+         <div class=" colw mx-auto">
+    <div class="entryarea w-100">
+        <input  id="contrasena_registro" class="inputani " type="password"  required />
+        <label class="labelline" for="contrasena_registro">Contraseña</label>
+    </div>
+    <div class="mensajesinput mt-1 text-left">
+        Debe contener al menos: 1 minúscula, 1 mayúscula, 1 caracter especial (@caracterEspeciales)
+        1 número y una longitud minima de 8 caracteres
+    </div>
+
+</div>
+            ```
+             ```JavaScript  
+                const textInput = document.getElementById('contrasena_registro');
+
+textInput.addEventListener('input', function () {
+    const inputValue = textInput.value.trim();
+    var labelinput = document.getElementById("labelnws1");
+    if (inputValue !== '') {
+
+        labelinput.classList.add('focusclassinputemail');
+    } else {
+
+        labelinput.classList.remove('focusclassinputemail');
+    }
+}); 
+            ```
+
+
+             <Aside>Para su correcta funcionalidad, es importante agregar el js referenciando el id del input y el label de forma correspondiente cada que se duplique este componente  </Aside>
   </Card>
 
 </div>
@@ -142,9 +187,13 @@ y el segundo es el input normal que se usa para formularios para el administrati
                 <label class="labelline " for="ordenaPedidos"> selecciona:</label>
             </div>
         ```html
-           <div class="entryarea w-100">
-                <input class="inputani inputdate" type="date" required />
-                <label id="" class="labelline labeldate" >Fecha </label>
+          <div class="entryarea mb-1">
+                <select name="ordenaPedidos" style="display: flex; pointer-events: all;" class="inputani orPedidosFil"  required="">
+                    <option  data-op="0"></option>
+                    <option data-op="1">1</option>
+                    <option data-op="2">2</option>
+                </select>
+                <label class="labelline " for="ordenaPedidos"> selecciona:</label>
             </div>
             ```
   </Card>
@@ -228,6 +277,7 @@ y el segundo es el input normal que se usa para formularios para el administrati
                 </label>
             </label>
             ```
+             <Aside>Para poder visualizar los check input de forma correcta, es requerido importar la hoja de estilos llamada <Badge text="radiobutons.css" variant="note" /> </Aside>
   </Card>
 
 </div>
