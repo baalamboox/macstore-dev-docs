@@ -1,0 +1,58 @@
+---
+import '../../css/radiobutons.css'
+---
+
+<div class="d-flex-">
+    <div class="cbsc__cbs w-50">
+        <input id='chkEcommerce' class="cbs__cbsir" type='radio' value='1' name='optradio1' checked />
+        <label for="chkEcommerce" class="cbs__cbslh no-outline">
+            <div class="cbslh__cbsrtc">
+                <div class="cbsrtc__cbsr">
+                    <svg class="cbsr__cbsrd" width="18" height="18" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="7.99994" cy="8.00006" r="6.70827" fill="white" stroke="#D2D2D7" stroke-width="0.583333" />
+                    </svg>
+                    <!--radio de color-->
+                    <svg class="cbsr__cbsre" width="18" height="18" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="7" cy="6.99988" r="4.66665" fill="white" stroke="#0071E3" stroke-width="4.66671" />
+                    </svg>
+                </div>
+                <div class="cbsrtc__cbst--container">
+                    <p class="cbsrtc__cbst">ejemplo1</p>
+                </div>
+            </div>
+        </label>
+    </div>
+    <div class="cbsc__cbs w-50">
+        <input type="radio" class="cbs__cbsir" id='chkSucursal'  value='2' name='optradio1' />
+        <label for="chkSucursal" class="cbs__cbslh no-outline">
+            <div class="cbslh__cbsrtc">
+                <div class="cbsrtc__cbsr">
+                    <svg class="cbsr__cbsrd" width="18" height="18" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="7.99994" cy="8.00006" r="6.70827" fill="white" stroke="#D2D2D7" stroke-width="0.583333" />
+                    </svg>
+                    <!--radio de color-->
+                    <svg class="cbsr__cbsre" width="18" height="18" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="7" cy="6.99988" r="4.66665" fill="white" stroke="#0071E3" stroke-width="4.66671" />
+                    </svg>
+                </div>
+                <div class="cbsrtc__cbst--container">
+                    <p class="cbsrtc__cbst">ejemplo2</p>
+                </div>
+            </div>
+        </label>
+    </div>
+
+
+</div>
+
+<script>
+       $(document).ready(function () {
+       $(".radiocllegales[type='radio']").change((event) => {
+           $(`[data-id="${event.currentTarget.dataset.target}"]`).collapse("show");
+           $(`.radiocllegales[type="radio"][name="${event.currentTarget.name}"]:not(:checked)`).map((index, element) => {
+               $(`[data-id="${element.dataset.target}"]`).collapse("hide");
+           });
+       });
+   }
+   )
+</script>

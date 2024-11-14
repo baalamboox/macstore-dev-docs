@@ -1,0 +1,392 @@
+.errorDirec {
+    font-family: 'sf-pro-display-light';
+    font-size: 14px;
+    color: red;
+    line-height: 1;
+}
+
+.inputani,
+.inputani:focus {
+    color: #000
+}
+
+.checkregister,
+.entryarea,
+.ulcrearcuenta {
+    text-align: left
+}
+
+.borderx .colw,
+.inputani,
+textarea {
+    width: 100%
+}
+
+.entryarea {
+    position: relative;
+    line-height: 50px;
+    height: 45px;
+    background-color: #fff
+}
+
+input[type=date]:in-range::-webkit-datetime-edit-day-field,
+input[type=date]:in-range::-webkit-datetime-edit-month-field,
+input[type=date]:in-range::-webkit-datetime-edit-text,
+input[type=date]:in-range::-webkit-datetime-edit-year-field {
+    color: transparent
+}
+
+.inputani {
+    position: absolute;
+    outline: 0;
+    font-size: 14px;
+    padding: 20px 15px 5px 16px;
+    line-height: 20px;
+    border-radius: 4px;
+    border: 1.2px solid #d9d9d9;
+    background: 0 0;
+    transition: none;
+    z-index: 1
+}
+
+.borderrecoverpass,
+.inputani:focus {
+    border: 2px solid #000
+}
+
+.labelline,
+label.labeltextarea {
+    position: absolute;
+    transition: .2s
+}
+
+input[type=date]::-webkit-calendar-picker-indicator {
+    background: 0 0;
+    bottom: 0;
+    color: transparent;
+    cursor: pointer;
+    height: auto;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto
+}
+
+.labelline {
+    font-size: 14px;
+    color: #7c7c80;
+    padding: .25px;
+    margin: 0 20px;
+    background-color: transparent;
+    line-height: 47px !important;
+    font-weight: 400 !important;
+    cursor: auto
+}
+
+.focusclassinputemail,
+.inputani:disabled+.labelline {
+    height: 30px;
+    padding: 0 10px;
+    font-weight: 500;
+    transform: translate(-15px) scale(.88);
+    font-size: 14px;
+    color: #7c7c80
+}
+
+.inputani:focus+.labelline,
+.inputani:valid+.labelline {
+    color: #7c7c80;
+    height: 30px;
+    line-height: 27px !important;
+    padding: 0 10px;
+    font-size: 14px;
+    font-weight: 500;
+    z-index: 5;
+    transform: translate(-15px) scale(.88)
+}
+
+.inputani:disabled+.labelline {
+    line-height: 27px !important;
+    z-index: 5
+}
+
+#CDMD.inputani:focus+.labelline,
+#CDMD.inputani:valid+.labelline {
+    padding: 0 !important
+}
+
+.radiogeneros {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%
+}
+
+.radiogeneros label.cbs__cbslh {
+    padding: 0
+}
+
+input[type=radio].btradio {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 57px;
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    margin-left: -14px;
+    margin-top: 2px
+}
+
+.mn-2 {
+    margin-top: -4px
+}
+
+.focusclassinputemail {
+    line-height: 30px !important;
+    z-index: 5 !important
+}
+
+.loginros {
+    display: flex;
+    justify-content: space-between
+}
+
+.form-check,
+.form-check2 {
+    display: flex;
+    align-items: center
+}
+
+.mt-13 {
+    margin-top: 25px
+}
+
+.errorinfo {
+    width: 15px;
+    height: 15px
+}
+
+.f-s20 {
+    font-size: 22px
+}
+
+.form-check {
+    justify-content: center
+}
+
+.validations {
+    color: #121212;
+    font-size: 1.6rem;
+    letter-spacing: 1.2px
+}
+
+.inputcheck {
+    margin: -8px 0 0 !important
+}
+
+.validations2 {
+    color: rgb(18 18 18 / 68%);
+    font-size: 12px;
+    letter-spacing: 1.4px
+}
+
+.mt-0 {
+    margin-top: 0 !important
+}
+
+.p-2 {
+    padding: 15px
+}
+
+.error {
+    color: red;
+    line-height: 1;
+    font-family: sf-pro-display-light;
+    font-size: 14px;
+}
+
+.regulartext {
+    font-family: sf-pro-display-regular !important
+}
+
+.optionss,
+.ulcrearcuenta li,
+label.labeltextarea {
+    font-family: sf-pro-display-regular
+}
+
+.pr-1 {
+    padding-left: 6px
+}
+
+.carlogin {
+    padding: 16px;
+    border-radius: 16px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px #00000014;
+    margin: 5px 0 15px;
+    height: 520px
+}
+
+.ulcrearcuenta {
+    list-style: none;
+    width: fit-content
+}
+
+.ulcrearcuenta li {
+    font-size: 14px;
+    letter-spacing: 1px
+}
+
+.p-25 {
+    padding-left: 25px
+}
+
+.pt-3px {
+    padding-top: 3px
+}
+
+.mt-01 {
+    margin-top: 10px;
+    margin-bottom: 10px
+}
+
+.w-80 {
+    width: 80%
+}
+
+.mensajesinput {
+    color: var(--gray2);
+    font-size: 10px;
+    margin-top: 14px
+}
+
+.labeldate {
+    z-index: auto !important
+}
+
+.form-check2 {
+    justify-content: left
+}
+
+@media (max-width:1024px) {
+    .w-80 {
+        width: 100%
+    }
+}
+
+@media (max-width:767px) {
+    .colw {
+        width: 90%
+    }
+
+    .rowlblock {
+        display: block !important
+    }
+
+    .carlogin {
+        height: auto
+    }
+}
+
+.inputani.inputestados:disabled+.labelline,
+.inputani.inputestados:focus+.labelline,
+.inputani.inputestados:valid+.labelline {
+    padding: 0 !important
+}
+
+.divtext {
+    position: relative;
+    margin-top: 5px
+}
+
+textarea {
+    padding: 36px 10px 10px;
+    font-size: 16px;
+    resize: vertical;
+    border: 1px solid #ccc;
+    resize: none !important;
+    background: #fff
+}
+
+.textencuesta {
+    min-height: 150px;
+    max-height: 200px
+}
+
+.h-100 {
+    min-height: 80px !important
+}
+
+label.labeltextarea {
+    top: 15px;
+    left: 10px;
+    font-size: 14px;
+    color: #7c7c80;
+    font-weight: initial;
+}
+
+textarea:focus+label,
+textarea:not(:placeholder-shown)+label {
+    top: 1.5px;
+    left: 2px;
+    font-size: 13px;
+    width: 99%;
+    background: #fff;
+    padding: 10px;
+    text-align: left
+}
+
+.ml-30 {
+    margin-left: 10px
+}
+
+.inputani:focus+.labelline.selec2,
+.inputani:valid+.labelline.selec2 {
+    padding: 0 7px !important
+}
+
+option {
+    white-space: normal
+}
+
+.textoselec {
+    white-space: normal !important
+}
+
+.cuentamacs {
+    color: #121212bf;
+    font-size: 1.4rem;
+    font-family: sf-pro-display-light;
+    display: inline-flex;
+    align-items: center;
+    letter-spacing: 1px
+}
+
+@-moz-document url-prefix() {
+    .labeldate {
+        margin-top: -10px
+    }
+
+    .inputani:focus+.labelline.labeldate,
+    .inputani:valid+.labelline.labeldate {
+        line-height: 42px !important
+    }
+}
+
+@media (max-width:600px) {
+
+    textarea:focus+label,
+    textarea:not(:placeholder-shown)+label {
+        width: 96%
+    }
+}
+
+@media (max-width:316px) {
+
+    textarea:focus+label,
+    textarea:not(:placeholder-shown)+label {
+        width: 89%
+    }
+}
