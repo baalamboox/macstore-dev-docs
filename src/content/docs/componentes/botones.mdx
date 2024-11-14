@@ -1,0 +1,94 @@
+---
+title: Botones
+---
+
+import { Card } from '@astrojs/starlight/components';
+import '/src/css/buttons.css';
+
+<div class="buttons">
+
+    ## Botones primarios
+    
+    <Card title="">
+        <div class="buttons-container">
+            <a href="#" class="boton boton-primario"><span>Botón primario</span></a>
+            <button type="button" class="boton boton-primario"><span>Botón primario</span></button>
+        </div>
+        ```html
+        <a href="#" class="boton boton-primario">
+            <span>Botón primario</span>
+        </a>
+        <button type="button" class="boton boton-primario">
+            <span>Botón primario</span>
+        </button>
+        ```
+    </Card>
+
+    ## Botones secudarios
+
+    <Card title="">
+        <div class="buttons-container">
+            <a href="#" class="boton boton-secundario"><span>Botón secundario</span></a>
+            <button type="button" class="boton boton-secundario"><span>Botón secundario</span></button>
+        </div>
+        ```html
+        <a href="#" class="boton boton-primario">
+            <span>Botón primario</span>
+        </a>
+        <button type="button" class="boton boton-secundario">
+            <span>Botón secundario</span>
+        </button>
+        ```
+    </Card>
+
+    ## Botones sin stock
+
+    <Card title="">
+        <div class="buttons-container">
+            <a href="#" class="boton boton-sin-stock"><span>Botón sin stock</span></a>
+            <button type="button" class="boton boton-sin-stock"><span>Botón sin stock</span></button>
+        </div>
+        ```html
+        <a href="#" class="boton boton-sin-stock">
+            <span>Botón primario</span>
+        </a>
+        <button type="button" class="boton boton-sin-stock">
+            <span>Botón secundario</span>
+        </button>
+        ```
+    </Card>
+
+    ## Botones agregar
+
+    <Card title="">
+        <div class="buttons-container">
+            <a href="#" class="boton boton-secundario boton-agregar"><span>Botón agregar</span></a>
+            <button type="button" class="boton boton-secundario boton-agregar"><span>Botón agregar</span></button>
+        </div>
+        ```html
+        <a href="#" class="boton boton-secundario boton-agregar">
+            <span>Botón agregar</span>
+        </a>
+        <button type="button" class="boton boton-secundario boton-agregar">
+            <span>Botón agregar</span>
+        </button>
+        ```
+    </Card>
+
+    ## Botones saber más
+
+    <Card title="">
+        <div class="buttons-container">
+            <a href="#" class="boton boton-saber-mas"><span>Botón saber más</span></a>
+            <button type="button" class="boton boton-saber-mas"><span>Botón saber más</span></button>
+        </div>
+        ```html
+        <a href="#" class="boton boton-saber-mas">
+            <span>Botón saber más</span>
+        </a>
+        <button type="button" class="boton boton-saber-mas">
+            <span>Botón saber más</span>
+        </button>
+        ```
+    </Card>
+</div>
