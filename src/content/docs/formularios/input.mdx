@@ -7,6 +7,7 @@ import { Card, CardGrid, Code, FileTree, Aside, Badge} from '@astrojs/starlight/
 import InputRadio from '/src/components/formularios/input-radio.astro';
 import InputEmail from '/src/components/formularios/input-email.astro';
 import InputPassword from '/src/components/formularios/input-password.astro';
+import InputdateAdmin from '/src/components/formularios/input-date.astro';
 import '../../../css/input.css'
 import '../../../css/input-admin.css'
 
@@ -80,6 +81,22 @@ y el segundo es el input normal que se usa para formularios para el administrati
   </Card>
 
 </div>
+
+
+## Input date Administrativo
+
+<div class="inputs">
+  <Card title="input date Administrativo" icon="setting">
+    <InputdateAdmin/>
+        ```html
+          <div class="form-group">
+    <label for="fechaFinal"><i class="fa fa-calendar"></i>&nbsp; Fecha</label>
+    <input class="form-control "  name="Final"  type="date"  >
+     </div>
+            ```
+  </Card>
+
+</div>
 ## Input Email
 
 <div class="inputs">
@@ -104,8 +121,7 @@ y el segundo es el input normal que se usa para formularios para el administrati
          labelinput2.classList.remove('focusclassinputemail');
      }
  }); 
-            ```
-
+ ```
 
              <Aside>Para su correcta funcionalidad, es importante agregar el js referenciando el id del input y el label de forma correspondiente cada que se duplique este componente  </Aside>
   </Card>
@@ -195,6 +211,24 @@ textInput.addEventListener('input', function () {
                 </select>
                 <label class="labelline " for="ordenaPedidos"> selecciona:</label>
             </div>
+            ```
+  </Card>
+
+</div>
+## Select Administrativo
+<div class="inputs select">
+  <Card title="Select administrativo" icon="setting">
+  <select class="form-control"name="select2">
+                                        <option value="0">1</option>
+                                            <option value="13"> 2 </option>
+                                            <option value="8"> 3 </option>
+            </select>
+        ```html
+          <select class="form-control"name="select2">
+                                        <option value="0">1</option>
+                                            <option value="13"> 2 </option>
+                                            <option value="8"> 3 </option>
+            </select>
             ```
   </Card>
 

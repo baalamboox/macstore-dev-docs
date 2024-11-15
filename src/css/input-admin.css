@@ -15,4 +15,24 @@ label {
     font-size: 14px;
 }
 
+input[type=date].date:in-range::-webkit-datetime-edit-day-field,
+input[type=date].date:in-range::-webkit-datetime-edit-month-field,
+input[type=date].date:in-range::-webkit-datetime-edit-text,
+input[type=date].date:in-range::-webkit-datetime-edit-year-field {
+    color: #555 !important;
+}
+
+input[type=date].date::-webkit-calendar-picker-indicator {
+    background: initial;
+    bottom: initial;
+    color: initial;
+    cursor: initial;
+    height: initial;
+    left: initial;
+    position: initial;
+    right: initial;
+    top: initial;
+    width: initial;
+}
+
 
