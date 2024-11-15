@@ -2,10 +2,6 @@
     --sl-font: 'sf-pro';
 }
 
-/* .sl-flex:where(.astro-kmkmnagf) {
-    justify-content: center;
-} */
-
 .card {
     border-radius: 1rem;
 }
