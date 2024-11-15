@@ -1,24 +1,105 @@
 :root {
     --sl-font: 'sf-pro';
+    /* --sl-color-accent: var(--bblue) !important; */
 }
 
+/* :::::::::: Starlight custum :::::::::: */
 .card {
+    border-color: var(--gray4);
+    box-shadow: 2px 4px 10px var(--gray4);
     border-radius: 1rem;
 }
 
 .card .title {
     font-size: 16px;
-    font-weight: 100;
+    font-weight: normal;
+}
+
+
+
+/* :::::::::: Cards with executable code :::::::::: */
+.card-exe-code .card {
+    position: relative;
+}
+
+.card-exe-code .title {
+    justify-content: flex-start;
+}
+
+.card-exe-code .button-play {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    cursor: pointer;
+    background-color: var(--wwhite);
+    border-radius: 50px;
+    border: 1px solid var(--bblue);
+    height: 32px;
     justify-content: center;
+    outline: 0px solid var(--bblue);
+    top: 0;
+    right: 1.1rem;
+    width: 32px;
 }
 
-.card .text-example {
-    text-align: center;
-    font-size: 24px;
+.card-exe-code .button-play:focus {
+    animation: play 1s ease-out infinite alternate;
 }
 
-.card .code {
-    text-align: center;
+.card-exe-code .button-play:focus > svg > path {
+    animation: play 1s ease-out infinite alternate;
+}
+
+.card-exe-code .button-play > svg > path {
+    fill: var(--bblue);
+}
+
+.card-exe-code .code {
+    text-align: left;
+}
+
+.card pre {
+    border-radius: 4px !important;
+    border-color: var(--gray3) !important;
+    background-color: var(--wwhite) !important;
+}
+
+.card-exe-code .button-play:hover {
+    background-color: var(--bblue);
+}
+
+.card-exe-code .button-play:hover > svg > path {
+    fill: var(--wwhite);
+}
+
+@keyframes play {
+    0% {
+        outline-width: 1px;
+        outline-offset: -1px;
+        background-color: var(--bblue);
+        fill: var(--wwhite)
+    }
+
+    25% {
+        outline-width: 1px;
+        outline-offset: 5px;
+    }
+
+    50% {
+        outline-width: 1px;
+        outline-offset: 10px;
+    }
+
+    75% {
+        outline-width: 1px;
+        outline-offset: 15px;
+    }
+
+    100% {
+        outline-width: 1px;
+        outline-offset: 20px;
+        outline-color: transparent;
+    }
 }
 
 /* :::::::::: Buttons :::::::::: */
@@ -99,27 +180,9 @@
     padding: 2px;
 }
 
+/* :::::::::: Alertify section :::::::::: */
 
-/* :::::::::: Sweet Alert 2 :::::::::: */
 
-.sweet-container .card {
-    position: relative;
-}
-
-.sweet-container .title {
-    justify-content: flex-start;
-}
-
-.sweet-container .button-play {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    right: 1.1rem;
-}
-
-.sweet-container .code {
-    text-align: left;
-}
 
 /* :::::::::: INPUTS :::::::::: */
 .inputs{

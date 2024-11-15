@@ -24,3 +24,37 @@
     --button-primary-hover: #62bbfa;
     --button-secondary: #d0d0d0;
 }
+
+
+/* Dark mode colors. */
+/* :root {
+	--sl-color-accent-low: var(--wwhite);
+	--sl-color-accent: var(--bblue);
+	--sl-color-accent-high: var(--bblue);
+	--sl-color-white: var(--wwhite);
+	--sl-color-gray-1: var(--gray1);
+	--sl-color-gray-2: var(--gray2);
+	--sl-color-gray-3: var(--gray3);
+	--sl-color-gray-4: var(--gray1);
+	--sl-color-gray-5: var(--gray2);
+	--sl-color-gray-6: var(--bblack);
+    --sl-color-gray-7: var(--gray4);
+
+	--sl-color-black: var(--wwhite);
+} */
+
+/* Light mode colors. */
+/* :root[data-theme='light'] {
+	--sl-color-accent-low: red;
+	--sl-color-accent: var(--bblue);
+	--sl-color-accent-high: #182775;
+	--sl-color-white: black;
+	--sl-color-gray-1: purple;
+	--sl-color-gray-2: pink;
+	--sl-color-gray-3: orange;
+	--sl-color-gray-4: red;
+	--sl-color-gray-5: green;
+	--sl-color-gray-6: var(--gray3);
+	--sl-color-gray-7: var(--white);
+	--sl-color-black: var(--wwhite);
+} */

@@ -1,0 +1,17 @@
+---
+---
+
+<link rel="stylesheet" href="/src/vendor/alertify/alertify.css" />
+<script is:inline src="/src/vendor/alertify/alertify.js"></script>
+
+<button type="button" id="alertSuccess" class="button-play" title="Visualizar">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="#65a30d" d="M8 5.14v14l11-7z"/></svg>
+</button>
+
+<script>
+    const swalPlay = document?.querySelector('#alertSuccess');
+    swalPlay?.addEventListener('click', () => {
+        alertify.set('notifier', 'position', 'bottom-right');
+        alertify.success('¡Éxito!', 1000);
+    });
+</script>

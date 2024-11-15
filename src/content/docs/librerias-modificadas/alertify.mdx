@@ -1,3 +1,119 @@
 ---
 title: 'Alertify'
 ---
+
+import  { Card, FileTree } from '@astrojs/starlight/components';
+import AlertifySuccess from '/src/components/alertify/AlertifySuccess.astro';
+import AlertifyWarning from '/src/components/alertify/AlertifyWarning.astro';
+import AlertifyError from '/src/components/alertify/AlertifyError.astro';
+import AlertifyMessage from '/src/components/alertify/AlertifyMessage.astro';
+import AlertifyNotify from '/src/components/alertify/AlertifyNotify.astro';
+
+:::tip[Versión: 1.13.1]
+:::
+
+AlertifyJS es un librería de JavaScript diseñado para crear diálogos y notificaciones atractivas en
+navegadores web. Este script facilita la implementación de elementos personalizados como alertas, confirmaciones y
+prompts, así como notificaciones que son visualmente agradables y fáciles de personalizar.
+
+## Uso
+
+La implementación de Alertify JS es sumamente fácil, solo hay que tener en cuenta
+algunos detalles de configuración de archivos como es el caso de las fuentes y los colores ya
+que Alertify JS al ser una versión modificada para CX MacStore hace uso de estos archivos:
+- **root.css**
+- **fonts.css**
+
+:::caution[Ejemplo de uso]
+    Ejemplo de directorios <small><b>(Puede cambiar)</b></small>
+    <FileTree>
+        - public
+            - css
+                - root.css
+                - fonts.css
+            - vendor
+                - alertify
+                    - alertify.min.css
+                    - alertify.min.js
+        - index.html
+    </FileTree>
+
+    En el archivo **index.html** o donde se desea usar Alertify JS se debe primero cargar el
+    archivo **root.css** y después **fonts.css**.
+
+    ```html
+        <!DOCTYPE>
+        <html>
+            <head>
+                <link rel="stylesheet" href="/public/css/root.css" />
+                <link rel="stylesheet" href="/public/css/fonts.css" />
+                <link rel="stylesheet" href="/public/vendor/alertify/alertify.min.css" />
+                <script src="/public/vendor/alertify/alertify.min.js"></script>
+            </head>
+        </html>
+    ```
+
+    **Nota:** Es recomendable hacer uso de layouts para evitar llamar más de una vez el mismo archivo.
+:::
+
+## Ejemplos
+
+<div class="card-exe-code">
+    ### Alertify para éxitos
+    <Card title="En caso de éxito este es estupendo." icon="approve-check-circle">
+            <AlertifySuccess />
+            ```js
+            // Define la posición de Alertify (Opcional)
+            alertify.set('notifier', 'position', 'bottom-right'); 
+            
+            // Se hace uso de Alertify tipo success
+            alertify.success('¡Genial!', 1000);
+            ```
+    </Card>
+    ### Alertify para advertencias
+    <Card title="Para advertencias esta notificación es la ideal." icon="warning">
+            <AlertifyWarning />
+            ```js
+            // Define la posición de Alertify (Opcional)
+            alertify.set('notifier', 'position', 'bottom-right'); 
+            
+            // Se hace uso de Alertify tipo success
+            alertify.warning('¡Advertencia!', 1000);
+            ```
+    </Card>
+    ### Alertify para errores
+    <Card title="Para la notificación de errores, este es el Alertify correcto." icon="close">
+            <AlertifyError />
+            ```js
+            // Define la posición de Alertify (Opcional)
+            alertify.set('notifier', 'position', 'bottom-right'); 
+            
+            // Se hace uso de Alertify tipo error
+            alertify.error('¡Error!', 1000);
+            ```
+    </Card>
+    ### Alertify para mensajes
+     <Card title="Si solo quieres mandar un simple mensaje, usa este tipo de Alertify." icon="comment">
+            <AlertifyMessage />
+            ```js
+            // Define la posición de Alertify (Opcional)
+            alertify.set('notifier', 'position', 'bottom-right'); 
+            
+            // Se hace uso de Alertify tipo mensaje
+            alertify.message('¡Mensaje!', 1000);
+            ```
+    </Card>
+    ### Alertify para notificaciones
+    <Card title="Usalo cuando quieras mandar solo notificaciones." icon="information">
+            <AlertifyNotify />
+            ```js
+            // Define la posición de Alertify (Opcional)
+            alertify.set('notifier', 'position', 'bottom-right'); 
+            
+            // Se hace uso de Alertify tipo notificación
+            alertify.notify('¡Notificación!', 1000);
+            ```
+    </Card>
+</div>
+
+## Personalizar
