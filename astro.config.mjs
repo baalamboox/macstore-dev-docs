@@ -1,5 +1,6 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import ThemeSelect from './src/components/ThemeSelect.astro';
 
 // https://astro.build/config
 export default defineConfig({
@@ -68,6 +69,9 @@ export default defineConfig({
 				'./src/css/custom.css',
 			],
 			lastUpdated: true,
+			components: {
+				ThemeSelect: '/src/components/ThemeSelect.astro'
+			}
 		}),
 	],
 });

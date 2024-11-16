@@ -1,60 +1,28 @@
 @import url('./fonts.css');
 
 :root {
-    /* :::::::::: Colores base :::::::::: */
+    /* :::::::::: Base colors :::::::::: */
     --wwhite: #ffffff;
     --bblack: #000000;
-    --gray1: #424245;
+    --gray1: rgb(66, 66, 69);
     --gray2: #6e6e73;
     --gray3: #d0d0d0;
     --gray4: #f2f2f2;
     --oorange: #bf4800;
-    --bblue: #0071e3;
+    --bblue: rgb(0, 113, 227);
     --ggreen: #008900;
     --rred: #e30000;
-    /* :::::::::: Colores promociones :::::::::: */
-    --new: #bf4800;
-    --sale: #008900;
-    --special-offer: #5856d6;
+
+    /* :::::::::: Offers colors :::::::::: */
+    --new: var(--oorange);
+    --sale: var(--ggreen);
+    --special-offer: hsl(241, 61%, 59%);
     --affordability: #0071bc;
     --order-related: #336e7b;
     --in-stock: #a3684e;
     --store-related: #707070;
-    /* :::::::::: Colores estados de botones :::::::::: */
+
+    /* :::::::::: State color buttons :::::::::: */
     --button-primary-hover: #62bbfa;
     --button-secondary: #d0d0d0;
 }
-
-
-/* Dark mode colors. */
-/* :root {
-	--sl-color-accent-low: var(--wwhite);
-	--sl-color-accent: var(--bblue);
-	--sl-color-accent-high: var(--bblue);
-	--sl-color-white: var(--wwhite);
-	--sl-color-gray-1: var(--gray1);
-	--sl-color-gray-2: var(--gray2);
-	--sl-color-gray-3: var(--gray3);
-	--sl-color-gray-4: var(--gray1);
-	--sl-color-gray-5: var(--gray2);
-	--sl-color-gray-6: var(--bblack);
-    --sl-color-gray-7: var(--gray4);
-
-	--sl-color-black: var(--wwhite);
-} */
-
-/* Light mode colors. */
-/* :root[data-theme='light'] {
-	--sl-color-accent-low: red;
-	--sl-color-accent: var(--bblue);
-	--sl-color-accent-high: #182775;
-	--sl-color-white: black;
-	--sl-color-gray-1: purple;
-	--sl-color-gray-2: pink;
-	--sl-color-gray-3: orange;
-	--sl-color-gray-4: red;
-	--sl-color-gray-5: green;
-	--sl-color-gray-6: var(--gray3);
-	--sl-color-gray-7: var(--white);
-	--sl-color-black: var(--wwhite);
-} */
