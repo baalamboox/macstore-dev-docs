@@ -1,0 +1,18 @@
+.table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: #f9f9f9
+}
+
+.table-hover > tbody > tr:hover {
+    background-color: #f5f5f5
+}
+table.dataTable thead th, table.dataTable thead td {
+    padding: 10px 18px;
+    border-bottom: 1px solid #111;
+}
+th {
+    color: black;
+    font-family: 'sf-pro-display-regular' !important;
+}
+.w-100{
+    width: 100%;
+}

@@ -1,0 +1,73 @@
+---
+title: Tablas
+---
+import { Card, CardGrid, Code, FileTree, Aside, Badge} from '@astrojs/starlight/components';
+import Collapse from '/src/components/formularios/collapse.astro';
+import Tablamicuenta from '/src/components/tablas/Micuenta.astro';
+
+import '../../../css/tablas.css'
+import '../../../css/micuenta.css'
+
+<div class="tablas">
+  <Card title='Tabla administrativo'>
+        <table class="display table table-striped table-hover" style="width: 100%;">
+            <thead>
+                <tr>
+                    <th class="sorting" style="width: 505px;">Columna1</th>
+                    <th class="sorting" style="width: 346px;">Columna 2</th>
+                    <th class="sorting"  style="width: 178px;">Columna 3</th>
+                </tr>
+            </thead>
+            <tbody class="cuperotb">
+                <tr class="odd">
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                <tr class="even">
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+            </tbody>
+        </table>
+```js
+<table class="display table table-striped table-hover dataTable " >
+    <thead>
+        <tr>
+            <th class="sorting">Columna1</th>
+            <th class="sorting">Columna 2</th>
+             <th class="sorting">Columna 3</th>
+        </tr>
+    </thead>
+    <tbody class="cuperotb">
+        <tr class="odd">
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr class="even">
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+    </tbody>
+</table>
+```
+  <Aside>Para su correcta visualización es importante agregar la libreria de css de <Badge text="bootstrap-min.cs" variant="note" /></Aside>
+  </Card>
+
+</div>
+## Tabla mi cuenta
+<div class="tablas">
+  <Card title='Tabla mi cuenta cx'>
+    <Tablamicuenta/>
+```js
+
+```
+  <Aside>Para su correcta visualización es importante agregar la libreria de css de <Badge text="bootstrap-min.cs" variant="note" /></Aside>
+  </Card>
+
+</div>
+
+
