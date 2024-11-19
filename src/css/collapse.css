@@ -1,0 +1,822 @@
+.principal {
+    font-size: 48px !important;
+    line-height: 58px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'sf-pro-display-semibold' !important;
+    font-weight: inherit;
+}
+    h2.h2landing {
+        font-size: 35px !important;
+        line-height: 40px;
+    }
+h3.h3landing {
+    font-size: 32px !important;
+    line-height: 36px;
+}
+h4.h4landing {
+    font-size: 24px !important;
+    line-height: 32px;
+}
+h5.h5landing {
+    font-size: 18px !important;
+    line-height: 20px;
+}
+.title-medium {
+    font-size: 16px !important;
+    line-height: 20px;
+    font-family: 'sf-pro-display-medium' !important;
+}
+/*list-process li*/
+.pgeneral {
+    font-size: 16px !important;
+    font-weight: 200;
+    margin-bottom: 10px;
+    color: #333;
+}
+.pcollapse {
+    color: #000;
+    font-size: 1.8rem !important;
+    font-weight: 500;
+}
+.pcollapsehijo {
+    border: none;
+    padding-top: 0;
+    padding-left: 6vw;
+    line-height: 2.3rem !important;
+}
+p {
+    padding: 0;
+    font-family: 'sf-pro-display-regular';
+    font-size: 14px;
+    font-weight: inherit;
+}
+#ademas1 {
+    padding: 20px 30px !important;
+}
+.padd-D1 {
+    padding: 20px 30px !important;
+}
+.think {
+    color: var(--gray1);
+    font-family: 'sf-pro-display-light-Redonder';
+    font-size: 14px;
+    line-height: initial;
+    margin: 0;
+}
+.btn-caracteristica {
+    font-size: 13px;
+}
+.bg-black {
+    color: #fff;
+    background-color: #000;
+}
+.colorwhite{
+    color:white;
+}
+th {
+  /*  font-size: 1.8rem;*/
+    padding-bottom: 2vw;
+    border-bottom: 0 solid #ddd;
+    font-family: 'sf-pro-display-regular';
+    text-align: left;
+    width:50%;
+}
+.collapsetable {
+    width: 100%;
+    margin: 0 auto;/*
+    transform: translate(10px, -8vw);*/
+    background-color: #fff;
+    border-radius: 28px 28px 0 0;
+    padding: 0;
+    position:relative;
+}
+tr {
+    border-bottom: 1px solid #ddd !important;
+}
+td {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    font-family: 'sf-pro-display-regular' !important;
+    font-size: 16px;
+}
+#ipgris #ipgris1 {
+    padding: 50px 10px;
+}
+.close-container.servicios {
+    top: 10px;
+    right: 10px;
+}
+.close.serviciostec {
+    position: sticky;
+    top: 15px;
+    align-items: center;
+    justify-content: center;
+    background-color: #e8e8ed;
+}
+
+.txtavisode {
+    color: var(--gray1);
+    font-family: 'sf-pro-display-light-Redonder';
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 1.2px;
+    margin: 0;
+    text-align: left;
+}
+.rowquejastex {
+    padding: 5px 16px;
+}
+/*.btn-caracteristica.activo, .btn-caracteristica:hover {
+    font-size: 13px !important;
+}*/
+.btnnegro {
+    color: white !important;
+    border-color: #000 !important;
+    padding: 15px 0;
+    font-size: 1.6rem !important;
+    font-weight: 100;
+    border-radius: 50px !important;
+    width: 175px;
+    height: auto;
+    margin: 15px 15px !important;
+    padding: 15px !important;
+    font-size: 14px !important;
+    background: #000 !important;
+    text-align: center;
+    font-family: 'sf-pro-display-regular' !important;
+    text-decoration:none !important;
+    line-height:initial !important;
+}
+    .btnnegro.activo, .btnnegro:hover {
+        color: white !important;
+        border-color: #000 !important;
+        padding: 15px 0;
+        font-size: 1.6rem;
+        font-weight: 100;
+        border-radius: 10px;
+        height: auto;
+        padding: 15px;
+        font-size: 14px !important;
+        background: #000 !important;
+    }
+.img-paso-1 {
+    margin-top: 0;
+}
+.mt-4 {
+    margin-top: 35px;
+}
+p {
+    font-size: 1.2rem;
+}
+#slider-pasos, .titulo-mobile {
+    display: block !important;
+}
+ul.slick-dots{
+    display:none !important;
+}
+    ul.slick-dots li button {
+        background: #6e6e737a;
+        width: 16px;
+        height: 16px;
+        margin-left: 10px;
+        margin-right: 10px;
+        border-radius: 50%;
+        border: none;
+        color: transparent;
+        padding:0;
+    }
+
+.slick-active button {
+    background: #6e6e73 !important;
+    padding: 0 !important;
+}
+
+
+
+
+.btn-caracteristica {
+    font-family: 'sf-pro-display-regular' !important;
+    min-height:40px;
+}
+.d-lg-nonetitle{
+    display:none !important;
+}
+.titulo-pregunta {
+    white-space: pre-wrap;
+    width: 100%;
+    font-size: 1.6rem;
+    color: #000;
+    font-weight: 500;
+    font-family: 'sf-pro-display-regular' !important;
+}
+.bg-greyL {
+    background-color: #F6F6F6 !important;
+}
+.bg-greyL .card {
+    background-color: #F6F6F6 !important;
+}
+.card-body p {
+    font-size: 14px;
+    font-family: 'sf-pro-display-regular';
+    letter-spacing: normal;
+}
+.container-resuelve-tus-dudas button .icono-preguntas-container {
+    margin-top: -10px;
+}
+.slick-active button:hover {
+    background: #6e6e73 !important;
+    padding: 0 !important;
+   
+}
+ul.slick-dots li button:hover {
+    padding: 0 !important;
+    border:none;
+}
+.mw-3 {
+    margin-bottom: 45px;
+}
+.content-img-applecare img {
+    width: 30%;
+}
+.buttonazul {
+    background-color: #043263 !important;
+    padding: 18px !important;
+    color: white !important;
+    border-radius: 50px !important;
+    padding: 15px !important;
+    font-size: 13px !important;
+    text-align: center !important;
+    border: 1px solid #043263 !important;
+    margin: 6px !important;
+    font-family: 'sf-pro-display-regular';
+    text-decoration:none !important;
+    line-height:initial;
+}
+.buttonazul:hover {
+    background-color: #043263;
+    padding: 18px;
+    color: white !important;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 13px !important;
+    text-align: center; 
+}
+
+.btnblue.activo, .btnblue:hover {
+    border: 1px solid #043263 !important;
+    background-color: #043263 !important;
+    font-size: 13px;
+}
+.contenedor-applemusica-texto {
+
+    padding: 0.38vw 0;
+}
+.btpreguntas:hover, .btpreguntas.active {
+    background: none !important;
+    border: none !important;
+    font-size: 13px;
+}
+.mt-md-2 {
+    margin-top: 40px;
+}
+section#productos {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#datos-adicionales {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#datos-adicionales {
+    margin-top: 20px;
+}
+.titulo-ipad {
+    margin-top: 8px;
+}
+span.versiones {
+    font-weight: 600;
+    font-size: 17px;
+    margin-bottom: 10px !important;
+}
+.applecareText {
+    font-size: 1.2rem !important;
+}
+.btnnose{
+    padding:0!important;
+}
+section#banner-promo {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.contenedor-applemusica-texto {
+    padding: 10px 0px;
+}
+#banner .btn {
+    font-size: 14px !important;
+}
+#banerwt {
+    margin-bottom: 0px !important;
+    margin-top: 0px !important; 
+}
+.btn-product a.nav-link span {
+    font-family: 'sf-pro-display-regular';
+    font-size: 12px !important;
+    font-weight: inherit;
+}
+img.accesorio {
+    width: 30%;
+}
+
+.btn-caracteristica.activo, .btn-caracteristica:hover {
+    font-size: 13px;
+}
+.contenedor-applemusica-texto {
+    padding: 10px 0px !important;
+}
+.pago-decripcion-total .contratabtns {
+    justify-content: left;
+}
+img.bana {
+    margin: 0 10px;
+}
+.row.contratabtns {
+    display: inline-flex !important;
+    width: 100%;
+    justify-content: center;
+}
+.btnprecio {
+    justify-content: left !important;
+}
+th.text-right.font-14 {
+    text-align: right;
+}
+@media (max-width:1200px) {
+    .collapsetable {
+        width: 55vw;
+    }
+    .btnblue.activo, .btnblue:hover {
+        border: 1px solid #043263 !important;
+        background-color: #043263 !important;
+        font-size: 13px;
+    }
+}
+@media (max-width:1024px) {
+    section#productos ul.slick-dots {
+        display: flex !important;
+        text-align: center;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 40px;
+        color: transparent;
+        padding-left: 0;
+    }
+    
+    .title-medium {
+        font-size: 14px !important;
+    }
+    .mw-3 {
+        margin-bottom: 0;
+    }
+    .btnblue.activo, ..btnblue:hover {
+        border: 1px solid #043263 !important;
+        background-color: #043263 !important;
+    }
+    .btnblue.activo, .btnblue:hover {
+        border: 1px solid #043263 !important;
+        background-color: #043263 !important;
+        font-size: 13px;
+    }
+}
+ 
+    @media (max-width:992px) {
+        .principal {
+            font-size: 48px !important;
+            line-height: 58px;
+        }
+        #banner {
+            margin-top: 0px;
+        }
+        .pago-final {
+            padding-top: 0px;
+        }
+        .textoB {
+            padding: 2px 35px;
+        }
+        .titulo-mobile {
+            margin-top: 0px;
+        }
+        .btn-caracteristica.activo, .btn-caracteristica:hover {
+            border: 1px solid #000 !important;
+            background-color: #000 !important;
+            
+        }
+       
+       
+        h2.h2landing {
+            font-size: 35px !important;
+            line-height: 40px;
+        }
+        #como-funciona {
+            margin-top: 0;
+        }
+        .btnblue.activo, .btnblue:hover {
+            border: 1px solid #043263 !important;
+            background-color: #043263 !important;
+            font-size: 13px;
+        }
+        h3.h3landing {
+            font-size: 32px;
+            line-height: 36px;
+        }
+
+        h4.h4landing {
+            font-size: 24px;
+            line-height: 32px;
+        }
+
+        h5.h5landing {
+            font-size: 18px;
+            line-height: 20px;
+        }
+
+        .pgeneral {
+            font-size: 16px !important;
+            font-weight: 200;
+            margin-bottom: 10px;
+        }
+
+        .pcollapse {
+            color: #000;
+            font-size: 1.8rem !important;
+            font-weight: 500;
+        }
+
+        .pcollapsehijo {
+            border: none;
+            padding-top: 0;
+            padding-left: 6vw;
+            line-height: 2.3rem !important;
+        }
+
+        #ademas1 .jose {
+            margin-top: 10px;
+        }
+
+        .text-xs-center {
+            text-align: center !important;
+        }
+        .collapsetable {
+            width: 75vw;
+        }
+        td {
+            padding: 8px;
+            line-height: 1.42857143;
+            vertical-align: top;
+            font-family: 'sf-pro-display-regular' !important;
+            font-size: 16px;
+        }
+        th {
+            font-size: 1.8rem;
+            padding-bottom: 2vw;
+            border-bottom: 0 solid #ddd;
+            font-family: 'sf-pro-display-regular';
+            text-align: left;
+            width: 50%;
+        }
+        #slider-pasos, .titulo-mobile {
+            display: block !important;
+        }
+        .nav-link span {
+            bottom: 0;
+        }
+
+        .btn-product a {
+            height: 206px !important;
+        }
+        span.versiones {
+            font-weight: inherit !important;
+            font-family: 'sf-pro-display-semibold';
+        }
+        .btn-preguntas, .btn-preguntas:hover {
+           
+            background-color: transparent !important;
+            border: none !important;
+        }
+        #banerwt img {
+            width: 90% !important;
+            margin: auto;
+        }
+        .circulo-interior {
+            width: 35px;
+            height: 35px;
+        }
+        .circulo-exterior {
+            width: 50px;
+            height: 50px;
+        }
+        img.applemusica_icono.imgresponsiv {
+            width: 70% !important;
+        }
+        .pago-decripcion-total .contratabtns {
+            justify-content: center !important;
+        }
+        .contratabtns {
+            display: inline-flex !important;
+            justify-content: center;
+            width: 100%;
+        }
+    }
+
+    @media (max-width:768px) {
+        .principal {
+            font-size: 2.9rem !important;
+            line-height: unset;
+        }
+        #banner-promo {
+            margin-top: 24px;
+        }
+        .titulo-datos-adicionales {
+             text-align: left;
+            margin-bottom: 50px;
+        }
+        section#como-funciona img {
+            width: 100%;
+        }
+        .ipad-condiciones {
+            padding-top: 23px;
+        }
+        #banner-promo img {
+            width: 100%;
+        }
+        h2.h2landing {
+            font-size: 2.4rem !important;
+            line-height: unset;
+        }
+      
+
+        h3.h3landing {
+            font-size: 2rem !important;
+            line-height: unset;
+        }
+
+        .title-medium {
+            font-size: 1.3rem!important;
+            line-height: 20px;
+        }
+        .pago-decripcion-total {
+            margin-top: 0px !important; 
+        }
+        h4.h4landing {
+            font-size: 1.5rem !important;
+            line-height: unset;
+        }
+
+        h5.h5landing {
+            font-size: 1.3rem !important;
+            line-height: unset;
+        }
+
+        .pgeneral {
+            font-size: 1.3rem !important;
+        }
+
+        .pcollapse {
+            color: #000;
+            font-size: 1.8rem !important;
+            font-weight: 500;
+        }
+
+        .pcollapsehijo {
+            border: none;
+            padding-top: 0;
+            padding-left: 6vw;
+            line-height: 2.3rem !important;
+        }
+        .collapsetable {
+            width: 95vw;
+        }
+        .panel-title.d-none{
+            display:block !important;
+        }
+        .icontfooterc22 {
+            position: absolute;
+            right: 0;
+            top: 6px;
+            color: #121212;
+            font-weight: 400;
+            display: block;
+            font-size: 16px;
+        }
+        td {
+            
+            font-size: 1.2rem;
+        }
+
+        th {
+            font-size: 1.2rem !important;
+        }
+        #mac img {
+            width: 100%;
+        }
+        #confiar {
+            margin-bottom: 30px;
+        }
+        #ademas1 img, #ipzul img, #mac img {
+            margin: auto;
+            width: 25%;
+        }
+        .jose h4 br{
+            display:none;
+        }
+        .bg-black .mt-3{
+            margin-top:auto !important;
+        }
+      
+       
+        #galeria .imgG {
+            height: 300px;
+        }
+        p {
+            font-size: 1.2rem;
+        }
+        .btn-caracteristica.activo, .btn-caracteristica:hover {
+            border: 1px solid #000 !important;
+            background-color: #000 !important;
+        }
+        .titulo-pregunta {
+            white-space: pre-wrap;
+            width: 100%;
+            font-size: 1.6rem;
+            font-family: 'sf-pro-display-regular';
+        }
+        .img-bannerPrinc {
+            width: 100%;
+        }
+        .caracteristicas-ipad {
+            padding:0;
+        }
+        .ipad-condiciones {
+            text-align: left !important;
+        }
+        #banerwt img {
+            width: 100% !important;
+            margin: auto;
+        }
+        .btnnegro {
+            margin: 0 !important;
+        }
+        img.applemusica_icono.imgresponsiv {
+            width: 60% !important;
+        }
+        .contratabtns {
+            display: inline-flex !important;
+            justify-content: center;
+        }
+      
+    }
+@media (max-width:749px) {
+    .carousel-indicators.indicatorpasos {
+        display: block !important;
+        display: flex !important;
+        text-align: center;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 40px;
+        color: transparent;
+        padding-left: 0 !important;
+    }
+    .mt-md-2 {
+        margin-top: 0;
+    }
+    .img-producto {
+        width: 60%;
+    }
+    .pasos-puntos.activo {
+        background-color: blue; /* Color cuando está activo */
+    }
+    .btnblue.activo, .btnblue:hover {
+        border: 1px solid #043263 !important;
+        background-color: #043263 !important;
+       font-size: 13px;
+    }
+    
+        .img-paso-2 {
+        padding-top: 4.5vw;
+    }
+    ul.slick-dots {
+        display: flex !important;
+        text-align: center;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 40px;
+        color: transparent;
+        padding-left: 0;
+    }
+    #banner-promo img {
+        width: 100%;
+    }
+    .btn-caracteristica {
+        font-size: 1rem !important;
+    }
+    .btn-caracteristica.activo, .btn-caracteristica:hover {
+        font-size: 1rem !important;
+    }
+    img.applemusica_icono.imgresponsiv {
+        width: 50% !important;
+    }
+  
+     
+}
+    @media (max-width:500px) {
+        .bloquesIma .row .textoB {
+            height: auto;
+        }
+
+        .bloquesIma #img1, #img2 {
+            height: 39% !important;
+        }
+
+        .rowimagen {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            margin-right: -15px !important;
+            margin-left: -15px !important;
+        }
+
+        .order-first {
+            -webkit-box-ordinal-group: 0;
+            -ms-flex-order: -1;
+            order: -1;
+        }
+
+        .order-last {
+            -webkit-box-ordinal-group: 14;
+            -ms-flex-order: 13;
+            order: 13;
+        }
+
+        p {
+            font-size: 1.2rem;
+        }
+      
+        .container.container-carrousel {
+            margin-bottom: 0;
+        }
+        .btnnegro {
+            margin: 8px 0px;
+            padding: 15px;
+            width: 100%;
+        }
+        .titulo-mobile {
+            margin-top: 10px !important;
+        }
+        .btn-caracteristica {
+            font-size: 1rem !important;
+        }
+        
+    }
+@media (max-width: 466px) {
+    .contratabtns {
+        display: inline-flex !important;
+        justify-content: center;
+    }
+    .contratabtns .btnnegro{
+        margin:0 7px !important;
+    }
+    .circulo-interior {
+        width: 25px;
+        height: 25px;
+    }
+
+    .circulo-exterior {
+        width: 40px;
+        height: 40px;
+    }
+    .btnnegro {
+        padding: 10px !important;
+    }
+    .pago-decripcion-total {
+        font-size: 40px;
+    }
+   
+}
+@media (max-width: 350px) {
+    .btn-product a {
+        height: 171px !important;
+    }
+    #banner .btn {
+        font-size: 12px !important;
+    }
+    .pago-subsecuente {
+        font-size: 28px;
+    }
+    
+    .contratabtns a {
+        font-size: 12px !important;
+    }
+}

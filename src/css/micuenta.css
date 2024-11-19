@@ -764,6 +764,11 @@
         .col-w-12 {
             width: 100% !important;
         }
+        
+        .BTableGrey {
+            gap: 0px;
+            justify-content: left;
+        }
     }
 
     @media (max-width: 980px) {
