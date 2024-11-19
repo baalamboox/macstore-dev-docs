@@ -105,16 +105,58 @@
   color: #843534;
 }
 
-.alert-special-offer {
-  color: var(--special-offer);
-  background-color: var(--special-offer-alfa-light);
-  border-color: var(--special-offer-alfa-dark);
+.alert-affordability {
+  color: var(--affordability);
+  background-color: var(--affordability-alfa-light);
+  border-color: var(--affordability-alfa-dark);
 }
 
-.alert-special-offer hr {
+.alert-affordability hr {
   border-top-color: #e4b9c0;
 }
 
-.alert-special-offer .alert-link {
+.alert-affordability .alert-link {
+  color: #843534;
+}
+
+.alert-order-related {
+  color: var(--order-related);
+  background-color: var(--order-related-alfa-light);
+  border-color: var(--order-related-alfa-dark);
+}
+
+.alert-order-related hr {
+  border-top-color: #e4b9c0;
+}
+
+.alert-order-related .alert-link {
+  color: #843534;
+}
+
+.alert-in-stock {
+  color: var(--in-stock);
+  background-color: var(--in-stock-alfa-light);
+  border-color: var(--in-stock-alfa-dark);
+}
+
+.alert-in-stock hr {
+  border-top-color: #e4b9c0;
+}
+
+.alert-in-stock .alert-link {
+  color: #843534;
+}
+
+.alert-store-related {
+  color: var(--store-related);
+  background-color: var(--store-related-alfa-light);
+  border-color: var(--store-related-alfa-dark);
+}
+
+.alert-store-related hr {
+  border-top-color: #e4b9c0;
+}
+
+.alert-store-related .alert-link {
   color: #843534;
 }

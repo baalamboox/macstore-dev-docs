@@ -1,43 +1,43 @@
 ---
 import { Card, Code } from "@astrojs/starlight/components";
 
-const alerts = {
-    basic: {
-        alertSuccess: `
-<div class="alert alert-success" role="alert">
-    ¡Éxito!
-</div>
-<div class="alert alert-success" role="alert">
-    ¡Éxito!
-</div>
-<div class="alert alert-success" role="alert">
-    ¡Éxito!
-</div>
-<div class="alert alert-success" role="alert">
-    ¡Éxito!
-</div>
-        `,
-    }
-};
-
-
+const alerts = `
+<div class="alert alert-success" role="alert">Éxito</div>
+<div class="alert alert-info" role="alert">Información</div>
+<div class="alert alert-warning" role="alert">Advertencia</div>
+<div class="alert alert-danger" role="alert">Error</div>
+<div class="alert alert-special-offer" role="alert">Oferta especial</div>
+<div class="alert alert-affordability" role="alert">Asequibilidad</div>
+<div class="alert alert-order-related" role="alert">Relacionados</div>
+<div class="alert alert-in-stock" role="alert">En stock</div>
+<div class="alert alert-store-related" role="alert">Sugeridos</div>
+`;
 ---
 
 <link rel="stylesheet" href="/src/vendor/bootstrap/css/alerts.css" />
-
-<Card title="">
-    <div class="alert alert-success" role="alert">¡Éxito!</div>
-    <!-- <Code code={ alerts.basic.alertSuccess } lang="html" /> -->
-    <div class="alert alert-info" role="alert">¡Información!</div>
-    <!-- <Code code={ alerts.basic.alertSuccess } lang="html" /> -->
-    <div class="alert alert-warning" role="alert">¡Advertencia!</div>
-    <!-- <Code code={ alerts.basic.alertSuccess } lang="html" /> -->
-    <div class="alert alert-danger" role="alert">¡Error!</div>
-    <!-- <Code code={ alerts.basic.alertSuccess } lang="html" /> -->
-    <div class="alert alert-special-offer" role="alert">¡Oferta especial!</div>
+<link rel="stylesheet" href="/src/vendor/bootstrap/css/animations.css" />
+<Card title="Si quieres mostrar algun tipo de contenido como texto que llame la antención al usuario, las alertas son recomendadas." icon="">
+    <div class="alert alert-success" role="alert">Éxito</div>
+    <div class="alert alert-info" role="alert">Información</div>
+    <div class="alert alert-warning" role="alert">Advertencia</div>
+    <div class="alert alert-danger" role="alert">Error</div>
+    <div class="alert alert-special-offer" role="alert">Oferta especial</div>
+    <div class="alert alert-affordability" role="alert">Asequibilidad</div>
+    <div class="alert alert-order-related" role="alert">Relacionados</div>
+    <div class="alert alert-in-stock" role="alert">En stock</div>
+    <div class="alert alert-store-related" role="alert">Sugeridos</div>
+    <Code code={ alerts } lang="html" />
 </Card>
 
-<Card title="">
-    <div class="alert alert-info" role="alert">¡Información!</div>
-    <Code code={ alerts.basic.alertSuccess } lang="html" />
-</Card>
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+    Button with data-target
+  </button>
+  <div class="collapse" id="collapseExample">
+    <div class="well">
+      Something greate
+    </div>
+  </div>
+
+<script>
+    $('#collapseExample');
+</script>
