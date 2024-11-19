@@ -672,6 +672,11 @@
     font-family: "sf-pro-display-light";
     font-size: 16px;
 }
+.BTableGrey{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
 
 
 @media (max-width: 1118px) {
@@ -685,6 +690,12 @@
 
         .mr-1 {
             margin-right: 0 !important;
+        }
+    }
+    
+    @media (max-width: 2880px) {
+        .BTableGrey{
+            gap: 40px;
         }
     }
 
@@ -706,6 +717,7 @@
         .p-50 {
             padding: 36px 40px;
         }
+      
     }
 
     @media (max-width: 999px) {
@@ -734,6 +746,10 @@
         .cop__clft {
             padding: 0;
         }
+            .BTableGrey {
+                gap: 20px;
+            }
+        
     }
 
     @media (max-width: 991px) {
@@ -988,6 +1004,10 @@
     display: inline-flex;
     align-items: center;
     letter-spacing: 1px;
+}
+
+svg.flechaazul {
+    display: inline-block;
 }
 
 @media screen and (max-width: 400px) {

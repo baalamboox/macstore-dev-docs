@@ -16,3 +16,6 @@ th {
 .w-100{
     width: 100%;
 }
+.sl-markdown-content :not(a, strong, em, del, span, input, code, br) + :not(a, strong, em, del, span, input, code, br, :where(.not-content *)) {
+    margin-top: 0;
+}
