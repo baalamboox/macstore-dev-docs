@@ -2,13 +2,11 @@
 title: 'Bootstrap'
 ---
 
+import { FileTree } from '@astrojs/starlight/components';
 import BootstrapJQuery from '/src/components/bootstrap/BootstrapJQuery.astro';
-import BasicAlerts from '/src/components/bootstrap/BasicAlerts.astro';
-import IconAlerts from '/src/components/bootstrap/IconAlerts.astro';
+import Alerts from '/src/components/bootstrap/Alerts.mdx';
 
 <BootstrapJQuery />
-
-
 
 :::tip[Versión: 3.3.7]
 :::
@@ -16,12 +14,18 @@ import IconAlerts from '/src/components/bootstrap/IconAlerts.astro';
 Bootstrap es un librería de desarrollo web gratuito y de código abierto. Su propósito principal es facilitar la creación de sitios web responsivos
 y adaptables a diferentes dispositivos, utilizando una combinación de HTML, CSS y JavaScript.
 
-## Uso
+## Estructura archivos
+
+<FileTree>
+    - bootstrap/
+        - css/
+            - alerts.css
+        - js/
+            - [bootstrap.min.js](/)
+</FileTree>
+
+<a href="/src/vendor/bootstrap/alerts.css" download="alerts.css" >Descargar </a>
 
 ## Alertas
 
-### Alertas básicas
-<BasicAlerts />
-
-### Alertas con icono
-<IconAlerts />
+<Alerts />
