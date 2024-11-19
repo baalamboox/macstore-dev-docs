@@ -352,10 +352,14 @@ img.bana {
 th.text-right.font-14 {
     text-align: right;
 }
+.cursorNone {
+    pointer-events: none;
+}
+.panel-title.d-none {
+    display: none;
+}
 @media (max-width:1200px) {
-    .collapsetable {
-        width: 55vw;
-    }
+   
     .btnblue.activo, .btnblue:hover {
         border: 1px solid #043263 !important;
         background-color: #043263 !important;
@@ -467,9 +471,7 @@ th.text-right.font-14 {
         .text-xs-center {
             text-align: center !important;
         }
-        .collapsetable {
-            width: 75vw;
-        }
+        
         td {
             padding: 8px;
             line-height: 1.42857143;
@@ -478,7 +480,7 @@ th.text-right.font-14 {
             font-size: 16px;
         }
         th {
-            font-size: 1.8rem;
+            /*font-size: 1.8rem;*/
             padding-bottom: 2vw;
             border-bottom: 0 solid #ddd;
             font-family: 'sf-pro-display-regular';
@@ -554,6 +556,9 @@ th.text-right.font-14 {
             font-size: 2.4rem !important;
             line-height: unset;
         }
+        .panel-title.d-none {
+            display: block !important;
+        }
       
 
         h3.h3landing {
@@ -594,9 +599,7 @@ th.text-right.font-14 {
             padding-left: 6vw;
             line-height: 2.3rem !important;
         }
-        .collapsetable {
-            width: 95vw;
-        }
+       
         .panel-title.d-none{
             display:block !important;
         }
