@@ -1,14 +1,17 @@
 ---
 title: Tablas
 ---
+
 import { Card, CardGrid, Code, FileTree, Aside, Badge} from '@astrojs/starlight/components';
+import BoostrapJquery from '/src/components/bootstrap/BootstrapJQuery.astro';
 import Collapse from '/src/components/formularios/collapse.astro';
 import Tablamicuenta from '/src/components/tablas/Micuenta.astro';
 import Ladingtable from '/src/components/tablas/Landing.astro';
 
 import '../../../css/tablas.css'
-import '/public/vendor/jquery/jquery-3.7.0.min.js'
-import '../../../../public/vendor/bootstrap/bootstrap.min.js'
+import '/src/vendor/bootstrap/animations.css'
+
+<BoostrapJquery/>
 
 <div class="tablas">
   <Card title='Tabla administrativo'>
@@ -137,5 +140,6 @@ import '../../../../public/vendor/bootstrap/bootstrap.min.js'
 </Card>
 
 </div>
+
 
 

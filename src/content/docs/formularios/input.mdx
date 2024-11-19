@@ -2,7 +2,7 @@
 title: Formularios
 ---
 
-import { Card, CardGrid, Code, FileTree, Aside, Badge} from '@astrojs/starlight/components';
+import { Card, CardGrid, Code, FileTree, Aside, Badge,Tabs, TabItem } from '@astrojs/starlight/components';
 
 import InputRadio from '/src/components/formularios/input-radio.astro';
 import InputEmail from '/src/components/formularios/input-email.astro';
@@ -20,17 +20,25 @@ y el segundo es el input normal que se usa para formularios para el administrati
 <Aside>Para que los input de cx funcionen en diferentes navegadores es nesesario agregar un id al input y que este sea el mismo que el for del label.  </Aside>
 <div class="inputs">
   <Card title="input Primario" icon="setting">
-    <div class="entryarea w-100">
-            <input  class="inputani " maxlength="64" type="text" required />
-            <label class="labelline" > Nombre</label>
+<div class="entryarea w-100">
+    <input  class="inputani " maxlength="64" type="text" required />
+    <label class="labelline" > Nombre</label>
        
-      </div>
-        ```html
-            <div class="entryarea w-100">
-            <input id="ejemplo" class="inputani " maxlength="64" type="text" required />
-            <label  class="labelline" for="ejemplo" > Nombre</label>
-        </div>
-            ```
+</div>
+
+<div class="tabb-m">
+<Tabs>
+<TabItem label="HTML">
+```html
+<div class="entryarea w-100">
+    <input id="ejemplo" class="inputani " maxlength="64" type="text" required />
+    <label  class="labelline" for="ejemplo" > Nombre</label>
+</div>
+ ```
+</TabItem>
+ </Tabs>
+</div>
+
   </Card>
 
 </div>
@@ -39,10 +47,18 @@ y el segundo es el input normal que se usa para formularios para el administrati
        <label for="fechaFinal" icon="setting"><i class="fa fa-search"></i>&nbsp; Nombre</label>
       <input type="text" class="form-control"  maxlength="5" placeholder="Nombre"/>
 
-         ```html
-           <label for="fechaFinal" icon="setting"><i class="fa fa-search"></i>&nbsp; Nombre</label>
-           <input type="text" class="form-control"  maxlength="5" placeholder="Nombre"/>
-            ```
+<div class="tabb-m">
+<Tabs>
+<TabItem label="HTML">
+```html
+<label for="fechaFinal" icon="setting"><i class="fa fa-search"></i>&nbsp; Nombre</label>
+<input type="text" class="form-control"  maxlength="5" placeholder="Nombre"/>
+```
+</TabItem>
+ </Tabs>
+</div>
+
+
             
   </Card>
 </div>
@@ -72,12 +88,20 @@ y el segundo es el input normal que se usa para formularios para el administrati
                 <input  class="inputani inputdate" type="date" required />
                 <label id="" class="labelline labeldate" >Fecha </label>
             </div>
-        ```html
-           <div class="entryarea w-100">
-                <input  class="inputani inputdate" type="date" required />
-                <label  class="labelline labeldate" >Fecha </label>
-            </div>
-            ```
+
+<div class="tabb-m">
+<Tabs>
+<TabItem label="HTML">
+```html
+<div class="entryarea w-100">
+    <input  class="inputani inputdate" type="date" required />
+    <label  class="labelline labeldate" >Fecha </label>
+</div>
+```
+</TabItem>
+ </Tabs>
+</div>
+
   </Card>
 
 </div>
@@ -88,12 +112,20 @@ y el segundo es el input normal que se usa para formularios para el administrati
 <div class="inputs">
   <Card title="input date Administrativo" icon="setting">
     <InputdateAdmin/>
-        ```html
-          <div class="form-group">
+
+<div class="tabb-m">
+<Tabs>
+<TabItem label="HTML">
+```html
+<div class="form-group">
     <label for="fechaFinal"><i class="fa fa-calendar"></i>&nbsp; Fecha</label>
     <input class="form-control "  name="Final"  type="date"  >
-     </div>
-            ```
+</div>
+```
+</TabItem>
+ </Tabs>
+</div>
+
   </Card>
 
 </div>
@@ -102,14 +134,20 @@ y el segundo es el input normal que se usa para formularios para el administrati
 <div class="inputs">
   <Card title="input Email" icon="setting">
    <InputEmail/>
-        ```html
-           <div class="entryarea w-100">
+
+<div class="tabb-m">
+<Tabs>
+<TabItem label="HTML">
+ ```html
+<div class="entryarea w-100">
     <input id="nws3" class="inputani" type="email"  required />
     <label  id="labelnws3" class="labelline" for="nws3">Confirmar correo</label>
 </div>
-            ```
-             ```JavaScript  
-             const textInput3 = document.getElementById('nws3');
+ ```
+</TabItem>
+<TabItem label="JS">
+```JavaScript  
+ const textInput3 = document.getElementById('nws3');
  textInput3.addEventListener('input', function () {
      const inputValue2 = textInput3.value.trim();
      var labelinput2 = document.getElementById("labelnws3");
@@ -122,8 +160,14 @@ y el segundo es el input normal que se usa para formularios para el administrati
      }
  }); 
  ```
+</TabItem>
+ </Tabs>
+</div>
 
-             <Aside>Para su correcta funcionalidad, es importante agregar el js referenciando el id del input y el label de forma correspondiente cada que se duplique este componente  </Aside>
+
+
+
+<Aside>Para su correcta funcionalidad, es importante agregar el js referenciando el id del input y el label de forma correspondiente cada que se duplique este componente  </Aside>
   </Card>
 
 </div>
@@ -134,8 +178,11 @@ y el segundo es el input normal que se usa para formularios para el administrati
 <div class="inputs">
   <Card title="input Contraseña" icon="setting">
    <InputPassword/>
-        ```html
-         <div class=" colw mx-auto">
+<div class="tabb-m">
+<Tabs>
+<TabItem label="HTML">
+ ```html
+ <div class=" colw mx-auto">
     <div class="entryarea w-100">
         <input  id="contrasena_registro" class="inputani " type="password"  required />
         <label class="labelline" for="contrasena_registro">Contraseña</label>
@@ -146,13 +193,14 @@ y el segundo es el input normal que se usa para formularios para el administrati
     </div>
 
 </div>
-            ```
-             ```JavaScript  
-                const textInput = document.getElementById('contrasena_registro');
-
+```
+</TabItem>
+<TabItem label="JS">
+```JavaScript  
+const textInput = document.getElementById('contrasena_registro');
 textInput.addEventListener('input', function () {
-    const inputValue = textInput.value.trim();
-    var labelinput = document.getElementById("labelnws1");
+const inputValue = textInput.value.trim();
+var labelinput = document.getElementById("labelnws1");
     if (inputValue !== '') {
 
         labelinput.classList.add('focusclassinputemail');
@@ -161,10 +209,12 @@ textInput.addEventListener('input', function () {
         labelinput.classList.remove('focusclassinputemail');
     }
 }); 
-            ```
+```
+</TabItem>
+ </Tabs>
+</div>
 
-
-             <Aside>Para su correcta funcionalidad, es importante agregar el js referenciando el id del input y el label de forma correspondiente cada que se duplique este componente  </Aside>
+<Aside>Para su correcta funcionalidad, es importante agregar el js referenciando el id del input y el label de forma correspondiente cada que se duplique este componente  </Aside>
   </Card>
 
 </div>
@@ -179,14 +229,21 @@ textInput.addEventListener('input', function () {
                     <label  class="labeltextarea">Comentarios</label>
                 </div>
             </div>
-        ```html
-           <div class=" mb-20">
-                <div class=" divtext">
-                    <textarea class="textencuesta"  placeholder=" " name="story" required maxlength="4000" autocomplete="off"></textarea>
-                    <label  class="labeltextarea">Comentarios</label>
-                </div>
-            </div>
-            ```
+<div class="tabb-m">
+<Tabs>
+<TabItem label="HTML">
+ ```html
+<div class=" mb-20">
+    <div class=" divtext">
+        <textarea class="textencuesta"  placeholder=" " name="story" required maxlength="4000" autocomplete="off"></textarea>
+        <label  class="labeltextarea">Comentarios</label>
+    </div>
+</div>
+```
+</TabItem>
+ </Tabs>
+</div>
+
   </Card>
 
 </div>
@@ -202,16 +259,23 @@ textInput.addEventListener('input', function () {
                 </select>
                 <label class="labelline " for="ordenaPedidos"> selecciona:</label>
             </div>
-        ```html
-          <div class="entryarea mb-1">
-                <select name="ordenaPedidos" style="display: flex; pointer-events: all;" class="inputani orPedidosFil"  required="">
-                    <option  data-op="0"></option>
-                    <option data-op="1">1</option>
-                    <option data-op="2">2</option>
-                </select>
-                <label class="labelline " for="ordenaPedidos"> selecciona:</label>
-            </div>
-            ```
+<div class="tabb-m">
+<Tabs>
+<TabItem label="HTML">
+ ```html
+<div class="entryarea mb-1">
+    <select name="ordenaPedidos" style="display: flex; pointer-events: all;" class="inputani orPedidosFil"  required="">
+        <option  data-op="0"></option>
+        <option data-op="1">1</option>
+        <option data-op="2">2</option>
+    </select>
+    <label class="labelline " for="ordenaPedidos"> selecciona:</label>
+</div>
+```
+</TabItem>
+ </Tabs>
+</div>
+
   </Card>
 
 </div>
@@ -223,13 +287,20 @@ textInput.addEventListener('input', function () {
                                             <option value="13"> 2 </option>
                                             <option value="8"> 3 </option>
             </select>
-        ```html
-          <select class="form-control"name="select2">
-                                        <option value="0">1</option>
-                                            <option value="13"> 2 </option>
-                                            <option value="8"> 3 </option>
-            </select>
-            ```
+<div class="tabb-m">
+<Tabs>
+<TabItem label="HTML">
+```html
+<select class="form-control"name="select2">
+    <option value="0">1</option>
+    <option value="13"> 2 </option>
+    <option value="8"> 3 </option>
+</select>
+```
+</TabItem>
+ </Tabs>
+</div>
+
   </Card>
 
 </div>
@@ -241,9 +312,11 @@ textInput.addEventListener('input', function () {
      <InputRadio />
 </div>
   
-
-        ```html
-          <div class="d-flex-">
+<div class="tabb-m">
+<Tabs>
+<TabItem label="HTML">
+```html
+<div class="d-flex-">
     <div class="cbsc__cbs w-50">
         <input id='chkEcommerce' class="cbs__cbsir" type='radio' value='1' name='optradio1' checked />
         <label for="chkEcommerce" class="cbs__cbslh no-outline">
@@ -283,7 +356,11 @@ textInput.addEventListener('input', function () {
 
 
 </div>
-            ```
+```
+</TabItem>
+ </Tabs>
+</div>
+
 
               <Aside>Para poder visualizar los input radio de forma correcta, es requerido importar la hoja de estilos llamada <Badge text="radiobutons.css" variant="note" /> </Aside>
   </Card>
@@ -302,15 +379,20 @@ textInput.addEventListener('input', function () {
                     ejemplo
                 </label>
             </label>
-        ```html
-            <label for="terminos_registro" class="check-group crpt-2">
-                <input type="checkbox" class="check-input" id="terminos_registro" required />
-                <span class="check-custom"></span>
-                <label for="terminos_registro" class="check-label checkregister mb-0">
-                    ejemplo
-                </label>
-            </label>
-            ```
+<div class="tabb-m">
+<Tabs>
+<TabItem label="HTML">
+ ```html
+<label for="terminos_registro" class="check-group crpt-2">
+    <input type="checkbox" class="check-input" id="terminos_registro" required />
+     <span class="check-custom"></span>
+    <label for="terminos_registro" class="check-label checkregister mb-0">ejemplo</label>
+</label>
+ ```
+</TabItem>
+ </Tabs>
+</div>
+
              <Aside>Para poder visualizar los check input de forma correcta, es requerido importar la hoja de estilos llamada <Badge text="radiobutons.css" variant="note" /> </Aside>
   </Card>
 
