@@ -1,0 +1,43 @@
+---
+import { Card, Code } from "@astrojs/starlight/components";
+
+const alerts = {
+    basic: {
+        alertSuccess: `
+<div class="alert alert-success" role="alert">
+    ¡Éxito!
+</div>
+<div class="alert alert-success" role="alert">
+    ¡Éxito!
+</div>
+<div class="alert alert-success" role="alert">
+    ¡Éxito!
+</div>
+<div class="alert alert-success" role="alert">
+    ¡Éxito!
+</div>
+        `,
+    }
+};
+
+
+---
+
+<link rel="stylesheet" href="/src/vendor/bootstrap/css/alerts.css" />
+
+<Card title="">
+    <div class="alert alert-success" role="alert">¡Éxito!</div>
+    <!-- <Code code={ alerts.basic.alertSuccess } lang="html" /> -->
+    <div class="alert alert-info" role="alert">¡Información!</div>
+    <!-- <Code code={ alerts.basic.alertSuccess } lang="html" /> -->
+    <div class="alert alert-warning" role="alert">¡Advertencia!</div>
+    <!-- <Code code={ alerts.basic.alertSuccess } lang="html" /> -->
+    <div class="alert alert-danger" role="alert">¡Error!</div>
+    <!-- <Code code={ alerts.basic.alertSuccess } lang="html" /> -->
+    <div class="alert alert-special-offer" role="alert">¡Oferta especial!</div>
+</Card>
+
+<Card title="">
+    <div class="alert alert-info" role="alert">¡Información!</div>
+    <Code code={ alerts.basic.alertSuccess } lang="html" />
+</Card>
