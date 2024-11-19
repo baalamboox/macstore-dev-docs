@@ -19,3 +19,9 @@ th {
 .sl-markdown-content :not(a, strong, em, del, span, input, code, br) + :not(a, strong, em, del, span, input, code, br, :where(.not-content *)) {
     margin-top: 0;
 }
+.text-right {
+    text-align: right;
+}
+.afs {
+    text-align: right;
+}
