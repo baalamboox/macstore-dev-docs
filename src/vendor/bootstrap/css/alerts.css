@@ -1,0 +1,120 @@
+﻿.alert {
+  padding: 15px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.alert h4 {
+  margin-top: 0;
+  color: inherit;
+}
+
+.alert .alert-link {
+  font-weight: 700;
+}
+
+.alert > p,
+.alert > ul {
+  margin-bottom: 0;
+}
+
+.alert > p + p {
+  margin-top: 5px;
+}
+
+.alert-dismissable,
+.alert-dismissible {
+  padding-right: 35px;
+}
+
+.alert-dismissable .close,
+.alert-dismissible .close {
+  position: relative;
+  top: -2px;
+  right: -21px;
+  color: inherit;
+}
+
+.alert-success {
+  color: var(--ggreen);
+  background-color: var(--ggreen-alfa-light);
+  border-color: var(--ggreen-alfa-dark);
+}
+
+.alert-success hr {
+  border-top-color: #c9e2b3;
+}
+
+.alert-success .alert-link {
+  color: #2b542c;
+}
+
+.alert-info {
+  color: var(--bblue);
+  background-color: var(--bblue-alfa-light);
+  border-color: var(--bblue-alfa-dark);
+}
+
+.alert-info hr {
+  border-top-color: #a6e1ec;
+}
+
+.alert-info .alert-link {
+  color: #245269;
+}
+
+.alert-warning {
+  color: var(--oorange);
+  background-color: var(--oorange-alfa-light);
+  border-color: var(--oorange-alfa-dark);
+}
+
+.alert-warning hr {
+  border-top-color: #f7e1b5;
+}
+
+.alert-warning .alert-link {
+  color: #66512c;
+}
+
+.alert-danger {
+  color: var(--rred);
+  background-color: var(--rred-alfa-light);
+  border-color: var(--rred-alfa-dark);
+}
+
+.alert-danger hr {
+  border-top-color: #e4b9c0;
+}
+
+.alert-danger .alert-link {
+  color: #843534;
+}
+
+.alert-special-offer {
+  color: var(--special-offer);
+  background-color: var(--special-offer-alfa-light);
+  border-color: var(--special-offer-alfa-dark);
+}
+
+.alert-special-offer hr {
+  border-top-color: #e4b9c0;
+}
+
+.alert-special-offer .alert-link {
+  color: #843534;
+}
+
+.alert-special-offer {
+  color: var(--special-offer);
+  background-color: var(--special-offer-alfa-light);
+  border-color: var(--special-offer-alfa-dark);
+}
+
+.alert-special-offer hr {
+  border-top-color: #e4b9c0;
+}
+
+.alert-special-offer .alert-link {
+  color: #843534;
+}

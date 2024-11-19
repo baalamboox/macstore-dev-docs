@@ -4,25 +4,45 @@
     /* :::::::::: Base colors :::::::::: */
     --wwhite: #ffffff;
     --bblack: #000000;
-    --gray1: rgb(66, 66, 69);
+    --gray1: #424245;
     --gray2: #6e6e73;
     --gray3: #d0d0d0;
     --gray4: #f2f2f2;
     --oorange: #bf4800;
-    --bblue: rgb(0, 113, 227);
+    --bblue: #0071e3;
     --ggreen: #008900;
     --rred: #e30000;
 
     /* :::::::::: Offers colors :::::::::: */
     --new: var(--oorange);
     --sale: var(--ggreen);
-    --special-offer: hsl(241, 61%, 59%);
+    --special-offer: #5957d6;
     --affordability: #0071bc;
     --order-related: #336e7b;
     --in-stock: #a3684e;
-    --store-related: #707070;
+    --store-related: rgb(112, 112, 112);
 
     /* :::::::::: State color buttons :::::::::: */
     --button-primary-hover: #62bbfa;
     --button-secondary: #d0d0d0;
+
+    /* :::::::::: Colors with transparency :::::::::: */
+    --oorange-alfa-dark: rgb(191, 72, 0, 0.1);
+    --oorange-alfa-light: rgb(191, 72, 0, 0.04);
+    --bblue-alfa-dark: rgb(0, 113, 227, 0.1);
+    --bblue-alfa-light: rgb(0, 113, 227, 0.04);
+    --ggreen-alfa-dark: rgb(0, 137, 0, 0.1);
+    --ggreen-alfa-light: rgba(0, 137, 0, 0.04);
+    --rred-alfa-dark: rgb(227, 0, 0, 0.1);
+    --rred-alfa-light: rgba(227, 0, 0, 0.04);
+    --special-offer-alfa-dark: rgb(89, 87, 214, 0.1);
+    --special-offer-alfa-light: rgba(89, 87, 214, 0.04);
+    --affordability-alfa-dark: rgb(0, 113, 188, 0.1);
+    --affordability-alfa-light: rgba(0, 113, 188, 0.04);
+    --order-related-alfa-dark: rgb(51, 110, 123, 0.1);
+    --order-related-alfa-light: rgba(51, 110, 123, 0.04);
+    --in-stock-alfa-dark: rgb(163, 104, 78, 0.1);
+    --in-stock-alfa-light: rgba(163, 104, 78, 0.04);
+    --store-related-alfa-dark: rgb(112, 112, 112, 0.1);
+    --store-related-alfa-light: rgba(112, 112, 112, 0.04);
 }
