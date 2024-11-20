@@ -1,5 +1,5 @@
 ---
-title: Formularios
+title: Banners Ofertas
 ---
 
 import { Card, CardGrid, Code, FileTree, Aside, Badge,Tabs, TabItem } from '@astrojs/starlight/components';
@@ -8,60 +8,15 @@ import InputRadio from '/src/components/formularios/input-radio.astro';
 import InputEmail from '/src/components/formularios/input-email.astro';
 import InputPassword from '/src/components/formularios/input-password.astro';
 import InputdateAdmin from '/src/components/formularios/input-date.astro';
-import '../../../css/input.css'
-import '../../../css/input-admin.css'
-import '../../../css/buttons.css'
+import '../../../../css/input.css'
+import '../../../../css/input-admin.css'
 
-Componentes personalizados para la implementacion de formularios
+Tamaño de imágenes
 
-## Input text 
-Dentro del proyecto se utilizan dos tipos de input text,  el primero  se usa principalmente en el proyecto de CX
-y el segundo es el input normal que se usa para formularios para el administrativo
+## Input text rr32r34
+El tamaño de imagenes varia de acuerdo al componente mostrado
 
 <Aside>Para que los input de cx funcionen en diferentes navegadores es nesesario agregar un id al input y que este sea el mismo que el for del label.  </Aside>
-<div class="inputs formulario">
-  <Card title="Ejemplo de formulario" icon="setting">
-<div class="entryarea w-100">
-    <input  class="inputani " maxlength="64" type="text" required />
-    <label class="labelline" > Usuario</label>
-       
-</div>
-  <InputPassword/>
-  <button type="button" class="boton boton-primario">
-    <span>Botón primario</span>
-</button>
-<div class="tabb-m">
-<Tabs>
-<TabItem label="HTML">
-```html
-<div class="card">
-<div class="entryarea w-100">
-    <input  class="inputani " maxlength="64" type="text" required />
-    <label class="labelline" > Usuario</label>
-</div>
-<div class=" colw mx-auto">
-    <div class="entryarea w-100">
-        <input  id="contrasena_registro" class="inputani " type="password"  required />
-        <label class="labelline" for="contrasena_registro">Contraseña</label>
-    </div>
-    <div class="mensajesinput mt-1 text-left">
-        Debe contener al menos: 1 minúscula, 1 mayúscula, 1 caracter especial (caracterEspeciales)
-        1 número y una longitud minima de 8 caracteres
-    </div>
-</div>
-<button type="button" class="boton boton-primario">
-    <span>Botón primario</span>
-</button>
-</div>
-
- ```
-</TabItem>
- </Tabs>
-</div>
-
-  </Card>
-
-</div>
 <div class="inputs">
   <Card title="input Primario" icon="setting">
 <div class="entryarea w-100">
@@ -232,7 +187,7 @@ y el segundo es el input normal que se usa para formularios para el administrati
         <label class="labelline" for="contrasena_registro">Contraseña</label>
     </div>
     <div class="mensajesinput mt-1 text-left">
-        Debe contener al menos: 1 minúscula, 1 mayúscula, 1 caracter especial (caracterEspeciales)
+        Debe contener al menos: 1 minúscula, 1 mayúscula, 1 caracter especial (@caracterEspeciales)
         1 número y una longitud minima de 8 caracteres
     </div>
 

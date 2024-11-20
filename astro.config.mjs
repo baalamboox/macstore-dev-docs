@@ -37,6 +37,13 @@ export default defineConfig({
 						directory: 'colores',
 					},
 				},
+
+				{
+					label: 'Imágenes',
+					autogenerate: {
+						directory: 'imagenes',
+					},
+				},
 				{
 					label: 'Formularios',
 					autogenerate: {
