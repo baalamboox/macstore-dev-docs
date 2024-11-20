@@ -1,29 +1,272 @@
 ---
 title: Collapse
 ---
-import { Card, CardGrid, Code, FileTree, Aside, Badge} from '@astrojs/starlight/components';
+import { Card, CardGrid, Code, FileTree, Aside, Badge, Tabs, TabItem} from '@astrojs/starlight/components';
 import BoostrapJquery from '/src/components/bootstrap/BootstrapJQuery.astro';
 import Collapsefooter from '/src/components/formularios/collapse-footer.astro';
+import Collapsegeneral from '/src/components/formularios/collapse.astro';
+import Collapsecheckout from '/src/components/formularios/collapse-checkout.astro';
 
 import '/src/vendor/bootstrap/animations.css'
-import '/src/css/collapse-footer.css'
+
 
 <BoostrapJquery/>
 
-El componente collapse se utiliza para mostrar contenido y ocultarlo dentro de ventanas. Utilizando css para darle animación y más visivilidad. 
+El componente collapse se utiliza para mostrar contenido y ocultarlo dentro de ventanas. Utilizando css para darle animación y más visivilidad.
+Se utilizan dons tipos de collapse, el primero se usa principalmente para contener los links del footer y 
+este solo es funcional en responsivo y el segundo es el genral que se usa dentro de cx 
 
 
-  
-  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-  Button with data-target
-</button>
-<div class="collapse" id="collapseExample">
-  <div class="well">
-    ...
-  </div>
+## Collapse Legales
+
+<div class="tablas">
+<Card title="">
+<Collapsegeneral/>
+<div class="tabb-m">
+<Tabs>
+<TabItem label="HTML">
+```html
+<div class="cbsc crpt-2">
+    <div class="cbsc__cbs">
+        <input type="radio" class="cbs__cbsir radiocl radiocllegales" data-leg="4633" id="lr01" name="legales" data-target="l0"/>
+        <label for="lr01" class="cbs__cbslh baalamboox legal-cursor">
+            <div class="cbslh__cbsrtc">
+                <p class="cbsrtc__cbst legal-main-title">Legal 1</p>
+            </div>
+            <div class="cbslh__cbsic">
+                <span class="options-address__container">
+                    <svg class="legal-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 12.5156C7.83754 12.5156 7.68627 12.4456 7.54622 12.3055L1.17647 5.59963C1.12045 5.54361 1.07563 5.48198 1.04202 5.41475C1.01401 5.34753 1 5.2719 1 5.18786C1 5.08142 1.02521 4.98338 1.07563 4.89375C1.12605 4.80411 1.19328 4.73408 1.27731 4.68366C1.36695 4.63324 1.46499 4.60803 1.57143 4.60803C1.7395 4.60803 1.87675 4.66405 1.98319 4.7761L8.36975 11.482H7.63025L14.0084 4.7761C14.1261 4.66405 14.2633 4.60803 14.4202 4.60803C14.5322 4.60803 14.6303 4.63324 14.7143 4.68366C14.7983 4.73408 14.8655 4.80411 14.916 4.89375C14.972 4.98338 15 5.08142 15 5.18786C15 5.33912 14.9412 5.47358 14.8235 5.59123L8.45378 12.3055C8.39216 12.3727 8.32213 12.426 8.2437 12.4652C8.16527 12.4988 8.08403 12.5156 8 12.5156Z" fill="black"></path>
+                    </svg>
+                </span>
+            </div>
+        </label>
+        <div id="legalbs4633" class="collapse mt-0" data-id="l0" aria-expanded="false" style="height: 0px;">
+            <div class="well cbs__cbsp">
+                <p>Texto</p>
+            </div>
+        </div>
+    </div>
+    <div class="cbsc__cbs">
+        <input type="radio" class="cbs__cbsir radiocl radiocllegales" data-leg="4533" id="lr12" name="legales" data-target="l1"/>
+        <label for="lr12" class="cbs__cbslh baalamboox legal-cursor">
+            <div class="cbslh__cbsrtc">
+                <p class="cbsrtc__cbst legal-main-title">Legal 2</p>
+            </div>
+            <div class="cbslh__cbsic">
+                <span class="options-address__container">
+                    <svg class="legal-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 12.5156C7.83754 12.5156 7.68627 12.4456 7.54622 12.3055L1.17647 5.59963C1.12045 5.54361 1.07563 5.48198 1.04202 5.41475C1.01401 5.34753 1 5.2719 1 5.18786C1 5.08142 1.02521 4.98338 1.07563 4.89375C1.12605 4.80411 1.19328 4.73408 1.27731 4.68366C1.36695 4.63324 1.46499 4.60803 1.57143 4.60803C1.7395 4.60803 1.87675 4.66405 1.98319 4.7761L8.36975 11.482H7.63025L14.0084 4.7761C14.1261 4.66405 14.2633 4.60803 14.4202 4.60803C14.5322 4.60803 14.6303 4.63324 14.7143 4.68366C14.7983 4.73408 14.8655 4.80411 14.916 4.89375C14.972 4.98338 15 5.08142 15 5.18786C15 5.33912 14.9412 5.47358 14.8235 5.59123L8.45378 12.3055C8.39216 12.3727 8.32213 12.426 8.2437 12.4652C8.16527 12.4988 8.08403 12.5156 8 12.5156Z" fill="black"></path>
+                    </svg>
+                </span>
+            </div>
+        </label>
+        <div id="legalbs4533" class="collapse in mt-0" data-id="l1" aria-expanded="true" style="">
+            <div class="well cbs__cbsp">
+                <p>Texto 2</p>
+            </div>
+        </div>
+    </div>
 </div>
+ ```
+</TabItem>
+<TabItem label="JavaScript">
+```JavaScript
+    $(document).ready(function () {
+       $(".radiocllegales[type='radio']").change((event) => {
+           $(`[data-id="${event.currentTarget.dataset.target}"]`).collapse("show");
+           $(`.radiocllegales[type="radio"][name="${event.currentTarget.name}"]:not(:checked)`).map((index, element) => {
+               $(`[data-id="${element.dataset.target}"]`).collapse("hide");
+           });
+       });
+   }
+   )
+ ```
+</TabItem>
+ </Tabs>
+ </div>
+ </Card>
+ </div>
+
+<div class="tablas">
+## Collapse ckeckout
+<Card title="">
+<Collapsecheckout/>
+<div class="tabb-m">
+<Tabs>
+<TabItem label="HTML">
+```html
+<div class="delivery">
+    <div class="cbsc crpt-2">
+        <div class="cbsc__cbs">
+            <input type="radio" class="cbs__cbsir direccionEnvio direccionEnvioS0" id="dr1" data-id="0" name="delivery" data-target="dp1">
+            <label for="dr1" class="cbs__cbslh">
+                <div class="cbslh__cbsrtc">
+                <div class="cbsrtc__cbsr">
+                    <svg class="cbsr__cbsrd" width="18" height="18" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <circle cx="7.99994" cy="8.00006" r="6.70827" fill="white" stroke="#D2D2D7" stroke-width="0.583333"></circle>
+                    </svg>
+                    <svg class="cbsr__cbsre" width="18" height="18" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <circle cx="7" cy="6.99988" r="4.66665" fill="white" stroke="#0071E3" stroke-width="4.66671"></circle>
+                    </svg>
+                </div>
+                <div class="cbsrtc__cbst--container">
+                    <p class="cbsrtc__cbst">A domicilio</p>
+                </div>
+                </div>
+                <div class="cbslh__cbsic">
+                    <svg class="cbsic__cbsi" width="18" height="18" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M2.4374 11.5087C2.0123 11.5087 1.6903 11.3993 
+                     1.47141 11.1804C1.25251 10.9615 1.14307 10.6411 1.14307 
+                     10.2191V3.97591C1.14307 3.55081 1.25251 3.22881 1.47141 3.00992C1.6903 2.79103 
+                     2.0123 2.68158 2.4374 2.68158H9.42297C9.84806 2.68158 10.1701 2.79261 10.389 3.01468C10.6078 
+                     3.23357 10.7173 3.55398 10.7173 3.97591V10.557L9.95117 10.9758V3.99018C9.95117 3.80936 9.90517 
+                     3.67453 9.81317 3.58571C9.72117 3.49371 9.58634 3.44771 9.40869 3.44771H2.44691C2.26926 3.44771 
+                     2.13443 3.49371 2.04243 3.58571C1.95361 3.67453 1.90919 3.80936 1.90919 3.99018V10.2049C1.90919 
+                     10.3825 1.95361 10.5173 2.04243 10.6093C2.13443 10.6982 2.26926 10.7426 2.44691 10.7426H3.47952V11.5087H2.4374ZM10.2985 
+                     6.07443V5.30831H11.9831C12.2178 5.30831 12.4177 5.34003 12.5827 5.40348C12.7476 5.46692 12.9015 5.57637 13.0442 5.73182L14.6621 
+                     7.55911C14.7954 7.70821 14.8842 7.85096 14.9286 7.98738C14.9762 8.12062 15 8.30461 15 8.53937V10.2191C15 10.6411 14.8906 10.9615 14.6717
+                      11.1804C14.4528 11.3993 14.1308 11.5087 13.7057 11.5087H12.9253V10.7426H13.6914C13.869 10.7426 14.0039 10.6982 14.0959 10.6093C14.1879 
+                      10.5173 14.2339 10.3825 14.2339 10.2049V8.52509C14.2339 8.43944 14.2164 8.35061 14.1815 8.25861C14.1498 8.16662 14.1022 8.08413 
+                      14.0388 8.01117L12.5446 6.3314C12.4462 6.22354 12.3495 6.15374 12.2543 6.12202C12.1623 6.0903 12.056 6.07443 11.9355 6.07443H10.2985ZM11.6071 
+                      8.5822C11.4803 8.5822 11.3803 8.54571 11.3074 8.47275C11.2344 8.39979 11.1979 8.30144 11.1979 8.17772V6.55029H11.788C11.8546 6.55029 11.918 6.56774 
+                      11.9783 6.60263C12.0418 6.63436 12.0989 6.67719 12.1496 6.73112L13.5677 8.32523C13.6026 8.3633 13.6295 8.40137 13.6486 8.43944C13.6708 8.47751 13.6819 
+                      8.52509 13.6819 8.5822H11.6071ZM4.67392 12.8364C4.37254 12.8364 4.09813 12.7634 3.85069 12.6175C3.60642 12.4715 3.40973 12.2748 3.26063 12.0274C3.1147 
+                      11.7831 3.04173 11.5103 3.04173 11.2089C3.04173 10.9107 3.1147 10.6395 3.26063 10.3952C3.40973 10.1478 3.60642 9.95108 3.85069 9.80515C4.09813 9.65922 
+                      4.37254 9.58625 4.67392 9.58625C4.97212 9.58625 5.24336 9.65922 5.48763 9.80515C5.73508 9.95108 5.93177 10.1478 6.0777 10.3952C6.22362 10.6395 6.29659 
+                      10.9107 6.29659 11.2089C6.29659 11.5103 6.22362 11.7831 6.0777 12.0274C5.93177 12.2748 5.73508 12.4715 5.48763 12.6175C5.24336 12.7634 4.97212 12.8364 
+                      4.67392 12.8364ZM4.67392 12.1892C4.85157 12.1892 5.01495 12.1448 5.16405 12.0559C5.31315 11.9703 5.43053 11.8529 5.51619 11.7038C5.60501 11.5547 
+                      5.64943 11.3897 5.64943 11.2089C5.64943 11.0281 5.60501 10.8647 5.51619 10.7188C5.43053 10.5697 5.31315 10.4507 5.16405 10.3619C5.01495 10.2731 
+                      4.85157 10.2287 4.67392 10.2287C4.49309 10.2287 4.32813 10.2731 4.17903 10.3619C4.02993 10.4507 3.91096 10.5697 3.82214 10.7188C3.73331 10.8647 
+                      3.6889 11.0281 3.6889 11.2089C3.6889 11.3897 3.73331 11.5547 3.82214 11.7038C3.91096 11.8529 4.02993 11.9703 4.17903 12.0559C4.32813 12.1448 
+                      4.49309 12.1892 4.67392 12.1892ZM11.531 12.8364C11.2328 12.8364 10.96 12.7634 10.7125 12.6175C10.4651 12.4715 10.2684 12.2748 10.1225 12.0274C9.97655 11.7831 
+                      9.90358 11.5103 9.90358 11.2089C9.90358 10.9107 9.97655 10.6395 10.1225 10.3952C10.2684 10.1478 10.4651 9.95108 10.7125 9.80515C10.96 9.65922 11.2328 9.58625 
+                      11.531 9.58625C11.8292 9.58625 12.1004 9.65922 12.3447 9.80515C12.5922 9.95108 12.7889 10.1478 12.9348 10.3952C13.0807 10.6395 13.1537 10.9107 13.1537 
+                      11.2089C13.1537 11.5103 13.0807 11.7831 12.9348 12.0274C12.7889 12.2748 12.5922 12.4715 12.3447 12.6175C12.1004 12.7634 11.8292 12.8364 11.531 12.8364ZM11.531 
+                      12.1892C11.7118 12.1892 11.8752 12.1448 12.0211 12.0559C12.1702 11.9703 12.2876 11.8529 12.3733 11.7038C12.4621 11.5547 12.5065 11.3897 12.5065 11.2089C12.5065 
+                      11.0281 12.4621 10.8647 12.3733 10.7188C12.2844 10.5697 12.1655 10.4507 12.0164 10.3619C11.8705 10.2731 11.7087 10.2287 11.531 10.2287C11.3502 10.2287 11.1852 
+                      10.2731 11.0361 10.3619C10.8902 10.4507 10.7728 10.5697 10.684 10.7188C10.5952 10.8647 10.5507 11.0281 10.5507 11.2089C10.5507 11.3897 10.5952 11.5547 10.684 
+                      11.7038C10.7728 11.8529 10.8902 11.9703 11.0361 12.0559C11.1852 12.1448 11.3502 12.1892 11.531 12.1892ZM5.9397 11.5087V10.7426H10.2795V11.5087H5.9397Z" fill="#707070"></path>
+                    </svg>
+                </div>
+            </label>
+        </div>
+        <div class="cbsc__cbs">
+            <input type="radio" class="cbs__cbsir direccionEnvio direccionEnvioS1" id="dr2" data-id="1" name="delivery" data-target="dp2" checked="">
+            <label for="dr2" class="cbs__cbslh">
+            <div class="cbslh__cbsrtc">
+                <div class="cbsrtc__cbsr">
+                    <svg class="cbsr__cbsrd" width="18" height="18" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="7.99994" cy="8.00006" r="6.70827" fill="white" stroke="#D2D2D7" stroke-width="0.583333"></circle>
+                    </svg>
+                    <svg class="cbsr__cbsre" width="18" height="18" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="7" cy="6.99988" r="4.66665" fill="white" stroke="#0071E3" stroke-width="4.66671"></circle>
+                    </svg>
+                </div>
+                <p class="cbsrtc__cbst">Entrega en Tienda</p>
+           </div>
+            <div class="">
+                <svg class="cbsic__cbsi" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.1067 15.3754H3.38443C2.56102 15.3754 1.89123 14.7055 1.89123 13.8821L1.89111 7.4696H2.6248V13.8821C2.6248 14.3008 2.96556 14.6416 3.38432 14.6416H13.1069C13.5256 14.6416 13.8664 14.301 13.8664 13.8821L13.8665 7.4696H14.6002V13.8821C14.6002 14.7055 13.9303 15.3754 13.1069 15.3754H13.1067Z" fill="#707070"></path>
+                <path d="M6.52898 8.04204C5.37788 8.04204 4.44141 7.10545 4.44141 5.95447H5.17509C5.17509 6.70091 5.78242 7.30824 6.52898 7.30824C7.27554 7.30824 7.88286 6.70091 7.88286 5.95447H8.61655C8.61655 7.10545 7.68008 8.04204 6.52898 8.04204Z" fill="#707070"></path>
+                <path d="M9.97039 8.04384C8.81929 8.04384 7.88281 7.10726 7.88281 5.95627V4.43201H8.6165V5.95627C8.6165 6.70272 9.22383 7.31004 9.97039 7.31004C10.7169 7.31004 11.3243 6.70272 11.3243 5.95627H12.058C12.058 7.10726 11.1215 8.04384 9.97039 8.04384Z" fill="#707070"></path>
+                <path d="M13.4123 8.04286C12.2612 8.04286 11.3247 7.10627 11.3247 5.95529V4.43102H12.0584V5.95529C12.0584 6.70173 12.6657 7.30906 13.4123 7.30906C14.1588 7.30906 14.7663 6.70173 14.7663 5.95529V4.54174L13.564 2.73392H2.93596L1.73369 4.54163V5.95517C1.73369 6.70162 2.34113 7.30894 3.08769 7.30894C3.83424 7.30894 4.44157 6.70162 4.44157 5.95517V4.43091H5.17526V5.95517C5.17526 7.10627 4.23879 8.04275 3.08769 8.04275C1.93647 8.04275 1 7.10616 1 5.95517V4.43091C1 4.35862 1.02134 4.2879 1.06134 4.22768L2.43375 2.16379C2.50168 2.06145 2.61642 2 2.73922 2H13.7606C13.8833 2 13.9981 2.06145 14.066 2.16379L15.4387 4.22779C15.4788 4.28802 15.5 4.35874 15.5 4.43102V5.95529C15.5 7.10627 14.5635 8.04286 13.4123 8.04286H13.4123Z" fill="#707070"></path>
+                <path d="M1.3667 4.06055H15.1332V4.79435H1.3667V4.06055Z" fill="#707070"></path>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.91424 10.739H6.34847C6.25001 10.739 6.17018 10.8188 6.17018 10.9173V14.483C6.17018 14.5815 6.25001 14.6613 6.34847 14.6613H9.91424C10.0127 14.6613 10.0925 14.5815 10.0925 14.483V10.9173C10.0925 10.8188 10.0127 10.739 9.91424 10.739ZM6.34847 10.0258C5.85614 10.0258 5.45703 10.4249 5.45703 10.9173V14.483C5.45703 14.9754 5.85614 15.3745 6.34847 15.3745H9.91424C10.4066 15.3745 10.8057 14.9754 10.8057 14.483V10.9173C10.8057 10.4249 10.4066 10.0258 9.91424 10.0258H6.34847Z" fill="#707070"></path>
+                </svg>
+            </div>
+            </label>
+        </div>
+    </div>
+    <div id="seccioninsertardirentregacx" class="crpt-1 collapse" data-id="dp1" aria-expanded="true" style="">
+        <div class="well">
+            <div class="account__container">
+             ¿Qué es Lorem Ipsum?
+            Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.
+            Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor 
+                        
+            </div>
+        </div>
+    </div>
+    <div id="seccioninsertardirentregacx" class="crpt-1 collapse in" data-id="dp2" aria-expanded="true" style="">
+        <div class="well">
+            <div class="account__container">
+            ¿Por qué lo usamos?
+            Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del 
+            texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, 
+            </div>
+        </div>
+    </div>
+</div>
+ ```
+</TabItem>
+<TabItem label="JavaScript">
+```JavaScript 
+$("input[type='radio'][data-target]:checked").map((index, element) => {
+    $(`[data-id="${element.dataset.target}"]`).collapse("show");
+});
+$("input[type='radio']").change((event) => {
+    $(`[data-id="${event.currentTarget.dataset.target}"]`).collapse("show");
+    $(`input[type="radio"][name="${event.currentTarget.name}"]:not(:checked)`).map((index, element) => {
+        $(`[data-id="${element.dataset.target}"]`).collapse("hide");
+    });
+});
+
+ ```
+</TabItem>
+ </Tabs>
+ </div>
+ </Card>
+ </div>
+ 
+ <div class="tablas">
+## Collapse footer
+
+<Card title="">
 <Collapsefooter/>
-<Aside>Es importante recordar que este collapse, unicamente se habre en responsivo, tal cual la funcionalidad de los collapses en el footer  </Aside>
+<div class="tabb-m">
+<Tabs>
+<TabItem label="HTML">
+```html
+<div class="panel panel-default">
+    <div class="panel-heading" id="headingThree">
+        <p class="panel-title mb-2 border-responsive">
+            <a class="cursorNone h5collapse" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true">
+                Collapse
+                <i class="fa fa-angle-down icontfooterc"></i>
+            </a>
+        </p>
+    </div>
+    <div id="collapseThree" class="panel-collapse menufooter collapse in" aria-expanded="true" style="">
+        <div class="panel-body">
+            <ul class="listafooter">
+                <li>
+                    <a href="#" title="">
+                        link 1
+                    </a>
+                </li>
+                <li>
+                    <a href="#" title="">
+                       link 2
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+ ```
+</TabItem>
+
+ </Tabs>
+ </div>
+ </Card>
+ </div>
+<Aside>Es importante recordar que este collapse, unicamente se habre en responsivo, tal cual la funcionalidad de los collapses en el footer de CX </Aside>
+
+
+
+
+
 
 
 

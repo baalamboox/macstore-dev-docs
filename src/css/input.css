@@ -372,6 +372,16 @@ option {
 .formulario .entryarea{
     margin-bottom: 15px;
 }
+.formulario12{
+    text-align: center;
+}
+.colorblack label{
+    color: inherit !important;
+}
+.mensajesinput.mt-1.text-left {
+    margin-top: 10px;
+    color: inherit;
+}
 @-moz-document url-prefix() {
     .labeldate {
         margin-top: -10px

@@ -21,15 +21,18 @@ y el segundo es el input normal que se usa para formularios para el administrati
 <Aside>Para que los input de cx funcionen en diferentes navegadores es nesesario agregar un id al input y que este sea el mismo que el for del label.  </Aside>
 <div class="inputs formulario">
   <Card title="Ejemplo de formulario" icon="setting">
+
 <div class="entryarea w-100">
     <input  class="inputani " maxlength="64" type="text" required />
     <label class="labelline" > Usuario</label>
        
 </div>
   <InputPassword/>
+<div class="formulario12">
   <button type="button" class="boton boton-primario">
     <span>Botón primario</span>
 </button>
+</div>
 <div class="tabb-m">
 <Tabs>
 <TabItem label="HTML">
@@ -416,7 +419,7 @@ var labelinput = document.getElementById("labelnws1");
 ## Check-input
 <div class="inputs">
   <Card title="Checkbox" icon="setting">
-    <label for="terminos_registro" class="check-group crpt-2">
+    <label for="terminos_registro" class="check-group colorblack crpt-2">
                 <input type="checkbox" class="check-input" id="terminos_registro" required />
                 <span class="check-custom"></span>
                 <label for="terminos_registro" class="check-label checkregister mb-0">
@@ -427,7 +430,7 @@ var labelinput = document.getElementById("labelnws1");
 <Tabs>
 <TabItem label="HTML">
  ```html
-<label for="terminos_registro" class="check-group crpt-2">
+<label for="terminos_registro" class="check-group colorblack crpt-2">
     <input type="checkbox" class="check-input" id="terminos_registro" required />
      <span class="check-custom"></span>
     <label for="terminos_registro" class="check-label checkregister mb-0">ejemplo</label>
