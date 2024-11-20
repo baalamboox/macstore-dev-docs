@@ -18,13 +18,12 @@
     max-width: 55rem;
 }
 
-
-.card {
+/* .card {
     border-color: var(--gray4);
     box-shadow: 2px 4px 10px var(--gray4);
     border-radius: 1rem;
 }
-
+ */
 .card .title {
     font-size: 16px;
     font-weight: normal;
@@ -71,11 +70,11 @@
     text-align: left;
 }
 
-.card pre {
+/* .card pre {
     border-radius: 4px !important;
     border-color: var(--gray3) !important;
     background-color: var(--wwhite) !important;
-}
+} */
 
 .card-exe-code .button-play:hover {
     background-color: var(--bblue);
