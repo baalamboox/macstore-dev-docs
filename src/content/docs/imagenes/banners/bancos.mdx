@@ -10,7 +10,8 @@ import Sswiper from '/src/components/swiper/Swiper.astro';
 
 <Sswiper/>
 ## Carrusel principal
-Representan gráficamente los productos principales Apple, con un botón CTA a su Landing Page, se debe considerar estrictamente crear una vista para dispositivos de escritorio y mobile.
+Representan gráficamente los productos principales Apple, promociones bancarias y/o ofertas de productos de terceros,  con un botón CTA a su Landing Page y/o url de campaña o destino,
+se debe considerar estrictamente crear una vista para dispositivos de escritorio y mobile.
 <br>
 
 <BannersHome/>
@@ -37,8 +38,26 @@ Representan gráficamente los productos principales Apple, con un botón CTA a s
 <br> </br>
 ## Integración
 
-```html
-      <div class="swiper banner-home-swiper carousel" id="carrusel-x">
+    <FileTree>
+        - macstore
+            - css
+                - carrusel-banners.css
+                - swiper-custom.css
+                - swiper.css
+            - js 
+                - jquery-3.7.0.min.js
+                - swiper-custom.min.js
+                - swiper.js
+        - index.html
+    </FileTree>
+
+
+        <Tabs>
+            <TabItem label="HTML">
+              
+                ```html
+              
+      <div class="swiper banner-home-swiper carousel" id="carrusel-id">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <div class="item active">
@@ -172,9 +191,39 @@ Representan gráficamente los productos principales Apple, con un botón CTA a s
                 </div>
             </div>
         </div>
-        <div class="swiper-pagination banner-home-pagination"></div>
+        <div class="swiper-pagination banner-paginacion"></div>
     </div>
-```
+
+
+                ```
+            </TabItem>
+            <TabItem label="JS">
+               
+                ```JavaScript
+                /* id o clase del elemento disparador de Swiper */ 
+                const bannerHomeSwiper = new Swiper("#carrusel-id", {
+                    slidesPerView: 1,
+                    loop: true,
+                    autoHeight: true,
+                    autoplay: {
+                        delay: 6000,
+                    },
+                    resizeObserver: true,
+                    updateOnWindowResize: true,
+                    pagination: {
+                        /* id o clase del elemento paginador o bullets */ 
+                        el: ".banner-paginacion",
+                        clickable: true,
+                    },
+                });
+         
+                ```
+            </TabItem>
+        </Tabs>
+
+
+
+
 
 
 
