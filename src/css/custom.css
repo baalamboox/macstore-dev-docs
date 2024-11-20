@@ -4,10 +4,20 @@
 
 /* :::::::::: Starlight custum :::::::::: */
 
+[data-has-sidebar][data-has-toc] .main-pane:where(.astro-67yu43on) {
+    width: 100%;
+}
+
+.right-sidebar-container:where(.astro-67yu43on) {
+    width: 100%;
+    max-width: 320px;
+}
+
 .sl-container:where(.astro-7nkwcw3z) {
     margin-inline: auto;
     max-width: 55rem;
 }
+
 
 .card {
     border-color: var(--gray4);
