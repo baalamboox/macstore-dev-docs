@@ -1,0 +1,398 @@
+---
+title: Banners Ofertas
+---
+
+import { Card, CardGrid, Code, FileTree, Aside, Badge,Tabs, TabItem } from '@astrojs/starlight/components';
+
+import InputRadio from '/src/components/formularios/input-radio.astro';
+import InputEmail from '/src/components/formularios/input-email.astro';
+import InputPassword from '/src/components/formularios/input-password.astro';
+import InputdateAdmin from '/src/components/formularios/input-date.astro';
+import '../../../../css/input.css'
+import '../../../../css/input-admin.css'
+
+Tamaño de imágenes
+
+## Input text rr32r34
+El tamaño de imagenes varia de acuerdo al componente mostrado
+
+<Aside>Para que los input de cx funcionen en diferentes navegadores es nesesario agregar un id al input y que este sea el mismo que el for del label.  </Aside>
+<div class="inputs">
+  <Card title="input Primario" icon="setting">
+<div class="entryarea w-100">
+    <input  class="inputani " maxlength="64" type="text" required />
+    <label class="labelline" > Nombre</label>
+       
+</div>
+
+<div class="tabb-m">
+<Tabs>
+<TabItem label="HTML">
+```html
+<div class="entryarea w-100">
+    <input id="ejemplo" class="inputani " maxlength="64" type="text" required />
+    <label  class="labelline" for="ejemplo" > Nombre</label>
+</div>
+ ```
+</TabItem>
+ </Tabs>
+</div>
+
+  </Card>
+
+</div>
+<div class="inputs">
+  <Card title="input Administrativo" icon="setting">
+       <label for="fechaFinal" icon="setting"><i class="fa fa-search"></i>&nbsp; Nombre</label>
+      <input type="text" class="form-control"  maxlength="5" placeholder="Nombre"/>
+
+<div class="tabb-m">
+<Tabs>
+<TabItem label="HTML">
+```html
+<label for="fechaFinal" icon="setting"><i class="fa fa-search"></i>&nbsp; Nombre</label>
+<input type="text" class="form-control"  maxlength="5" placeholder="Nombre"/>
+```
+</TabItem>
+ </Tabs>
+</div>
+
+
+            
+  </Card>
+</div>
+
+
+
+<div class="inputs">
+:::caution[¡IMPORTANTE!]
+    Para poder implementar los formularios, es necesario que tengan sus rutas de css correspondientes:
+    <FileTree>
+        - public
+            - css
+                - input.css
+                - input-admin.css
+                
+        - index.astro
+    </FileTree>
+   
+:::
+</div>
+
+## Input date
+
+<div class="inputs">
+  <Card title="input date" icon="setting">
+   <div class="entryarea w-100">
+                <input  class="inputani inputdate" type="date" required />
+                <label id="" class="labelline labeldate" >Fecha </label>
+            </div>
+
+<div class="tabb-m">
+<Tabs>
+<TabItem label="HTML">
+```html
+<div class="entryarea w-100">
+    <input  class="inputani inputdate" type="date" required />
+    <label  class="labelline labeldate" >Fecha </label>
+</div>
+```
+</TabItem>
+ </Tabs>
+</div>
+
+  </Card>
+
+</div>
+
+
+## Input date Administrativo
+
+<div class="inputs">
+  <Card title="input date Administrativo" icon="setting">
+    <InputdateAdmin/>
+
+<div class="tabb-m">
+<Tabs>
+<TabItem label="HTML">
+```html
+<div class="form-group">
+    <label for="fechaFinal"><i class="fa fa-calendar"></i>&nbsp; Fecha</label>
+    <input class="form-control "  name="Final"  type="date"  >
+</div>
+```
+</TabItem>
+ </Tabs>
+</div>
+
+  </Card>
+
+</div>
+## Input Email
+
+<div class="inputs">
+  <Card title="input Email" icon="setting">
+   <InputEmail/>
+
+<div class="tabb-m">
+<Tabs>
+<TabItem label="HTML">
+ ```html
+<div class="entryarea w-100">
+    <input id="nws3" class="inputani" type="email"  required />
+    <label  id="labelnws3" class="labelline" for="nws3">Confirmar correo</label>
+</div>
+ ```
+</TabItem>
+<TabItem label="JS">
+```JavaScript  
+ const textInput3 = document.getElementById('nws3');
+ textInput3.addEventListener('input', function () {
+     const inputValue2 = textInput3.value.trim();
+     var labelinput2 = document.getElementById("labelnws3");
+     if (inputValue2 !== '') {
+ 
+         labelinput2.classList.add('focusclassinputemail');
+     } else {
+ 
+         labelinput2.classList.remove('focusclassinputemail');
+     }
+ }); 
+ ```
+</TabItem>
+ </Tabs>
+</div>
+
+
+
+
+<Aside>Para su correcta funcionalidad, es importante agregar el js referenciando el id del input y el label de forma correspondiente cada que se duplique este componente  </Aside>
+  </Card>
+
+</div>
+
+
+## Input Contraseña
+
+<div class="inputs">
+  <Card title="input Contraseña" icon="setting">
+   <InputPassword/>
+<div class="tabb-m">
+<Tabs>
+<TabItem label="HTML">
+ ```html
+ <div class=" colw mx-auto">
+    <div class="entryarea w-100">
+        <input  id="contrasena_registro" class="inputani " type="password"  required />
+        <label class="labelline" for="contrasena_registro">Contraseña</label>
+    </div>
+    <div class="mensajesinput mt-1 text-left">
+        Debe contener al menos: 1 minúscula, 1 mayúscula, 1 caracter especial (@caracterEspeciales)
+        1 número y una longitud minima de 8 caracteres
+    </div>
+
+</div>
+```
+</TabItem>
+<TabItem label="JS">
+```JavaScript  
+const textInput = document.getElementById('contrasena_registro');
+textInput.addEventListener('input', function () {
+const inputValue = textInput.value.trim();
+var labelinput = document.getElementById("labelnws1");
+    if (inputValue !== '') {
+
+        labelinput.classList.add('focusclassinputemail');
+    } else {
+
+        labelinput.classList.remove('focusclassinputemail');
+    }
+}); 
+```
+</TabItem>
+ </Tabs>
+</div>
+
+<Aside>Para su correcta funcionalidad, es importante agregar el js referenciando el id del input y el label de forma correspondiente cada que se duplique este componente  </Aside>
+  </Card>
+
+</div>
+
+## Textarea
+
+<div class="inputs">
+  <Card title="Textarea" icon="setting">
+   <div class=" mb-20">
+                <div class=" divtext">
+                    <textarea class="textencuesta"  placeholder=" " name="story" required maxlength="4000" autocomplete="off"></textarea>
+                    <label  class="labeltextarea">Comentarios</label>
+                </div>
+            </div>
+<div class="tabb-m">
+<Tabs>
+<TabItem label="HTML">
+ ```html
+<div class=" mb-20">
+    <div class=" divtext">
+        <textarea class="textencuesta"  placeholder=" " name="story" required maxlength="4000" autocomplete="off"></textarea>
+        <label  class="labeltextarea">Comentarios</label>
+    </div>
+</div>
+```
+</TabItem>
+ </Tabs>
+</div>
+
+  </Card>
+
+</div>
+
+## Select
+<div class="inputs select">
+  <Card title="Select" icon="setting">
+   <div class="entryarea mb-1">
+                <select name="ordenaPedidos" style="display: flex; pointer-events: all;" class="inputani orPedidosFil"  required="">
+                    <option  data-op="0"></option>
+                    <option data-op="1">1</option>
+                    <option data-op="2">2</option>
+                </select>
+                <label class="labelline " for="ordenaPedidos"> selecciona:</label>
+            </div>
+<div class="tabb-m">
+<Tabs>
+<TabItem label="HTML">
+ ```html
+<div class="entryarea mb-1">
+    <select name="ordenaPedidos" style="display: flex; pointer-events: all;" class="inputani orPedidosFil"  required="">
+        <option  data-op="0"></option>
+        <option data-op="1">1</option>
+        <option data-op="2">2</option>
+    </select>
+    <label class="labelline " for="ordenaPedidos"> selecciona:</label>
+</div>
+```
+</TabItem>
+ </Tabs>
+</div>
+
+  </Card>
+
+</div>
+## Select Administrativo
+<div class="inputs select">
+  <Card title="Select administrativo" icon="setting">
+  <select class="form-control"name="select2">
+                                        <option value="0">1</option>
+                                            <option value="13"> 2 </option>
+                                            <option value="8"> 3 </option>
+            </select>
+<div class="tabb-m">
+<Tabs>
+<TabItem label="HTML">
+```html
+<select class="form-control"name="select2">
+    <option value="0">1</option>
+    <option value="13"> 2 </option>
+    <option value="8"> 3 </option>
+</select>
+```
+</TabItem>
+ </Tabs>
+</div>
+
+  </Card>
+
+</div>
+
+## Radio input
+<div class="inputs ">
+  <Card title="radio input" icon="setting">
+<div class="radiobutton">
+     <InputRadio />
+</div>
+  
+<div class="tabb-m">
+<Tabs>
+<TabItem label="HTML">
+```html
+<div class="d-flex-">
+    <div class="cbsc__cbs w-50">
+        <input id='chkEcommerce' class="cbs__cbsir" type='radio' value='1' name='optradio1' checked />
+        <label for="chkEcommerce" class="cbs__cbslh no-outline">
+            <div class="cbslh__cbsrtc">
+                <div class="cbsrtc__cbsr">
+                    <svg class="cbsr__cbsrd" width="18" height="18" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="7.99994" cy="8.00006" r="6.70827" fill="white" stroke="#D2D2D7" stroke-width="0.583333" />
+                    </svg>
+                    <svg class="cbsr__cbsre" width="18" height="18" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="7" cy="6.99988" r="4.66665" fill="white" stroke="#0071E3" stroke-width="4.66671" />
+                    </svg>
+                </div>
+                <div class="cbsrtc__cbst--container">
+                    <p class="cbsrtc__cbst">ejemplo1</p>
+                </div>
+            </div>
+        </label>
+    </div>
+    <div class="cbsc__cbs w-50">
+        <input type="radio" class="cbs__cbsir" id='chkSucursal'  value='2' name='optradio1' />
+        <label for="chkSucursal" class="cbs__cbslh no-outline">
+            <div class="cbslh__cbsrtc">
+                <div class="cbsrtc__cbsr">
+                    <svg class="cbsr__cbsrd" width="18" height="18" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="7.99994" cy="8.00006" r="6.70827" fill="white" stroke="#D2D2D7" stroke-width="0.583333" />
+                    </svg>
+                    <svg class="cbsr__cbsre" width="18" height="18" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="7" cy="6.99988" r="4.66665" fill="white" stroke="#0071E3" stroke-width="4.66671" />
+                    </svg>
+                </div>
+                <div class="cbsrtc__cbst--container">
+                    <p class="cbsrtc__cbst">ejemplo2</p>
+                </div>
+            </div>
+        </label>
+    </div>
+
+
+</div>
+```
+</TabItem>
+ </Tabs>
+</div>
+
+
+              <Aside>Para poder visualizar los input radio de forma correcta, es requerido importar la hoja de estilos llamada <Badge text="radiobutons.css" variant="note" /> </Aside>
+  </Card>
+
+</div>
+
+
+
+## Check-input
+<div class="inputs">
+  <Card title="Checkbox" icon="setting">
+    <label for="terminos_registro" class="check-group crpt-2">
+                <input type="checkbox" class="check-input" id="terminos_registro" required />
+                <span class="check-custom"></span>
+                <label for="terminos_registro" class="check-label checkregister mb-0">
+                    ejemplo
+                </label>
+            </label>
+<div class="tabb-m">
+<Tabs>
+<TabItem label="HTML">
+ ```html
+<label for="terminos_registro" class="check-group crpt-2">
+    <input type="checkbox" class="check-input" id="terminos_registro" required />
+     <span class="check-custom"></span>
+    <label for="terminos_registro" class="check-label checkregister mb-0">ejemplo</label>
+</label>
+ ```
+</TabItem>
+ </Tabs>
+</div>
+
+             <Aside>Para poder visualizar los check input de forma correcta, es requerido importar la hoja de estilos llamada <Badge text="radiobutons.css" variant="note" /> </Aside>
+  </Card>
+
+</div>
