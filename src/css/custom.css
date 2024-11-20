@@ -3,6 +3,7 @@
 }
 
 /* :::::::::: Starlight custum :::::::::: */
+
 .card {
     border-color: var(--gray4);
     box-shadow: 2px 4px 10px var(--gray4);
@@ -100,19 +101,8 @@
 }
 
 /* :::::::::: Buttons :::::::::: */
-.buttons .title {
-    display: none;
-}
-
-.buttons .code {
-    text-align: left;
-}
-
-.buttons .buttons-container {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 16px;
+.buttons .card {
+    flex-direction: column-reverse;
 }
 
 /* :::::::::: Color palete :::::::::: */
