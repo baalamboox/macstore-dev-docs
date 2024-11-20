@@ -2,20 +2,58 @@
 title: Botones
 ---
 
-import { Card, Tabs, TabItem } from '@astrojs/starlight/components';
+import { Card, Tabs, TabItem, FileTree } from '@astrojs/starlight/components';
 import '/src/css/buttons.css';
+
+Los botones son elementos de interfaz de usuario que permiten a los usuarios interactuar con una aplicación o sitio web. Se utilizan para realizar acciones específicas, como iniciar sesión, agregar un elemento a un carrito de compras o proporcionar información adicional.
+
+## Uso
+<hr />
+
+El uso de los botones es sumamente fácil, solo hay que tener en cuenta algunos detalles de configuración de archivos como es el caso de las fuentes y los colores ya que los botones hacen uso de estos archivos:
+
+- **fonts.css**
+- **root.css**
+
+:::caution[Ejemplo de uso]
+    Ejemplo de directorios <small><b>(Puede cambiar)</b></small>
+    <FileTree>
+        - public
+            - css
+                - root.css
+                - fonts.css
+                - buttons.css
+        - index.html
+    </FileTree>
+
+    En el archivo **index.html** o donde se desean usar los botones se debe primero cargar el
+    archivo **root.css** y después **fonts.css**.
+
+    ```html
+        <!DOCTYPE>
+        <html>
+            <head>
+                <link rel="stylesheet" href="/public/css/root.css" />
+                <link rel="stylesheet" href="/public/css/fonts.css" />
+                <link rel="stylesheet" href="/public/css/buttons.css" />
+            </head>
+        </html>
+    ```
+
+    **Nota:** Es recomendable hacer uso de layouts para evitar llamar más de una vez el mismo archivo.
+:::
+## Tipos y ejemplos
+<hr />
+<br />
 
 <div class="buttons">
 
-
-
-    ## Botones primarios
+    ### Botones primarios
     
-    <Card title="">
-        
+    <Card title="En general, se utilizan para acciones como Iniciar sesión, Registrarse, Comprar ahora, entre otras.">
         <Tabs>
             <TabItem label="Enlace">
-                <a href="#" class="boton boton-primario not-content"><span>Botón primario</span></a>
+                <button type="button" class="boton boton-primario"><span>Botón primario</span></button>
                 ```html
                 <a href="#" class="boton boton-primario">
                     <span>Botón primario</span>
@@ -33,71 +71,95 @@ import '/src/css/buttons.css';
         </Tabs>
     </Card>
 
-    ## Botones secudarios
+    ### Botones secudarios
 
-    <Card title="">
-        <div class="buttons-container">
-            <a href="#" class="boton boton-secundario"><span>Botón secundario</span></a>
-            <button type="button" class="boton boton-secundario"><span>Botón secundario</span></button>
-        </div>
-        ```html
-        <a href="#" class="boton boton-primario">
-            <span>Botón primario</span>
-        </a>
-        <button type="button" class="boton boton-secundario">
-            <span>Botón secundario</span>
-        </button>
-        ```
+    <Card title="Se utilizan para acciones como Cancelar, Volver, Ver más, entre otras.">
+        <Tabs>
+            <TabItem label="Enlace">
+                <button type="button" class="boton boton-secundario"><span>Botón secundario</span></button>
+                ```html
+                <a href="#" class="boton boton-secundario">
+                    <span>Botón primario</span>
+                </a>
+                ```
+            </TabItem>
+            <TabItem label="Botón">
+                <button type="button" class="boton boton-secundario"><span>Botón secundario</span></button>
+                ```html
+                <button type="button" class="boton boton-secundario">
+                    <span>Botón secundario</span>
+                </button>
+                ```
+            </TabItem>
+        </Tabs>
     </Card>
 
-    ## Botones sin stock
+    ### Botones sin stock
 
-    <Card title="">
-        <div class="buttons-container">
-            <a href="#" class="boton boton-sin-stock"><span>Botón sin stock</span></a>
-            <button type="button" class="boton boton-sin-stock"><span>Botón sin stock</span></button>
-        </div>
-        ```html
-        <a href="#" class="boton boton-sin-stock">
-            <span>Botón primario</span>
-        </a>
-        <button type="button" class="boton boton-sin-stock">
-            <span>Botón secundario</span>
-        </button>
-        ```
+    <Card title="Los botones sin stock se utilizan para indicar que un producto o servicio no está disponible en el momento.">
+        <Tabs>
+            <TabItem label="Enlace">
+                <button type="button" class="boton boton-sin-stock"><span>Botón sin stock</span></button>
+                ```html
+                <a href="#" class="boton boton-sin-stock">
+                    <span>Botón primario</span>
+                </a>
+                ```
+            </TabItem>
+            <TabItem label="Botón">
+                <button type="button" class="boton boton-sin-stock"><span>Botón sin stock</span></button>
+                ```html
+                <button type="button" class="boton boton-sin-stock">
+                    <span>Botón secundario</span>
+                </button>
+                ```
+            </TabItem>
+        </Tabs>
     </Card>
 
-    ## Botones agregar 
+    ### Botones agregar 
 
-    <Card title="">
-        <div class="buttons-container">
-            <a href="#" class="boton boton-secundario boton-agregar"><span>Botón agregar</span></a>
-            <button type="button" class="boton boton-secundario boton-agregar"><span>Botón agregar</span></button>
-        </div>
-        ```html
-        <a href="#" class="boton boton-secundario boton-agregar">
-            <span>Botón agregar</span>
-        </a>
-        <button type="button" class="boton boton-secundario boton-agregar">
-            <span>Botón agregar</span>
-        </button>
-        ```
+    <Card title="Los botones agregar se utilizan para agregar un elemento o servicio a una lista o carrito de compras.">
+        <Tabs>
+            <TabItem label="Enlace">
+                <button type="button" class="boton boton-secundario boton-agregar"><span>Botón agregar</span></button>
+                ```html
+                <a href="#" class="boton boton-secundario boton-agregar">
+                    <span>Botón agregar</span>
+                </a>
+                ```
+            </TabItem>
+            <TabItem label="Botón">
+                <button type="button" class="boton boton-secundario boton-agregar"><span>Botón agregar</span></button>
+                ```html
+                <button type="button" class="boton boton-secundario boton-agregar">
+                    <span>Botón agregar</span>
+                </button>
+                ```
+            </TabItem>
+        </Tabs>
     </Card>
 
-    ## Botones saber más
+    ### Botones saber más
 
-    <Card title="">
-        <div class="buttons-container">
-            <a href="#" class="boton boton-saber-mas"><span>Botón saber más</span></a>
-            <button type="button" class="boton boton-saber-mas"><span>Botón saber más</span></button>
-        </div>
-        ```html
-        <a href="#" class="boton boton-saber-mas">
-            <span>Botón saber más</span>
-        </a>
-        <button type="button" class="boton boton-saber-mas">
-            <span>Botón saber más</span>
-        </button>
-        ```
+    <Card title="Los botones saber más se utilizan para proporcionar información adicional sobre un producto o servicio.">
+        <Tabs>
+            <TabItem label="Enlace">
+                <button type="button" class="boton boton-saber-mas"><span>Botón saber más</span></button>
+                ```html
+                <a href="#" class="boton boton-secundario boton-agregar">
+                    <span>Botón agregar</span>
+                </a>
+                ```
+            </TabItem>
+            <TabItem label="Botón">
+                <button type="button" class="boton boton-saber-mas"><span>Botón saber más</span></button>
+                ```html
+                <button type="button" class="boton boton-saber-mas">
+                    <span>Botón saber más</span>
+                </button>
+                ```
+            </TabItem>
+        </Tabs>
     </Card>
 </div>
