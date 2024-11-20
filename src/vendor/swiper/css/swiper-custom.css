@@ -1,0 +1,255 @@
+﻿.swiper-container,
+.swiper-macstore-title {
+    padding: 0 0 0 calc((100% - 1220px) / 2);
+}
+
+.swiper-macstore-title,
+.swn-dc__title {
+    color: var(--bblack);
+    letter-spacing: -0.02em;
+}
+
+.swiper-macstore-container {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid var(--gray3);
+    overflow: hidden;
+}
+
+.swiper-macstore--without-border {
+    border-top: none;
+}
+
+.swiper-macstore-title {
+    font-family: sf-pro-display-semibold;
+    font-size: 32px;
+    line-height: 36px;
+    max-height: 72px;
+    margin-top: 32px;
+    overflow: hidden;
+}
+
+.swiper-macstore {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    position: relative;
+    width: 100%;
+}
+
+.mac-swiper {
+    padding: 0;
+}
+
+.macstore-wrapper {
+    padding: 24px 0 32px 2px;
+}
+
+.swiper-slide {
+    width: initial;
+}
+
+.macstore-next-container,
+.macstore-prev-container {
+    position: absolute;
+    margin: auto 0;
+    top: 50%;
+    transform: translateY(-50%);
+    min-height: 97px;
+    max-height: 100%;
+    height: 100%;
+    width: 36px;
+    background-color: var(--wwhite);
+}
+
+.macstore-prev-container {
+    left: 0;
+}
+
+.macstore-next-container {
+    right: 0;
+}
+
+.macstore-prev-container::after {
+    content: url(https://webonline.macstore.mx/img/cx/media/rheel_home_principal_apple/left-arrow-line.png) !important;
+}
+
+.macstore-next-container::after {
+    content: url(https://webonline.macstore.mx/img/cx/media/rheel_home_principal_apple/right-arrow-line.png) !important;
+}
+
+.swiper-button-disabled.macstore-prev-container {
+    display: none;
+}
+
+.swiper-button-disabled.macstore-next-container {
+    opacity: 1 !important;
+    background-color: var(--wwhite);
+}
+
+.swn__swn-card {
+    display: flex;
+    border-radius: 16px;
+    box-shadow: 0 2px 10px #00000014 !important;
+    height: 390px;
+    justify-content: center;
+    max-height: 390px;
+    padding: 16px;
+    width: 288px;
+    content-visibility: auto;
+}
+
+.swn-card__swn-card-link {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+}
+
+    .swn-card__swn-card-link:active,
+    .swn-card__swn-card-link:link {
+        outline: 0;
+        text-decoration: none;
+    }
+
+.swn-card-link__swn-pc {
+    display: grid;
+    height: 172px;
+    max-height: 172px;
+    max-width: 256px;
+    overflow: hidden;
+    place-items: center;
+    width: auto;
+}
+
+.swn-card-link__swn-dc {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 4px;
+    height: auto;
+    width: 256px;
+}
+
+.swn-pc__swn-media {
+    display: flex;
+    position: relative;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.swn-media__image {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    max-height: 172px;
+    max-width: 100%;
+}
+
+.swn-dc__tag {
+    font-family: sf-pro-display-medium !important;
+    font-size: 12px;
+    height: 14px;
+    line-height: 14px;
+    overflow: hidden;
+}
+
+.swn-dc__title {
+    font-family: sf-pro-display-semibold;
+    font-size: 24px;
+    height: 32px;
+    line-height: 32px;
+    overflow: hidden;
+}
+
+.swn-dc__title--aap {
+    height: 64px;
+}
+
+.swn-dc__text--aap {
+    height: auto !important;
+}
+
+.swn-dc__subtitle,
+.swn-dc__text {
+    color: var(--bblack);
+    font-size: 14px;
+    overflow: hidden;
+}
+
+.swn-dc__subtitle {
+    font-family: sf-pro-display-medium;
+    height: 40px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+}
+
+.swn-dc__text {
+    font-family: sf-pro-display-light;
+    height: 66.84px;
+    line-height: 16.71px;
+    letter-spacing: 1px;
+}
+
+@media screen and (max-width: 1249px) {
+    .swiper-container,
+    .swiper-macstore-title {
+        padding: 0 0 0 16px !important;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .swn__swn-card {
+        align-items: center;
+        height: 362px;
+        max-height: 362px;
+        width: 249px;
+    }
+
+    .swn-card-link__swn-pc {
+        height: 144px;
+        justify-content: center;
+        max-width: 216px;
+        max-height: 144px;
+        width: auto;
+    }
+
+    .swn-card-link__swn-dc {
+        width: 216px;
+    }
+
+    .swn-media__image {
+        max-height: 144px;
+    }
+
+    .macstore-prev-container {
+        display: none;
+    }
+
+    .swiper-macstore-title {
+        font-size: 24px;
+        line-height: unset;
+    }
+
+    .swiper-macstore-title--small {
+        margin-top: 16px;
+    }
+
+    .swiper-wrapper--small {
+        padding: 16px 0 32px;
+    }
+
+    .swiper-wrapper--medium {
+        padding: 16px 0;
+    }
+
+    .swiper-wrapper--large {
+        padding: 24px 0 16px;
+    }
+
+    .swiper-container .swiper {
+        padding-left: 2px;
+    }
+}
