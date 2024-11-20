@@ -3,9 +3,10 @@ title: Collapse
 ---
 import { Card, CardGrid, Code, FileTree, Aside, Badge} from '@astrojs/starlight/components';
 import BoostrapJquery from '/src/components/bootstrap/BootstrapJQuery.astro';
-import Collapse from '/src/components/formularios/collapse.astro';
-import '../../../css/radiobutons.css'
+import Collapsefooter from '/src/components/formularios/collapse-footer.astro';
+
 import '/src/vendor/bootstrap/animations.css'
+import '/src/css/collapse-footer.css'
 
 <BoostrapJquery/>
 
@@ -21,5 +22,9 @@ El componente collapse se utiliza para mostrar contenido y ocultarlo dentro de v
     ...
   </div>
 </div>
+<Collapsefooter/>
+<Aside>Es importante recordar que este collapse, unicamente se habre en responsivo, tal cual la funcionalidad de los collapses en el footer  </Aside>
+
+
 
 
