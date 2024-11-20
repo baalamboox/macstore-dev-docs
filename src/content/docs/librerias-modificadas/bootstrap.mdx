@@ -4,7 +4,10 @@ title: 'Bootstrap'
 
 import { FileTree } from '@astrojs/starlight/components';
 import BootstrapJQuery from '/src/components/bootstrap/BootstrapJQuery.astro';
-import Alerts from '/src/components/bootstrap/Alerts.mdx';
+import BasicAlerts from '/src/components/bootstrap/alerts/BasicAlerts.astro';
+import IconAlerts from '/src/components/bootstrap/alerts/IconAlerts.astro';
+
+import '/src/vendor/bootstrap/alerts.css';
 
 <BootstrapJQuery />
 
@@ -16,16 +19,41 @@ y adaptables a diferentes dispositivos, utilizando una combinación de HTML, CSS
 
 ## Estructura archivos
 
+<hr />
+
 <FileTree>
     - bootstrap/
         - css/
             - alerts.css
+            - animations.css
+            - modals.css
         - js/
-            - [bootstrap.min.js](/)
+            - bootstrap.min.js
 </FileTree>
 
-<a href="/src/vendor/bootstrap/alerts.css" download="alerts.css" >Descargar </a>
+La estructura anterior muestra los diferente archivos que conforman Bootstrap modificado para CX MacStore,
+a continuación de enlista una breve descripción de cada archivo:
+
+- **css/**
+    - `alert.css:` Contiene todos los estilos necesarios para el correcto funcionamiento de las alertas.
+    - `animations.css:` Aquí se encuentran todas las animaciones que requiere Bootstrap.
+    - `modals.css:` Aquí se encuentran todas las animaciones que requiere Bootstrap.
+- **js/**
+    - `bootstrap.min.js:` Contiene toda la funcionalidad de la librería de Bootstrap, para hacer funcionar por ejemplo la apertura y cierre de los collapse. 
 
 ## Alertas
 
-<Alerts />
+<hr />
+
+### Alertas básicas
+
+<BasicAlerts />
+
+### Alertas con icono
+
+<IconAlerts />
+
+### Alerta con cierre
+
+<BasicAlerts />
+
