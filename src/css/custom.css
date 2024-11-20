@@ -4,6 +4,11 @@
 
 /* :::::::::: Starlight custum :::::::::: */
 
+.sl-container:where(.astro-7nkwcw3z) {
+    margin-inline: auto;
+    max-width: 55rem;
+}
+
 .card {
     border-color: var(--gray4);
     box-shadow: 2px 4px 10px var(--gray4);
