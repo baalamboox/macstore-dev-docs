@@ -1,0 +1,153 @@
+/* Estilos para el carrusel de imagenes */
+#carrusel-x {
+    margin-bottom: 24px;
+    border-bottom: solid 1px var(--gray3) !important;
+    overflow: revert;
+}
+
+/* Ajusta la imagen al centro del contenedor */
+#carrusel-x img {
+    margin: auto;
+}
+
+/* Contenedor flex donde esta la lista de los indicadores del carrusel de imagenes** */
+.bullets-c {
+    display: flex;
+}
+
+/* Estilos para el contenedor de los indicadores del carrusel de imagenes** */
+#indicadores-carrusel {
+    background-color: var(--wwhite);
+    width: fit-content;
+    height: 48px;
+    padding: 15px 50px;
+    box-shadow: 0 4px 10px #00000017;
+    border-radius: 50px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: calc(-50px / 2);
+    margin: auto;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    z-index: 1;
+}
+
+/* Estilos para los indicadores en general del carrusel de imagenes** */
+#indicadores-carrusel li {
+    background-color: var(--gray3);
+    height: 14px;
+    width: 14px;
+    margin: 0;
+}
+
+/* Estilos para el indicador que este activo en el carrusel de imagenes** */
+#indicadores-carrusel li.active {
+    background-color: var(--gray2);
+    height: 14px;
+    width: 14px;
+    margin: 0;
+}
+
+div#carrusel-x img {
+    max-width: 100%;
+    width: auto;
+    object-fit: contain;
+}
+#carrusel-x .bloquecolor {
+    text-align: center;
+}
+
+/* Media query para funcionar cuando se alcanza un ancho máximo de 768px */
+@media (max-width: 768px) {
+
+    /* Cambia el alto del contenedor de los indicadores */
+    #indicadores-carrusel {
+        height: 23px;
+        bottom: calc(-25px / 2);
+    }
+    img.img-responsive.responsive1920 {
+        height: 617px !important;
+    }
+    #indicadores-carrusel li {
+        height: 10px;
+        width: 10px;
+    }
+        #indicadores-carrusel li.active {
+            height: 10px;
+            width: 10px;
+        }
+}
+@media (max-width: 699px) {
+
+    #carrusel-x img {
+        margin: auto;
+        max-width: 100% !important;
+        height: auto;
+    }
+    #indicadores-carrusel {
+        padding: 12px 46px;
+
+    }
+    div #bloque-chat {
+        margin-left: 0px;
+        align-items: flex-end;
+        justify-content: center;
+        flex-direction: row;
+    }
+   
+}
+    @media (max-width: 451px) {
+        img.img-responsive.responsive1920 {
+            height: auto !important;
+        }
+    }
+
+    @media (max-width: 376px) {
+        img.img-responsive.responsive1920 {
+            height: auto !important;
+        }
+    }
+
+@media screen and (max-width: 767px) {
+    #carrusel-x {
+        margin-bottom: 16px;
+    }
+}
+
+#carrusel-x .banner-home-pagination {
+    background-color: var(--wwhite);
+    width: fit-content;
+    height: 48px;
+    box-shadow: 0 4px 10px #00000017;
+    border-radius: 50px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: calc(-50px / 2);
+    margin: auto;
+    padding: 0 1.2rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    #carrusel-x .banner-home-pagination .swiper-pagination-bullet {
+        height: 12px;
+        width: 12px;
+    }
+
+@media screen and (max-width: 767px) {
+    #carrusel-x .banner-home-pagination {
+        height: 25px;
+        bottom: calc(-25px / 2);
+        padding: 0 32px;
+    }
+
+    #carrusel-x .banner-home-pagination .swiper-pagination-bullet {
+        height: 8px;
+        width: 8px;
+    }
+}
