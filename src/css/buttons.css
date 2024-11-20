@@ -19,8 +19,8 @@
 }
 
 .boton-primario {
-    background-color: var(--bblue);
-    color: var(--wwhite);
+    background-color: var(--bblue) !important;
+    color: var(--wwhite) !important;
 }
 
 .boton-secundario {
@@ -52,3 +52,34 @@
     outline: solid 1px var(--button-primary-hover);
 }
 
+.boton-saber-mas {
+    color: var(--bblue);
+    padding: 0;
+    height: auto;
+    letter-spacing: normal;
+}
+
+.boton-saber-mas > span {
+    text-wrap: balance;
+    text-align: left;
+}
+
+.boton-saber-mas > span > svg {
+    margin-left: 4px;
+    vertical-align: middle;
+    width: 10px;
+}
+
+.boton-saber-mas > span > svg > path {
+    fill: var(--bblue);
+    stroke: var(--bblue);
+}
+
+.boton-saber-mas:hover > span > svg > path {
+    stroke: var(--button-primary-hover);
+}
+
+.boton-saber-mas:hover,
+.boton-saber-mas:focus {
+    color: var(--button-primary-hover);
+}

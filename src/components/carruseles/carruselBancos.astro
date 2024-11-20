@@ -1,63 +1,24 @@
 ---
-title: Banners Bancos
+import "/src/css/banners.css";
 ---
-import '../../../../css/input.css'
-import '../../../../css/input-admin.css'
-import { Card, CardGrid, Code, FileTree, Aside, Badge, Tabs, TabItem } from '@astrojs/starlight/components';
-import BannersHome from '/src/components/carruseles/carruselBancos.astro';
-import Sswiper from '/src/components/swiper/Swiper.astro';
 
+<style>
+    .contenedorx {
+        overflow: hidden;
+    }
+    #carrusel-x {
+        border-bottom: none !important;
+        box-sizing: border-box;
+    }
 
-<Sswiper/>
-## Carrusel principal
-Representan gráficamente los productos principales Apple, promociones bancarias y/o ofertas de productos de terceros,  con un botón CTA a su Landing Page y/o url de campaña o destino,
-se debe considerar estrictamente crear una vista para dispositivos de escritorio y mobile.
-<br>
-
-<BannersHome/>
-
- </br>
-## Caracteristicas
-<br> </br>
-<img src="https://webonline.macstore.mx/img/sliderhome/banner_macbook-pro.webp"  class="img-rounded"> </img>
-<Aside><h5>Banner principal escritorio</h5>
-        <p>Dimensiones 1200px x 600px </p>
-        <p>Formato .jpg y .webp </p> 
-        <p>72 DPI </p>  </Aside>
-
-
-   <br> </br> 
-
-
-<br> </br>
-<img src="https://webonline.macstore.mx/img/sliderhome/banner_macbook-pro_m.webp"  class="img-rounded"> </img>
-<Aside> <h5>Banner principal mobile</h5>
-        <p>Dimensiones 600px x 500px </p>
-        <p>Formato .jpg y .webp </p> 
-        <p>72 DPI </p>  </Aside>
-<br> </br>
-## Integración
-
-    <FileTree>
-        - macstore
-            - css
-                - carrusel-banners.css
-                - swiper-custom.css
-                - swiper.css
-            - js 
-                - jquery-3.7.0.min.js
-                - swiper-custom.min.js
-                - swiper.js
-        - index.html
-    </FileTree>
-
-
-        <Tabs>
-            <TabItem label="HTML">
-              
-                ```html
-              
-      <div class="swiper banner-home-swiper carousel" id="carrusel-id">
+    #carrusel-x img {
+        cursor: pointer;
+    }
+    #carrusel-x .banner-home-pagination {
+    }
+</style>
+<div class="contenedorx">
+    <div class="swiper banner-home-swiper carousel" id="carrusel-x">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <div class="item active">
@@ -191,41 +152,22 @@ se debe considerar estrictamente crear una vista para dispositivos de escritorio
                 </div>
             </div>
         </div>
-        <div class="swiper-pagination banner-paginacion"></div>
+        <div class="swiper-pagination banner-home-pagination"></div>
     </div>
-
-
-                ```
-            </TabItem>
-            <TabItem label="JS">
-               
-                ```JavaScript
-                /* id o clase del elemento disparador de Swiper */ 
-                const bannerHomeSwiper = new Swiper("#carrusel-id", {
-                    slidesPerView: 1,
-                    loop: true,
-                    autoHeight: true,
-                    autoplay: {
-                        delay: 6000,
-                    },
-                    resizeObserver: true,
-                    updateOnWindowResize: true,
-                    pagination: {
-                        /* id o clase del elemento paginador o bullets */ 
-                        el: ".banner-paginacion",
-                        clickable: true,
-                    },
-                });
-         
-                ```
-            </TabItem>
-        </Tabs>
-
-
-
-
-
-
-
-
-
+</div>
+<script>
+    const bannerHomeSwiper = new Swiper(".banner-home-swiper", {
+        slidesPerView: 1,
+        loop: true,
+        autoHeight: true,
+        autoplay: {
+            delay: 6000,
+        },
+        resizeObserver: true,
+        updateOnWindowResize: true,
+        pagination: {
+            el: ".banner-home-pagination",
+            clickable: true,
+        },
+    });
+</script>

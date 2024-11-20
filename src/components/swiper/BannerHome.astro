@@ -1,0 +1,178 @@
+---
+import "/src/css/banners.css";
+---
+
+<div class="swiper banner-home-swiper carousel" id="carrusel-x">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <div class="">
+                <div class="bloquecolor" style="background-color:#@background">
+                    <a href="#">
+                        <picture>
+                            <source
+                                media="(max-width: 700px)"
+                                srcset="@(ruta + imgResolucion2w)"
+                                alt="titulo"
+                                width="500"
+                                height="600"
+                                type="image/webp"
+                            />
+                            <source
+                                media="(max-width: 700px)"
+                                srcset="@(ruta + imgResolucion2)"
+                                alt="titulo"
+                                width="500"
+                                height="600"
+                            />
+                            <source
+                                media="(min-width: 1501px)"
+                                srcset="@(ruta + imgResolucion1w)"
+                                alt="titulo"
+                                width="1400"
+                                height="407"
+                                type="image/webp"
+                            />
+                            <source
+                                media="(min-width: 1501px)"
+                                srcset="@(ruta + imgResolucion1)"
+                                alt="titulo"
+                                width="1400"
+                                height="407"
+                            />
+
+                            <img
+                                src="https://webonline.macstore.mx/img/sliderhome/iPhone_16_Pro_D.webp"
+                                alt="@titulo"
+                                class="img-responsivex"
+                                height="407"
+                                width="1400"
+                                loading="lazy"
+                            />
+                        </picture>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="">
+                <div class="bloquecolor" style="background-color:#@background">
+                    <a href="">
+                        <picture>
+                            <!--banner 3000x494 -->
+
+                            <source
+                                media="(max-width: 700px)"
+                                srcset="@(ruta + imgResolucion2w)"
+                                alt="titulo"
+                                width="500"
+                                height="600"
+                                type="image/webp"
+                            />
+                            <source
+                                media="(max-width: 700px)"
+                                srcset="@(ruta + imgResolucion2)"
+                                alt="titulo"
+                                width="500"
+                                height="600"
+                            />
+                            <source
+                                media="(min-width: 1501px)"
+                                srcset="@(ruta + imgResolucion1w)"
+                                alt="titulo"
+                                width="1400"
+                                height="407"
+                                type="image/webp"
+                            />
+                            <source
+                                media="(min-width: 1501px)"
+                                srcset="@(ruta + imgResolucion1)"
+                                alt="titulo"
+                                width="1400"
+                                height="407"
+                            />
+
+                            <img
+                                src="https://webonline.macstore.mx/img/sliderhome/w10_D.webp"
+                                alt="@titulo"
+                                class="img-responsivex"
+                                height="407"
+                                width="1400"
+                                loading="lazy"
+                            />
+                        </picture>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="">
+                <div class="bloquecolor" style="background-color:#@background">
+                    <a href="">
+                        <picture>
+                            <!--banner 3000x494 -->
+
+                            <source
+                                media="(max-width: 700px)"
+                                srcset="@(ruta + imgResolucion2w)"
+                                alt="titulo"
+                                width="500"
+                                height="600"
+                                type="image/webp"
+                            />
+                            <source
+                                media="(max-width: 700px)"
+                                srcset="@(ruta + imgResolucion2)"
+                                alt="titulo"
+                                width="500"
+                                height="600"
+                            />
+                            <source
+                                media="(min-width: 1501px)"
+                                srcset="@(ruta + imgResolucion1w)"
+                                alt="titulo"
+                                width="1400"
+                                height="407"
+                                type="image/webp"
+                            />
+                            <source
+                                media="(min-width: 1501px)"
+                                srcset="@(ruta + imgResolucion1)"
+                                alt="titulo"
+                                width="1400"
+                                height="407"
+                            />
+
+                            <img
+                                src="https://webonline.macstore.mx/img/sliderhome/ultra_D.webp"
+                                alt="@titulo"
+                                class="img-responsivex"
+                                height="407"
+                                width="1400"
+                                loading="lazy"
+                            />
+                        </picture>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="swiper-pagination banner-home-pagination"></div>
+</div>
+
+
+<script>
+    const bannerHomeSwiper = new Swiper(".banner-home-swiper", {
+        slidesPerView: 1,
+        loop: true,
+        autoHeight: true,
+        // autoplay: {
+        //     delay: 6000,
+        // },
+        resizeObserver: true,
+        updateOnWindowResize: true,
+        pagination: {
+            el: ".banner-home-pagination",
+            clickable: true,
+        },
+    });
+</script>

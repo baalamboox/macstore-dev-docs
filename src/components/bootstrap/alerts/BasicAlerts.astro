@@ -1,0 +1,76 @@
+---
+import { Card, Code, Tabs, TabItem } from "@astrojs/starlight/components";
+
+const basicAlerts = {
+    success: `<div class="alert alert-success" role="alert">Éxito</div>`,
+    info: `<div class="alert alert-info" role="alert">Información</div>`,
+    warning: `<div class="alert alert-warning" role="alert">Advertencia</div>`,
+    error: `<div class="alert alert-danger" role="alert">Error</div>`,
+    specialOffer: `<div class="alert alert-special-offer" role="alert">Oferta especial</div>`,
+    affordability: `<div class="alert alert-affordability" role="alert">Asequibilidad</div>`,
+    orderRelated: `<div class="alert alert-order-related" role="alert">Relacionados</div>`,
+    inStock: `<div class="alert alert-" role="alert">En stock</div>`,
+    storeRelated: `<div class="alert alert-store-related" role="alert">Sugeridos</div>`
+};
+---
+
+<div class="alert alert-warning" role="alert">Advertencia</div>
+<Card title="Si requires mostrar una alerta en caso de advertencia esta es la ideal.">
+    <Code code={ basicAlerts.warning } lang="html" />
+</Card>
+<br />
+<hr />
+<br />
+<div class="alert alert-success" role="alert">Éxito</div>
+<Card title="Si es en caso de éxito, esta es perfecta.">
+    <Code code={ basicAlerts.success } lang="html" />
+</Card>
+<br />
+<hr />
+<br />
+<div class="alert alert-info" role="alert">Información</div>
+<Card title="Para mostrar información simple esta alerta es la adecuada.">
+    <Code code={ basicAlerts.info } lang="html" />
+</Card>       
+<br />
+<hr />
+<br />
+<div class="alert alert-danger" role="alert">Error</div>
+<Card title="En caso de error, lo ideal es que uses esta alerta.">
+    <Code code={ basicAlerts.info } lang="html" />
+</Card>
+<br />
+<hr />
+<br />
+<div class="alert alert-special-offer" role="alert">Oferta especial</div>
+<Card title="Si existe una oferta especial, esta alerta vendría bien.">
+    <Code code={ basicAlerts.info } lang="html" />
+</Card>
+<br />
+<hr />
+<br />
+<div class="alert alert-affordability" role="alert">Asequibilidad</div>
+<Card title="Alerta ">
+    <Code code={ basicAlerts.info } lang="html" />
+</Card>
+<br />
+<hr />
+<br />
+<div class="alert alert-order-related" role="alert">Relacionados</div>
+<Card title="Alerta de información">
+    <Code code={ basicAlerts.info } lang="html" />
+</Card>
+<br />
+<hr />
+<br />
+<div class="alert alert-in-stock" role="alert">En stock</div>
+<Card title="Alerta de información">
+    <Code code={ basicAlerts.info } lang="html" />
+</Card>
+<br />
+<hr />
+<br />
+<div class="alert alert-store-related" role="alert">Sugeridos</div>
+<Card title="Alerta de información">
+    <Code code={ basicAlerts.info } lang="html" />
+</Card>
