@@ -1,21 +1,19 @@
 ---
-import { Card, CardGrid } from '@astrojs/starlight/components';
-import { readdirSync } from 'node:fs';
+import { Card, CardGrid, Code } from '@astrojs/starlight/components';
+import { readdirSync, readFileSync } from 'node:fs';
 const pathCXIcons = "/public/downloads/icons/cx/";
 ---
 <div class="cx-icons-gallery">
     <CardGrid>
         { readdirSync(`.${ pathCXIcons }`).map((pathNameFile) => (
             <Card title={ pathNameFile }>
-                <img src={ '/downloads/icons/cx/' + pathNameFile } width="24" height="24" loading="lazy" />
-                {/* <div class="actions-buttons">
-                    <a href={ `${ '/downloads/icons/cx/' + pathNameFile }` } download={ pathNameFile } class="button-download" title="Descargar" >
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="#0071E3" d="m12 16l-5-5l1.4-1.45l2.6 2.6V4h2v8.15l2.6-2.6L17 11zm-6 4q-.825 0-1.412-.587T4 18v-3h2v3h12v-3h2v3q0 .825-.587 1.413T18 20z"/></svg>
-                    </a>
-                    <button class="button-copy">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="#0071E3" d="M3 18.5v-2h2v2zM3 15v-2h2v2zm0-3.5v-2h2v2zM6.5 22v-2h2v2zM9 18q-.825 0-1.412-.587T7 16V4q0-.825.588-1.412T9 2h9q.825 0 1.413.588T20 4v12q0 .825-.587 1.413T18 18zm1 4v-2h2v2zm-5 0q-.825 0-1.412-.587T3 20h2zm8.5 0v-2h2q0 .825-.587 1.413T13.5 22M3 8q0-.825.588-1.412T5 6v2z"/></svg>
-                    </button>
-                </div> */}
+                <div set:html={readFileSync(`.${ pathCXIcons + pathNameFile }`, 'utf-8')
+                    .replace(/width="\d+"/, 'width="24"')
+                    .replace(/height="\d+"/, 'height="24"')
+                    .replace(/fill="black"*/g, 'fill="currentColor"')
+                }>
+                </div>
+                <Code code={readFileSync(`.${ pathCXIcons + pathNameFile }`, 'utf-8')} lang="html" />
             </Card>
         ))}
     </CardGrid>    

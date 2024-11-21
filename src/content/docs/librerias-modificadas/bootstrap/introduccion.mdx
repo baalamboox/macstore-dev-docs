@@ -1,15 +1,10 @@
 ---
-title: 'Bootstrap'
+title: Introducción
+sidebar:
+    order: 1
 ---
 
 import { FileTree } from '@astrojs/starlight/components';
-import BootstrapJQuery from '/src/components/bootstrap/BootstrapJQuery.astro';
-import BasicAlerts from '/src/components/bootstrap/alerts/BasicAlerts.astro';
-import IconAlerts from '/src/components/bootstrap/alerts/IconAlerts.astro';
-
-import '/src/vendor/bootstrap/alerts.css';
-
-<BootstrapJQuery />
 
 :::tip[Versión: 3.3.7]
 :::
@@ -17,7 +12,7 @@ import '/src/vendor/bootstrap/alerts.css';
 Bootstrap es un librería de desarrollo web gratuito y de código abierto. Su propósito principal es facilitar la creación de sitios web responsivos
 y adaptables a diferentes dispositivos, utilizando una combinación de HTML, CSS y JavaScript.
 
-## Estructura archivos
+## Estructura de archivos
 
 <hr />
 
@@ -26,7 +21,15 @@ y adaptables a diferentes dispositivos, utilizando una combinación de HTML, CSS
         - css/
             - alerts.css
             - animations.css
-            - modals.css
+            - buttons-groups.css
+            - dropdown.css
+            - form-goups.css
+            - grid.css
+            - modal.css
+            - popover.css
+            - tables.css
+            - thumbails.css
+            - tooltip.css
         - js/
             - bootstrap.min.js
 </FileTree>
@@ -40,20 +43,3 @@ a continuación de enlista una breve descripción de cada archivo:
     - `modals.css:` Aquí se encuentran todas las animaciones que requiere Bootstrap.
 - **js/**
     - `bootstrap.min.js:` Contiene toda la funcionalidad de la librería de Bootstrap, para hacer funcionar por ejemplo la apertura y cierre de los collapse. 
-
-## Alertas
-
-<hr />
-
-### Alertas básicas
-
-<BasicAlerts />
-
-### Alertas con icono
-
-<IconAlerts />
-
-### Alerta con cierre
-
-<BasicAlerts />
-

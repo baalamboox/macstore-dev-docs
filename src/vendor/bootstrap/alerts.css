@@ -1,4 +1,5 @@
 ﻿.alert {
+  position: relative;
   padding: 15px;
   border: 1px solid transparent;
   border-radius: 4px;
@@ -45,10 +46,15 @@
 
 .alert-dismissable .close,
 .alert-dismissible .close {
-  position: relative;
-  top: -2px;
-  right: -21px;
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
   color: inherit;
+  margin-top: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 .alert-success {
@@ -65,6 +71,10 @@
   color: #2b542c;
 }
 
+.alert-success > svg > path {
+  fill: var(--ggreen);
+}
+
 .alert-info {
   color: var(--bblue);
   background-color: var(--bblue-alfa-light);
@@ -77,6 +87,10 @@
 
 .alert-info .alert-link {
   color: #245269;
+}
+
+.alert-info > svg > path {
+  fill: var(--bblue);
 }
 
 .alert-warning {
@@ -93,6 +107,10 @@
   color: #66512c;
 }
 
+.alert-warning > svg > path {
+  fill: var(--oorange);
+}
+
 .alert-danger {
   color: var(--rred);
   background-color: var(--rred-alfa-light);
@@ -105,6 +123,10 @@
 
 .alert-danger .alert-link {
   color: #843534;
+}
+
+.alert-danger > svg > path {
+  fill: var(--rred);
 }
 
 .alert-special-offer {
@@ -121,6 +143,10 @@
   color: #843534;
 }
 
+.alert-special-offer > svg > path {
+  fill: var(--special-offer);
+}
+
 .alert-affordability {
   color: var(--affordability);
   background-color: var(--affordability-alfa-light);
@@ -133,6 +159,10 @@
 
 .alert-affordability .alert-link {
   color: #843534;
+}
+
+.alert-affordability > svg > path {
+  fill: var(--affordability);
 }
 
 .alert-order-related {
@@ -149,6 +179,10 @@
   color: #843534;
 }
 
+.alert-order-related > svg > path {
+  fill: var(--order-related);
+}
+
 .alert-in-stock {
   color: var(--in-stock);
   background-color: var(--in-stock-alfa-light);
@@ -163,6 +197,10 @@
   color: #843534;
 }
 
+.alert-in-stock > svg > path {
+  fill: var(--in-stock);
+}
+
 .alert-store-related {
   color: var(--store-related);
   background-color: var(--store-related-alfa-light);
@@ -175,4 +213,8 @@
 
 .alert-store-related .alert-link {
   color: #843534;
+}
+
+.alert-store-related > svg > path {
+  fill: var(--store-related);
 }

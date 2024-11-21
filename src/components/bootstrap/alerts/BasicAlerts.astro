@@ -1,5 +1,5 @@
 ---
-import { Card, Code, Tabs, TabItem } from "@astrojs/starlight/components";
+import { Card, Code } from "@astrojs/starlight/components";
 
 const basicAlerts = {
     success: `<div class="alert alert-success" role="alert">Éxito</div>`,
@@ -14,63 +14,74 @@ const basicAlerts = {
 };
 ---
 
+<h5>⚠️ Alertas para advertencias</h5>
 <div class="alert alert-warning" role="alert">Advertencia</div>
-<Card title="Si requires mostrar una alerta en caso de advertencia esta es la ideal.">
-    <Code code={ basicAlerts.warning } lang="html" />
-</Card>
+<Code code={ basicAlerts.warning } lang="html" frame="terminal" />
+<p>Usa este tipo de alerta cuando se requira mostrar información de advertencia para el usuario.</p>
+
 <br />
 <hr />
-<br />
+
+<h5>✅ Alertas para éxitos</h5>
 <div class="alert alert-success" role="alert">Éxito</div>
-<Card title="Si es en caso de éxito, esta es perfecta.">
-    <Code code={ basicAlerts.success } lang="html" />
-</Card>
+<Code code={ basicAlerts.success } lang="html" frame="terminal" />
+<p>Si requires mostrar una alerta cuando algo haya salido correctamente esta es la ideal.</p>
+
 <br />
 <hr />
-<br />
+
+<h5>ℹ️ Alertas para información</h5>
 <div class="alert alert-info" role="alert">Información</div>
-<Card title="Para mostrar información simple esta alerta es la adecuada.">
-    <Code code={ basicAlerts.info } lang="html" />
-</Card>       
+<Code code={ basicAlerts.info } lang="html" frame="terminal" />
+<p>Para simples mensajes usa este tipo de alerta, va bien.</p>     
+
 <br />
 <hr />
-<br />
+
+<h5>❌ Alertas para errores</h5>
 <div class="alert alert-danger" role="alert">Error</div>
-<Card title="En caso de error, lo ideal es que uses esta alerta.">
-    <Code code={ basicAlerts.info } lang="html" />
-</Card>
+<Code code={ basicAlerts.error } lang="html" frame="terminal" />
+<p>Si lo tuyo es querer llamar la atención del usuario por algún motivo de conflicto, esta alerta es la indicada.</p>
+
 <br />
 <hr />
-<br />
+
+<h5>🎊 Alertas para ofertas especiales</h5>
 <div class="alert alert-special-offer" role="alert">Oferta especial</div>
-<Card title="Si existe una oferta especial, esta alerta vendría bien.">
-    <Code code={ basicAlerts.info } lang="html" />
-</Card>
+<Code code={ basicAlerts.specialOffer } lang="html" frame="terminal"/>
+<p>
+    Las ofertas especiales son una gran opotunidad para captar la atención del usuario,
+    para lograr ello usa este tipo de alertas.
+</p>
 <br />
 <hr />
-<br />
+
+<h5>👌 Alertas para asequibilidad</h5>
 <div class="alert alert-affordability" role="alert">Asequibilidad</div>
-<Card title="Alerta ">
-    <Code code={ basicAlerts.info } lang="html" />
-</Card>
+<Code code={ basicAlerts.affordability } lang="html" frame="terminal" />
+<p>Permite mostrar alertar para que el usuario vea que algo es asequible.</p>
+
 <br />
 <hr />
-<br />
+
+<h5>🏷️ Alertas para relacionados</h5>
 <div class="alert alert-order-related" role="alert">Relacionados</div>
-<Card title="Alerta de información">
-    <Code code={ basicAlerts.info } lang="html" />
-</Card>
+<Code code={ basicAlerts.orderRelated } lang="html" frame="terminal" />
+<p>Si quieres denotar que algo esta en ralación a otro elemento, producto etc. Esta alerta es la ideal.</p>
+
 <br />
 <hr />
-<br />
+
+<h5>🧊 Alertas para stock</h5>
 <div class="alert alert-in-stock" role="alert">En stock</div>
-<Card title="Alerta de información">
-    <Code code={ basicAlerts.info } lang="html" />
-</Card>
+<Code code={ basicAlerts.inStock } lang="html" frame="terminal" />
+<p>Si algún producto o elementos esta en existencia, la alerta de stock es la indicada.</p>
+
 <br />
 <hr />
-<br />
+
+<h5>👆 Alertas para sugeridos</h5>
 <div class="alert alert-store-related" role="alert">Sugeridos</div>
-<Card title="Alerta de información">
-    <Code code={ basicAlerts.info } lang="html" />
-</Card>
+<Code code={ basicAlerts.storeRelated } lang="html" frame="terminal" />
+<p>Para indicarle a usuario una sugerencia, esta alerta es la indicada.</p>
+
