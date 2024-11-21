@@ -39,9 +39,9 @@ export default defineConfig({
 				},
 
 				{
-					label: 'Imágenes',
+					label: 'Home Page',
 					autogenerate: {
-						directory: 'imagenes',
+						directory: 'home',
 					},
 				},
 				{
