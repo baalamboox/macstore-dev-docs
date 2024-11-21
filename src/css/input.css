@@ -374,6 +374,7 @@ option {
 }
 .formulario12{
     text-align: center;
+    margin-top: 10px !important;
 }
 .colorblack label{
     color: inherit !important;
