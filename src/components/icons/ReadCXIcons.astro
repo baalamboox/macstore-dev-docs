@@ -7,7 +7,6 @@ const pathCXIcons = "/public/downloads/icons/cx/";
     <CardGrid>
         { readdirSync(`.${ pathCXIcons }`).map((pathNameFile) => (
             <Card title={ pathNameFile }>
-                {/* <img src={ '/downloads/icons/cx/' + pathNameFile } width="24" height="24" loading="lazy" /> */}
                 <div set:html={readFileSync(`.${ pathCXIcons + pathNameFile }`, 'utf-8')
                     .replace(/width="\d+"/, 'width="24"')
                     .replace(/height="\d+"/, 'height="24"')
