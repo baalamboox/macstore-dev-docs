@@ -7,9 +7,7 @@ import Sswiper from '/src/components/swiper/Swiper.astro';
 
 
 <Sswiper/>
-## Carrusel principal
-Representan gráficamente los productos principales Apple, promociones bancarias y/o ofertas de productos de terceros,  con un botón CTA a su Landing Page y/o url de campaña o destino,
-se debe considerar estrictamente crear una vista para dispositivos de escritorio y mobile.
+Este componente contiene los productos principales LOBs, el orden no puede ser alterado ni su estructura. Únicamente se actualizarán las imágenes y el precio de producto por los futuros lanzamientos.
 <div class="lobs">
   <Card>
 <LobStripe/>
@@ -17,30 +15,350 @@ se debe considerar estrictamente crear una vista para dispositivos de escritorio
 </Card>
 </div>
 ## Caracteristicas
+
+
 <br> </br>
-<img src="https://webonline.macstore.mx/img/sliderhome/pp16.jpg"  class="img-rounded"> </img>
-<Aside><h5>Banner principal escritorio</h5>
-        <p>Dimensiones 1200px x 600px </p>
+<img src="https://webonline.macstore.mx/img/cx/media/rheel_home_principal_apple/iPhone.jpg"  class="img-rounded"> </img>
+
+<Aside><h5>Imagen para items del Carousel</h5>
+        <p>Dimensiones 100px x 60px |  @2x   </p>
         <p>Formato .jpg y .webp </p> 
         <p>72 DPI </p>  </Aside>
 
 
-   <br> </br> 
 
 
-<br> </br>
-<img src="https://webonline.macstore.mx/img/sliderhome/pp16m.jpg"  class="img-rounded"> </img>
-<Aside> <h5>Banner principal mobile</h5>
-        <p>Dimensiones 600px x 500px </p>
-        <p>Formato .jpg y .webp </p> 
-        <p>72 DPI </p>  </Aside>
-<br> </br>
 ## Integración
+        <Tabs>
+            <TabItem label="HTML">
+              
+                ```html
+<div class="swiper-macstore-container swiper-macstore--without-border" id="carruselApple">
+        <div class="swiper-macstore-title swiper-macstore-title--small">
+            Ver todos los productos Apple.
+        </div>
+    <div class="swiper-macstore">
+        <div class="swiper-button-prev macstore-prev-container lob-stripe-prev">
+        </div>
+        <div class="swiper-container">
+            <div class="swiper macstore-swiper lob-stripe">
+                <div class="swiper-wrapper macstore-wrapper swiper-wrapper--small">
+                    <div class="swiper-slide view-all-apple-product-card">
+                        <a href="#">
+                            <div class="lobs-image-container">
+                                <div class="lobs-media">
+                                    <picture>
+                                        <source
+                                            srcset="https://webonline.macstore.mx/img/cx/media/rheel_home_principal_apple/Mac.webp"
+                                        />
+                                        <img
+                                            src="https://webonline.macstore.mx/img/cx/media/rheel_home_principal_apple/Mac.jpg"
+                                            class="img-responsive"
+                                            height="84"
+                                            width="84"
+                                            loading="lazy"
+                                            alt="Mac"
+                                        />
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="lobs-details-container">
+                                <div class="lobs-title">Mac</div>
+
+                                <div class="lobs-price">Desde $11,499.00</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide view-all-apple-product-card">
+                        <a href="#">
+                            <div class="lobs-image-container">
+                                <div class="lobs-media">
+                                    <picture>
+                                        <source
+                                            srcset="https://webonline.macstore.mx/img/cx/media/rheel_home_principal_apple/iPhone.webp"
+                                        />
+                                        <img
+                                            src="https://webonline.macstore.mx/img/cx/media/rheel_home_principal_apple/iPhone.jpg"
+                                            class="img-responsive"
+                                            height="84"
+                                            width="84"
+                                            loading="lazy"
+                                            alt="iPhone"
+                                        />
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="lobs-details-container">
+                                <div class="lobs-title">
+                                    <span>iPhone</span>
+                                </div>
+
+                                <div class="lobs-price">
+                                    <span>Desde $10,499.00</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide view-all-apple-product-card">
+                        <a href="#">
+                            <div class="lobs-image-container">
+                                <div class="lobs-media">
+                                    <picture>
+                                        <source
+                                            srcset="https://webonline.macstore.mx/img/cx/media/rheel_home_principal_apple/iPad.webp"
+                                        />
+                                        <img
+                                            src="https://webonline.macstore.mx/img/cx/media/rheel_home_principal_apple/iPad.jpg"
+                                            class="img-responsive"
+                                            height="84"
+                                            width="84"
+                                            loading="lazy"
+                                            alt="iPad"
+                                        />
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="lobs-details-container">
+                                <div class="lobs-title"><span>iPad</span></div>
+
+                                <div class="lobs-price">
+                                    <span> Desde $4,999.00</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide view-all-apple-product-card">
+                        <a href="#">
+                            <div class="lobs-image-container">
+                                <div class="lobs-media">
+                                    <picture>
+                                        <source
+                                            srcset="https://webonline.macstore.mx/img/cx/media/rheel_home_principal_apple/apple_watch.webp"
+                                        />
+                                        <img
+                                            src="https://webonline.macstore.mx/img/cx/media/rheel_home_principal_apple/apple_watch.jpg"
+                                            class="img-responsive"
+                                            height="84"
+                                            width="84"
+                                            loading="lazy"
+                                            alt="Watch"
+                                        />
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="lobs-details-container">
+                                <div class="lobs-title">
+                                    <span> Watch</span>
+                                </div>
+
+                                <div class="lobs-price">
+                                    <span>Desde $4,599.00</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide view-all-apple-product-card">
+                        <a href="#">
+                            <div class="lobs-image-container">
+                                <div class="lobs-media">
+                                    <picture>
+                                        <source
+                                            srcset="https://webonline.macstore.mx/img/cx/media/rheel_home_principal_apple/music.webp"
+                                        />
+                                        <img
+                                            src="https://webonline.macstore.mx/img/cx/media/rheel_home_principal_apple/music.jpg"
+                                            class="img-responsive"
+                                            height="84"
+                                            width="84"
+                                            loading="lazy"
+                                            alt="Music"
+                                        />
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="lobs-details-container">
+                                <div class="lobs-title">
+                                    <span> Music</span>
+                                </div>
+
+                                <div class="lobs-price">
+                                    <span> Desde $549.00</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide view-all-apple-product-card">
+                        <a href="#">
+                            <div class="lobs-image-container">
+                                <div class="lobs-media">
+                                    <picture>
+                                        <source
+                                            srcset="https://webonline.macstore.mx/img/cx/media/rheel_home_principal_apple/apple_tv.webp"
+                                        />
+                                        <img
+                                            src="https://webonline.macstore.mx/img/cx/media/rheel_home_principal_apple/apple_tv.jpg"
+                                            class="img-responsive"
+                                            height="84"
+                                            width="84"
+                                            loading="lazy"
+                                            alt="TV & Home"
+                                        />
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="lobs-details-container">
+                                <div class="lobs-title">
+                                    <span> TV & Home </span>
+                                </div>
+
+                                <div class="lobs-price">
+                                    <span> Desde $2,299.00</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide view-all-apple-product-card">
+                        <a href="#">
+                            <div class="lobs-image-container">
+                                <div class="lobs-media">
+                                    <picture>
+                                        <source
+                                            srcset="https://webonline.macstore.mx/img/cx/media/rheel_home_principal_apple/accesorios.webp"
+                                        />
+                                        <img
+                                            src="https://webonline.macstore.mx/img/cx/media/rheel_home_principal_apple/accesorios.jpg"
+                                            class="img-responsive"
+                                            height="84"
+                                            width="84"
+                                            loading="lazy"
+                                            alt="Accesorios"
+                                        />
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="lobs-details-container">
+                                <div class="lobs-title">
+                                    <span> Accesorios</span>
+                                </div>
+
+                                <div class="lobs-price">
+                                    <span> Desde $89.00</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide view-all-apple-product-card">
+                        <a href="#">
+                            <div class="lobs-image-container">
+                                <div class="lobs-media">
+                                    <picture>
+                                        <source
+                                            srcset="https://webonline.macstore.mx/img/cx/media/rheel_home_principal_apple/airtag.webp"
+                                        />
+                                        <img
+                                            src="https://webonline.macstore.mx/img/cx/media/rheel_home_principal_apple/airtag.jpg"
+                                            class="img-responsive"
+                                            height="84"
+                                            width="84"
+                                            loading="lazy"
+                                            alt="AirTag"
+                                        />
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="lobs-details-container">
+                                <div class="lobs-title">
+                                    <span> AirTag</span>
+                                </div>
+
+                                <div class="lobs-price">
+                                    <span> Desde $649.00 </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-next macstore-next-container lob-stripe-next">
+        </div>
+    </div>
+</div>
+
+
+                ```
+            </TabItem>
+            <TabItem label="JS">
+               
+                ```js
+             
+                   /*clase del elemento disparador de Swiper , se debe importar la clase de SwiperCustom en el layout o vista*/ 
+                    const swiperCustom = new SwiperCustom({
+                        swiperNameClass: "lob-stripe",
+                        slidesPerView: 8,
+                        spaceBetween: 40,
+                        loop: false,
+                        breakPoints: {
+                            320: {
+                                slidesPerView: "auto",
+                                spaceBetween: 40,
+                                loop: true,
+                            },
+                            480: {
+                                slidesPerView: "auto",
+                                spaceBetween: 40,
+                                loop: true,
+                            },
+                            576: {
+                                slidesPerView: "auto",
+                                spaceBetween: 40,
+                                loop: true,
+                            },
+                            768: {
+                                slidesPerView: "auto",
+                                spaceBetween: 40,
+                                loop: false,
+                            },
+                            992: {
+                                slidesPerView: "auto",
+                                spaceBetween: 40,
+                                loop: false,
+                            },
+                            1200: {
+                                slidesPerView: "auto",
+                                spaceBetween: 40,
+                                loop: false,
+                            },
+                            1400: {
+                                slidesPerView: "auto",
+                                spaceBetween: 40,
+                                loop: false,
+                            },
+                        },
+                        enableEventOn: true,
+                        enablePaginationEl: false,
+                    });
+
+
+                
+         
+                ```
+            </TabItem>
+        </Tabs>
+
+
+
+
+
+
 
     <FileTree>
         - macstore
             - css
-                - carrusel-banners.css
+                - lob-stripe.css
                 - swiper-custom.css
                 - swiper.css
             - js 
@@ -49,178 +367,6 @@ se debe considerar estrictamente crear una vista para dispositivos de escritorio
                 - swiper.js
         - index.html
     </FileTree>
-
-
-        <Tabs>
-            <TabItem label="HTML">
-              
-                ```html
-              
-      <div class="swiper banner-home-swiper carousel" id="carrusel-id">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <div class="item active">
-                    <div class="bloquecolor" style="background-color:#000000">
-                        <a href="#">
-                            <picture>
-                                <source
-                                    media="(max-width: 700px)"
-                                    srcset="https://webonline.macstore.mx/img/sliderhome/iPhone_16_Pro_M.webp"
-                                    width="500"
-                                    height="600"
-                                    type="image/webp"
-                                />
-                                <source
-                                    media="(max-width: 700px)"
-                                    srcset="https://webonline.macstore.mx/img/sliderhome/iPhone_16_Pro_M.jpg"
-                                    width="500"
-                                    height="600"
-                                />
-                                <source
-                                    media="(min-width: 1501px)"
-                                    srcset="https://webonline.macstore.mx/img/sliderhome/iPhone_16_Pro_D.webp"
-                                    width="1400"
-                                    height="407"
-                                    type="image/webp"
-                                />
-                                <source
-                                    media="(min-width: 1501px)"
-                                    srcset="https://webonline.macstore.mx/img/sliderhome/iPhone_16_Pro_D.jpg"
-                                    width="1400"
-                                    height="407"
-                                />
-                                <img
-                                    src="https://webonline.macstore.mx/img/sliderhome/iPhone_16_Pro_D.jpg"
-                                    alt="iPhone 16 Pro"
-                                    class="img-responsivex"
-                                    height="407"
-                                    width="1400"
-                                    loading="lazy"
-                                />
-                            </picture>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="item">
-                    <div class="bloquecolor" style="background-color:#f6f5f8">
-                        <a href="#">
-                            <picture>
-                                <source
-                                    media="(max-width: 700px)"
-                                    srcset="https://webonline.macstore.mx/img/sliderhome/banner_macbook-pro_m.webp"
-                                    width="500"
-                                    height="600"
-                                    type="image/webp"
-                                />
-                                <source
-                                    media="(max-width: 700px)"
-                                    srcset="https://webonline.macstore.mx/img/sliderhome/banner_macbook-pro_m.jpg"
-                                    width="500"
-                                    height="600"
-                                />
-                                <source
-                                    media="(min-width: 1501px)"
-                                    srcset="https://webonline.macstore.mx/img/sliderhome/banner_macbook-pro.webp"
-                                    width="1400"
-                                    height="407"
-                                    type="image/webp"
-                                />
-                                <source
-                                    media="(min-width: 1501px)"
-                                    srcset="https://webonline.macstore.mx/img/sliderhome/banner_macbook-pro.jpg"
-                                    width="1400"
-                                    height="407"
-                                />
-                                <img
-                                    src="https://webonline.macstore.mx/img/sliderhome/banner_macbook-pro.jpg"
-                                    alt="MacBook Pro M4"
-                                    height="407"
-                                    width="1400"
-                                    loading="lazy"
-                                />
-                            </picture>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="item">
-                    <div class="bloquecolor" style="background-color:#000000">
-                        <a href="#">
-                            <picture>
-                                <source
-                                    media="(max-width: 700px)"
-                                    srcset="https://webonline.macstore.mx/img/sliderhome/banner_imac_m.webp"
-                                    width="500"
-                                    height="600"
-                                    type="image/webp"
-                                />
-                                <source
-                                    media="(max-width: 700px)"
-                                    srcset="https://webonline.macstore.mx/img/sliderhome/banner_imac_m.jpg"
-                                    width="500"
-                                    height="600"
-                                />
-                                <source
-                                    media="(min-width: 1501px)"
-                                    srcset="https://webonline.macstore.mx/img/sliderhome/banner_imac.webp"
-                                    width="1400"
-                                    height="407"
-                                    type="image/webp"
-                                />
-                                <source
-                                    media="(min-width: 1501px)"
-                                    srcset="https://webonline.macstore.mx/img/sliderhome/banner_imac.jpg"
-                                    width="1400"
-                                    height="407"
-                                />
-                                <img
-                                    src="https://webonline.macstore.mx/img/sliderhome/banner_imac.jpg"
-                                    alt="iMac M4"
-                                    class="img-responsivex"
-                                    height="407"
-                                    width="1400"
-                                    loading="lazy"
-                                />
-                            </picture>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="swiper-pagination banner-paginacion"></div>
-    </div>
-
-
-                ```
-            </TabItem>
-            <TabItem label="JS">
-               
-                ```JavaScript
-                /* id o clase del elemento disparador de Swiper */ 
-                const bannerHomeSwiper = new Swiper("#carrusel-id", {
-                    slidesPerView: 1,
-                    loop: true,
-                    autoHeight: true,
-                    autoplay: {
-                        delay: 6000,
-                    },
-                    resizeObserver: true,
-                    updateOnWindowResize: true,
-                    pagination: {
-                        /* id o clase del elemento paginador o bullets */ 
-                        el: ".banner-paginacion",
-                        clickable: true,
-                    },
-                });
-         
-                ```
-            </TabItem>
-        </Tabs>
-
-
 
 
 
