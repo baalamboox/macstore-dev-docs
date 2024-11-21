@@ -13,23 +13,26 @@ import '../../../css/input-admin.css'
 import '../../../css/buttons.css'
 
 Componentes personalizados para la implementacion de formularios
-
-## Input text 
 Dentro del proyecto se utilizan dos tipos de input text,  el primero  se usa principalmente en el proyecto de CX
 y el segundo es el input normal que se usa para formularios para el administrativo
 
-<Aside>Para que los input de cx funcionen en diferentes navegadores es nesesario agregar un id al input y que este sea el mismo que el for del label.  </Aside>
+<Aside>Para que los input de cx funcionen en diferentes navegadores es necesario agregar un id al input y que este sea el mismo que el for del label.  </Aside>
+
+## Ejmplo de formulario
 <div class="inputs formulario">
-  <Card title="Ejemplo de formulario" icon="setting">
+  <Card title="Formulario de iniciar sesión" icon="setting">
+
 <div class="entryarea w-100">
     <input  class="inputani " maxlength="64" type="text" required />
     <label class="labelline" > Usuario</label>
        
 </div>
   <InputPassword/>
+<div class="formulario12">
   <button type="button" class="boton boton-primario">
     <span>Botón primario</span>
 </button>
+</div>
 <div class="tabb-m">
 <Tabs>
 <TabItem label="HTML">
@@ -204,6 +207,7 @@ y el segundo es el input normal que se usa para formularios para el administrati
      }
  }); 
  ```
+ <Aside>Para su correcta funcionalidad, es importante cambiando el id del input y el label, cada que se duplique este componente </Aside>
 </TabItem>
  </Tabs>
 </div>
@@ -211,7 +215,7 @@ y el segundo es el input normal que se usa para formularios para el administrati
 
 
 
-<Aside>Para su correcta funcionalidad, es importante agregar el js referenciando el id del input y el label de forma correspondiente cada que se duplique este componente  </Aside>
+
   </Card>
 
 </div>
@@ -254,11 +258,12 @@ var labelinput = document.getElementById("labelnws1");
     }
 }); 
 ```
+
+<Aside>Para su correcta funcionalidad, es importante cambiando el id del input y el label, cada que se duplique este componente </Aside>
 </TabItem>
  </Tabs>
 </div>
 
-<Aside>Para su correcta funcionalidad, es importante agregar el js referenciando el id del input y el label de forma correspondiente cada que se duplique este componente  </Aside>
   </Card>
 
 </div>
@@ -405,18 +410,30 @@ var labelinput = document.getElementById("labelnws1");
  </Tabs>
 </div>
 
-
-              <Aside>Para poder visualizar los input radio de forma correcta, es requerido importar la hoja de estilos llamada <Badge text="radiobutons.css" variant="note" /> </Aside>
   </Card>
 
 </div>
+<div class="inputs">
+:::caution[¡IMPORTANTE!]
+    Para poder visualizar los input radio de forma correcta, es requerido importar la hoja de estilos llamada <Badge text="radiobutons.css" variant="note" />
+    <FileTree>
+        - public
+            - css
+                - radiobutons.css
+                
+        - index.astro
+    </FileTree>
+   
+:::
+</div>
+
 
 
 
 ## Check-input
 <div class="inputs">
   <Card title="Checkbox" icon="setting">
-    <label for="terminos_registro" class="check-group crpt-2">
+    <label for="terminos_registro" class="check-group colorblack crpt-2">
                 <input type="checkbox" class="check-input" id="terminos_registro" required />
                 <span class="check-custom"></span>
                 <label for="terminos_registro" class="check-label checkregister mb-0">
@@ -427,7 +444,7 @@ var labelinput = document.getElementById("labelnws1");
 <Tabs>
 <TabItem label="HTML">
  ```html
-<label for="terminos_registro" class="check-group crpt-2">
+<label for="terminos_registro" class="check-group colorblack crpt-2">
     <input type="checkbox" class="check-input" id="terminos_registro" required />
      <span class="check-custom"></span>
     <label for="terminos_registro" class="check-label checkregister mb-0">ejemplo</label>
@@ -437,7 +454,20 @@ var labelinput = document.getElementById("labelnws1");
  </Tabs>
 </div>
 
-             <Aside>Para poder visualizar los check input de forma correcta, es requerido importar la hoja de estilos llamada <Badge text="radiobutons.css" variant="note" /> </Aside>
+            
   </Card>
 
+</div>
+<div class="inputs">
+:::caution[¡IMPORTANTE!]
+    Para poder visualizar los Check-input de forma correcta, es requerido importar la hoja de estilos llamada <Badge text="radiobutons.css" variant="note" />
+    <FileTree>
+        - public
+            - css
+                - radiobutons.css
+                
+        - index.astro
+    </FileTree>
+   
+:::
 </div>
