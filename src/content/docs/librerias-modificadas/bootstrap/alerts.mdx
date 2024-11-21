@@ -1,0 +1,56 @@
+---
+title: "Alertas"
+---
+
+import { Icons, LinkButton } from '@astrojs/starlight/components';
+
+import BootstrapJQuery from '/src/components/bootstrap/BootstrapJQuery.astro';
+import BasicAlerts from '/src/components/bootstrap/alerts/BasicAlerts.astro';
+import IconAlerts from '/src/components/bootstrap/alerts/IconAlerts.astro';
+import CloseAlerts from '/src/components/bootstrap/alerts/CloseAlerts.astro';
+
+import '/src/vendor/bootstrap/alerts.css';
+
+<BootstrapJQuery />
+
+<div class="alerts">
+
+    Las alertas de Bootstrap son componentes visuales que permiten mostrar mensajes importantes al usuario. Estas alertas pueden ser básicas,
+    con icono o con un botón de cierre. Cada tipo de alerta tiene un propósito específico y puede ser personalizada según sea necesario.
+
+    :::note[Clasificación]
+        Las alertas se clasifican en tres tipos:
+        - **Alertas básicas.**
+        - **Alertas con icono.**
+        - **Alerta con botón de cierre.**
+    :::
+
+    ### Alertas básicas
+
+    Las alertas básicas solo llevan algo de texto, no debe llevar bastante ya que el contenido
+    se vería saturado, para CX MacStore se personalizaron y crearon las siguientes:
+
+    <BasicAlerts />
+
+    ### Alertas con icono
+
+    Las alertas con icono al igual que las alertas básicas además de llevar texto, se acompaña el mismo
+    de un icono del lado izquierdo.
+
+    :::tip[Consejo]
+        Si quieres cambiar los iconos de las alertas, solo tienes que ir al apartado de Iconos CX y elegir el
+        icono que más te guste y reemplazarlo en la estructra HTML de la alerta.
+
+        <LinkButton href="/iconos/iconos-cx/" variant="secondary" icon="external" iconPlacement="start">Ir a Iconos CX</LinkButton>
+    :::
+
+    <IconAlerts />
+
+    ### Alerta con cierre
+
+    Las alertas con icono de cierre al igual que las alertas básicas y con icono, llevan texto y un icono del lado izquierdo, pero a
+    diferencia de las anteriores, estas llevan un botón de cierre en la parte derecha que desaparecera la alerta.
+
+    <CloseAlerts />
+
+</div>

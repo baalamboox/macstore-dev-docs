@@ -1,38 +1,47 @@
 ---
 import { Card, Code } from "@astrojs/starlight/components";
 
-const alerts = `
-<div class="alert alert-success" role="alert">Éxito</div>
-<div class="alert alert-info" role="alert">Información</div>
-<div class="alert alert-warning" role="alert">Advertencia</div>
-<div class="alert alert-danger" role="alert">Error</div>
-<div class="alert alert-special-offer" role="alert">Oferta especial</div>
-<div class="alert alert-affordability" role="alert">Asequibilidad</div>
-<div class="alert alert-order-related" role="alert">Relacionados</div>
-<div class="alert alert-in-stock" role="alert">En stock</div>
-<div class="alert alert-store-related" role="alert">Sugeridos</div>
-`;
+const iconAlerts = {
+    success: `
+<div class="alert alert-success alert-flex" role="alert">
+    <svg viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M9.36719 17.8281C5.01562 17.8281 1.39844 14.2109 1.39844 9.85938C1.39844 5.5 5.00781 1.89062 9.35938 1.89062C13.7188 1.89062 17.3359 5.5 17.3359 9.85938C17.3359 14.2109 13.7266 17.8281 9.36719 17.8281ZM8.49219 13.6797C8.75781 13.6797 8.98438 13.5547 9.14844 13.2969L12.8203 7.51562C12.9141 7.35156 13.0156 7.17188 13.0156 7C13.0156 6.63281 12.6953 6.39844 12.3516 6.39844C12.1484 6.39844 11.9453 6.52344 11.7969 6.75781L8.46094 12.1172L6.875 10.0703C6.67969 9.8125 6.50781 9.74219 6.28125 9.74219C5.92969 9.74219 5.65625 10.0312 5.65625 10.3828C5.65625 10.5625 5.72656 10.7344 5.84375 10.8906L7.80469 13.2969C8.00781 13.5703 8.22656 13.6797 8.49219 13.6797Z" fill="#00AA00"/>
+    </svg>
+    Éxito
+</div>
+    `,
+    error: `
+<div class="alert alert-danger alert-flex" role="alert">
+    <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M2.61681 2.61684C2.73501 2.49863 2.87855 2.43953 3.04741 2.43953C3.21628 2.43953 3.3577 2.49652 3.47169 2.6105L7.75243 6.89124L12.0268 2.61683C12.1408 2.50285 12.2801 2.44375 12.4448 2.43953C12.6136 2.43953 12.7572 2.49863 12.8754 2.61684C12.9936 2.73504 13.0527 2.87858 13.0527 3.04744C13.0527 3.21631 12.9957 3.35773 12.8817 3.47172L8.60731 7.74612L12.8754 12.0142C12.9936 12.1324 13.0527 12.2759 13.0527 12.4448C13.0527 12.6137 12.9936 12.7572 12.8754 12.8754C12.7572 12.9936 12.6136 13.0527 12.4448 13.0527C12.2801 13.0485 12.1387 12.9873 12.0205 12.8691L7.75243 8.601L3.47169 12.8817C3.3577 12.9957 3.21628 13.0527 3.04741 13.0527C2.87855 13.0527 2.73501 12.9936 2.61681 12.8754C2.4986 12.7572 2.4395 12.6137 2.4395 12.4448C2.44372 12.2802 2.50282 12.1408 2.61681 12.0269L6.89755 7.74612L2.61681 3.46538C2.50282 3.3514 2.44372 3.21209 2.4395 3.04744C2.4395 2.87858 2.4986 2.73504 2.61681 2.61684Z" fill="black"/>
+    </svg>
+    Éxito
+</div>
+    `,
+};
+
 ---
 
 <link rel="stylesheet" href="/src/vendor/bootstrap/css/alerts.css" />
 
-<Card title="Si quieres mostrar algun tipo de contenido como texto que llame la antención al usuario, las alertas son recomendadas.">
+<Card title="😎 Ejemplos de alertas con iconos">
     <div class="alert alert-success alert-flex" role="alert">
-        <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M9.36719 17.8281C5.01562 17.8281 1.39844 14.2109 1.39844 9.85938C1.39844 5.5 5.00781 1.89062 9.35938 1.89062C13.7188 1.89062 17.3359 5.5 17.3359 9.85938C17.3359 14.2109 13.7266 17.8281 9.36719 17.8281ZM8.49219 13.6797C8.75781 13.6797 8.98438 13.5547 9.14844 13.2969L12.8203 7.51562C12.9141 7.35156 13.0156 7.17188 13.0156 7C13.0156 6.63281 12.6953 6.39844 12.3516 6.39844C12.1484 6.39844 11.9453 6.52344 11.7969 6.75781L8.46094 12.1172L6.875 10.0703C6.67969 9.8125 6.50781 9.74219 6.28125 9.74219C5.92969 9.74219 5.65625 10.0312 5.65625 10.3828C5.65625 10.5625 5.72656 10.7344 5.84375 10.8906L7.80469 13.2969C8.00781 13.5703 8.22656 13.6797 8.49219 13.6797Z" fill="#00AA00"/>
         </svg>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius ea magni ad ipsa, dolorum beatae veritatis officia nisi ducimus et itaque adipisci omnis sit debitis reprehenderit atque praesentium! Obcaecati, eius.
+        Éxito
     </div>
-    <div class="alert alert-info alert-dismissible" role="alert">
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        Información
+    <Code code={ iconAlerts.success } lang="html" frame="terminal" />
+    <br />
+    <hr />
+    <br />
+    <div class="alert alert-danger alert-flex" role="alert">
+        <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.61681 2.61684C2.73501 2.49863 2.87855 2.43953 3.04741 2.43953C3.21628 2.43953 3.3577 2.49652 3.47169 2.6105L7.75243 6.89124L12.0268 2.61683C12.1408 2.50285 12.2801 2.44375 12.4448 2.43953C12.6136 2.43953 12.7572 2.49863 12.8754 2.61684C12.9936 2.73504 13.0527 2.87858 13.0527 3.04744C13.0527 3.21631 12.9957 3.35773 12.8817 3.47172L8.60731 7.74612L12.8754 12.0142C12.9936 12.1324 13.0527 12.2759 13.0527 12.4448C13.0527 12.6137 12.9936 12.7572 12.8754 12.8754C12.7572 12.9936 12.6136 13.0527 12.4448 13.0527C12.2801 13.0485 12.1387 12.9873 12.0205 12.8691L7.75243 8.601L3.47169 12.8817C3.3577 12.9957 3.21628 13.0527 3.04741 13.0527C2.87855 13.0527 2.73501 12.9936 2.61681 12.8754C2.4986 12.7572 2.4395 12.6137 2.4395 12.4448C2.44372 12.2802 2.50282 12.1408 2.61681 12.0269L6.89755 7.74612L2.61681 3.46538C2.50282 3.3514 2.44372 3.21209 2.4395 3.04744C2.4395 2.87858 2.4986 2.73504 2.61681 2.61684Z" fill="black"/>
+        </svg>
+        Error
     </div>
-    <div class="alert alert-warning alert-flex" role="alert">Advertencia</div>
-    <div class="alert alert-danger" role="alert">Error</div>
-    <div class="alert alert-special-offer" role="alert">Oferta especial</div>
-    <div class="alert alert-affordability" role="alert">Asequibilidad</div>
-    <div class="alert alert-order-related" role="alert">Relacionados</div>
-    <div class="alert alert-in-stock" role="alert">En stock</div>
-    <div class="alert alert-store-related" role="alert">Sugeridos</div>
-    <Code code={ alerts } lang="html" />
+    <Code code={ iconAlerts.error } lang="html" frame="terminal" />
+
+    <p>La clase <code dir="auto">alert-flex</code> hace que la alerta junto con el icono mantenga la relación de espacio aunque se haga pequeña y siempre el contenido este alineado.</p>
 </Card>
