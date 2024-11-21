@@ -251,7 +251,16 @@ padding-bottom: 0px;
 }
 
 .lobs .card .title{
-display: none;
-    
-    
-    }
+    display: none;
+}
+
+
+/* :::::::::: Bootstrap :::::::::: */
+
+.alerts .expressive-code .frame.is-terminal .header {
+    border-radius: 4px 4px 0px 0px;
+}
+
+.alerts .expressive-code .frame pre {
+    border-radius: 0px 0px 4px 4px !important;
+}
