@@ -1,0 +1,346 @@
+﻿.modal {
+    padding-right: 0 !important
+}
+
+.regaloss,
+·modal_pdp_bancos .modal-content {
+    padding: 10px
+}
+
+.modal-border .modal-content {
+    border: 2px solid var(--bblue);
+    border-radius: 20px
+}
+
+#buenFin-Promociones {
+    width: auto
+}
+
+table#tablaB .cuerpoBanco {
+    font-size: 12px;
+    margin-top: 0;
+    text-align: left !important
+}
+
+td#fisica p:first-child,
+td#linea p:first-child {
+    font-size: 16px;
+    font-family: sf-pro-display-semibold;
+    color: var(--affordability)
+}
+
+#modal_ayuda_pdp .modal-body h2 {
+    text-align: left;
+    font-size: 34px;
+    line-height: 36px;
+    margin-top: 0
+}
+
+#modal_ayuda_pdp .modal-body p,
+#modal_ayuda_pdp .modal-body ul {
+    font-family: sf-pro-text-light;
+    font-size: 17px;
+    line-height: 24px;
+    text-align: left
+}
+
+#modal_ayuda_pdp .modal-body p {
+    margin: 0
+}
+
+#modal_ayuda_pdp .modal-body ul {
+    padding-inline-start: 1em
+}
+
+#modal_ayuda_pdp .modal-body ul>li {
+    padding-top: 1rem
+}
+
+#modal_ayuda_pdp .modal-body .pdp-subtitle {
+    color: var(--bblack);
+    font-family: sf-pro-text-medium;
+    font-size: 21px !important
+}
+
+#modal_ayuda_pdp .modal-content {
+    padding: 60px
+}
+
+#modal_ayuda_pdp .memories-container {
+    margin-top: 46px
+}
+
+#modal_ayuda_pdp .memories-container>.memory-item:last-child {
+    border-bottom: 1px solid var(--gray3)
+}
+
+#modal_ayuda_pdp .memory-item {
+    display: grid;
+    border-top: 1px solid var(--gray3);
+    grid-template-columns: 8rem 1fr;
+    gap: 34px;
+    padding: 37px 0 41px;
+    text-align: start
+}
+
+#modal_ayuda_pdp .memory-size {
+    font-family: sf-pro-display-medium;
+    font-size: 24px
+}
+
+#modal_ayuda_pdp .pdp-modal-cite {
+    display: block;
+    color: var(--gray2);
+    font-family: sf-pro-text-light;
+    font-size: 14px;
+    margin-top: 2.6rem;
+    word-break: break-word
+}
+
+div#modal_ayuda_pdp .modal-body {
+    padding: 15px
+}
+
+#modal_pdp_regalos .modal-content {
+    padding: 45px
+}
+
+.item-regalos {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    border-bottom: 1px solid silver;
+    padding-top: 10px;
+    padding-bottom: 10px
+}
+
+.regaloss {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.regaloss img {
+    margin: auto
+}
+
+div#modalRegalos .modal-content {
+    border-radius: 15px
+}
+
+.txt-reg {
+    justify-content: normal
+}
+
+.item-regalos:first-child {
+    border-top: 1px solid silver
+}
+
+.precio-sku {
+    font-size: 14px
+}
+
+#btn-cerrar-regalos {
+    background-color: #000;
+    border: none;
+    transition: .3s;
+    padding: 10px 40px;
+    border-radius: 10px
+}
+
+#btn-cerrar-regalos:hover {
+    background-color: silver;
+    border: none
+}
+
+div#regalos-pdp h3 {
+    margin-top: -5px;
+    margin-bottom: 0
+}
+
+.txt-sku {
+    font-size: 16px;
+    margin-bottom: -10px
+}
+
+.sugeridos .txt-sku {
+    margin-bottom: 20px
+}
+
+span.botones-sugeridos a {
+    margin-left: 10px
+}
+
+.sugeridos {
+    border: none !important
+}
+
+#modal_pdp_sugeridos .modal-content {
+    padding: 45px 45px 30px
+}
+
+#sugeridosc {
+    position: inherit
+}
+
+@media screen and (max-width:768px) {
+    #modal_pdp_bancos .modal-content {
+        padding: 15px
+    }
+
+    #modal_pdp_bancos td {
+        white-space: unset;
+        width: 100%
+    }
+}
+
+.processors-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 64px;
+    padding: 16px 32px
+}
+
+.processor-text {
+    font-family: sf-pro-display-light;
+    font-size: 14px !important
+}
+
+.processor-title {
+    font-family: sf-pro-display-bold !important;
+    font-size: 16px
+}
+
+.processor-list {
+    font-family: sf-pro-display-light;
+    font-size: 14px !important;
+    line-height: normal;
+    padding-top: 0 !important
+}
+
+.descripcionpromo,
+.legalpromo {
+    font-family: sf-pro-text-light
+}
+
+@media screen and (max-width:991px) {
+    .sugeridos {
+        grid-template-columns: 1fr
+    }
+
+    .sugeridos .dat {
+        text-align: center
+    }
+
+    .botones-sugeridos a {
+        margin-bottom: 15px
+    }
+
+    div#modal_pdp_sugeridos .modal-content {
+        padding: 50px
+    }
+
+    .processors-container {
+        grid-template-columns: repeat(2, 1fr)
+    }
+}
+
+@media screen and (max-width:567px) {
+    .processors-container {
+        grid-template-columns: 1fr;
+        padding-inline: 0
+    }
+}
+
+.financy-container {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 2rem;
+    margin-bottom: 48px
+}
+
+.financy-header {
+    width: 100%
+}
+
+.financy-title {
+    text-align: left
+}
+
+.espacio-btn-seleccion {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    justify-content: flex-end
+}
+
+.modalregalospdpbody h3 {
+    text-align: center
+}
+
+.descripcionpromo {
+    color: var(--ggreen);
+    font-size: 14px;
+    text-align: left
+}
+
+.legalpromo {
+    display: block;
+    color: var(--gray2);
+    font-size: 12px;
+    padding: 2rem 0
+}
+
+.insertacontenidomodalregalos {
+    padding-top: 2rem
+}
+
+.bundles-buttons {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start
+}
+
+@media screen and (max-width:479px) {
+
+    #modal_ayuda_pdp .memory-info,
+    #modal_ayuda_pdp .memory-size {
+        text-align: center;
+        grid-column: span 2
+    }
+
+    #modal_ayuda_pdp .memory-item {
+        gap: 17px
+    }
+
+    #modal_ayuda_pdp .memory-info {
+        grid-row: 2
+    }
+
+    .item-regalos {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0;
+        padding-bottom: 2rem
+    }
+
+    .precio-sku,
+    .txt-sku {
+        text-align: center
+    }
+
+    .bundle-button-add {
+        width: 100%
+    }
+}
+
+@media screen and (max-width:439px) {
+    .espacio-btn-seleccion {
+        flex-direction: column
+    }
+}
