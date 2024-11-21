@@ -239,3 +239,17 @@ pre {
     max-width: 100%;
     height: auto;
 }
+
+/* :::::::::: RADIO INPUT :::::::::: */
+.lobs .card{
+background-color: #fff;
+padding-top: 0px;
+
+
+}
+
+.lobs .card .title{
+display: none;
+    
+    
+    }
