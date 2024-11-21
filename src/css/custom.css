@@ -205,3 +205,22 @@
     max-width: 100%;
     height: auto;
 }
+.bg-white{
+    background-color: white;
+}
+.bg-white table tr th{
+    color: black;
+}
+.bg-white table tbody{
+    color: black;
+}
+.table.preciosMS{
+    display: table;
+    padding: 10px;
+}
+.mx-auto{
+    margin:auto;
+}
+.ftable table{
+padding: 10px;
+}

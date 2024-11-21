@@ -1,23 +1,268 @@
 ---
 title: Dropdowns
 ---
-import { Card, CardGrid, Code, FileTree, Aside, Badge, Tabs, TabItem} from '@astrojs/starlight/components';
+import { Card, CardGrid, Code, FileTree, Aside, Badge, Tabs, TabItem } from '@astrojs/starlight/components';
 import BoostrapJquery from '/src/components/bootstrap/BootstrapJQuery.astro';
-import Collapsefooter from '/src/components/formularios/collapse-footer.astro';
+import '/src/css/buscador.css'
+import '/src/css/form-groups.css'
+import '/src/css/dropdown.css'
+import '/src/css/menu.css'
 
-<Card title="Dropdowns Navbar">
-Nav
+Este componente esta realizado con boostrap y fue modificado para que fuera más interactivo por lo que es nesesario que se referencie a las librerías de Bootstrap.
+<a href="/librerias-modificadas/bootstrap/"> Saber más</a>
+
+<BoostrapJquery/>
+
+## Dropdown en navbar
+<Card>
+<div id="hamburger">
+            <button id="hamburbtn" onclick="verificarClase()" type="button" class="menu" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" title="menu" aria-label="menu" aria-labelledby="menu" name="menu">
+                <span class="top-line"></span>
+                <span class="midden-line"></span>
+                <span class="bottom-line"></span>
+            </button>
+        </div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light" id="menu-ms">
+
+    <ul class="navbar-nav nav" id="navbarSupportedContent">
+        <li class="dropdown respons movil">
+            <a
+                href="#"
+                data-toggle="dropdown"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+                class="dropdown-toggle linka macka text-decoration">
+                Dropdown1
+                <i class="fa fa-angle-right zicon"></i></a>
+            <ul class="dropdown-menu secundario ipad">
+                <li class="d-none d-md-block">
+                    <a href="#" class="pb-0">
+                    <i class="fa fa-angle-left iconleft"></i> Dropdown1
+                    </a>
+                </li>
+                <span>
+                    <li>
+                        <a href="#" class="text-decoration"> Link1 </a>
+                    </li>
+                </span>
+                <span>
+                    <li>
+                        <a href="#" class="text-decoration"> Link2 </a>
+                    </li>
+                </span>
+            </ul>
+        </li>
+        <li class="dropdown respons movil">
+            <a
+                href="#"
+                data-toggle="dropdown"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+                class="dropdown-toggle linka text-decoration">
+                Dropdown2
+                <i class="fa fa-angle-right zicon"></i></a>
+            <ul class="dropdown-menu secundario ipad">
+                <li class="d-none d-md-block">
+                    <a href="#" class="pb-0">
+                    <i class="fa fa-angle-left iconleft"></i> Dropdown12
+                    </a>
+                </li>
+                <span>
+                    <li>
+                        <a href="#" class="text-decoration"> Link1 </a>
+                    </li></span>
+            </ul>
+            <li class="dropdown respons">
+                <a
+                    href="#"
+                    role="button"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    class="dropdown-toggle linka linka text-decoration"
+                    >Link 1</a>
+            </li>
+            <li>
+                <span class="right_header_division right_menu_divider"></span>
+            </li>
+            <li class="dropdown respons">
+                <a
+                    href="#"
+                    role="button"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    class="dropdown-toggle linka linka text-decoration">Link2</a>
+            </li>
+        </li>
+    </ul>
+</nav>
 <div class="tabb-m">
 <Tabs>
 <TabItem label="HTML">
 ```html
-hpkjh
+<nav class="navbar navbar-expand-lg navbar-light bg-light" id="menu-ms">
+     <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <ul class="navbar-nav nav" id="navbarSupportedContent">
+        <li class="dropdown respons movil">
+            <a href="#"
+                data-toggle="dropdown"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+                class="dropdown-toggle linka macka text-decoration">
+                Dropdown1
+                <i class="fa fa-angle-right zicon"></i></a>
+            <ul class="dropdown-menu secundario ipad">
+                <li class="d-none d-md-block">
+                    <a href="#" class="pb-0">
+                    <i class="fa fa-angle-left iconleft"></i> Dropdown1
+                    </a>
+                </li>
+                <span>
+                    <li>
+                        <a href="#" class="text-decoration"> Link1 </a>
+                    </li>
+                </span>
+                <span>
+                    <li>
+                        <a href="#" class="text-decoration"> Link2 </a>
+                    </li>
+                </span>
+            </ul>
+        </li>
+        <li class="dropdown respons movil">
+            <a href="#"
+                data-toggle="dropdown"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+                class="dropdown-toggle linka text-decoration">
+                Dropdown2
+                <i class="fa fa-angle-right zicon"></i></a>
+            <ul class="dropdown-menu secundario ipad">
+                <li class="d-none d-md-block">
+                    <a href="#" class="pb-0">
+                    <i class="fa fa-angle-left iconleft"></i> Dropdown12
+                    </a>
+                </li>
+                <span>
+                    <li>
+                        <a href="#" class="text-decoration"> Link1 </a>
+                    </li></span>
+            </ul>
+            <li class="dropdown respons">
+                <a href="#"
+                    role="button"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    class="dropdown-toggle linka linka text-decoration">Link 1</a>
+            </li>
+            <li>
+                <span class="right_header_division right_menu_divider"></span>
+            </li>
+            <li class="dropdown respons">
+                <a href="#"
+                    role="button"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    class="dropdown-toggle linka linka text-decoration">Link2</a>
+            </li>
+        </li>
+    </ul>
+</nav>
+```
+</TabItem>
+ </Tabs>
+</div>
+</Card>
+## Dropdown General
+<Card >
+<ul class="navbar-nav nav" id="menu-ms">
+<li class="dropdown respons">
+<a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle linka">
+                                Servicios
+    <i class="fa fa-angle-right zicon"></i>
+</a> 
+<ul class="dropdown-menu secundario servicios">
+<li class="d-none d-md-block">
+<a href="#" class="text-decoration">
+    <i class="fa fa-angle-left iconleft"></i> Servicios
+</a>
+</li> 
+<span>
+<li><a href="#" class="text-decoration">
+        Servicio técnico
+    </a>
+</li>
+</span>
+<span>
+<li>
+    <a href="#" class="text-decoration">
+        Compra 
+    </a>
+    </li>
+    </span>
+</ul>
+</li>
+</ul>
+<div class="droptab">
+<Tabs>
+<TabItem label="HTML">
+```html
+<ul class="navbar-nav nav" id="menu-ms">
+    <li class="dropdown respons ">
+        <a  href="#"
+            data-toggle="dropdown"
+            role="button"
+            aria-haspopup="true"
+            aria-expanded="false"
+            class="dropdown-toggle linka">
+            Servicios
+            <i class="fa fa-angle-right zicon"></i>
+        </a>
+        <ul class="dropdown-menu secundario servicios">
+            <li class="d-none d-md-block">
+                <a href="#">
+                    <i class="fa fa-angle-left iconleft"></i>
+                    Servicios
+                </a>
+            </li>
+            <span>
+                <li><a href="#"> Servicio técnico </a></li>
+            </span>
+            <span>
+                <li>
+                    <a href="#"> Compra </a>
+                </li>
+            </span>
+        </ul>
+    </li>
+</ul>
  ```
 </TabItem>
 
  </Tabs>
  </div>
  </Card>
-<Aside>Es importante recordar que este collapse, unicamente se habre en responsivo, tal cual la funcionalidad de los collapses en el footer de CX </Aside>
+ ## Implementación 
+<div class="inputs">
+:::caution[¡IMPORTANTE!]
+    Para poder implementar los dropdown, es necesario que se referencie a las siguientes rutas de css en el orden que se muestra a continuación:
+    <FileTree>
+        - public
+            - css
+                - form-groups.css.css
+                - dropdown.css
+                - menu.css
+                
+        - index.astro
+    </FileTree>
+   
+:::
+</div>
 
 

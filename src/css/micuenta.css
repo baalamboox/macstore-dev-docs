@@ -1,4 +1,6 @@
-
+ body{
+    color:black;
+ }
 .cuentatitle {
     font-family: 'sf-pro-display-regularRounder';
     letter-spacing: 1.1px;
@@ -968,21 +970,7 @@
         }
     }
 
-    @media (prefers-color-scheme: light) {
-        body {
-            background-color: #ffffff !important;
-        }
-    }
-
-
-
-    @media (prefers-color-scheme: dark) {
-
-
-        body {
-            background-color: #ffffff !important;
-        }
-    }
+  
 
     .paddin-r {
     padding-right: 1px;
