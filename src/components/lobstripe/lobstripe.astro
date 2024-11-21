@@ -2,6 +2,24 @@
 import "/src/css/lobstripe.css";
 ---
 
+<style>
+    #carruselApple
+        :not(a, strong, em, del, span, input, code, br)
+        + :not(
+            a,
+            strong,
+            em,
+            del,
+            span,
+            input,
+            code,
+            br,
+            :where(.not-content *)
+        ) {
+        margin-top: 0px !important;
+    }
+</style>
+
 <div
     class="swiper-macstore-container swiper-macstore--without-border"
     id="carruselApple"
@@ -10,33 +28,15 @@ import "/src/css/lobstripe.css";
         Ver todos los productos Apple.
     </div>
     <div class="swiper-macstore">
-        <div
-            class="swiper-button-prev macstore-prev-container lob-stripe-prev swiper-button-disabled swiper-button-lock"
-            tabindex="-1"
-            role="button"
-            aria-label="Previous slide"
-            aria-controls="swiper-wrapper-a10d1096104a72966bc"
-            aria-disabled="true"
-        >
+        <div class="swiper-button-prev macstore-prev-container lob-stripe-prev">
         </div>
         <div class="swiper-container">
-            <div
-                class="swiper macstore-swiper lob-stripe swiper-initialized swiper-horizontal swiper-free-mode swiper-backface-hidden"
-            >
+            <div class="swiper macstore-swiper lob-stripe">
                 <div
                     class="swiper-wrapper macstore-wrapper swiper-wrapper--small"
-                    id="swiper-wrapper-a10d1096104a72966bc"
-                    aria-live="polite"
-                    style="transform: translate3d(0px, 0px, 0px);"
                 >
-                    <div
-                        class="swiper-slide view-all-apple-product-card swiper-slide-active"
-                        role="group"
-                        aria-label="1 / 8"
-                        style="margin-right: 40px;"
-                        data-swiper-slide-index="0"
-                    >
-                        <a href="/paginas/todo-mac">
+                    <div class="swiper-slide view-all-apple-product-card">
+                        <a href="#">
                             <div class="lobs-image-container">
                                 <div class="lobs-media">
                                     <picture>
@@ -56,18 +56,13 @@ import "/src/css/lobstripe.css";
                             </div>
                             <div class="lobs-details-container">
                                 <div class="lobs-title">Mac</div>
+
                                 <div class="lobs-price">Desde $11,499.00</div>
                             </div>
                         </a>
                     </div>
-                    <div
-                        class="swiper-slide view-all-apple-product-card swiper-slide-next"
-                        role="group"
-                        aria-label="2 / 8"
-                        style="margin-right: 40px;"
-                        data-swiper-slide-index="1"
-                    >
-                        <a href="/paginas/todo-iphone">
+                    <div class="swiper-slide view-all-apple-product-card">
+                        <a href="#">
                             <div class="lobs-image-container">
                                 <div class="lobs-media">
                                     <picture>
@@ -86,19 +81,19 @@ import "/src/css/lobstripe.css";
                                 </div>
                             </div>
                             <div class="lobs-details-container">
-                                <div class="lobs-title">iPhone</div>
-                                <div class="lobs-price">Desde $10,499.00</div>
+                                <div class="lobs-title">
+                                    <span>iPhone</span>
+                                </div>
+
+                                <div class="lobs-price">
+                                    <span>Desde $10,499.00</span>
+                                </div>
                             </div>
                         </a>
                     </div>
-                    <div
-                        class="swiper-slide view-all-apple-product-card"
-                        role="group"
-                        aria-label="3 / 8"
-                        style="margin-right: 40px;"
-                        data-swiper-slide-index="2"
-                    >
-                        <a href="/paginas/todo-ipad">
+
+                    <div class="swiper-slide view-all-apple-product-card">
+                        <a href="#">
                             <div class="lobs-image-container">
                                 <div class="lobs-media">
                                     <picture>
@@ -117,19 +112,17 @@ import "/src/css/lobstripe.css";
                                 </div>
                             </div>
                             <div class="lobs-details-container">
-                                <div class="lobs-title">iPad</div>
-                                <div class="lobs-price">Desde $4,999.00</div>
+                                <div class="lobs-title"><span>iPad</span></div>
+
+                                <div class="lobs-price">
+                                    <span> Desde $4,999.00</span>
+                                </div>
                             </div>
                         </a>
                     </div>
-                    <div
-                        class="swiper-slide view-all-apple-product-card"
-                        role="group"
-                        aria-label="4 / 8"
-                        style="margin-right: 40px;"
-                        data-swiper-slide-index="3"
-                    >
-                        <a href="/paginas/todo-apple-watch">
+
+                    <div class="swiper-slide view-all-apple-product-card">
+                        <a href="#">
                             <div class="lobs-image-container">
                                 <div class="lobs-media">
                                     <picture>
@@ -149,21 +142,17 @@ import "/src/css/lobstripe.css";
                             </div>
                             <div class="lobs-details-container">
                                 <div class="lobs-title">
-                                    <i class="fa fa-apple" aria-hidden="true"
-                                    ></i>Watch
+                                    <span> Watch</span>
                                 </div>
-                                <div class="lobs-price">Desde $4,674.15</div>
+
+                                <div class="lobs-price">
+                                    <span>Desde $4,599.00</span>
+                                </div>
                             </div>
                         </a>
                     </div>
-                    <div
-                        class="swiper-slide view-all-apple-product-card"
-                        role="group"
-                        aria-label="5 / 8"
-                        style="margin-right: 40px;"
-                        data-swiper-slide-index="4"
-                    >
-                        <a href="/paginas/todo-musica">
+                    <div class="swiper-slide view-all-apple-product-card">
+                        <a href="#">
                             <div class="lobs-image-container">
                                 <div class="lobs-media">
                                     <picture>
@@ -182,19 +171,18 @@ import "/src/css/lobstripe.css";
                                 </div>
                             </div>
                             <div class="lobs-details-container">
-                                <div class="lobs-title">Music</div>
-                                <div class="lobs-price">Desde $549.00</div>
+                                <div class="lobs-title">
+                                    <span> Music</span>
+                                </div>
+
+                                <div class="lobs-price">
+                                    <span> Desde $549.00</span>
+                                </div>
                             </div>
                         </a>
                     </div>
-                    <div
-                        class="swiper-slide view-all-apple-product-card"
-                        role="group"
-                        aria-label="6 / 8"
-                        style="margin-right: 40px;"
-                        data-swiper-slide-index="5"
-                    >
-                        <a href="/paginas/todo-tv-hogar">
+                    <div class="swiper-slide view-all-apple-product-card">
+                        <a href="#">
                             <div class="lobs-image-container">
                                 <div class="lobs-media">
                                     <picture>
@@ -214,21 +202,17 @@ import "/src/css/lobstripe.css";
                             </div>
                             <div class="lobs-details-container">
                                 <div class="lobs-title">
-                                    <i class="fa fa-apple" aria-hidden="true"
-                                    ></i>TV &amp; Home
+                                    <span> TV & Home </span>
                                 </div>
-                                <div class="lobs-price">Desde $2,299.00</div>
+
+                                <div class="lobs-price">
+                                    <span> Desde $2,299.00</span>
+                                </div>
                             </div>
                         </a>
                     </div>
-                    <div
-                        class="swiper-slide view-all-apple-product-card"
-                        role="group"
-                        aria-label="7 / 8"
-                        style="margin-right: 40px;"
-                        data-swiper-slide-index="6"
-                    >
-                        <a href="/paginas/todo-accesorios">
+                    <div class="swiper-slide view-all-apple-product-card">
+                        <a href="#">
                             <div class="lobs-image-container">
                                 <div class="lobs-media">
                                     <picture>
@@ -247,19 +231,19 @@ import "/src/css/lobstripe.css";
                                 </div>
                             </div>
                             <div class="lobs-details-container">
-                                <div class="lobs-title">Accesorios</div>
-                                <div class="lobs-price">Desde $89.00</div>
+                                <div class="lobs-title">
+                                    <span> Accesorios</span>
+                                </div>
+
+                                <div class="lobs-price">
+                                    <span> Desde $89.00</span>
+                                </div>
                             </div>
                         </a>
                     </div>
-                    <div
-                        class="swiper-slide view-all-apple-product-card"
-                        role="group"
-                        aria-label="8 / 8"
-                        style="margin-right: 40px;"
-                        data-swiper-slide-index="7"
-                    >
-                        <a href="/buscar/especialaccairtag">
+
+                    <div class="swiper-slide view-all-apple-product-card">
+                        <a href="#">
                             <div class="lobs-image-container">
                                 <div class="lobs-media">
                                     <picture>
@@ -278,79 +262,70 @@ import "/src/css/lobstripe.css";
                                 </div>
                             </div>
                             <div class="lobs-details-container">
-                                <div class="lobs-title">AirTag</div>
-                                <div class="lobs-price">Desde $649.00</div>
+                                <div class="lobs-title">
+                                    <span> AirTag</span>
+                                </div>
+
+                                <div class="lobs-price">
+                                    <span> Desde $649.00 </span>
+                                </div>
                             </div>
                         </a>
                     </div>
                 </div>
-                <span
-                    class="swiper-notification"
-                    aria-live="assertive"
-                    aria-atomic="true"></span>
             </div>
         </div>
-        <div
-            class="swiper-button-next macstore-next-container lob-stripe-next swiper-button-lock swiper-button-disabled"
-            tabindex="-1"
-            role="button"
-            aria-label="Next slide"
-            aria-controls="swiper-wrapper-a10d1096104a72966bc"
-            aria-disabled="true"
-        >
+        <div class="swiper-button-next macstore-next-container lob-stripe-next">
         </div>
     </div>
 </div>
 
-
 <script>
-
-const swiperCustom = new SwiperCustom({
-    swiperNameClass: "lob-stripe",
-    slidesPerView: 8,
-    spaceBetween: 40,
-    loop: false,
-    breakPoints: {
-        320: {
-            slidesPerView: "auto",
-            spaceBetween: 40,
-            loop: true,
+    const swiperCustom = new SwiperCustom({
+        swiperNameClass: "lob-stripe",
+        slidesPerView: 8,
+        spaceBetween: 40,
+        loop: false,
+        breakPoints: {
+            320: {
+                slidesPerView: "auto",
+                spaceBetween: 40,
+                loop: true,
+            },
+            480: {
+                slidesPerView: "auto",
+                spaceBetween: 40,
+                loop: true,
+            },
+            576: {
+                slidesPerView: "auto",
+                spaceBetween: 40,
+                loop: true,
+            },
+            768: {
+                slidesPerView: "auto",
+                spaceBetween: 40,
+                loop: false,
+            },
+            992: {
+                slidesPerView: "auto",
+                spaceBetween: 40,
+                loop: false,
+            },
+            1200: {
+                slidesPerView: "auto",
+                spaceBetween: 40,
+                loop: false,
+            },
+            1400: {
+                slidesPerView: "auto",
+                spaceBetween: 40,
+                loop: false,
+            },
         },
-        480: {
-            slidesPerView: "auto",
-            spaceBetween: 40,
-            loop: true,
-        },
-        576: {
-            slidesPerView: "auto",
-            spaceBetween: 40,
-            loop: true,
-        },
-        768: {
-            slidesPerView: "auto",
-            spaceBetween: 40,
-            loop: false,
-        },
-        992: {
-            slidesPerView: "auto",
-            spaceBetween: 40,
-            loop: false,
-        },
-        1200: {
-            slidesPerView: "auto",
-            spaceBetween: 40,
-            loop: false,
-        },
-        1400: {
-            slidesPerView: "auto",
-            spaceBetween: 40,
-            loop: false,
-        },
-    },
-    enableEventOn: true,
-    enablePaginationEl: false,
-
-})
-
+        enableEventOn: true,
+        enablePaginationEl: false,
+    });
 </script>
+
 
