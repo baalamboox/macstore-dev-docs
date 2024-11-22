@@ -1,0 +1,112 @@
+---
+import "/src/css/ribbonbanner.css";
+---
+
+<style>
+    #plecab
+        :not(a, strong, em, del, span, input, code, br)
+        + :not(
+            a,
+            strong,
+            em,
+            del,
+            span,
+            input,
+            code,
+            br,
+            :where(.not-content *)
+        ) {
+        margin-top: 0px !important;
+    }
+
+    #plecab p a {
+        text-decoration: none;
+        font-size: 14px;
+        font-family: sf-pro-display-light !important;
+    }
+
+    #plecab p  {
+   
+        line-height: 30px;
+    }
+
+    .lobs .swiper-button-prev svg {
+        position: inherit !important;
+    }
+
+    .lobs .swiper-button-next svg {
+        position: inherit !important;
+    }
+    .contenedorx {
+        overflow: hidden;
+    }
+
+
+    #plecab .ld::after {
+    content: url("https://webonline.macstore.mx/img/cx/SiteIconsCX/icon.regular/4.2.Chevron-%20Right.svg");
+    position: absolute;
+    top: -7px;
+    left: 0px;
+    filter: invert(1);
+
+}
+
+#plecab .rd::after {
+    content: url("https://webonline.macstore.mx/img/cx/SiteIconsCX/icon.regular/4.1.Chevron-%20Left.svg");
+    position: absolute;
+    top: -9px;
+    right: 0px;
+    filter: invert(1);
+}
+</style>
+<div class="contenedorx">
+<div class="container-fluid" id="plecab">
+    <div class="container swiper carruel-header-info">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide text-center">
+                <p class="text-center title-regular">
+                    <a href="#">
+                        Con el iPad es fácil, lo tiene todo. - <span
+                            class="textplaceholder2">Desde $5,499*</span
+                        >
+                    </a>
+                </p>
+            </div>
+            <div class="swiper-slide text-center">
+                <p class="title-regular text-center">
+                    <a href="#">
+                        Con el MacBook Pro Chip M3, lo tienes todo. - <span
+                            class="textplaceholder2">Desde $34,999*</span
+                        >
+                    </a>
+                </p>
+            </div>
+            <div class="swiper-slide text-center">
+                <p class="title-regular">
+                    <a href="#">
+                        Protege tus equipos con AppleCare+ - <span
+                            class="textplaceholder2">Saber más</span
+                        ></a
+                    >
+                </p>
+            </div>
+        </div>
+        <div class="swiper-button-next header-n navazul ld"></div>
+        <div class="swiper-button-prev header-p navazul rd"></div>
+    </div>
+</div>
+</div>
+<script>
+    var swiper = new Swiper(".carruel-header-info", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        loop: true,
+        pagination: {
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".header-n",
+            prevEl: ".header-p",
+        },
+    });
+</script>

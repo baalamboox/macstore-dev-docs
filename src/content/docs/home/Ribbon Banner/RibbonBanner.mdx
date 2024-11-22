@@ -1,0 +1,100 @@
+---
+title: Ribbon Banner Carousel
+---
+import { Card, CardGrid, Code, FileTree, Aside, Badge, Tabs, TabItem } from '@astrojs/starlight/components';
+import RibbonBanner from '/src/components/ribbonBanner/ribbonBanner.astro';
+import Sswiper from '/src/components/swiper/Swiper.astro';
+
+
+<Sswiper/>
+Este componente  muestra en un carousel datos de promociones cortas, con CTA personalizados y el número de elemenos es indefinido. 
+El color y la estructura del componente no se puede modificar.
+Se posiciona en el layout principal de todo el sitio.
+<div class="lobs">
+<RibbonBanner/>
+</div>
+
+
+## Integración
+        <Tabs>
+            <TabItem label="HTML">
+              
+                ```html
+                    <div class="container-fluid" id="plecab">
+                        <div class="container swiper carruel-header-info">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide text-center">
+                                    <p class="text-center title-regular">
+                                        <a href="/colecciones/ipad">
+                                            Con el iPad es fácil, lo tiene todo. - <span class="textplaceholder2">Desde $5,499*</span>
+                                        </a>
+                                    </p>
+                                </div>
+                                <div class="swiper-slide text-center">
+                                    <p class="title-regular text-center">
+                                        <a href="/colecciones/macbook-pro">
+                                            Con el MacBook Pro Chip M3, lo tienes todo. - <span class="textplaceholder2">Desde $34,999*</span>
+                                        </a>
+                                    </p>
+                                </div>
+                                <div class="swiper-slide text-center">
+                                    <p class="title-regular">
+                                        <a href="/paginas/apple-care">
+                                            Protege tus equipos con AppleCare+ - <span class="textplaceholder2">Saber más</span>
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next header-n navazul"></div>
+                            <div class="swiper-button-prev header-p navazul"></div>
+                        </div>
+                    </div>
+
+                ```
+            </TabItem>
+            <TabItem label="JS">
+               
+                ```js
+             
+                   /*clase del elemento disparador de Swiper*/ 
+                      var swiper = new Swiper(".carruel-header-info", {
+                        slidesPerView: 1,
+                        spaceBetween: 10,
+                        loop: true,
+                        pagination: {
+                            clickable: true,
+                        },
+                        navigation: {
+                            nextEl: ".header-n",
+                            prevEl: ".header-p",
+                        },
+                    });
+                ```
+            </TabItem>
+        </Tabs>
+
+
+
+
+
+
+
+    <FileTree>
+        - macstore
+            - css
+                - ribbonbanner.css
+                - swiper-custom.css
+                - swiper.css
+            - js 
+                - jquery-3.7.0.min.js
+                - swiper-custom.min.js
+                - swiper.js
+        - index.html
+    </FileTree>
+
+
+
+
+
+
+
