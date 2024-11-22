@@ -1,0 +1,369 @@
+---
+import "/src/css/root.css";
+---
+
+<style>
+    #carruselApple
+        :not(a, strong, em, del, span, input, code, br)
+        + :not(
+            a,
+            strong,
+            em,
+            del,
+            span,
+            input,
+            code,
+            br,
+            :where(.not-content *)
+        ) {
+        margin-top: 0px !important;
+    }
+
+    #carruselApple .nuevo {
+        text-transform: uppercase;
+        color: var(--oorange) !important;
+        letter-spacing: 1px;
+    }
+</style>
+
+<div id="carruselApple">
+    <div class="swiper-macstore-container">
+        <div class="swiper-macstore-title">
+            Echa un vistazo a las novedades.
+        </div>
+        <div class="swiper-macstore">
+            <div
+                class="swiper-button-prev macstore-prev-container whats-new-stripe-prev"
+                id="s-m-prev-whats-new-s"
+            >
+            </div>
+            <div class="swiper-container">
+                <div
+                    class="swiper macstore-swiper whats-new-stripe"
+                    id="s-macstore-s-w-new-s"
+                >
+                    <!-- Additional required wrapper -->
+                    <div
+                        class="swiper-wrapper macstore-wrapper swiper-wrapper--large"
+                    >
+                        <!-- Slides -->
+
+                        <div
+                            class="swiper-slide swiper-macstore-card swn__swn-card"
+                        >
+                            <a href="#" class="swn-card__swn-card-link">
+                                <div class="swn-card-link__swn-pc">
+                                    <div class="swn-pc__swn-media">
+                                        <picture>
+                                            <source
+                                                srcset="https://webonline.macstore.mx/img/cx/media/rheel_secundario_nuevo/macbook_pro_m4.webp"
+                                            />
+                                            <img
+                                                src="https://webonline.macstore.mx/img/cx/media/rheel_secundario_nuevo/macbook_pro_m4.jpg"
+                                                alt="item MacBook Pro M4"
+                                                class="swn-media__image"
+                                                height="172"
+                                                width="255"
+                                                loading="lazy"
+                                            />
+                                        </picture>
+                                    </div>
+                                </div>
+
+                                <div class="swn-card-link__swn-dc">
+                                    <div class="swn-dc__tag">
+                                        <span class="nuevo">NUEVO</span>
+                                    </div>
+
+                                    <div
+                                        class="swn-dc__title swn-dc__title--aap"
+                                    >
+                                        MacBook Pro M4
+                                    </div>
+                                    <div class="swn-dc__subtitle">
+                                        Más velocidad para hacer más de lo que
+                                        te gusta.
+                                    </div>
+                                    <div class="swn-dc__text swn-dc__text--aap">
+                                        Desde $37,999.00
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div
+                            class="swiper-slide swiper-macstore-card swn__swn-card"
+                        >
+                            <a href="#" class="swn-card__swn-card-link">
+                                <div class="swn-card-link__swn-pc">
+                                    <div class="swn-pc__swn-media">
+                                        <picture>
+                                            <source
+                                                srcset="https://webonline.macstore.mx/img/cx/media/rheel_secundario_nuevo/mac_mini_m4.webp"
+                                            />
+                                            <img
+                                                src="https://webonline.macstore.mx/img/cx/media/rheel_secundario_nuevo/mac_mini_m4.jpg"
+                                                alt="item Mac mini M4"
+                                                class="swn-media__image"
+                                                height="172"
+                                                width="255"
+                                                loading="lazy"
+                                            />
+                                        </picture>
+                                    </div>
+                                </div>
+
+                                <div class="swn-card-link__swn-dc">
+                                    <div class="swn-dc__tag">
+                                        <span class="nuevo">NUEVO</span>
+                                    </div>
+
+                                    <div
+                                        class="swn-dc__title swn-dc__title--aap"
+                                    >
+                                        Mac mini M4
+                                    </div>
+                                    <div class="swn-dc__subtitle">
+                                        Es pequeña. Es enorme.
+                                    </div>
+                                    <div class="swn-dc__text swn-dc__text--aap">
+                                        Desde $14,499.00
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div
+                            class="swiper-slide swiper-macstore-card swn__swn-card"
+                        >
+                            <a href="#" class="swn-card__swn-card-link">
+                                <div class="swn-card-link__swn-pc">
+                                    <div class="swn-pc__swn-media">
+                                        <picture>
+                                            <source
+                                                srcset="https://webonline.macstore.mx/img/cx/media/rheel_secundario_nuevo/macbook_pro_m4.webp"
+                                            />
+                                            <img
+                                                src="https://webonline.macstore.mx/img/cx/media/rheel_secundario_nuevo/macbook_pro_m4.jpg"
+                                                alt="item MacBook Pro M4"
+                                                class="swn-media__image"
+                                                height="172"
+                                                width="255"
+                                                loading="lazy"
+                                            />
+                                        </picture>
+                                    </div>
+                                </div>
+
+                                <div class="swn-card-link__swn-dc">
+                                    <div class="swn-dc__tag">
+                                        <span class="nuevo">NUEVO</span>
+                                    </div>
+
+                                    <div
+                                        class="swn-dc__title swn-dc__title--aap"
+                                    >
+                                        MacBook Pro M4
+                                    </div>
+                                    <div class="swn-dc__subtitle">
+                                        Más velocidad para hacer más de lo que
+                                        te gusta.
+                                    </div>
+                                    <div class="swn-dc__text swn-dc__text--aap">
+                                        Desde $37,999.00
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div
+                            class="swiper-slide swiper-macstore-card swn__swn-card"
+                        >
+                            <a href="#" class="swn-card__swn-card-link">
+                                <div class="swn-card-link__swn-pc">
+                                    <div class="swn-pc__swn-media">
+                                        <picture>
+                                            <source
+                                                srcset="https://webonline.macstore.mx/img/cx/media/rheel_secundario_nuevo/macbook_pro_m4.webp"
+                                            />
+                                            <img
+                                                src="https://webonline.macstore.mx/img/cx/media/rheel_secundario_nuevo/macbook_pro_m4.jpg"
+                                                alt="item MacBook Pro M4"
+                                                class="swn-media__image"
+                                                height="172"
+                                                width="255"
+                                                loading="lazy"
+                                            />
+                                        </picture>
+                                    </div>
+                                </div>
+
+                                <div class="swn-card-link__swn-dc">
+                                    <div class="swn-dc__tag">
+                                        <span class="nuevo">NUEVO</span>
+                                    </div>
+
+                                    <div
+                                        class="swn-dc__title swn-dc__title--aap"
+                                    >
+                                        MacBook Pro M4
+                                    </div>
+                                    <div class="swn-dc__subtitle">
+                                        Más velocidad para hacer más de lo que
+                                        te gusta.
+                                    </div>
+                                    <div class="swn-dc__text swn-dc__text--aap">
+                                        Desde $37,999.00
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div
+                            class="swiper-slide swiper-macstore-card swn__swn-card"
+                        >
+                            <a href="#" class="swn-card__swn-card-link">
+                                <div class="swn-card-link__swn-pc">
+                                    <div class="swn-pc__swn-media">
+                                        <picture>
+                                            <source
+                                                srcset="https://webonline.macstore.mx/img/cx/media/rheel_secundario_nuevo/macbook_pro_m4.webp"
+                                            />
+                                            <img
+                                                src="https://webonline.macstore.mx/img/cx/media/rheel_secundario_nuevo/macbook_pro_m4.jpg"
+                                                alt="item MacBook Pro M4"
+                                                class="swn-media__image"
+                                                height="172"
+                                                width="255"
+                                                loading="lazy"
+                                            />
+                                        </picture>
+                                    </div>
+                                </div>
+
+                                <div class="swn-card-link__swn-dc">
+                                    <div class="swn-dc__tag">
+                                        <span class="nuevo">NUEVO</span>
+                                    </div>
+
+                                    <div
+                                        class="swn-dc__title swn-dc__title--aap"
+                                    >
+                                        MacBook Pro M4
+                                    </div>
+                                    <div class="swn-dc__subtitle">
+                                        Más velocidad para hacer más de lo que
+                                        te gusta.
+                                    </div>
+                                    <div class="swn-dc__text swn-dc__text--aap">
+                                        Desde $37,999.00
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div
+                            class="swiper-slide swiper-macstore-card swn__swn-card"
+                        >
+                            <a href="#" class="swn-card__swn-card-link">
+                                <div class="swn-card-link__swn-pc">
+                                    <div class="swn-pc__swn-media">
+                                        <picture>
+                                            <source
+                                                srcset="https://webonline.macstore.mx/img/cx/media/rheel_secundario_nuevo/macbook_pro_m4.webp"
+                                            />
+                                            <img
+                                                src="https://webonline.macstore.mx/img/cx/media/rheel_secundario_nuevo/macbook_pro_m4.jpg"
+                                                alt="item MacBook Pro M4"
+                                                class="swn-media__image"
+                                                height="172"
+                                                width="255"
+                                                loading="lazy"
+                                            />
+                                        </picture>
+                                    </div>
+                                </div>
+
+                                <div class="swn-card-link__swn-dc">
+                                    <div class="swn-dc__tag">
+                                        <span class="nuevo">NUEVO</span>
+                                    </div>
+
+                                    <div
+                                        class="swn-dc__title swn-dc__title--aap"
+                                    >
+                                        MacBook Pro M4
+                                    </div>
+                                    <div class="swn-dc__subtitle">
+                                        Más velocidad para hacer más de lo que
+                                        te gusta.
+                                    </div>
+                                    <div class="swn-dc__text swn-dc__text--aap">
+                                        Desde $37,999.00
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="swiper-button-next macstore-next-container whats-new-stripe-next"
+                id="s-m-next-whats-new-s"
+            >
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    new SwiperCustom({
+        swiperNameClass: "whats-new-stripe",
+        slidesPerView: 5,
+        spaceBetween: 24,
+        loop: false,
+        breakPoints: {
+            320: {
+                slidesPerView: "auto",
+                spaceBetween: 16,
+                loop: true,
+            },
+            480: {
+                slidesPerView: "auto",
+                spaceBetween: 16,
+                loop: true,
+            },
+            576: {
+                slidesPerView: "auto",
+                spaceBetween: 16,
+                loop: true,
+            },
+            767: {
+                slidesPerView: "auto",
+                spaceBetween: 16,
+                loop: true,
+            },
+            768: {
+                slidesPerView: "auto",
+                spaceBetween: 24,
+                loop: false,
+            },
+            992: {
+                slidesPerView: "auto",
+                spaceBetween: 24,
+                loop: false,
+            },
+            1200: {
+                slidesPerView: "auto",
+                spaceBetween: 24,
+                loop: false,
+            },
+            1400: {
+                slidesPerView: "auto",
+                spaceBetween: 24,
+                loop: false,
+            },
+        },
+        enableEventOn: true,
+        enablePaginationEl: false,
+    });
+</script>
