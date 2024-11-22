@@ -461,3 +461,6 @@ img.img-responsive.masctorelogo {
         padding-inline: 0;
     }
 }
+.account__container {
+    padding: 12px;
+}

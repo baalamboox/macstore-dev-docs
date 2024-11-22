@@ -13,8 +13,9 @@ import '/src/vendor/bootstrap/animations.css'
 
 <BoostrapJquery/>
 ## Tabla Administrativo
-<div class="tablas">
+<div class="tablas ftable">
   <Card title='Tabla administrativo'>
+<div class="bg-white">
         <table class="display table table-striped table-hover" style="width: 100%;">
             <thead>
                 <tr>
@@ -36,6 +37,7 @@ import '/src/vendor/bootstrap/animations.css'
                 </tr>
             </tbody>
         </table>
+</div>
 ```js
 <table class="display table table-striped table-hover dataTable " >
     <thead>
@@ -67,7 +69,9 @@ import '/src/vendor/bootstrap/animations.css'
 <div class="tablas">
 ## Tabla mi cuenta
   <Card title='Tabla mi cuenta cx'>
+  <div class="bg-white">
     <Tablamicuenta/>
+    </div>
 ```html
 <div class="row BTableGrey">
     <div class="col-lg-3 col-md-3 col-sm-3 ">
@@ -129,9 +133,53 @@ import '/src/vendor/bootstrap/animations.css'
 :::
 
 </div>
+## Tabla para landings
 <div class="inputs">
 <Card title='Tabla que se usa en las landings en cx'>
+ <div class="bg-white">
  <Ladingtable/>
+ </div>
+ ```js
+<div class="panel panel-default collapsetable">
+   
+    <div  class="panel-collapse collapse in mobile-collapse">
+        <div class="panel-body">
+            <table class="table  preciosMS mx-auto">
+                <thead>
+                    <tr>
+                        <th>Modelo de iPhone</th>
+                        <th class="text-right font-14">
+                            Reparación de pantallas
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>iPhone 14 Pro Max</td>
+                        <td class="afs ">MXN 7,599</td>
+                    </tr>
+
+                    <tr>
+                        <td>iPhone 14 Pro</td>
+                        <td class="afs ">MXN 6,699</td>
+                    </tr>
+
+                    <tr>
+                        <td>iPhone 14 Plus</td>
+                        <td class="afs ">MXN 6,699</td>
+                    </tr>
+
+                    <tr>
+                        <td>iPhone SE, iPhone SE 2da Generación, iPhone SE Tercera Gen</td>
+                        <td class="afs">MXN 2,899</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+```
 </Card>
 
 </div>
