@@ -257,14 +257,12 @@ pre {
 }
 .ftable table{
 padding: 10px;
-
+}
 /* :::::::::: RADIO INPUT :::::::::: */
 .lobs .card{
 background-color: #fff;
 padding-top: 0px;
 padding-bottom: 0px;
-
-
 
 }
 
@@ -281,4 +279,7 @@ padding-bottom: 0px;
 
 .alerts .expressive-code .frame pre {
     border-radius: 0px 0px 4px 4px !important;
+}
+div#menu-ms {
+    background: white;
 }
