@@ -1,0 +1,52 @@
+/* :::::::::: NAV :::::::::: */
+div#nav {
+    display: none;
+}
+ul#navbarSupportedContent {
+    align-items: center !important;
+    padding: 10px;
+}
+div#menu-ms {
+    background: #e0e0e0;
+}
+#carshop{
+    position: initial !important;
+}
+.sl-markdown-content h3:not(:where(.not-content *)) {
+    font-size: initial;
+    font-weight: initial;
+}
+.sl-markdown-content :not(a, strong, em, del, span, input, code, br) + :not(a, strong, em, del, span, input, code, br, :where(.not-content *)) {
+    margin-top: 0;
+}
+@media (max-width: 1024px) {
+    .-bgcollapse {
+        position: initial !important;
+    }
+    div#menu-ms {
+        background: white;
+    }
+    .stykynav {
+        position: initial !important;
+    }
+    .menu[aria-expanded="true"]:before {
+        position: initial;
+
+    }
+    #menu-ms .nav {
+        height: 15vw !important;
+    }
+    div#nav {
+        display: block;
+    }
+    div#bs-example-navbar-collapse-1{
+        width: 100%;
+    }
+    ul#navbarSupportedContent {
+        margin: 0 !important;
+    }
+    #menu-ms .nav {
+        align-items: center;
+    }
+
+}
