@@ -1,0 +1,38 @@
+---
+
+---
+<div class=" sticky" id="seccion-buscador">
+    <div id="hamburger">
+        <button id="hamburbtn" onclick="verificarClase()" type="button" class="menu" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="true" title="menu" aria-label="menu" aria-labelledby="menu" name="menu">
+            <span class="top-line"></span>
+            <span class="midden-line"></span>
+            <span class="bottom-line"></span>
+        </button>
+    </div>
+
+</div>
+<script>
+    /* Redimencionamiento del Nav para diferentes resoluciones de pantalla */
+  function agregarclase() {
+    var elementoer = document.getElementById("bs-example-navbar-collapse-1");
+    if (window.innerWidth >= 1025) {
+      elementoer.classList.add("width2");
+    } else {
+      elementoer.classList.remove("width2");
+    }
+}
+
+window.addEventListener("load", agregarclase);
+window.addEventListener("resize", agregarclase);
+
+
+const nav = document.querySelector("#hamburger button");
+var box = document.getElementById('nav');
+
+/* Abrir y cerrar el navbar */
+nav.addEventListener("click", e => {
+    nav.classList.toggle('open');
+    box.classList.toggle('stykynav');
+});
+
+</script>

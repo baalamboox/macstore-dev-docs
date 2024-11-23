@@ -3,27 +3,54 @@ title: Dropdowns
 ---
 import { Card, CardGrid, Code, FileTree, Aside, Badge, Tabs, TabItem } from '@astrojs/starlight/components';
 import BoostrapJquery from '/src/components/bootstrap/BootstrapJQuery.astro';
+import Navbar from '/src/components/formularios/navbar.astro';
 import '/src/css/buscador.css'
+import '/src/css/buttons.css'
 import '/src/css/form-groups.css'
 import '/src/css/dropdown.css'
 import '/src/css/menu.css'
+import "/src/css/style.css";
 
 Este componente esta realizado con boostrap y fue modificado para que fuera más interactivo por lo que es nesesario que se referencie a las librerías de Bootstrap.
 <a href="/librerias-modificadas/bootstrap/"> Saber más</a>
 
 <BoostrapJquery/>
-
+## Implementación 
+<div class="inputs">
+:::caution[¡IMPORTANTE!]
+    Para poder implementar los dropdown, es necesario que se referencie a las siguientes rutas de css en el orden que se muestra a continuación:
+    <FileTree>
+        - public
+            - css
+                - form-groups.css
+                - dropdown.css
+                - menu.css
+                
+        - index.astro
+    </FileTree>
+    y para el ejemplo del Navbar, tambien hay que agregar la ruta de css llamada buscador
+      <FileTree>
+        - public
+            - css
+                - buscador.css
+                - form-groups.css
+                - dropdown.css
+                - menu.css
+                
+        - index.astro
+    </FileTree>
+   
+:::
+</div> 
 ## Dropdown en navbar
 <Card>
-<div id="hamburger">
-            <button id="hamburbtn" onclick="verificarClase()" type="button" class="menu" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" title="menu" aria-label="menu" aria-labelledby="menu" name="menu">
-                <span class="top-line"></span>
-                <span class="midden-line"></span>
-                <span class="bottom-line"></span>
-            </button>
-        </div>
-<nav class="navbar navbar-expand-lg navbar-light bg-light" id="menu-ms">
-
+<div class="">
+<div class="divnavbar" id="nav">
+<Navbar/>
+</div>
+<div id="bs-example-navbar-collapse-1" class="navbar-collapse width -bgcollapse p-0 collapse">
+<div id="menu-ms">
+<nav class="navbar navbar-expand-lg navbar-light bg-light" >
     <ul class="navbar-nav nav" id="navbarSupportedContent">
         <li class="dropdown respons movil">
             <a
@@ -97,18 +124,36 @@ Este componente esta realizado con boostrap y fue modificado para que fuera más
         </li>
     </ul>
 </nav>
+</div>
+
+</div>
+</div>
+
 <div class="tabb-m">
 <Tabs>
 <TabItem label="HTML">
 ```html
-<nav class="navbar navbar-expand-lg navbar-light bg-light" id="menu-ms">
-     <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+<div class="divnavbar" id="nav">
+<div class=" sticky" id="seccion-buscador">
+    <div id="hamburger">
+        <button id="hamburbtn" onclick="verificarClase()" type="button" class="menu"
+         data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="true" 
+         title="menu" aria-label="menu" aria-labelledby="menu" name="menu">
+            <span class="top-line"></span>
+            <span class="midden-line"></span>
+            <span class="bottom-line"></span>
+        </button>
+    </div>
+
+</div>
+</div>
+<div id="bs-example-navbar-collapse-1" class="navbar-collapse width -bgcollapse p-0 collapse">
+<div id="menu-ms">
+<nav class="navbar navbar-expand-lg navbar-light bg-light" >
     <ul class="navbar-nav nav" id="navbarSupportedContent">
         <li class="dropdown respons movil">
-            <a href="#"
+            <a
+                href="#"
                 data-toggle="dropdown"
                 role="button"
                 aria-haspopup="true"
@@ -135,7 +180,8 @@ Este componente esta realizado con boostrap y fue modificado para que fuera más
             </ul>
         </li>
         <li class="dropdown respons movil">
-            <a href="#"
+            <a
+                href="#"
                 data-toggle="dropdown"
                 role="button"
                 aria-haspopup="true"
@@ -155,17 +201,20 @@ Este componente esta realizado con boostrap y fue modificado para que fuera más
                     </li></span>
             </ul>
             <li class="dropdown respons">
-                <a href="#"
+                <a
+                    href="#"
                     role="button"
                     aria-haspopup="true"
                     aria-expanded="false"
-                    class="dropdown-toggle linka linka text-decoration">Link 1</a>
+                    class="dropdown-toggle linka linka text-decoration"
+                    >Link 1</a>
             </li>
             <li>
                 <span class="right_header_division right_menu_divider"></span>
             </li>
             <li class="dropdown respons">
-                <a href="#"
+                <a
+                    href="#"
                     role="button"
                     aria-haspopup="true"
                     aria-expanded="false"
@@ -174,7 +223,35 @@ Este componente esta realizado con boostrap y fue modificado para que fuera más
         </li>
     </ul>
 </nav>
+</div>
+
+</div>
 ```
+</TabItem>
+<TabItem label="JavaScript">
+```JavaScript
+/* Redimencionamiento del Nav para diferentes resoluciones de pantalla */
+function agregarclase() {
+    var elementoer = document.getElementById("bs-example-navbar-collapse-1");
+    if (window.innerWidth >= 1025) {
+      elementoer.classList.add("width2");
+    } else {
+      elementoer.classList.remove("width2");
+    }
+}
+
+window.addEventListener("load", agregarclase);
+window.addEventListener("resize", agregarclase);
+
+const nav = document.querySelector("#hamburger button");
+var box = document.getElementById('nav');
+
+/* Abrir y cerrar el navbar */
+nav.addEventListener("click", e => {
+    nav.classList.toggle('open');
+    box.classList.toggle('stykynav');
+});
+ ```
 </TabItem>
  </Tabs>
 </div>
@@ -248,21 +325,208 @@ Este componente esta realizado con boostrap y fue modificado para que fuera más
  </Tabs>
  </div>
  </Card>
- ## Implementación 
-<div class="inputs">
-:::caution[¡IMPORTANTE!]
-    Para poder implementar los dropdown, es necesario que se referencie a las siguientes rutas de css en el orden que se muestra a continuación:
-    <FileTree>
-        - public
-            - css
-                - form-groups.css.css
-                - dropdown.css
-                - menu.css
-                
-        - index.astro
-    </FileTree>
-   
-:::
+ ## Dropdown carrito
+<Card>
+<div class="item-iconos iconsright">
+    <span>
+        <nav class="icons-movile" id="">
+            <div class="item-iconos iconsright">
+                <span class="icon-cart">
+                    <div class="dropdown dropcard open" id="divcardshop">
+                        <button
+                            id="dLabel"
+                            class="cardbtn"
+                            type="button"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false">
+                            <svg
+                                width="19"
+                                height="22"
+                                viewBox="0 0 19 22"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M6.5 4.25C6.5 2.93882 7.76806 1.75 
+                                    9.5 1.75C11.2319 1.75 12.5 2.93882 12.5 4.25H6.5ZM5.5 4.25C5.5 2.24747 7.36595 0.75 9.5 0.75C11.6341 
+                                    0.75 13.5 2.24747 13.5 4.25H17C18.1046 4.25 19 5.14543 19 6.25V19.25C19 20.3546 18.1046 21.25 17 21.25H2C0.895431 
+                                    21.25 0 20.3546 0 19.25V6.25C0 5.14543 0.895431 4.25 2 4.25H5.5ZM1 6.25C1 5.69772 1.44772 5.25 2 5.25H17C17.5523 5.25 18 5.69772 18 
+                                    6.25V19.25C18 19.8023 17.5523 20.25 17 20.25H2C1.44772 20.25 1 19.8023 1 19.25V6.25Z"
+                                    fill="currentColor"></path>
+                            </svg>
+                        </button><br />
+                        <ul
+                            class="dropdown-menu carshopping"
+                            aria-labelledby="dLabel"
+                            id="carshop"
+                            aria-expanded="true"
+                            style="top: 183px;" >
+                            <div class="cart-notification-wrapper" id="">
+                                <div>
+                                    <div class="cart-notification__header">
+                                        <h5 class="m-5">
+                                            Artículos añadidos a tu carrito
+
+                                            <a
+                                                id="close-cart1"
+                                                class="minicart_close"
+                                                aria-label="Close">
+                                                <svg
+                                                    id="close-cart"
+                                                    width="16.71"
+                                                    height="16.71"
+                                                    viewBox="0 0 17 18"
+                                                    fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M9.06066 8.85355L16.7071 1.20711L16 0.5L8.35355 8.14645L0.707108 0.5L0 1.20711L7.64645 8.85355L0 16.5L0.707107 17.2071L8.35355 9.56066L16 17.2071L16.7071 16.5L9.06066 8.85355Z"
+                                                        fill="#121212"></path>
+                                                </svg>
+                                            </a>
+                                        </h5>
+                                    </div>
+                                    <div
+                                        id="cart-notification-product-1WATCH468item"
+                                        class="cartmini cartitem">
+                                        <div class="col-set1">
+                                            <div
+                                                class="cart-notification-product__image">
+                                                <picture>
+                                                    <source
+                                                        srcset=""
+                                                        type="image/webp"/>
+                                                    <img
+                                                        src="https://webonline.macstore.mx/img/sku/watch468_FZ.jpg"
+                                                        class="img-responsive"
+                                                        width="362"
+                                                        height="362"
+                                                        loading="lazy"
+                                                        alt="Apple Watch MWYW3AM/A S10 GPS+Cell 46mm Titanio Pizarra Milanes M/L"/>
+                                                </picture>
+                                            </div>
+                                        </div>
+                                        <div class="col-set2">
+                                            <a class="name" href="#">
+                                                <h3
+                                                    class="cart-notification-product__name h4">
+                                                    Apple Watch MWYW3AM/A S10
+                                                    GPS+Cell 46mm Titanio
+                                                    Pizarra Milanes M/L
+                                                </h3>
+                                            </a>
+                                            <div class="spangrey">
+                                                <div
+                                                    class="min_options product-option">
+                                                    <dt class="tdname">
+                                                        Cantidad:
+                                                    </dt>
+                                                    <dd
+                                                        class="ddcaracteristica">
+                                                        1
+                                                    </dd>
+                                                </div>
+                                            </div>
+
+                                            <div class="spangrey">
+                                                <div
+                                                    class="min_options product-option">
+                                                    <dt class="tdname">
+                                                        Color:
+                                                    </dt>
+                                                    <dd
+                                                        class="ddcaracteristica">
+                                                        Pizarra
+                                                    </dd>
+                                                </div>
+                                                <div
+                                                    class="min_options product-option">
+                                                    <dt class="tdname">
+                                                        Material:
+                                                    </dt>
+                                                    <dd
+                                                        class="ddcaracteristica">
+                                                        Titanio
+                                                    </dd>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <a
+                                            href="#"
+                                            class="boton boton-secundario btncar2 mt--1">
+                                            Ver mi carrito (<span
+                                                class="spancarrito"
+                                                id="numerounidadesencarrito">1</span>)
+                                        </a>
+                                        <a
+                                            href="/"
+                                            class="boton boton-primario btncar2 mt--1 btemppago cfloat">
+                                            <span> Ir a pagar </span>
+                                        </a>
+                                        <a
+                                            href="#"
+                                            class="continue_link link button-label"
+                                            >Continuar comprando</a>
+                                    </div>
+
+                                    <div
+                                        id="elcompfrqcartfloat"
+                                        class="textitlecar2">
+                                        <h5 class="m-0">
+                                            Comprados juntos habitualmente
+                                        </h5>
+                                        <div class="" id="">
+                                            <div class="">
+                                                <ul class="productosmini">
+                                                    <li class="itemline">
+                                                        <span
+                                                            class="spancontenidomini">
+                                                            <picture>
+                                                                <source
+                                                                    srcset="https://webonline.macstore.mx/img/sku/WATCH462_FG.webp"/>
+                                                                <img
+                                                                    src="https://webonline.macstore.mx/img/sku/WATCH462_FG.jpg"
+                                                                    alt="Compra Apple Watch MWY63AM/A S10 GPS+Cell 46mm Alum Oro Rosa Dep Rosa S/M"
+                                                                    class="img-responsive"
+                                                                    width="42"
+                                                                    height="42"
+                                                                    loading="lazy"/>
+                                                            </picture>
+                                                        </span>
+                                                        <span
+                                                            class="span3col-set2">
+                                                            <a
+                                                                href="#"
+                                                                class="removeline">
+                                                                <span
+                                                                    class="cart-notification-product__name">
+                                                                    Apple Watch
+                                                                    MWY63AM/A
+                                                                    S10 GPS+Cell
+                                                                    46mm Alum
+                                                                    Oro Rosa Dep
+                                                                    Rosa S/M
+                                                                </span>
+                                                            </a>
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                                <br />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                </span>
+            </div>
+        </nav>
+    </span>
 </div>
+</Card>
 
 
