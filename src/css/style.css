@@ -63,8 +63,21 @@ ul#menu-ms {
 .sl-markdown-content :not(a, strong, em, del, span, input, code, br) + :not(a, strong, em, del, span, input, code, br, :where(.not-content *)) {
     margin-top: 0;
 }
-.sl-markdown-content :is(img, picture, video, canvas, svg, iframe):not(:where(.not-content *)) {
+.sl-markdown-content :is( video, canvas, svg, iframe):not(:where(.not-content *)) {
     display: none;
+}
+svg.cbsic__cbsi {
+    display: block;
+}
+
+svg.legal-arrow {
+    display: block;
+}
+.cardbtn svg{
+    display: block;
+}
+.cart-notification-product__image picture{
+    display: block;
 }
 @media (max-width: 1024px) {
     .-bgcollapse {
