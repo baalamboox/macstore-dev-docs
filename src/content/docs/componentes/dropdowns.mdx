@@ -4,6 +4,7 @@ title: Dropdowns
 import { Card, CardGrid, Code, FileTree, Aside, Badge, Tabs, TabItem } from '@astrojs/starlight/components';
 import BoostrapJquery from '/src/components/bootstrap/BootstrapJQuery.astro';
 import Navbar from '/src/components/formularios/navbar.astro';
+import TabsBoostrap from '/src/components/tablas/tabs.astro';
 import '/src/css/buscador.css'
 import '/src/css/buttons.css'
 import '/src/css/form-groups.css'
@@ -43,6 +44,7 @@ Este componente esta realizado con boostrap y fue modificado para que fuera más
 :::
 </div> 
 ## Dropdown en navbar
+<div class="inputs">
 <Card>
 <div class="">
 <div class="divnavbar" id="nav">
@@ -256,20 +258,18 @@ nav.addEventListener("click", e => {
  </Tabs>
 </div>
 </Card>
+</div>
 ## Dropdown General
+<div class="inputs">
 <Card >
 <ul class="navbar-nav nav" id="menu-ms">
-<li class="dropdown respons">
+<li class="dropdown respons open">
 <a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle linka">
                                 Servicios
     <i class="fa fa-angle-right zicon"></i>
 </a> 
 <ul class="dropdown-menu secundario servicios">
-<li class="d-none d-md-block">
-<a href="#" class="text-decoration">
-    <i class="fa fa-angle-left iconleft"></i> Servicios
-</a>
-</li> 
+
 <span>
 <li><a href="#" class="text-decoration">
         Servicio técnico
@@ -291,7 +291,7 @@ nav.addEventListener("click", e => {
 <TabItem label="HTML">
 ```html
 <ul class="navbar-nav nav" id="menu-ms">
-    <li class="dropdown respons ">
+    <li class="dropdown respons">
         <a  href="#"
             data-toggle="dropdown"
             role="button"
@@ -302,12 +302,7 @@ nav.addEventListener("click", e => {
             <i class="fa fa-angle-right zicon"></i>
         </a>
         <ul class="dropdown-menu secundario servicios">
-            <li class="d-none d-md-block">
-                <a href="#">
-                    <i class="fa fa-angle-left iconleft"></i>
-                    Servicios
-                </a>
-            </li>
+           
             <span>
                 <li><a href="#"> Servicio técnico </a></li>
             </span>
@@ -325,16 +320,17 @@ nav.addEventListener("click", e => {
  </Tabs>
  </div>
  </Card>
+ </div>
  ## Dropdown carrito
+<div class="inputs">
 <Card>
-<div class="item-iconos iconsright">
+<div class="item-iconos iconsright bg-white">
     <span>
-        <nav class="icons-movile" id="">
+        <nav class="icons-movile" >
             <div class="item-iconos iconsright">
                 <span class="icon-cart">
-                    <div class="dropdown dropcard open" id="divcardshop">
+                    <div class="dropdown dropcard open" >
                         <button
-                            id="dLabel"
                             class="cardbtn"
                             type="button"
                             data-toggle="dropdown"
@@ -370,7 +366,6 @@ nav.addEventListener("click", e => {
                                             Artículos añadidos a tu carrito
 
                                             <a
-                                                id="close-cart1"
                                                 class="minicart_close"
                                                 aria-label="Close">
                                                 <svg
@@ -388,7 +383,7 @@ nav.addEventListener("click", e => {
                                         </h5>
                                     </div>
                                     <div
-                                        id="cart-notification-product-1WATCH468item"
+                                        id=""
                                         class="cartmini cartitem">
                                         <div class="col-set1">
                                             <div
@@ -473,13 +468,12 @@ nav.addEventListener("click", e => {
                                     </div>
 
                                     <div
-                                        id="elcompfrqcartfloat"
                                         class="textitlecar2">
                                         <h5 class="m-0">
                                             Comprados juntos habitualmente
                                         </h5>
-                                        <div class="" id="">
-                                            <div class="">
+                                        <div >
+                                            <div>
                                                 <ul class="productosmini">
                                                     <li class="itemline">
                                                         <span
@@ -504,11 +498,7 @@ nav.addEventListener("click", e => {
                                                                 <span
                                                                     class="cart-notification-product__name">
                                                                     Apple Watch
-                                                                    MWY63AM/A
-                                                                    S10 GPS+Cell
-                                                                    46mm Alum
-                                                                    Oro Rosa Dep
-                                                                    Rosa S/M
+                                                                    MWY63AM/
                                                                 </span>
                                                             </a>
                                                         </span>
@@ -527,6 +517,181 @@ nav.addEventListener("click", e => {
         </nav>
     </span>
 </div>
-</Card>
 
+<div class="droptab">
+<Tabs>
+<TabItem label="HTML">
+```html
+<div class="item-iconos iconsright bg-white">
+    <span>
+        <nav class="icons-movile" >
+            <div class="item-iconos iconsright">
+                <span class="icon-cart">
+                    <div class="dropdown dropcard" >
+                        <button class="cardbtn"
+                            type="button"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false">
+                            <svg  width="19"
+                                height="22"
+                                viewBox="0 0 19 22"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M6.5 4.25C6.5 2.93882 7.76806 1.75 
+                                    9.5 1.75C11.2319 1.75 12.5 2.93882 12.5 4.25H6.5ZM5.5 4.25C5.5 2.24747 7.36595 0.75 9.5 0.75C11.6341 
+                                    0.75 13.5 2.24747 13.5 4.25H17C18.1046 4.25 19 5.14543 19 6.25V19.25C19 20.3546 18.1046 21.25 17 
+                                    21.25H2C0.895431 21.25 0 20.3546 0 19.25V6.25C0 5.14543 0.895431 4.25 2 4.25H5.5ZM1 
+                                    6.25C1 5.69772 1.44772 5.25 2 5.25H17C17.5523 5.25 18 5.69772 18 
+                                    6.25V19.25C18 19.8023 17.5523 20.25 17 20.25H2C1.44772 20.25 1 19.8023 1 19.25V6.25Z"
+                                    fill="currentColor"></path>
+                            </svg>
+                        </button><br />
+                        <ul class="dropdown-menu carshopping"
+                            aria-labelledby="dLabel"
+                            id="carshop"
+                            aria-expanded="true"
+                            style="top: 183px;" >
+                            <div class="cart-notification-wrapper" >
+                                <div>
+                                    <div class="cart-notification__header">
+                                        <h5 class="m-5">
+                                            Artículos añadidos a tu contrasena_registro
+                                             <a class="minicart_close"  aria-label="Close">
+                                                <svg  id="close-cart"
+                                                    width="16.71"
+                                                    height="16.71"
+                                                    viewBox="0 0 17 18"
+                                                    fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M9.06066 8.85355L16.7071 1.20711L16 0.5L8.35355 8.14645L0.707108 0.5L0 1.20711L7.64645 
+                                                        8.85355L0 16.5L0.707107 17.2071L8.35355 9.56066L16 17.2071L16.7071 16.5L9.06066 8.85355Z"
+                                                        fill="#121212"></path>
+                                                </svg>
+                                            </a>
+                                        </h5>
+                                    </div>
+                                    <div class="cartmini cartitem">
+                                        <div class="col-set1">
+                                            <div  class="cart-notification-product__image">
+                                                <picture>
+                                                    <source  srcset=""
+                                                        type="image/webp"/>
+                                                    <img src="https://webonline.macstore.mx/img/sku/watch468_FZ.jpg"
+                                                        class="img-responsive"
+                                                        width="362"
+                                                        height="362"
+                                                        loading="lazy"
+                                                        alt="Apple Watch MWYW3AM/A S10 GPS+Cell 46mm Titanio Pizarra Milanes M/L"/>
+                                                </picture>
+                                            </div>
+                                        </div>
+                                        <div class="col-set2">
+                                            <a class="name" href="#">
+                                                <h3 class="cart-notification-product__name h4">
+                                                    Apple Watch MWYW3AM/A S10
+                                                    GPS+Cell 46mm Titanio
+                                                    Pizarra Milanes M/L
+                                                </h3>
+                                            </a>
+                                            <div class="spangrey">
+                                                <div class="min_options product-option">
+                                                    <dt class="tdname">
+                                                        Cantidad:
+                                                    </dt>
+                                                    <dd class="ddcaracteristica">
+                                                        1
+                                                    </dd>
+                                                </div>
+                                            </div>
+                                            <div class="spangrey">
+                                                <div class="min_options product-option">
+                                                    <dt class="tdname">
+                                                        Color:
+                                                    </dt>
+                                                    <dd class="ddcaracteristica">
+                                                        Pizarra
+                                                    </dd>
+                                                </div>
+                                                <div class="min_options product-option">
+                                                    <dt class="tdname">
+                                                        Material:
+                                                    </dt>
+                                                    <dd class="ddcaracteristica">
+                                                        Titanio
+                                                    </dd>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <a  href="#" class="boton boton-secundario btncar2 mt--1">
+                                            Ver mi carrito (<span
+                                                class="spancarrito"
+                                                id="numerounidadesencarrito">1</span>)
+                                        </a>
+                                        <a href="/" class="boton boton-primario btncar2 mt--1 btemppago cfloat">
+                                            <span> Ir a pagar </span>
+                                        </a>
+                                        <a href="#" class="continue_link link button-label"
+                                            >Continuar comprando</a>
+                                    </div>
+
+                                    <div  class="textitlecar2">
+                                        <h5 class="m-0">
+                                            Comprados juntos habitualmente
+                                        </h5>
+                                        <div >
+                                            <div>
+                                                <ul class="productosmini">
+                                                    <li class="itemline">
+                                                        <span  class="spancontenidomini">
+                                                            <picture>
+                                                                <source
+                                                                    srcset="https://webonline.macstore.mx/img/sku/WATCH462_FG.webp"/>
+                                                                <img
+                                                                    src="https://webonline.macstore.mx/img/sku/WATCH462_FG.jpg"
+                                                                    alt="Compra Apple Watch MWY63AM/A S10 GPS+Cell 46mm Alum Oro Rosa Dep Rosa S/M"
+                                                                    class="img-responsive"
+                                                                    width="42"
+                                                                    height="42"
+                                                                    loading="lazy"/>
+                                                            </picture>
+                                                        </span>
+                                                        <span class="span3col-set2">
+                                                            <a href="#" class="removeline">
+                                                                <span class="cart-notification-product__name">
+                                                                    Apple Watch
+                                                                    MWY63AM/
+                                                                </span>
+                                                            </a>
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                                <br />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                </span>
+            </div>
+        </nav>
+    </span>
+</div>
+
+ ```
+</TabItem>
+ </Tabs>
+</div>
+</Card>
+</div>
+
+
+<Aside> Como ejemplo, en la primera carga se dejo el dropdown habierto agregando la clase <Badge text="open" variant="note" />, 
+esta clase es la que hace la funcion de visualizar o ocultar el contenido del dropdown </Aside>
 

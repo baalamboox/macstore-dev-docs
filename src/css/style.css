@@ -19,6 +19,53 @@ div#menu-ms {
 .sl-markdown-content :not(a, strong, em, del, span, input, code, br) + :not(a, strong, em, del, span, input, code, br, :where(.not-content *)) {
     margin-top: 0;
 }
+.cardbtn {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color: black;
+
+}
+.item-iconos.iconsright.bg-white {
+    padding: 15px;
+}
+.cart-notification__header h5{
+    color:black;
+}
+h3.cart-notification-product__name.h4{
+    color:black;
+}
+.textitlecar2 h5{
+    color:black; 
+}
+.boton-secundario {
+    color: var(--bblue) !important;
+}
+#menu-ms li a {
+    padding: 0;
+}
+a.text-decoration {
+    justify-content: left;
+    display: flex
+;
+}
+ul#menu-ms {
+    width: 100%;
+    background: white;
+    padding: 15px;
+}
+.continue_link {
+    color: #0071e3 !important;
+}
+.droptab ul{
+    margin-top:15px !important;
+
+}
+.sl-markdown-content :not(a, strong, em, del, span, input, code, br) + :not(a, strong, em, del, span, input, code, br, :where(.not-content *)) {
+    margin-top: 0;
+}
+.sl-markdown-content :is(img, picture, video, canvas, svg, iframe):not(:where(.not-content *)) {
+    display: none;
+}
 @media (max-width: 1024px) {
     .-bgcollapse {
         position: initial !important;
@@ -48,5 +95,18 @@ div#menu-ms {
     #menu-ms .nav {
         align-items: center;
     }
-
+    ul.dropdown-menu.secundario {
+        position: relative !important;
+        height: auto;
+    }
+    #carshop {
+        position: relative !important;
+        left: -18px !important;
+        top: 0 !important;
+        right: auto;
+        float: left !important;
+    }
+    .item-iconos span {
+        display: block;
+    }
 }
