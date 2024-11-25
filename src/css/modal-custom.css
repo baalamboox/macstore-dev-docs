@@ -949,3 +949,68 @@ div#modal_pdp .modal-footer {
         row-gap: 16px;
     }
 }
+
+.checkout-loader {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    background: #0000000a;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    flex-direction: row;
+    height: 100vh;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.loader-text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.spinner-text {
+    color: var(--bblack);
+    font-family: sf-pro-text-light;
+    font-size: 16px;
+    margin-top: 1rem;
+}
+
+.spinner-container > .fa-spinner {
+    color: var(--bblack);
+    font-size: 48px !important;
+    stroke-dasharray: 20, 5;
+}
+
+.fa-spin {
+    -webkit-animation: 2s linear infinite fa-spin;
+    animation: 2s linear infinite fa-spin
+}
+
+@-webkit-keyframes fa-spin {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0)
+    }
+
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg)
+    }
+}
+
+@keyframes fa-spin {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0)
+    }
+
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg)
+    }
+}
