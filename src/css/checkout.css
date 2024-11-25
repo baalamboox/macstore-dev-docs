@@ -1777,19 +1777,8 @@
 .aero-rewards {
     color: var(--ggreen);
 }
-.sl-markdown-content :not(a, strong, em, del, span, input, code, br) + :not(a, strong, em, del, span, input, code, br, :where(.not-content *)) {
-    margin-top: 0;
-}
-.sl-markdown-content :is(img, picture, video, canvas, svg, iframe):not(:where(.not-content *)) {
-    display: none;
-}
-svg.cbsic__cbsi {
-    display: block;
-}
 
-svg.legal-arrow {
-    display: block;
-}
+
 
 /* :::::::::: UTILITIES FOR CHECKOUT: END :::::::::: */
 
