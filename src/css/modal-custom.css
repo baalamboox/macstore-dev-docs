@@ -1014,3 +1014,66 @@ div#modal_pdp .modal-footer {
         transform: rotate(359deg)
     }
 }
+
+.modal-icon-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    width: 100%;
+}
+
+.modal-icon {
+    display: block;
+    height: 90px;
+    width: 90px;
+}
+
+    .modal-icon > path {
+        fill: var(--bblue);
+    }
+
+.modal-content-message {
+    height: auto;
+    width: 100%;
+}
+
+.modal-content-primary {
+    color: var(--bblack);
+    font-family: sf-pro-display-medium;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.modal-content-subprimary {
+    font-family: sf-pro-display-regular;
+    font-size: 14px;
+    letter-spacing: 0.06rem;
+}
+
+.modal-content-secondary {
+    color: var(--gray2);
+    font-family: sf-pro-display-light;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.modal-footer-alert {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.modal-content-alert {
+    padding: 32px !important;
+}
+
+.modal-text-small {
+    display: block;
+}
+
+.modal-dialog-checkout {
+    max-width: 900px;
+    width: 100%;
+}

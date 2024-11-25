@@ -1,4 +1,4 @@
-﻿a:focus,
+﻿/* a:focus,
 a:hover,
 abbr[title] {
   text-decoration: underline;
@@ -208,7 +208,7 @@ textarea {
 a:focus {
   outline: -webkit-focus-ring-color auto 5px;
   outline-offset: -2px;
-}
+} */
 .img-responsive {
   display: block;
   max-width: 100%;

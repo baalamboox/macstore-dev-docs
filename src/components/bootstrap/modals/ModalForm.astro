@@ -1,0 +1,159 @@
+---
+---
+
+<div class="modal" id="modalDeliveryAddress" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-checkout">
+        <div class="modal-content modal-content-checkout">
+            <div class="modal-header">
+                <h4 class="modal-title modal-title-checkout">
+                    Dirección de envío
+                </h4>
+                <button type="button" class="close boton" data-dismiss="modal" aria-label="Close">
+                    <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.61681 2.61684C2.73501 2.49863 2.87855 2.43953 3.04741 2.43953C3.21628 2.43953 3.3577 2.49652 3.47169 2.6105L7.75243 6.89124L12.0268 2.61683C12.1408 2.50285 12.2801 2.44375 12.4448 2.43953C12.6136 2.43953 12.7572 2.49863 12.8754 2.61684C12.9936 2.73504 13.0527 2.87858 13.0527 3.04744C13.0527 3.21631 12.9957 3.35773 12.8817 3.47172L8.60731 7.74612L12.8754 12.0142C12.9936 12.1324 13.0527 12.2759 13.0527 12.4448C13.0527 12.6137 12.9936 12.7572 12.8754 12.8754C12.7572 12.9936 12.6136 13.0527 12.4448 13.0527C12.2801 13.0485 12.1387 12.9873 12.0205 12.8691L7.75243 8.601L3.47169 12.8817C3.3577 12.9957 3.21628 13.0527 3.04741 13.0527C2.87855 13.0527 2.73501 12.9936 2.61681 12.8754C2.4986 12.7572 2.4395 12.6137 2.4395 12.4448C2.44372 12.2802 2.50282 12.1408 2.61681 12.0269L6.89755 7.74612L2.61681 3.46538C2.50282 3.3514 2.44372 3.21209 2.4395 3.04744C2.4395 2.87858 2.4986 2.73504 2.61681 2.61684Z"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="#" method="post" class="modal-body">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="cdgcf__cib--floating">
+                                <div class="cdgcf__cibf">
+                                    <input id="NombreDireccion" autocomplete="off" maxlength="120" min="2" required="" type="text" class="cibf__ci" placeholder="Identificador de dirección (Casa, Oficina, etc.)">
+                                    <label for="" class="cibf__cl">Casa, Oficina, etc.</label>
+                                </div>
+                                <span class="msjerror" style="display:none"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row crmt-2 row-p-s">
+                        <div class="col-xs-12 col-sm-6 col-p-s">
+                            <div class="cdgcf__cib--floating">
+                                <div class="cdgcf__cibf">
+                                    <input type="text" id="calleD" autocomplete="off" maxlength="35" min="2" required="" class="cibf__ci" placeholder="Calle">
+                                    <label for="" class="cibf__cl">Calle</label>
+                                </div>
+                                <span class="msjerror" style="display:none"></span>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-3 col-p-s crmt-2-xs">
+                            <div class="cdgcf__cib--floating">
+                                <div class="cdgcf__cibf">
+                                    <input type="text" id="NExtD" autocomplete="off" maxlength="10" min="1" required="" class="cibf__ci" placeholder="Número exterior">
+                                    <label for="" class="cibf__cl">Número exterior</label>
+                                </div>
+                                <span class="msjerror" style="display:none"></span>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-3 col-p-s crmt-2-xs">
+                            <div class="cdgcf__cib--floating">
+                                <div class="cdgcf__cibf">
+                                    <input type="text" id="NIntD" autocomplete="off" maxlength="16" class="cibf__ci" placeholder="Número interior">
+                                    <label for="" class="cibf__cl">Número interior</label>
+                                </div>
+                                <span class="msjerror" style="display:none"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row crmt-2 row-p-s">
+                        <div class="col-xs-12 col-sm-6 col-p-s">
+                            <div class="cdgcf__cib--floating">
+                                <div class="cdgcf__cibf">
+                                    <input autocomplete="off" type="text" id="Calle1D" maxlength="128" required="" min="1" class="cibf__ci" placeholder="Entre calle">
+                                    <label for="" class="cibf__cl">Entre calle</label>
+                                </div>
+                            </div>
+                            <span class="msjerror" style="display:none"></span>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-p-s crmt-2-xs">
+                            <div class="cdgcf__cib--floating">
+                                <div class="cdgcf__cibf">
+                                    <input type="text" id="Calle2D" maxlength="128" min="1" required="" class="cibf__ci" placeholder="Y calle">
+                                    <label for="" class="cibf__cl">Y calle</label>
+                                </div>
+                            </div>
+                            <span class="msjerror" style="display:none"></span>
+                        </div>
+                    </div>
+                    <div class="row crmt-2 row-p-s">
+                        <div class="col-xs-12 col-sm-6 col-p-s">
+                            <div class="cdgcf__cib--floating">
+                                <div class="cdgcf__cibf">
+                                    <input type="text" class="cibf__ci" id="CPD" maxlength="5" min="5" required="" placeholder="Código postal">
+                                    <label for="" class="cibf__cl">Código postal</label>
+                                </div>
+                                <span class="msjerror" style="display:none"></span>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-p-s crmt-2-xs">
+                            <div class="cdgcf__cib--floating">
+                                <div class="cdgcf__cibf">
+                                    <select class="cibf__ci cibf__ci--select" id="selectmodform_muestra"></select>
+                                    <label for="selectmodform_muestra" class="cibf__cl">Colonia</label>
+                                    <svg class="cibf__svg cibf__svg--select" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8 12.5156C7.83754 12.5156 7.68627 12.4456 7.54622 12.3055L1.17647 5.59963C1.12045 5.54361 1.07563 5.48198 1.04202 5.41475C1.01401 5.34753 1 5.2719 1 5.18786C1 5.08142 1.02521 4.98338 1.07563 4.89375C1.12605 4.80411 1.19328 4.73408 1.27731 4.68366C1.36695 4.63324 1.46499 4.60803 1.57143 4.60803C1.7395 4.60803 1.87675 4.66405 1.98319 4.7761L8.36975 11.482H7.63025L14.0084 4.7761C14.1261 4.66405 14.2633 4.60803 14.4202 4.60803C14.5322 4.60803 14.6303 4.63324 14.7143 4.68366C14.7983 4.73408 14.8655 4.80411 14.916 4.89375C14.972 4.98338 15 5.08142 15 5.18786C15 5.33912 14.9412 5.47358 14.8235 5.59123L8.45378 12.3055C8.39216 12.3727 8.32213 12.426 8.2437 12.4652C8.16527 12.4988 8.08403 12.5156 8 12.5156Z" fill="black"></path>
+                                    </svg>
+                                </div>
+                                <span class="msjerror" style="display:none"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row crmt-2 row-p-s">
+                        <div class="col-xs-12 col-sm-6 col-p-s">
+                            <div class="cdgcf__cib--floating">
+                                <div class="cdgcf__cibf">
+                                    <input autocomplete="off" type="text" id="CDMD" required="" disabled="" min="1" maxlength="128" class="cibf__ci" placeholder="Ciudad / Alcaldía / Municipio">
+                                    <label for="" class="cibf__cl">Ciudad / Alcaldía / Municipio</label>
+                                </div>
+                                <span class="msjerror" style="display:none"></span>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-p-s crmt-2-xs">
+                            <div class="cdgcf__cib--floating">
+                                <div class="cdgcf__cibf">
+                                    <input autocomplete="off" type="text" id="EstadoD" disabled="" required="" min="1" maxlength="128" class="cibf__ci" placeholder="Estado">
+                                    <label for="" class="cibf__cl">Estado</label>
+                                </div>
+                                <span class="msjerror" style="display:none"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row crmt-2 row-p-s">
+                        <div class="col-xs-12 col-sm-6 col-p-s">
+                            <div class="cdgcf__cib--floating">
+                                <div class="cdgcf__cibf">
+                                    <input type="text" autocomplete="off" id="telD" maxlength="10" required="" min="10" max="10" class="cibf__ci phone-number" placeholder="Teléfono de contacto">
+                                    <label for="" class="cibf__cl">Teléfono de contacto</label>
+                                </div>
+                                <span class="msjerror" style="display:none"></span>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-p-s crmt-2-xs">
+                            <div class="cdgcf__cib--floating">
+                                <div class="cdgcf__cibf">
+                                    <input type="text" min="0" max="64" id="AdicionalesD" class="cibf__ci" placeholder="Datos adicionales">
+                                    <label for="" class="cibf__cl">Datos adicionales</label>
+                                </div>
+                                <span class="msjerror" style="display:none"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row crmt-2">
+                        <div class="col-xs-12 col-sm-6">
+                            <label for="defaultDeliveryAddress" class="check-group">
+                                <input type="checkbox" class="check-input checkboxpredform" id="defaultDeliveryAddress">
+                                <span class="check-custom"></span>
+                                <label for="defaultDeliveryAddress" class="check-label">Establecer como dirección predeterminada</label>
+                            </label>
+                            <span class="msjerror" style="display:none"></span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="boton boton-primario button-delivery-address">Guardar cambios</button>
+            </div>
+        </div>
+    </div>
+</div>
