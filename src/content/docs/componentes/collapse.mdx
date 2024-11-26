@@ -8,6 +8,7 @@ import Collapsegeneral from '/src/components/formularios/collapse.astro';
 import Collapsecheckout from '/src/components/formularios/collapse-checkout.astro';
 
 import '/src/vendor/bootstrap/animations.css'
+import "/src/css/style.css";
 
 
 <BoostrapJquery/>
@@ -228,8 +229,9 @@ $("input[type='radio']").change((event) => {
 ## Collapse footer
 
 <Card title="">
-
+<div class="bg-white footgerwhite">
 <Collapsefooter/>
+</div>
 <div class="tabb-m">
 <Tabs>
 <TabItem label="HTML">
@@ -243,7 +245,7 @@ $("input[type='radio']").change((event) => {
             </a>
         </p>
     </div>
-    <div id="collapseThree" class="panel-collapse menufooter collapse in" aria-expanded="true" style="">
+    <div id="collapseThree" class="panel-collapse menufooter collapse" aria-expanded="true" style="">
         <div class="panel-body">
             <ul class="listafooter">
                 <li>
