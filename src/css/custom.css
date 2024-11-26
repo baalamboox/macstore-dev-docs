@@ -298,3 +298,9 @@ div#menu-ms {
         max-width: 55rem;
     }
 }
+
+/* :::::::::: BTN MAS ADMINSITRADOR :::::::::: */
+.btnadd {
+    position: initial !important;
+    cursor: pointer;
+}

@@ -159,6 +159,39 @@ ul.dropdown-menu.secundario a {
 .listafooter a:hover{
     color:black;
 }
+.tabs-admin{
+        display: flex;
+        list-style: none;
+        justify-content: left;
+        padding: 0;
+}
+.nav2.active a {
+    color: #0071e3 !important;
+    font-family: 'sf-pro-display-light';
+    font-size: 18px !important;
+    padding: 5px 15px !important;
+}
+.nav2 svg {
+    display:inline-flex;
+}
+.nav2.active a svg{
+    color: #0071e3 !important;  
+    fill: #0071e3;
+    stroke: #0071e3;
+}
+
+div#menu1 {
+    margin-top: -45px;
+}
+.tab-content {
+    color: black !important;
+}
+.tab-content h3{
+    color: black !important;
+}
+.p-20{
+    padding: 20px;
+}
 @media (max-width: 1024px) {
     .-bgcollapse {
         position: initial !important;

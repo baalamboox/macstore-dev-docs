@@ -6,7 +6,7 @@ import BoostrapJquery from '/src/components/bootstrap/BootstrapJQuery.astro';
 import Collapsefooter from '/src/components/formularios/collapse-footer.astro';
 import Collapsegeneral from '/src/components/formularios/collapse.astro';
 import Collapsecheckout from '/src/components/formularios/collapse-checkout.astro';
-
+import TabsBoostrap from '/src/components/tablas/tabs.astro';
 import '/src/vendor/bootstrap/animations.css'
 import "/src/css/style.css";
 
@@ -25,7 +25,6 @@ este solo es funcional en responsivo y el segundo es el genral que se usa dentro
 <div class="bg-white">
 <Collapsegeneral/>
 </div>
-
 <div class="tabb-m">
 <Tabs>
 <TabItem label="HTML">
@@ -35,7 +34,7 @@ este solo es funcional en responsivo y el segundo es el genral que se usa dentro
         <input type="radio" class="cbs__cbsir radiocl radiocllegales" data-leg="4633" id="lr01" name="legales" data-target="l0"/>
         <label for="lr01" class="cbs__cbslh baalamboox legal-cursor">
             <div class="cbslh__cbsrtc">
-                <p class="cbsrtc__cbst legal-main-title">Legal 1</p>
+                <p class="cbsrtc__cbst legal-main-title">Envío gratis</p>
             </div>
             <div class="cbslh__cbsic">
                 <span class="options-address__container">
@@ -47,15 +46,18 @@ este solo es funcional en responsivo y el segundo es el genral que se usa dentro
         </label>
         <div id="legalbs4633" class="collapse mt-0" data-id="l0" aria-expanded="false" style="height: 0px;">
             <div class="well cbs__cbsp">
-                <p>Texto</p>
+                <p>Envío gratis en pedidos mayores de $999.00
+                    Envío sin costo dentro de la República Mexicana en pedidos mayores de $999.00. El tiempo de envío dependerá del producto adquirido, la fecha tentativa de entrega estará estipulada en la página de cada producto o SKU, nuestras entregas en promedio demoran un lapso de 5-14 días hábiles una vez autorizado, procesado y confirmado el pago. En caso de requerir factura, ésta estará disponible una vez que el pedido se haya enviado. El envío gratis en pedidos mayores de $999.00 aplica solo en compras en el sitio www.macstoreonline.com.mx La entrega se hará solo en la dirección especificada en los registros de alta dentro del sitio www.macstoreonline.com.mx en el momento de realizar la compra. La entrega se hará únicamente a pie de puerta. Tiempo de entrega El tiempo de entrega está sujeto a disponibilidad del producto y podrá variar entre productos participantes</p>
+               
             </div>
         </div>
     </div>
     <div class="cbsc__cbs">
         <input type="radio" class="cbs__cbsir radiocl radiocllegales" data-leg="4533" id="lr12" name="legales" data-target="l1"/>
+
         <label for="lr12" class="cbs__cbslh baalamboox legal-cursor">
             <div class="cbslh__cbsrtc">
-                <p class="cbsrtc__cbst legal-main-title">Legal 2</p>
+                <p class="cbsrtc__cbst legal-main-title">iPad Pro 11"</p>
             </div>
             <div class="cbslh__cbsic">
                 <span class="options-address__container">
@@ -67,11 +69,23 @@ este solo es funcional en responsivo y el segundo es el genral que se usa dentro
         </label>
         <div id="legalbs4533" class="collapse in mt-0" data-id="l1" aria-expanded="true" style="">
             <div class="well cbs__cbsp">
-                <p>Texto 2</p>
+                <p>20% de descuento en pago de contado o hasta 24 meses sin intereses en modelos seleccionados de iPad Pro 11"
+
+                    Promoción válida en macstoreonline.com.mx y en tienda física.
+                    
+                    Vigencia del 31 de marzo del 2024 al 27 de abril del 2024
+                    
+                    Modelos participantes: IPADAPP505 IPADAPP506 IPADAPP507 IPADAPP508 IPADAPP509 IPADAPP511 IPADAPP513
+                    
+                    Hasta 24 MSI exclusivo en tienda en línea o hasta 18 MSI para tienda física
+                    Descuento válido en pago de contado.
+                    No aplica con otras promociones ni programas
+                    </p>
             </div>
         </div>
     </div>
 </div>
+
  ```
 </TabItem>
 <TabItem label="JavaScript">
@@ -240,7 +254,7 @@ $("input[type='radio']").change((event) => {
     <div class="panel-heading" id="headingThree">
         <p class="panel-title mb-2 border-responsive">
             <a class="cursorNone h5collapse" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true">
-                Collapse
+                Comprar
                 <i class="fa fa-angle-down icontfooterc"></i>
             </a>
         </p>
@@ -250,12 +264,32 @@ $("input[type='radio']").change((event) => {
             <ul class="listafooter">
                 <li>
                     <a href="#" title="">
-                        link 1
+                        Mac
                     </a>
                 </li>
                 <li>
                     <a href="#" title="">
-                       link 2
+                       iPad
+                    </a>
+                </li>
+                 <li>
+                    <a href="#" title="">
+                       iPhone
+                    </a>
+                </li>
+                 <li>
+                    <a href="#" title="">
+                       Apple Watch
+                    </a>
+                </li>
+                 <li>
+                    <a href="#" title="">
+                      Música
+                    </a>
+                </li>
+                  <li>
+                    <a href="#" title="">
+                     TV & Hogar
                     </a>
                 </li>
             </ul>
@@ -277,5 +311,55 @@ $("input[type='radio']").change((event) => {
 
 
 
+
+<div class="inputs">
+## Tabs-Administrador
+  <Card>
+  <div class="bg-white p-20">
+  <TabsBoostrap/>
+  </div>
+<div class="tabb-m">
+<Tabs>
+<TabItem label="HTML">
+ ```html
+<ul class="nav nav-tabs tabs-admin">
+    <li class="nav2"><a data-toggle="tab" href="#home" class="nav1" aria-expanded="false">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.5 5.50468C0.5 4.84246 0.605236 4.23671 0.815708 3.68743C1.02618 3.13815 1.32392 
+            2.66331 1.70893 2.26289C2.09394 1.85735 2.54312 1.54678 3.05647 1.33117C3.56982 1.11043 
+            4.12936 1.00006 4.73511 1.00006C5.43326 1.00006 6.06982 1.1669 6.64476 1.50057C7.21971 1.82912 
+            7.67146 2.26803 8 2.81731C8.32854 2.26803 8.78029 1.82912 9.35524 1.50057C9.93018 1.1669 10.5667 1.00006 11.2649 1.00006C11.8706 1.00006 12.4302 1.11043 12.9435 1.33117C13.462 1.54678 13.9112 1.85735 14.2911 2.26289C14.6761 2.66331 14.9738 3.13815 15.1843 3.68743C15.3948 4.23671 15.5 4.84246 15.5 5.50468C15.5 6.57244 15.2074 7.62994 14.6222 8.67717C14.0421 9.72439 13.2233 10.746 12.1658 11.7418C11.1134 12.7377 9.88142 13.69 8.46971 14.5986C8.40298 14.6448 8.32597 14.6859 8.23871 14.7218C8.15144 14.7578 8.07187 14.7757 8 14.7757C7.93326 14.7757 7.85626 14.7578 7.76899 14.7218C7.68172 14.6859 7.60216 14.6448 7.53029 14.5986C6.12372 13.69 4.89168 12.7377 3.83419 11.7418C2.78183 10.746 1.96304 9.72439 1.37782 8.67717C0.792608 7.62994 0.5 6.57244 0.5 5.50468ZM1.44713 5.50468C1.44713 6.22337 1.6191 6.94975 1.96304 7.68384C2.31211 8.41279 2.78439 9.13148 3.37988 9.8399C3.98049 10.5483 4.66581 11.2311 5.43583 11.8882C6.20585 12.5401 7.01694 13.1459 7.8691 13.7054C7.93583 13.7567 7.97947 13.7824 8 13.7824C8.02053 13.7824 8.06673 13.7567 8.1386 13.7054C8.99076 13.1459 9.80185 12.5401 10.5719 11.8882C11.3419 11.2311 12.0246 10.5483 12.6201 9.8399C13.2207 9.13148 13.693 8.41279 14.037 7.68384C14.3809 6.94975 14.5529 6.22337 14.5529 5.50468C14.5529 4.79626 14.4091 4.17511 14.1217 3.64123C13.8393 3.10735 13.4517 2.69154 12.9589 2.3938C12.4661 2.09606 11.904 1.94719 11.2726 1.94719C10.8003 1.94719 10.3845 2.03446 10.0252 2.20899C9.66581 2.3784 9.35524 2.59914 9.09343 2.87121C8.83162 3.14328 8.60832 3.42563 8.42351 3.71823C8.34138 3.84144 8.26951 3.92614 8.20791 3.97234C8.1463 4.01854 8.077 4.04164 8 4.04164C7.923 4.04164 7.8537 4.01854 7.79209 3.97234C7.73049 3.92614 7.65606 3.84144 7.56879 3.71823C7.39425 3.42049 7.17608 3.13815 6.91427 2.87121C6.6576 2.59914 6.34702 2.3784 5.98255 2.20899C5.6232 2.03446 5.20483 1.94719 4.72741 1.94719C4.096 1.94719 3.53388 2.09606 3.04107 2.3938C2.54825 2.69154 2.15811 3.10735 1.87064 3.64123C1.5883 4.17511 1.44713 4.79626 1.44713 5.50468Z" fill="black"/>
+            </svg> Certificado de regalos</a></li>
+    <li class="nav2 active"><a data-toggle="tab" href="#menu1" class="nav1" aria-expanded="true">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.1067 15.3754H3.38443C2.56102 15.3754 1.89123 14.7055 1.89123 13.8821L1.89111 7.4696H2.6248V13.8821C2.6248 14.3008 2.96556 14.6416 3.38432 14.6416H13.1069C13.5256 14.6416 13.8664 14.301 13.8664 13.8821L13.8665 7.4696H14.6002V13.8821C14.6002 14.7055 13.9303 15.3754 13.1069 15.3754H13.1067Z" fill="#707070"/>
+            <path d="M6.52898 8.04204C5.37788 8.04204 4.44141 7.10545 4.44141 5.95447H5.17509C5.17509 6.70091 5.78242 7.30824 6.52898 7.30824C7.27554 7.30824 7.88286 6.70091 7.88286 5.95447H8.61655C8.61655 7.10545 7.68008 8.04204 6.52898 8.04204Z" fill="#707070"/>
+            <path d="M9.97039 8.04384C8.81929 8.04384 7.88281 7.10726 7.88281 5.95627V4.43201H8.6165V5.95627C8.6165 6.70272 9.22383 7.31004 9.97039 7.31004C10.7169 7.31004 11.3243 6.70272 11.3243 5.95627H12.058C12.058 7.10726 11.1215 8.04384 9.97039 8.04384Z" fill="#707070"/>
+            <path d="M13.4123 8.04286C12.2612 8.04286 11.3247 7.10627 11.3247 5.95529V4.43102H12.0584V5.95529C12.0584 6.70173 12.6657 7.30906 13.4123 7.30906C14.1588 7.30906 14.7663 6.70173 14.7663 5.95529V4.54174L13.564 2.73392H2.93596L1.73369 4.54163V5.95517C1.73369 6.70162 2.34113 7.30894 3.08769 7.30894C3.83424 7.30894 4.44157 6.70162 4.44157 5.95517V4.43091H5.17526V5.95517C5.17526 7.10627 4.23879 8.04275 3.08769 8.04275C1.93647 8.04275 1 7.10616 1 5.95517V4.43091C1 4.35862 1.02134 4.2879 1.06134 4.22768L2.43375 2.16379C2.50168 2.06145 2.61642 2 2.73922 2H13.7606C13.8833 2 13.9981 2.06145 14.066 2.16379L15.4387 4.22779C15.4788 4.28802 15.5 4.35874 15.5 4.43102V5.95529C15.5 7.10627 14.5635 8.04286 13.4123 8.04286H13.4123Z" fill="#707070"/>
+            <path d="M1.3667 4.06055H15.1332V4.79435H1.3667V4.06055Z" fill="#707070"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.91424 10.739H6.34847C6.25001 10.739 6.17018 10.8188 6.17018 10.9173V14.483C6.17018 14.5815 6.25001 14.6613 6.34847 14.6613H9.91424C10.0127 14.6613 10.0925 14.5815 10.0925 14.483V10.9173C10.0925 10.8188 10.0127 10.739 9.91424 10.739ZM6.34847 10.0258C5.85614 10.0258 5.45703 10.4249 5.45703 10.9173V14.483C5.45703 14.9754 5.85614 15.3745 6.34847 15.3745H9.91424C10.4066 15.3745 10.8057 14.9754 10.8057 14.483V10.9173C10.8057 10.4249 10.4066 10.0258 9.91424 10.0258H6.34847Z" fill="#707070"/>
+            </svg> Sucursales</a></li>
+</ul>
+<div class="tab-content">
+    <div id="home" class="tab-pane fade mt-1">
+        <h3>Titulo tab 1 </h3>
+        <p>Coloca el cupón en la caja de texto para validar  su estatus.  </p>
+        
+    </div>
+    <div id="menu1" class="tab-pane fade active in">
+        <h3>Titulo tab 2</h3>
+        <p>Coloca el codigo del certificado en la caja de texto para validarlo. </p>
+        
+    </div>
+</div>
+```
+</TabItem>
+
+ </Tabs>
+</div>
+
+  </Card>
+
+</div>
 
 

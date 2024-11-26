@@ -83,3 +83,23 @@
 .boton-saber-mas:focus {
     color: var(--button-primary-hover);
 }
+.btnadd {
+    background-color: #1B977B !important;
+    z-index: 1;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    height: 50px !important;
+    width: 50px !important;
+    border-radius: 50% !important;
+    transition: all .3s;
+    border: none !important;
+    display: flex
+
+}
+.svgbtnplus{
+    fill: white;
+    margin-top: 7px;
+    width: 35px;
+    margin-left: 2px;
+}
