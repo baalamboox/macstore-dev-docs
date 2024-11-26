@@ -20,6 +20,12 @@ export default defineConfig({
 			title: 'Dev Docs',
 			sidebar: [
 				{
+					label: 'Administrador',
+					autogenerate: {
+						directory: 'administrador',
+					},
+				},
+				{
 					label: 'Empezando',
 					autogenerate: {
 						directory: 'empezando',
