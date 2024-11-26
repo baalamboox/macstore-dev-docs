@@ -286,3 +286,9 @@ padding-bottom: 0px;
 div#menu-ms {
     background: white;
 }
+
+/* :::::::::: Modals :::::::::: */
+
+.modals .modal-content {
+    margin-top: 0;
+}

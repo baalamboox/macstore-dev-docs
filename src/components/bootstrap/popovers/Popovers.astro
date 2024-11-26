@@ -1,7 +1,5 @@
 ---
-import '/src/css/pdp-producto.css';
 ---
-
 
 <div id="Memoriasram" class="botones-conf btn-pdp divclaseposicion3">
     <h6 class="label-configuracion">
@@ -22,8 +20,7 @@ import '/src/css/pdp-producto.css';
     </h6>
     <ul class="lista-general list-propiedades" data-bgen="Memoria RAM">
         <li
-            style="cursor:context-menu"
-            !important;=""
+            
             data-toggle="tooltip"
             data-arrow="end"
             data-justify="end"
@@ -54,8 +51,7 @@ import '/src/css/pdp-producto.css';
             36 GB <x class="dif-price-eq"></x>
         </li>
         <li
-            style="cursor:context-menu"
-            !important;=""
+            style="cursor:context-menu";
             data-toggle="tooltip"
             data-arrow="end"
             data-justify="end"
@@ -75,3 +71,9 @@ import '/src/css/pdp-producto.css';
         </li>
     </ul>
 </div>
+
+<script>
+    $(function() {
+        $('[data-toggle="popover"]').popover();
+    });
+</script>
