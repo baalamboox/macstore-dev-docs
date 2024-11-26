@@ -156,6 +156,9 @@ ul.dropdown-menu.secundario a {
 .nav>li>a:focus, .nav>li>a:hover {
     background-color: white;
 }
+.listafooter a:hover{
+    color:black;
+}
 @media (max-width: 1024px) {
     .-bgcollapse {
         position: initial !important;
