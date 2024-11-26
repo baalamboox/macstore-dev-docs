@@ -292,3 +292,8 @@ div#menu-ms {
 .modals .modal-content {
     margin-top: 0;
 }
+/* :::::::::: BTN MAS ADMINSITRADOR :::::::::: */
+.btnadd {
+    position: initial !important;
+    cursor: pointer;
+}
