@@ -9,7 +9,7 @@ import ModalForm from '/src/components/bootstrap/modals/ModalForm.astro';
 import ModalBopis from '/src/components/bootstrap/modals/ModalBopis.astro';
 import ModalBopisLoader from '/src/components/bootstrap/modals/ModalBopisLoader.astro';
 
-import { Card, FileTree } from '@astrojs/starlight/components';
+import { Card, FileTree, Badge } from '@astrojs/starlight/components';
 
 import '/src/vendor/bootstrap/animations.css';
 import '/src/vendor/bootstrap/modal.css';
@@ -25,16 +25,83 @@ import '/src/css/bopis.css';
 
 Los modales de Bootstrap son ventanas emergentes que se utilizan para mostrar información adicional o para realizar acciones específicas sin redirigir a otra página.
 
-## Implementación
+## Uso
+<hr />
 
 La Implementación de los modales de Bootstrap adaptados a CX MacStore es sumamente sencillo, solo hay que tener en cuenta
 algunos archivos que se requieren para su correcto funcionamiento.
 
-:::caution[Uso]
+:::caution[Importante]
+    <small>
+        Este es un ejemplo de implementación 😎 de los Modales puede ser relativo dependiendo de las caracteristicas,
+        estructura y diseño del proyecto, en este caso es una simplificación para facilitar la comprensión 🤔.
+    </small>
 
+    <FileTree>
+        - macstore/
+            - css/
+                - **animations.css**
+                - **modal.css**
+                - **grid.css** 👈
+                - **buttons.css** 👈
+                - **modal-bancos-pdp.css** 
+                - **modal-custom.css**
+                - **checkout.css** 👈
+                - **footer.css**
+                - **bopis.css**
+            - js/
+                - jquery-3.7.0.min.js
+                - bootstrap.min.js
+        - index.html
+    </FileTree>
+
+    <div>
+        <small>Los archivos que tiene el icono 👈 son los que se puede omitir si no se quieren usar formuarios dentro de los modales o no se usara BOPIS.</small>
+        <small>
+            En el archivo `index.html` o donde se va quiera implementar los Modales se tienen que mandar a llamar los archivos
+            con sus correspondientes rutas relativas o absolutas.
+        </small>
+    </div>
+
+    ```html title="index.html" { 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17 }
+        <!DOCTYPE html>
+        <html lang="es-MX" dir="ltr">
+            <head>
+                <meta charset="UTF-8" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <title>Ejemplo implementación</title>
+                <link rel="stylesheet" href="./css/animations.css" />
+                <link rel="stylesheet" href="./css/modal.css" />
+                <link rel="stylesheet" href="./css/grid.css" />
+                <link rel="stylesheet" href="./css/buttons.css" />
+                <link rel="stylesheet" href="./css/modal-bancos-pdp.css" />
+                <link rel="stylesheet" href="./css/modal-custom.css" />
+                <link rel="stylesheet" href="./css/checkout.css" />
+                <link rel="stylesheet" href="./css/footer.css" />
+                <link rel="stylesheet" href="./css/bopis.css" />
+                <script src="./js/jquery-3.7.0.min.js"></script>
+                <script src="./js/bootstrap.min.js"></script>
+            </head>
+            <body>
+                ...
+            </body>
+        </html>
+    ``` 
 :::
 
-<div class="card-exe-code modals">
+<div>
+    <Badge text="👀 OJO:" variant="danger" size="medium" />
+    <p>
+        Es importante destacar que el archivo de CSS de bootstrap que se mostraron con anterioridad son archivos que ha sido modificados, para adaptar algunos
+        estilos para CX MacStore el caso de los modales ha sido modificado, si se intenta reemplazar por otros archivos posiblemente no
+        funcionen ☠️ correctamente.
+    </p>
+</div> 
+
+## Ejemplos
+<hr />
+
+<div class="card-exe-code modals" style="isolation:auto !important;">
     ### Modal con loader
     <Card title="Si el contenido que se va a rendizar se tarda es importante usar este tipo de modal, cuando la respuesta sea correcta solo se debe ocultar el loader." icon="approve-check-circle">
             <ModalLoader />
@@ -74,7 +141,7 @@ algunos archivos que se requieren para su correcto funcionamiento.
             ```
     </Card>
     ### Modal de confirmación
-    <Card title="" icon="approve-check-circle">
+    <Card title="Si lo que se quiere es un modal de confirmación este es el indicado." icon="approve-check-circle">
             <ModalConfirm />
             ```html
             <button type="button" class="button-play" data-toggle="modal" data-target="#modalconfirm" title="Visualizar">
@@ -104,7 +171,7 @@ algunos archivos que se requieren para su correcto funcionamiento.
             ```
     </Card>
     ### Modal con formularios
-    <Card title="" icon="approve-check-circle">
+    <Card title="Si el modal requiere la implementación de un formulario este vendría perfectamente bien." icon="approve-check-circle">
             <ModalForm />
             ```html
             <button type="button" class="button-play" data-toggle="modal" data-target="#modalForm" title="Visualizar">
@@ -246,7 +313,7 @@ algunos archivos que se requieren para su correcto funcionamiento.
             ```
     </Card>
     ### Modal para bopis
-    <Card title="" icon="approve-check-circle">
+    <Card title="Para implemetar un modal para BOPIS este es el correcto." icon="approve-check-circle">
             <ModalBopis />
             ```html
             <button type="button" class="button-play" data-toggle="modal" data-target="#modalBopis" title="Visualizar">
@@ -346,7 +413,7 @@ algunos archivos que se requieren para su correcto funcionamiento.
             ```
     </Card>
     ### Modal para bopis con loader
-    <Card title="" icon="approve-check-circle">
+    <Card title="Si se quiere con loader solo falta agregar algo." icon="approve-check-circle">
             <ModalBopisLoader />
             ```html {7,8,9}
             ...

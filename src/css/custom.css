@@ -14,12 +14,11 @@
 
 .right-sidebar-container:where(.astro-67yu43on) {
     width: 100%;
-    max-width: 320px;
+    max-width: 250px;
 }
 
 .sl-container:where(.astro-7nkwcw3z) {
     margin-inline: auto;
-    max-width: 55rem;
 }
 
 .expressive-code pre > code {
@@ -291,4 +290,11 @@ div#menu-ms {
 
 .modals .modal-content {
     margin-top: 0;
+}
+
+
+@media screen and (min-width: 1480px) {
+    .sl-container:where(.astro-7nkwcw3z) {
+        max-width: 55rem;
+    }
 }
