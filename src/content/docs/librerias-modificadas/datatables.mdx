@@ -2,6 +2,7 @@
 title: 'DataTables'
 ---
 
+import { Badge, FileTree } from '@astrojs/starlight/components';
 import DataTablesJQuery from '/src/components/datatables/DatatablesJQuery.astro';
 import DataTablesExample from '/src/components/datatables/DataTablesExample.astro';
 
@@ -15,6 +16,87 @@ import '/src/css/checkout.css';
 DataTables es una biblioteca de JavaScript que se utiliza para crear tablas 😎 interactivas y personalizables en aplicaciones web 🌐.
 
 ## Uso
+<hr />
+
+Para implementar los tooltips personalizados para el proyecto CX MacStore es muy fácil solo se tiene que tener en cuenta la importanción de los siguientes
+archivos necesarios para el buen funcionamiento ✅ de los mismos.
+
+:::caution[Importante]
+    <small>
+        Este es un ejemplo de implementación 😎 de los tooltips puede ser relativo  dependiendo de las caracteristicas,
+        estructura y diseño del proyecto, en este caso es una simplificación para facilitar la comprensión 🤔.
+    </small>
+
+    <FileTree>
+        - macstore/
+            - css/
+                - **datatables.css**
+                - **searchhighlight.css**
+            - js/
+                - jquery-3.7.0.min.js
+                - **datatables.js**
+                - **searchhighlight.js**
+                - **highlight.js**
+        - index.html
+    </FileTree>
+
+    <div>
+        <small>
+            En el archivo `index.html` o donde se va quiera implementar los tooltips se tienen que mandar a llamar los archivos
+            con sus correspondientes rutas relativas o absolutas.
+        </small>
+    </div>
+
+    ```html title="index.html"
+        <!DOCTYPE html>
+        <html lang="es-MX" dir="ltr">
+            <head>
+                <meta charset="UTF-8" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <title>Ejemplo implementación</title>
+                <link rel="stylesheet" href="./css/tooltip.css" />
+                <script src="./js/jquery-3.7.0.min.js"></script>
+                <script src="./js/bootstrap.min.js"></script>
+            </head>
+            <body>
+                ...
+                <script>
+                    // Script importante para la inicialización de DataTables.
+                    $(document).ready(function () {
+                        var table = $("#datatablesExample").DataTable({
+                            language: {
+                                url: "https://cdn.datatables.net/plug-ins/1.13.1/i18n/es-ES.json",
+                                search: "Título del input",
+                                searchPlaceholder: "Título del input",
+                            },
+                            title: "Título",
+                            bPaginate: false,
+                            searchHighlight: true,
+                            draw: true,
+                            responsive: true,
+                        });
+                        table.on("draw", function () {
+                            var body = $(table.table().body());
+                            body.unhighlight();
+                            body.highlight(table.search());
+                        });
+                    });
+                <script>
+            </body>
+        </html>
+    ``` 
+:::
+
+<div>
+    <Badge text="👀 OJO:" variant="danger" size="medium" />
+    <p>
+        Es importante destacar que el archivo de JavaScript de bootstrap `bootstrap.min.js` es un archivo que ha sido modificado, para adaptar algunas
+        funcionalidades para CX MacStore el caso de los tooltips ha sido modificada, si se intenta reemplazar por otro archivo posiblemente no
+        funcionen correctamente los tooltips.
+    </p>
+</div> 
+
+## Ejemplos
 <hr />
 
 <DataTablesExample />

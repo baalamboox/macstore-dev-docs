@@ -317,6 +317,11 @@ div#menu-ms {
     height: auto;
 }
 
+.datatables #table_id tr > th {
+    font-size: 14px;
+    padding-inline: 50px;
+}
+
 .datatables #table_id th, #table_id td {
     text-wrap: nowrap;
 }
