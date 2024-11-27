@@ -2,7 +2,7 @@
 title: 'DataTables'
 ---
 
-import { Badge, FileTree } from '@astrojs/starlight/components';
+import { Badge, FileTree, Tabs, TabItem, Card } from '@astrojs/starlight/components';
 import DataTablesJQuery from '/src/components/datatables/DatatablesJQuery.astro';
 import DataTablesExample from '/src/components/datatables/DataTablesExample.astro';
 
@@ -18,12 +18,13 @@ DataTables es una biblioteca de JavaScript que se utiliza para crear tablas 😎
 ## Uso
 <hr />
 
-Para implementar los tooltips personalizados para el proyecto CX MacStore es muy fácil solo se tiene que tener en cuenta la importanción de los siguientes
+Para implementar los DataTables personalizados para el proyecto CX MacStore es muy fácil solo se tiene que tener en cuenta la importanción de los siguientes
 archivos necesarios para el buen funcionamiento ✅ de los mismos.
 
+<div class="datatables-highligtht">
 :::caution[Importante]
     <small>
-        Este es un ejemplo de implementación 😎 de los tooltips puede ser relativo  dependiendo de las caracteristicas,
+        Este es un ejemplo de implementación 😎 de los DataTables puede ser relativo  dependiendo de las caracteristicas,
         estructura y diseño del proyecto, en este caso es una simplificación para facilitar la comprensión 🤔.
     </small>
 
@@ -42,61 +43,117 @@ archivos necesarios para el buen funcionamiento ✅ de los mismos.
 
     <div>
         <small>
-            En el archivo `index.html` o donde se va quiera implementar los tooltips se tienen que mandar a llamar los archivos
+            En el archivo `index.html` o donde se va quiera implementar los DataTables se tienen que mandar a llamar los archivos
             con sus correspondientes rutas relativas o absolutas.
         </small>
     </div>
 
-    ```html title="index.html"
+    ```html title="index.html" {7, 8, 9, 10, 11}
         <!DOCTYPE html>
         <html lang="es-MX" dir="ltr">
             <head>
                 <meta charset="UTF-8" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <title>Ejemplo implementación</title>
-                <link rel="stylesheet" href="./css/tooltip.css" />
-                <script src="./js/jquery-3.7.0.min.js"></script>
-                <script src="./js/bootstrap.min.js"></script>
+                <link rel="stylesheet" href="./css/datatables.css" />
+                <link rel="stylesheet" href="./css/searchhighlight.css" />
+                <script src="./js/datatables.js"></script>
+                <script src="./js/searchhighlight.js"></script>
+                <script src="./js/highlight.js"></script>
             </head>
             <body>
                 ...
-                <script>
-                    // Script importante para la inicialización de DataTables.
-                    $(document).ready(function () {
-                        var table = $("#datatablesExample").DataTable({
-                            language: {
-                                url: "https://cdn.datatables.net/plug-ins/1.13.1/i18n/es-ES.json",
-                                search: "Título del input",
-                                searchPlaceholder: "Título del input",
-                            },
-                            title: "Título",
-                            bPaginate: false,
-                            searchHighlight: true,
-                            draw: true,
-                            responsive: true,
-                        });
-                        table.on("draw", function () {
-                            var body = $(table.table().body());
-                            body.unhighlight();
-                            body.highlight(table.search());
-                        });
-                    });
-                <script>
             </body>
         </html>
     ``` 
 :::
+</div>
 
 <div>
     <Badge text="👀 OJO:" variant="danger" size="medium" />
     <p>
-        Es importante destacar que el archivo de JavaScript de bootstrap `bootstrap.min.js` es un archivo que ha sido modificado, para adaptar algunas
-        funcionalidades para CX MacStore el caso de los tooltips ha sido modificada, si se intenta reemplazar por otro archivo posiblemente no
-        funcionen correctamente los tooltips.
+        Es importante destacar que el archivos de CSS de DataTables son archivos que han sido modificados, para adaptar algunas
+        funcionalidades para CX MacStore.
     </p>
 </div> 
 
-## Ejemplos
+## Ejemplo
 <hr />
 
 <DataTablesExample />
+
+<Card title="👽 Código del ejemplo anterior">
+    <Tabs>
+        <TabItem label="HTML">
+            ```html
+            <div class="table-responsive" style="box-shadow: none;">
+                <table id="datatableExample" class="stripe table" style="width:100%;">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre(s)</th>
+                            <th>Apellido paterno</the=>
+                            <th>Apellido materno</th>
+                            <th>Correo electrónico</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="pregunta" style="text-align:center;">01</td>
+                            <td class="respuesta">José</td>
+                            <td class="respuesta">Lima</td>
+                            <td class="respuesta">Montes</td>
+                            <td class="respuesta">jose@macstore.mx</td>
+                        </tr>
+                        <tr>
+                            <td class="pregunta" style="text-align:center;">02</td>
+                            <td class="respuesta">Alondra</td>
+                            <td class="respuesta">Sandoval</td>
+                            <td class="respuesta">Sánchez</td>
+                            <td class="respuesta">alondra@macstore.mx</td>
+                        </tr>
+                        <tr>
+                            <td class="pregunta" style="text-align:center;">03</td>
+                            <td class="respuesta">Ameyali</td>
+                            <td class="respuesta">Ponce</td>
+                            <td class="respuesta">Martínez</td>
+                            <td class="respuesta">ameyali@macstore.mx</td>
+                        </tr>
+                        <tr>
+                            <td class="pregunta" style="text-align:center;">04</td>
+                            <td class="respuesta">Yamilet</td>
+                            <td class="respuesta">Hernández</td>
+                            <td class="respuesta">Santos</td>
+                            <td class="respuesta">yamilet@macstore.mx</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            ```
+        </TabItem>
+        <TabItem label="JS">
+        ```js
+        $(document).ready(function () {
+            var table = $("#datatableExample").DataTable({
+                language: {
+                    url: "https://cdn.datatables.net/plug-ins/1.13.1/i18n/es-ES.json",
+                    search: "Búsqueda por tema",
+                    searchPlaceholder: "Búsqueda por tema",
+                },
+                title: "Usuarios",
+                bPaginate: false,
+                searchHighlight: true,
+                draw: true,
+                responsive: true,
+            });
+
+            table.on("draw", function () {
+                var body = $(table.table().body());
+                body.unhighlight();
+                body.highlight(table.search());
+            });
+        });
+        ```
+        </TabItem>
+    </Tabs>
+</Card>

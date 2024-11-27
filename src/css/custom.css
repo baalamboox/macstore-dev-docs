@@ -325,4 +325,11 @@ div#menu-ms {
 .datatables #table_id th, #table_id td {
     text-wrap: nowrap;
 }
- 
+
+.datatables-highligtht .highlight {
+    background-color: var(--sl-color-text-accent) !important;
+}
+
+.datatables-highligtht .highlight.mark {
+    background-color: var(--tmLineBgCol) !important;
+}
