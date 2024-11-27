@@ -1,0 +1,70 @@
+---
+
+---
+<div class="datatables">
+    <div class="container" id="faq">
+        <div class="row">
+            <div class="table-responsive" style="box-shadow: none;">
+                <table id="table_id" class="stripe table" style="width:100%;">
+                    <thead>
+                        <tr>
+                            <th style="width: 100%;">ID</th>
+                            <th style="width: 100%;">Nombre(s)</th>
+                            <th style="width: 100%;">Apellido paterno</th>
+                            <th style="width: 100%;">Apellido materno</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="pregunta" style="text-align:center;">01</td>
+                            <td class="respuesta">José</td>
+                            <td class="respuesta">Lima</td>
+                            <td class="respuesta">Montes</td>
+                        </tr>
+                        <tr>
+                            <td class="pregunta" style="text-align:center;">02</td>
+                            <td class="respuesta">Alondra</td>
+                            <td class="respuesta">Sandoval</td>
+                            <td class="respuesta">Sánchez</td>
+                        </tr>
+                        <tr>
+                            <td class="pregunta" style="text-align:center;">03</td>
+                            <td class="respuesta">Ameyali</td>
+                            <td class="respuesta">Ponce</td>
+                            <td class="respuesta">Martínez</td>
+                        </tr>
+                        <tr>
+                            <td class="pregunta" style="text-align:center;">04</td>
+                            <td class="respuesta">Yamilet</td>
+                            <td class="respuesta">Hernández</td>
+                            <td class="respuesta">Santos</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        var table = $("#table_id").DataTable({
+            language: {
+                url: "https://cdn.datatables.net/plug-ins/1.13.1/i18n/es-ES.json",
+                search: "Búsqueda por tema",
+                searchPlaceholder: "Búsqueda por tema",
+            },
+            title: "Usuarios",
+            bPaginate: false,
+            searchHighlight: true,
+            draw: true,
+            responsive: true,
+        });
+
+        table.on("draw", function () {
+            var body = $(table.table().body());
+            body.unhighlight();
+            body.highlight(table.search());
+        });
+    });
+</script>

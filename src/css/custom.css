@@ -304,3 +304,20 @@ div#menu-ms {
     position: initial !important;
     cursor: pointer;
 }
+
+/* :::::::::: DataTables :::::::::: */
+
+.datatables .datatables-title,
+.datatables .datatables-search-icon,
+.datatables .cdgcf__cib--floating {
+    margin-top: 0;
+}
+
+.datatables #table_id tr {
+    height: auto;
+}
+
+.datatables #table_id th, #table_id td {
+    text-wrap: nowrap;
+}
+ 

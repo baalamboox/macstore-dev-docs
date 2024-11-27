@@ -1,0 +1,220 @@
+.faq-header {
+    display: flex;
+    align-items: center;
+    background-image: url("https://webonline.macstore.mx/img/lp/acerca-de/header-faq.png");
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+.faq-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.faq-img {
+    width: 600px;
+    max-width: 100%;
+    height: auto;
+}
+
+.faq-title {
+    font-family: "sf-pro-display-bold";
+    font-size: clamp(24px, 48px, 10vw);
+    color: var(--wwhite);
+    margin: 0;
+    text-align: center;
+}
+
+.table-responsive {
+    border-radius: 20px;
+    box-shadow: 5px 10px 10px var(--gray3);
+    padding: 32px;
+    margin: 50px 0;
+    overflow-x: auto;
+    outline: 1px solid var(--bblue);
+    -webkit-overflow-scrolling: touch;
+}
+
+#faq .row {
+    padding: 0 32px;
+}
+
+@media screen and (max-width: 576px) {
+    #faq .row {
+        padding: 0 16px;
+    }
+}
+
+#acerca-de .container {
+    height: 100%;
+}
+
+    #acerca-de .row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+        #acerca-de .row h1 {
+            color: white;
+            font-weight: 500;
+            font-size: 50px;
+        }
+
+            #acerca-de .row h1 img {
+                margin-bottom: 20px;
+                width: 60%;
+            }
+
+#textoBlack {
+    background-color: black;
+    color: white;
+    padding: 40px 80px;
+}
+
+    #textoBlack p {
+        font-size: 18px;
+        text-align: justify;
+    }
+
+#espacioT {
+    margin-bottom: 50px;
+    margin-top: 50px;
+    padding: 0px 5%;
+}
+
+#table_id .pregunta {
+    font-size: 14px;
+    letter-spacing: .2px;
+    font-family: 'sf-pro-display-semibold';
+}
+
+#table_id tr {
+    height: 100px;
+    align-items: center;
+}
+
+#table_id .respuesta {
+    color: var(--gray1);
+    font-family: 'sf-pro-rounded-light';
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 1.2px;
+    margin: 0;
+    text-align: left;
+}
+
+/*div#table_id_filter label {
+    font-size: 14px;
+    letter-spacing: .2px;
+    font-family: 'sf-pro-display-semibold';
+    color: black;
+    margin-right: 20px;
+}*/
+
+   /* div#table_id_filter label input {
+        color: #707070;
+        margin-left: 20px;
+    }*/
+
+div#table_id_info {
+    text-align: right;
+    color: #D0D0D0;
+    font-size: 14px;
+    letter-spacing: .5px;
+    font-family: 'sf-pro-display-regular';
+}
+
+.highlight {
+    background-color: #00ff01 !important;
+}
+
+@media (max-width:991px) {
+    #galeria {
+        height: 300px;
+    }
+
+    #iconShop {
+        margin-top: 280px;
+    }
+
+    #iconShop {
+        margin-top: 280px;
+        padding: 50px;
+    }
+}
+
+@media (max-width:768px) {
+
+    #galeria {
+        height: 250px;
+    }
+
+    #iconShop {
+        margin-top: 250px;
+    }
+
+    #textoBlack p {
+        font-size: 16px;
+    }
+
+    .bloquesIma .row .textoB p {
+        font-size: 16px;
+    }
+
+    div#silverB .row p {
+        font-size: 16px;
+    }
+
+    #silverB img {
+        width: 65%;
+    }
+
+    #acerca-de .row h1 {
+        font-size: 35px;
+    }
+
+    .container-fluid.espaciosB h3 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width:428px) {
+    #textoBlack {
+        background-color: black;
+        color: white;
+        padding: 40px 30px;
+    }
+
+    .bloquesIma {
+        height: 400px;
+    }
+
+    div#silverB .row {
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container-fluid.espaciosB i {
+        font-size: 40px;
+    }
+
+    #iconShop {
+        margin-top: 720px;
+    }
+}
+
+@media (max-width:375px) {
+    #acerca-de .row h1 {
+        font-size: 25px;
+    }
+}
