@@ -266,6 +266,26 @@ div#seccionBloques{
     .navbar {
         min-height: 300px !important;
     }
+    #seccionBloques .block-mosaicoMaster a i {
+        font-size: 40px;
+    }
     
 }
-
+@media (max-width: 560px) {
+    .textcardam{
+      font-size: 14px;
+    }
+}
+@media (max-width: 450px) {
+    div#seccionBloques{
+        display: block;
+        width: 100%;
+    
+    }
+    .block-mosaicoMaster {
+        width: 100%;
+    } 
+    .textcardam{
+        font-size: 16px;
+      }
+}
