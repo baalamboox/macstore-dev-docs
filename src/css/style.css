@@ -192,6 +192,24 @@ div#menu1 {
 .p-20{
     padding: 20px;
 }
+div#seccionBloques{
+    display: flex;
+    width: 100%;
+
+}
+.block-mosaicoMaster {
+    width: 33%;
+    padding: 5px;
+}
+#seccionBloques .block-mosaicoMaster a i {
+    font-size: 46px;
+    text-align: center;
+    display: flex
+;
+    justify-content: center;
+    align-items: center;
+}
+
 @media (max-width: 1024px) {
     .-bgcollapse {
         position: initial !important;
@@ -250,3 +268,4 @@ div#menu1 {
     }
     
 }
+

@@ -1,0 +1,178 @@
+#todoAdmin {
+    background-color: white;
+}
+
+#seccionBloques .block-mosaico {
+    background-color: white;
+    height: 150px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px #D9D7D7;
+    transition: all .3s;
+    margin-top:20px;
+    box-shadow: 1px 0px 10px -1px #dadada;
+
+}
+
+/* #seccionBloques .masterB {
+    margin-bottom: 50px;
+}*/
+
+#seccionBloques .block-mosaicoMaster {
+    transition: all .3s;
+}
+
+    #seccionBloques .block-mosaicoMaster:hover i {
+        color: white;
+        transition: all .3s;
+    }
+    #seccionBloques .block-mosaicoMaster:hover a p {
+        color: white;
+    }
+
+    #seccionBloques .block-mosaicoMaster:hover .block-mosaico {
+        border: solid 1px var(--bblue);
+        transition: all .3s;
+        background-color: var(--bblue);
+    }
+
+        #seccionBloques .block-mosaicoMaster:hover .block-mosaico h3 {
+            color: var(--bblue);
+            transition: all .3s;
+        }
+
+    #seccionBloques .block-mosaicoMaster a {
+        color: #0071e3;
+        text-decoration: none;
+    }
+
+#seccionBloques .block-mosaicoMaster a h3 {
+    font-size: 15px;
+    margin-top: -5px;
+}
+
+#seccionBloques .block-mosaicoMaster a i {
+    font-size: 46px;
+}
+
+#accesosDirectosAdmin ul li {
+    display: inline;
+    text-align: center;
+    margin-right: 20px;
+    transition: all .3s;
+}
+
+#accesosDirectosAdmin ul {
+    margin: auto;
+    text-align: center;
+}
+
+#accesosDirectosAdmin ul li i {
+    font-size: 35px;
+    background-color: white;
+    border-radius: 10px;
+    border: solid 1px #D9D7D7;
+    padding: 10px;
+    color: #BEBEBE;
+}
+
+#accesosDirectosAdmin ul li .activo {
+    border: solid 1px #FF580D;
+    transition: all .3s;
+    color: #FF580D;
+    background-color: white;
+}
+
+#accesosDirectosAdmin ul li:hover i {
+    border: solid 1px #FF580D;
+    transition: all .3s;
+    color: #FF580D;
+    background-color: white;
+}
+
+#contenedorCabecera h2 {
+    color: #5f5f5f;
+}
+
+.imglogo {
+    width: 185px;
+    margin-left: 40px;
+}
+a#cerrarcuentaAdmin {
+    cursor: pointer;
+    margin-top: 0px;
+    text-align: right;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+}
+.text1{
+    padding:0 !important;
+}
+@media (max-width: 992px) {
+ul#menuadmin {
+margin-top: -34px;
+}
+}
+
+@media (max-width: 768px) {
+#accesosDirectosAdmin ul li i {
+font-size: 20px;
+}
+
+#seccionBloques .block-mosaicoMaster a h3 {
+font-size: 10px;
+margin-top: 0px;
+}
+}
+
+@media (max-width: 414px) {
+#accesosDirectosAdmin ul li i {
+font-size: 20px;
+}
+
+#seccionBloques .block-mosaicoMaster a h3 {
+font-size: 10px;
+margin-top: 0px;
+}
+
+#seccionBloques .block-mosaicoMaster a i {
+font-size: 30px;
+}
+/* #seccionBloques .block-mosaico {
+        height: 90px;
+    }*/
+#contenedorCabecera h2 {
+color: #5f5f5f;
+font-size: 20px;
+}
+
+#accesosDirectosAdmin ul li .activo {
+margin-bottom: 10px;
+}
+
+a#cerrarcuentaAdmin {
+cursor: pointer;
+margin-top: 0px;
+text-align: right;
+margin-bottom: 0;
+padding-bottom: 2px;
+}
+
+.imglogo {
+width: 140px;
+margin-left: 20px;
+}
+
+nav#menuM .container-fluid {
+padding: 0px 14px 0px 10px !important;
+}
+}
+
+.activo {
+border: solid 1px #FF580D;
+transition: all .3s;
+color: #FF580D;
+background-color: white;
+}

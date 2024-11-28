@@ -1,8 +1,167 @@
 ---
 title: Grid administrador
 ---
-import CKEditor from '/src/components/ckeditor/CKEditor.astro';
-import CKEditorExampple from '/src/components/ckeditor/CKEditorExample.astro';
+import { Card, CardGrid, Code, FileTree, Aside, Badge,Tabs, TabItem } from '@astrojs/starlight/components';
+import BoostrapJquery from '/src/components/bootstrap/BootstrapJQuery.astro';
+import Imgadmin from '/src/components/administrador/imgadmin.astro';
+import '/src/css/input-admin.css'
+import '/src/css/admin.css'
+import "/src/css/style.css";
 
-<CKEditor />
-<CKEditorExampple />
+<Imgadmin/>
+<BoostrapJquery/>
+<div class="row masterB" id="seccionBloques">
+
+                            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 block-mosaicoMaster">
+                                <a href="/">
+                                    <div class="block-mosaico card">
+                                        <div class="section text-center">
+                                            <p> <i class="bi bi-cart-fill"></i></p>
+
+                                            <p class="textcardam"> Pedidos</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 block-mosaicoMaster">
+                                <a href="/">
+                                    <div class="block-mosaico card">
+                                        <div class="section text-center">
+                                            <p> <i class="bi bi-geo-alt-fill"></i></p>
+
+                                            <p class="textcardam"> Códigos Postales</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 block-mosaicoMaster">
+                                <a href="/">
+                                    <div class="block-mosaico card">
+                                        <div class="section text-center">
+                                            <p> <i class="bi bi-bag-heart-fill"></i></p>
+
+                                            <p class="textcardam"> Pedidos Kiosco.</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>                  
+</div>
+<div class="row masterB" id="seccionBloques">
+      <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 block-mosaicoMaster">
+                                <a href="/">
+                                    <div class="block-mosaico card">
+                                        <div class="section text-center">
+                                            <p> <i class="bi bi-suitcase-lg-fill"></i></p>
+
+                                            <p class="textcardam"> BOPIS</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 block-mosaicoMaster">
+                                <a href="/">
+                                    <div class="block-mosaico card">
+                                        <div class="section text-center">
+                                            <p> <i class="bi bi-bank2"></i></p>
+
+                                            <p class="textcardam">  Sucursales </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 block-mosaicoMaster">
+                                <a href="/">
+                                    
+                                    <div class="block-mosaico card">
+                                        <div class="section text-center">
+                                            <p> <i class="bi bi-newspaper"></i></p>
+
+                                            <p class="textcardam">  Newsletter</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div> 
+</div>
+ <Tabs>
+<TabItem label="HTML">
+```html
+<div class="row masterB">
+
+    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 block-mosaicoMaster">
+        <a href="/">
+            <div class="block-mosaico">
+                <div class="section text-center">
+                    <p> <i class="bi bi-cart-fill"></i></p>
+                    <p class="textcardam"> Pedidos</p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 block-mosaicoMaster">
+        <a href="/">
+            <div class="block-mosaico">
+                <div class="section text-center">
+                    <p> <i class="bi bi-geo-alt-fill"></i></p>
+                    <p class="textcardam"> Códigos Postales</p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 block-mosaicoMaster">
+        <a href="/">
+            <div class="block-mosaico card">
+                <div class="section text-center">
+                    <p> <i class="bi bi-bag-heart-fill"></i></p>
+                    <p class="textcardam"> Pedidos Kiosco.</p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 block-mosaicoMaster">
+        <a href="/">
+            <div class="block-mosaico">
+                <div class="section text-center">
+                    <p> <i class="bi bi-suitcase-lg-fill"></i></p>
+                    <p class="textcardam"> BOPIS</p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 block-mosaicoMaster">
+        <a href="/">
+            <div class="block-mosaico">
+                <div class="section text-center">
+                    <p> <i class="bi bi-bank2"></i></p>
+                    <p class="textcardam">  Sucursales </p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 block-mosaicoMaster">
+        <a href="/">
+            <div class="block-mosaico">
+                <div class="section text-center">
+                    <p> <i class="bi bi-newspaper"></i></p>
+                    <p class="textcardam">  Newsletter</p>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+ ```
+</TabItem>
+ </Tabs>
+<div class="inputs">
+ ## Integración
+
+ <hr/>
+<div class="inputs">
+ <FileTree>
+    - src/
+        - css/
+            - git.css
+            - admin.css
+</FileTree>
+</div>
+</div>
+<Aside>Es importante recordar que los iconos depende de la libreria de <a target="_blank" href="https://fontawesome.com/v4/"> <Badge text="https://fontawesome.com/v4/" variant="note" /> </a> </Aside>
