@@ -292,6 +292,11 @@ div#menu-ms {
     margin-top: 0;
 }
 
+/* :::::::::: icons formas de pago :::::::::: */
+.myIcon{
+    width: 65px !important;
+    max-width: initial !important;
+}
 
 @media screen and (min-width: 1480px) {
     .sl-container:where(.astro-7nkwcw3z) {

@@ -1,0 +1,35 @@
+---
+---
+ 
+
+
+ 
+
+   
+    
+ 
+<script>
+// Seleccionamos el input y los botones
+const inputCantidad = document.getElementById('cantidad');
+    const btnAumentar = document.getElementById('aumentar');
+    const btnDisminuir = document.getElementById('disminuir');
+
+    // Función para aumentar la cantidad
+    btnAumentar.addEventListener('click', () => {
+      let valorActual = parseInt(inputCantidad.value, 10);
+      inputCantidad.value = valorActual + 1;
+    });
+
+    // Función para disminuir la cantidad
+    btnDisminuir.addEventListener('click', () => {
+      let valorActual = parseInt(inputCantidad.value, 10);
+      if (valorActual > 1) { // Evita que disminuya por debajo de 1
+        inputCantidad.value = valorActual - 1;
+      }
+    });
+    inputCantidad.addEventListener('blur', () => {
+      if (inputCantidad.value.trim() === '') {
+        inputCantidad.value = 1;
+      }
+    });
+  </script>

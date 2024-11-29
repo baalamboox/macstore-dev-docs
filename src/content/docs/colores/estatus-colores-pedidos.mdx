@@ -1,0 +1,69 @@
+---
+title: Estatus colores pedidos
+---
+
+import { CardGrid, Card, Tabs, TabItem } from '@astrojs/starlight/components';
+import '/src/css/colores-pedidos.css';
+
+Los colores son una parte fundamental le dan a cualquier elemento identidad única, la
+Web no se quedan afuera, para el proyecto CX MacStore se emplea los siguiente colores. 
+
+## Status
+
+<div class="color-palate">
+    <CardGrid>
+        <Card title="Azul primario">
+            <div class="color-container bg-naranjaP"></div>
+            <small class="subtext">En verificación</small>
+            <Tabs>
+                <TabItem label="CSS">
+                ```css
+                    --bblue
+                ```
+                </TabItem>
+                <TabItem label="Hex">
+                ```css
+                    background: #FF8702
+                ```
+                </TabItem>
+            </Tabs>
+        </Card>
+        <Card title="Naranja primario">
+            <div class="color-container bg-oorange"></div>
+            <small class="subtext">Texto promociones, nuevo, iconos</small>
+            <Tabs>
+                <TabItem label="CSS">
+                ```css
+                    --oorange
+                ```
+                </TabItem>
+                <TabItem label="Hex">
+                ```css
+                    #bf4800
+                ```
+                </TabItem>
+            </Tabs>
+        </Card>
+        <Card title="Verde primario">
+            <div class="color-container bg-ggreen"></div>
+            <small class="subtext">Tiempos, texto de éxito, iconos</small>
+            <Tabs>
+                <TabItem label="CSS">
+                ```css
+                    --oorange
+                ```
+                </TabItem>
+                <TabItem label="Hex">
+                ```css
+                    #008900
+                ```
+                </TabItem>
+            </Tabs>
+        </Card>
+     
+      
+   
+   
+  
+    </CardGrid>
+</div>

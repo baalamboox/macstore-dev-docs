@@ -209,7 +209,34 @@ div#seccionBloques{
     justify-content: center;
     align-items: center;
 }
-
+#pleca-comprar {
+    position: relative;
+    padding-right: 15px;
+    padding-left: 15px;
+    z-index: 1;
+}
+.icon-svg svg {
+    display: block;
+}
+.sbrw__slrp {
+    font-family: "sf-pro-display-thin" !important;
+    font-size: 1.3rem;
+}
+span.ns-btn {
+    width: 30px;
+}
+span.ns-btn a {
+  margin:auto;
+}
+.ns-btn {
+    text-align: center;
+}
+.number-spinner input {
+    color: black;
+}
+.number-spinner {
+    background: white;
+}
 @media (max-width: 1024px) {
     .-bgcollapse {
         position: initial !important;
@@ -270,6 +297,16 @@ div#seccionBloques{
         font-size: 40px;
     }
     
+}
+@media screen and (max-width: 767px) {
+    .order-total-container {
+        width: 100%;
+        align-items: center;
+        padding-top: 0;
+    }
+    .order-summary-container {
+        display: none;
+    }
 }
 @media (max-width: 560px) {
     .textcardam{
