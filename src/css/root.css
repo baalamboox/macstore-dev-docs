@@ -45,4 +45,20 @@
     --in-stock-alfa-light: rgba(163, 104, 78, 0.04);
     --store-related-alfa-dark: rgb(112, 112, 112, 0.1);
     --store-related-alfa-light: rgba(112, 112, 112, 0.04);
+
+      /* :::::::::: Colores Pedidos:::::::::: */
+      --NaranjaV:#FF8702;
+      --AzulT:#96D0FF;
+      --VerdeC: #B7FAA7;
+      --VerdeTC:#00915A;
+      --BeigeE:#F2C588;
+      --LilaE: #CEA3FF;
+      --RojoC: #FF0000;
+      --GrisR: #C7C7C7;
+      --AmarilloD: #FFF5A5;
+      --AzulP:#008DE5;
+      --RosaCR:#D300B7;
+      --AmarilloPE:#F7E800;
+      --RojoCSP:#B40000;
+      --VerdeF: #5B8374;
 }

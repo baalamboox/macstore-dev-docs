@@ -338,3 +338,7 @@ div#menu-ms {
 .datatables-highligtht .highlight.mark {
     background-color: var(--tmLineBgCol) !important;
 }
+/* :::::::::: borde color blanco :::::::::: */
+.bg-wwhite.border {
+    border: 1px solid #d0d0d0;
+}
