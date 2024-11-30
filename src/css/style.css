@@ -237,6 +237,7 @@ span.ns-btn a {
 .number-spinner {
     background: white;
 }
+
 @media (max-width: 1024px) {
     .-bgcollapse {
         position: initial !important;
