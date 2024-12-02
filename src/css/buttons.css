@@ -99,7 +99,36 @@
 }
 .svgbtnplus{
     fill: white;
-    margin-top: 7px;
+    margin-top: 0px;
     width: 35px;
-    margin-left: 2px;
+    margin-left: 0px;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+    border-radius: 50px !important;
+    outline: 0 !important;
+    border: none;
+    padding: 8px;
+}
+.btn-amarillo {
+    color: #fff;
+    background-color: orange !important;
+    z-index: 1 !important;
+    border-radius: 50px !important;
+    outline: 0 !important;
+    border: none;
+    padding: 8px;
+}
+.btBorrarfiltro{
+    background-color: red !important;
+    border: solid red 1px !important;
+    z-index: 1 !important;
+    border-radius: 50px !important;
+    outline: 0 !important;
+    border: none;
+    padding: 8px;
+    color: #fff;
 }

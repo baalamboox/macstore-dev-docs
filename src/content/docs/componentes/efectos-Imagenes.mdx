@@ -1,0 +1,132 @@
+---
+title: Efectos de Imagenes
+---
+
+import { Card, CardGrid, Code, FileTree, Aside, Badge,Tabs, TabItem } from '@astrojs/starlight/components';
+
+import InputRadio from '/src/components/formularios/input-radio.astro';
+import '../../../css/imagenes-hover.css'
+import '../../../css/style.css'
+
+## Imagen Hover
+<br/>
+<div class="">
+<Card class="inputs">
+<div id="galeria">
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 imgG" id="g4">
+            <div class="cortina">
+                <h4 class="text-center">MacStore Polanco</h4>
+            </div>
+    </div>
+</div>
+<Tabs>
+<TabItem label="HTML">
+```html
+<div id="galeria">
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 imgG" id="g4">
+            <div class="cortina">
+                <h4 class="text-center">MacStore Polanco</h4>
+            </div>
+    </div>
+</div>
+ ```
+</TabItem>
+ </Tabs>
+</Card>
+</div>
+<br/>
+  ## Imagen contenedor 
+  <div class="inputs">
+<Card class="inputs" title='Imagen para contenedor'>
+<div class="container-fluid" id="cabeceraApplerCare">
+    <img src="https://webonline.macstore.mx/img/LP/applecare/appleCarec.png" class="img-responsive d-block" alt="Apple Care MacStore" title="Apple Care MacStore"/>
+</div>
+<Tabs>
+<TabItem label="HTML">
+```html
+<div class="container-fluid" id="cabeceraApplerCare">
+    <img src="https://webonline.macstore.mx/img/LP/applecare/appleCarec.png" class="img-responsive d-block" alt="Apple Care MacStore" title="Apple Care MacStore"/>
+</div>
+ ```
+</TabItem>
+ </Tabs>
+</Card>
+</div>
+  <br/>
+  ## Imagen contenedor con sombra
+  <div class="inputs">
+<Card class="inputs" title='Imagen con sombra a los laterales de la imagen'>
+<div class="container-fluid faq-header">
+    <div class="container">
+        <div class="row">
+            <div class="faq-container">
+                <h2 class="faq-title">Compra &amp; Recoge</h2>
+            </div>
+        </div>
+    </div>
+</div>
+<Tabs>
+<TabItem label="HTML">
+```html
+<div class="container-fluid faq-header">
+    <div class="container">
+        <div class="row">
+            <div class="faq-container">
+                <h2 class="faq-title">Compra &amp; Recoge</h2>
+            </div>
+        </div>
+    </div>
+</div>
+ ```
+</TabItem>
+ </Tabs>
+</Card>
+</div>
+
+## Imagen contenedor con opacidad
+
+<div class="inputs">
+<Card class="inputs" title='Imagen sin hover para contenedor'>
+<div class="container-fluid" id="acerca-de">
+    <div class="container">
+        <div class="row text-center">
+            <h1 class="text-center principal">
+                <img src="https://webonline.macstore.mx/img/lp/acerca-de/logo-macstore.png" alt="Logo MacStore"/>
+                <br/>
+                ¿Quiénes Somos?
+            </h1>
+        </div>
+    </div>
+</div>
+<Tabs>
+<TabItem label="HTML">
+```html
+<div class="container-fluid" id="acerca-de">
+    <div class="container">
+        <div class="row text-center">
+            <h1 class="text-center principal">
+                <img src="https://webonline.macstore.mx/img/lp/acerca-de/logo-macstore.png" alt="Logo MacStore"/>
+                <br/>
+                ¿Quiénes Somos?
+            </h1>
+        </div>
+    </div>
+</div>
+ ```
+</TabItem>
+ </Tabs>
+</Card>
+</div>
+
+## Integración 
+<div class="inputs">
+:::caution[¡IMPORTANTE!]
+    Es necesario que tengan css correspondiente:
+    <FileTree>
+        - public
+            - css
+                - imagenes-hover.css
+               
+    </FileTree>
+:::
+</div>
