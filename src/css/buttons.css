@@ -132,3 +132,52 @@
     padding: 8px;
     color: #fff;
 }
+.btnnegro {
+    color: white !important;
+    border-color: #000 !important;
+    padding: 15px 0;
+    font-size: 1.6rem !important;
+    font-weight: 100;
+    border-radius: 50px !important;
+   
+    padding: 15px !important;
+    font-size: 14px !important;
+    background: #000 !important;
+    text-align: center;
+    font-family: 'sf-pro-display-regular' !important;
+    text-decoration: none !important;
+    line-height: initial !important;
+}
+.btn-caracteristica {
+    padding: 10px 0 !important;
+    border-radius: 10px !important;
+    background-color: white;
+     border: 1px solid #000; 
+    font-size: 16px;
+    color: #000;
+    color: #000;
+    font-weight: 200;
+    width: 150px;
+}
+.fn{
+    background-color: #000;
+    color:white;
+}
+.buttonazul {
+    background-color: #043263 !important;
+    padding: 18px !important;
+    color: white !important;
+    border-radius: 50px !important;
+    padding: 15px !important;
+    font-size: 13px !important;
+    text-align: center !important;
+    border: 1px solid #043263 !important;
+    margin: 6px !important;
+    font-family: 'sf-pro-display-regular';
+    text-decoration: none !important;
+    line-height: initial;
+}
+.fn2{
+    background-color: #043263;
+    color:white;
+}

@@ -345,3 +345,9 @@ div#menu-ms {
 .sl-markdown-content :not(a, strong, em, del, span, input, code, br) + :not(a, strong, em, del, span, input, code, br, :where(.not-content *)) {
     margin-top: 0;
 }
+.fn {
+    margin-left: 10px;
+}
+.fn2 {
+    margin-left: 10px;
+}
