@@ -1,0 +1,67 @@
+.color-palate .title {
+    font-size: 14px;
+    font-weight: bold;
+}
+.bg-naranjaP{
+    background: var(--NaranjaV);
+}
+.bg-azulT{
+    background: var(--AzulT);
+}
+.bg-VerdeC{
+    background: var(--VerdeC);
+}
+.bg-VerdeTC{
+    background: var(--VerdeTC);
+}
+.bg-BeigeE{
+    background: var(--BeigeE);
+}
+.bg-LilaE{
+    background: var(--LilaE);
+}
+.bg-RojoC{
+    background: var(--RojoC);
+}
+.bg-GrisR{
+    background: var(--GrisR);
+}
+.bg-AmarilloD{
+    background: var(--AmarilloD);
+}
+.bg-AzulP{
+    background: var(--AzulP);
+}
+.bg-RosaCR{
+    background: var(--RosaCR);
+}
+.bg-AmarilloPE{
+    background: var(--AmarilloPE);
+}
+.bg-RojoCSP{
+    background: var(--RojoCSP);
+}
+.bg-VerdeF{
+    background: var(--VerdeF);
+}
+.bg-facturadoP{
+   
+    background: linear-gradient(180deg, rgba(91,131,116,1) 0%, rgba(255,255,255,1) 100%);
+}
+.bg-CanceladoP{
+    
+    background: linear-gradient(180deg, 
+    rgba(255,0,0,1) 0%, rgba(255,255,255,1) 100%)
+}
+.bg-EntregadoP{
+    background: rgb(206,163,255); 
+background: linear-gradient(180deg, rgba(206,163,255,1) 0%, rgba(255,255,255,1) 100%)
+}
+.bg-ProcesoEnvio{
+    background: rgb(247,232,0); 
+    background: linear-gradient(180deg, rgba(247,232,0,1) 0%, rgba(255,255,255,1) 100%)
+}
+.bg-RecibidoSucursal{
+    background: rgb(255,127,0); 
+    background: linear-gradient(180deg, rgba(255,127,0,1) 0%, rgba(255,255,255,1) 100%);
+}

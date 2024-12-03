@@ -1,0 +1,332 @@
+---
+title: Estatus de pedidos
+---
+
+import { CardGrid, Card, Tabs, TabItem, Badge } from '@astrojs/starlight/components';
+import '/src/css/colores-pedidos.css';
+
+Los colores son una parte fundamental le dan a cualquier elemento identidad única, la
+Web no se quedan afuera, para el proyecto CX MacStore se emplea los siguiente colores. 
+
+## Colores
+ <br/>
+<div class="color-palate">
+    <CardGrid>
+        <Card title="En verificación">
+            <div class="color-container bg-naranjaP"></div>
+            <Tabs>
+                <TabItem label="CSS">
+                ```css
+                    --NaranjaV
+                ```
+                </TabItem>
+                <TabItem label="Hex">
+                ```css
+                   #ff8702
+                ```
+                </TabItem>
+            </Tabs>
+        </Card>
+        <Card title="En espera de transferencia">
+            <div class="color-container bg-azulT"></div>
+            <Tabs>
+                <TabItem label="CSS">
+                ```css
+                    --AzulT
+                ```
+                </TabItem>
+                <TabItem label="Hex">
+                ```css
+                   #96D0FF
+                ```
+                </TabItem>
+            </Tabs>
+        </Card>
+        <Card title="Pago Confirmado">
+            <div class="color-container bg-VerdeC"></div>
+            <Tabs>
+                <TabItem label="CSS">
+                ```css
+                    --VerdeC
+                ```
+                </TabItem>
+                <TabItem label="Hex">
+                ```css
+                #B7FAA7
+                ```
+                </TabItem>
+            </Tabs>
+        </Card>
+       <Card title="Transferencia confirmada">
+            <div class="color-container bg-VerdeTC"></div>
+            <Tabs>
+                <TabItem label="CSS">
+                ```css
+                    --VerdeTC
+                ```
+                </TabItem>
+                <TabItem label="Hex">
+                ```css
+                    #00915A
+                ```
+                </TabItem>
+            </Tabs>
+        </Card>
+          <Card title="Enviado">
+            <div class="color-container bg-BeigeE"></div>
+            <Tabs>
+                <TabItem label="CSS">
+                ```css
+                    --BeigeE
+                ```
+                </TabItem>
+                <TabItem label="Hex">
+                ```css
+                    #F2C588
+                ```
+                </TabItem>
+            </Tabs>
+        </Card>
+          <Card title="Entregado">
+            <div class="color-container bg-LilaE"></div>
+            <Tabs>
+                <TabItem label="CSS">
+                ```css
+                    --LilaE
+                ```
+                </TabItem>
+                <TabItem label="Hex">
+                ```css
+                    #CEA3FF
+                ```
+                </TabItem>
+            </Tabs>
+        </Card>
+          <Card title="Cancelado">
+            <div class="color-container bg-RojoC"></div>
+            <Tabs>
+                <TabItem label="CSS">
+                ```css
+                    --RojoC
+                ```
+                </TabItem>
+                <TabItem label="Hex">
+                ```css
+                    #FF0000
+                ```
+                </TabItem>
+            </Tabs>
+        </Card>
+          <Card title="Reembolso">
+            <div class="color-container bg-GrisR"></div>
+            <Tabs>
+                <TabItem label="CSS">
+                ```css
+                    --GrisR
+                ```
+                </TabItem>
+                <TabItem label="Hex">
+                ```css
+                    #C7C7C7
+                ```
+                </TabItem>
+            </Tabs>
+        </Card>
+          <Card title=" Devolución">
+            <div class="color-container bg-AmarilloD"></div>
+            <Tabs>
+                <TabItem label="CSS">
+                ```css
+                    --AmarilloD
+                ```
+                </TabItem>
+                <TabItem label="Hex">
+                ```css
+                    #FFF5A5
+                ```
+                </TabItem>
+            </Tabs>
+        </Card>
+          <Card title="Pagado">
+            <div class="color-container bg-AzulP"></div>
+            <Tabs>
+                <TabItem label="CSS">
+                ```css
+                    --AzulP
+                ```
+                </TabItem>
+                <TabItem label="Hex">
+                ```css
+                    #008DE5
+                ```
+                </TabItem>
+            </Tabs>
+        </Card>
+          <Card title="Comprobante recibido">
+            <div class="color-container bg-RosaCR"></div>
+            <Tabs>
+                <TabItem label="CSS">
+                ```css
+                    --RosaCR
+                ```
+                </TabItem>
+                <TabItem label="Hex">
+                ```css
+                    #D300B7
+                ```
+                </TabItem>
+            </Tabs>
+        </Card>
+          <Card title=" En proceso de envío">
+            <div class="color-container bg-AmarilloPE"></div>
+            <Tabs>
+                <TabItem label="CSS">
+                ```css
+                    --AmarilloPE
+                ```
+                </TabItem>
+                <TabItem label="Hex">
+                ```css
+                    #F7E800
+                ```
+                </TabItem>
+            </Tabs>
+        </Card>
+          <Card title="Cancelado sin pago">
+            <div class="color-container bg-RojoCSP"></div>
+            <Tabs>
+                <TabItem label="CSS">
+                ```css
+                    --RojoCSP
+                ```
+                </TabItem>
+                <TabItem label="Hex">
+                ```css
+                    #B40000
+                ```
+                </TabItem>
+            </Tabs>
+        </Card>
+          <Card title="Facturado">
+            <div class="color-container bg-VerdeF"></div>
+            <Tabs>
+                <TabItem label="CSS">
+                ```css
+                    --VerdeF
+                ```
+                </TabItem>
+                <TabItem label="Hex">
+                ```css
+                    #5B8374
+                ```
+                </TabItem>
+            </Tabs>
+        </Card>
+          <Card title=" Facturado Parcial">
+            <div class="color-container bg-facturadoP"></div>
+            <Tabs>
+            <TabItem label="Clase">
+                
+                  ```css
+                bg-facturadoP
+                ```
+                </TabItem>
+                <TabItem label="Gradien">
+                ```css 
+                background: linear-gradient(180deg, 
+                rgba(91,131,116,1) 0%, 
+                rgba(255,255,255,1) 100%);
+                ```
+                </TabItem>
+                
+            </Tabs>
+        </Card>
+          <Card title="Cancelado Parcial">
+            <div class="color-container bg-CanceladoP"></div>
+            <Tabs>
+             <TabItem label="Clase">
+                ```css
+                bg-CanceladoP
+                ```
+                </TabItem>
+                <TabItem label="Gradien">
+                ```css
+                background: linear-gradient(180deg, 
+                rgba(255,0,0,1) 0%, 
+                rgba(255,255,255,1) 100%)
+                   
+                ```
+                </TabItem>
+               
+            </Tabs>
+        </Card>
+          <Card title="Entregado Parcial">
+            <div class="color-container bg-EntregadoP"></div>
+            <Tabs>
+            <TabItem label="Clase">
+                ```css
+                bg-EntregadoP
+                ```
+            </TabItem>
+                <TabItem label="Gradien">
+                ```css
+                background: linear-gradient(180deg, 
+                rgba(206,163,255,1) 0%, 
+                rgba(255,255,255,1) 100%)
+                ```
+                </TabItem>
+                
+            </Tabs>
+        </Card>
+          <Card title="En proceso de envío Parcial">
+            <div class="color-container bg-ProcesoEnvio"></div>
+            <Tabs>
+            <TabItem label="Classe">
+                ```css
+                bg-ProcesoEnvio
+                ```
+             </TabItem>
+                <TabItem label="Gradien">
+                ```css
+                    background: linear-gradient(180deg, 
+                    rgba(247,232,0,1) 0%, 
+                    rgba(255,255,255,1) 100%)
+                ```
+                </TabItem>
+                
+            </Tabs>
+        </Card>
+          <Card title="Recibido en Sucursal">
+            <div class="color-container bg-RecibidoSucursal"></div>
+            <Tabs>
+             <TabItem label="Classe">
+                ```css
+                   bg-RecibidoSucursal
+                ```
+                </TabItem>
+                <TabItem label="Gradien">
+                ```css
+                background: linear-gradient(180deg, 
+                rgba(255,127,0,1) 0%, 
+                rgba(255,255,255,1) 100%);
+                ```
+                </TabItem>
+               
+            </Tabs>
+        </Card>
+      
+   
+   
+  
+    </CardGrid>
+</div>
+ 
+## Ejemplo por clases
+ <br/>
+<hr/>
+
+:::note[Ejemplo:]
+```html
+<div class="bg-RecibidoSucursal"></div>
+```
+Para que los estilos de los gradientes puedan visualizarse con esta clase, es importante agregar el archivo de css llamado: <Badge text="colores-pedidos.css" variant="note" /> 

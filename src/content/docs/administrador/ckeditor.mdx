@@ -1,0 +1,95 @@
+---
+title: CKEditor 
+---
+import { Card, CardGrid, Code, FileTree, Aside, Badge,Tabs, TabItem } from '@astrojs/starlight/components';
+import CKEditor from '/src/components/ckeditor/CKEditor.astro';
+import CKEditorExampple from '/src/components/ckeditor/CKEditorExample.astro';
+
+:::tip[Versión: 4]
+:::
+
+CKEditor es un editor en línea que se utiliza para editar documentos HTML (o sus fragmentos) en el navegador.  
+El contenido web se crea en HTML, un lenguaje de marcado que incluye texto y etiquetas especiales que describen este texto y le añaden significado semántico.
+Para saber más visite <a href="https://ckeditor.com/docs/ckeditor4/latest/guide/dev_installation.html">Saber más sobre el Ckeditor</a>
+<div class="inputs">
+      <CKEditor />
+      <CKEditorExampple />
+
+<br/>
+<div class="tabb-m">
+<Tabs>
+<TabItem label="HTML">
+```html
+<textarea name="editor1" id="editor1" rows="10" cols="80">
+</textarea>
+```
+</TabItem>
+<TabItem label="JS">
+```JavaScript
+   CKEDITOR.replace("editor1");
+```
+ <Aside>El id del textarea debe conincidir con el valor de la función, en este caso "editor1"</Aside>
+</TabItem>
+ </Tabs>
+</div>
+
+</div>
+
+## Integración
+<br/>
+<hr />
+<Aside>Es importante cargar todos los archivos que se encuentran dentro de la carpeta ckeditor de lo contrario no se visualizará el componente de forma correcta</Aside>
+<FileTree>
+    - ckeditor/
+        - adapters/
+        - lang/
+        - plugins/
+        - samples/
+            - css
+            - img
+            - js
+            - old
+            - toolbarconfigurator
+            - index.html
+        - skins/
+        - vendor/
+        - bender-runner.config.json
+        - build-config.js
+        - CHANGES.md
+        - ckeditor.js
+        - config.js
+        - contents.css
+        - LISENSE.md
+        - README.md
+        - SECURITY.md
+        - styles.js
+</FileTree>
+<br/>
+## Cómo agregarlo a la página
+<br/>
+Para comenzar, crea una página HTML sencilla con un "textarea"  Luego tendrás que hacer dos cosas:
+
+1. Incluya el "script" elemento de carga CKEditor  en su página.
+2. Utilice el CKEDITOR.replace()método para reemplazar el "textarea".
+<br/>
+<hr />
+ <Card title="Ejemplo" icon="setting">
+```html
+   <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <script src="../vendor/ckeditor/ckeditor.js"></script>
+    </head>
+    <body>
+        <form>
+            <textarea name="editor1" id="editor1" rows="10" cols="80">
+            </textarea>
+            <script>
+                CKEDITOR.replace( 'editor1' );
+            </script>
+        </form>
+    </body>
+</html>
+```
+<Aside>El orden para agregar los scrip debe ser el mismo que se muestra en el ejemplo</Aside>
+  </Card>

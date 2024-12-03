@@ -8,9 +8,14 @@ import InputRadio from '/src/components/formularios/input-radio.astro';
 import InputEmail from '/src/components/formularios/input-email.astro';
 import InputPassword from '/src/components/formularios/input-password.astro';
 import InputdateAdmin from '/src/components/formularios/input-date.astro';
+import InputCantidad from '/src/components/formularios/input-cantidad.astro';
+import '../../../css/fonts.css'
+import '../../../css/buscador-v1.css'
+import '../../../css/input-cantidad.css'
 import '../../../css/input.css'
 import '../../../css/input-admin.css'
 import '../../../css/buttons.css'
+import '../../../css/style.css'
 
 Componentes personalizados para la implementacion de formularios
 Dentro del proyecto se utilizan dos tipos de input text,  el primero  se usa principalmente en el proyecto de CX
@@ -44,8 +49,8 @@ y el segundo es el input normal que se usa para formularios para el administrati
 </div>
 <div class=" colw mx-auto">
     <div class="entryarea w-100">
-        <input  id="contrasena_registro" class="inputani " type="password"  required />
-        <label class="labelline" for="contrasena_registro">Contraseña</label>
+        <input  id="contrasena_registro1" class="inputani " type="password"  required />
+        <label class="labelline" for="contrasena_registro1">Contraseña</label>
     </div>
     <div class="mensajesinput mt-1 text-left">
         Debe contener al menos: 1 minúscula, 1 mayúscula, 1 caracter especial (caracterEspeciales)
@@ -168,6 +173,42 @@ y el segundo es el input normal que se usa para formularios para el administrati
     <label for="fechaFinal"><i class="fa fa-calendar"></i>&nbsp; Fecha</label>
     <input class="form-control "  name="Final"  type="date"  >
 </div>
+```
+</TabItem>
+ </Tabs>
+</div>
+
+  </Card>
+
+</div>
+## Input datetime-local
+
+<div class="inputs">
+  <Card title="Datetime-local" icon="setting">
+  <input type="datetime-local" value="2023-06-01" class="form-control input-cupon" />
+<div class="tabb-m">
+<Tabs>
+<TabItem label="HTML">
+```html
+<input type="datetime-local" value="2023-06-01" class="form-control input-cupon"/>
+```
+</TabItem>
+ </Tabs>
+</div>
+
+  </Card>
+
+</div>
+## Input time
+
+<div class="inputs">
+  <Card title="Input time" icon="setting">
+ <input class="form-control bord valid hrs1 input-error"  type="time"/>
+<div class="tabb-m">
+<Tabs>
+<TabItem label="HTML">
+```html
+<input class="form-control bord valid hrs1 input-error"  type="time"/>
 ```
 </TabItem>
  </Tabs>
@@ -466,6 +507,197 @@ var labelinput = document.getElementById("labelnws1");
             - css
                 - radiobutons.css
                 
+        - index.astro
+    </FileTree>
+   
+:::
+</div>
+## Input Upload
+<div class="inputs">
+  <Card title="Upload" icon="setting">
+     <label for="uno" class="checkbox subir">
+            <input type="file" class="custom-file-input form-control"  name="uno"/>
+    </label>
+<div class="tabb-m">
+<Tabs>
+<TabItem label="HTML">
+ ```html
+ <label for="uno" class="checkbox subir">
+        <input type="file" class="custom-file-input form-control"  name="uno"/>
+</label>
+ ```
+</TabItem>
+ </Tabs>
+</div>        
+  </Card>
+</div>
+## Input Switch
+<div class="inputs">
+  <Card title="Switch" icon="setting">
+     <label class="switch">
+
+        <input type="checkbox" class="checkDeshabilitar" data-id="10" checked=""/>
+        <span class="slider round desh"></span>
+    </label>
+<div class="tabb-m">
+<Tabs>
+<TabItem label="HTML">
+ ```html
+ <label for="uno" class="checkbox subir">
+        <input type="file" class="custom-file-input form-control"  name="uno"/>
+</label>
+ ```
+</TabItem>
+ </Tabs>
+</div>        
+  </Card>
+</div>
+  ## Input Color
+<div class="inputs">
+  <Card title="Input color" icon="setting">
+  <input type="color" class="form-control main input-ok" id="dtbackgroundColor" value="#000000"/>
+<div class="tabb-m">
+<Tabs>
+<TabItem label="HTML">
+ ```html
+ <input type="color" class="form-control main input-ok" id="dtbackgroundColor" value="#000000"/>
+ ```
+</TabItem>
+ </Tabs>
+</div>        
+  </Card>
+</div>
+
+   ## Input Number Precio
+
+<div class="inputs">
+  <Card title="Precio" icon="setting">
+    <div class="sftpc__srpc">
+       <span class="srpc__s-dollar">$</span>
+       <div class="srpc__sbrw">
+           <input type="number" class="filtro-precio sbrw__sirp"  min="0" placeholder="" />
+          
+           <label for="" class="sbrw__slrp">Desde</label>
+       </div>
+       <div class="srpc__sbrw">
+           <input type="number" class="filtro-precio sbrw__sirp"  min="0" placeholder="" />
+           <label for="" class="sbrw__slrp">Hasta</label>
+       </div>
+   </div>
+<div class="tabb-m">
+<Tabs>
+<TabItem label="HTML">
+ ```html
+<div class="sftpc__srpc">
+       <span class="srpc__s-dollar">$</span>
+       <div class="srpc__sbrw">
+           <input type="number" class="filtro-precio sbrw__sirp"  min="0" placeholder="" />
+          
+           <label for="" class="sbrw__slrp">Desde</label>
+       </div>
+       <div class="srpc__sbrw">
+           <input type="number" class="filtro-precio sbrw__sirp"  min="0" placeholder="" />
+           <label for="" class="sbrw__slrp">Hasta</label>
+       </div>
+   </div>
+```
+</TabItem>
+ </Tabs>
+</div>
+
+  </Card>
+
+</div>
+<div class="inputs">
+:::caution[¡IMPORTANTE!]
+    Para poder visualizar el input number precio de forma correcta, es requerido importar la hoja de estilos llamada <Badge text="buscador-v1.css" variant="note" />
+    <FileTree>
+        - public
+            - css
+                - buscador-v1.css
+                
+        - index.astro
+    </FileTree>
+   
+:::
+</div>
+ ## Input Number Cantidad
+
+<div class="inputs">
+  <Card title="Input cantidad" icon="setting">
+<div  class="number-spinner" >
+
+    <span class="ns-btn ev-btn-c-pdp" data-m="0">
+        <a data-dir="dwn" id="disminuir"><span class="icon-minus desh"></span></a>
+    </span>
+    <input type="text" class="pl-ns-value" value="1" id="cantidad"  maxlength="2"/>
+    <span class="ns-btn ev-btn-c-pdp" data-m="1">
+        <a data-dir="up" id="aumentar"><span class="icon-plus"></span></a>
+    </span>
+</div>
+  <InputCantidad />
+
+
+
+<div class="tabb-m">
+<Tabs>
+<TabItem label="HTML">
+ ```html
+<div class="sftpc__srpc">
+       <span class="srpc__s-dollar">$</span>
+       <div class="srpc__sbrw">
+           <input type="number" class="filtro-precio sbrw__sirp"  min="0" placeholder="" />
+          
+           <label for="" class="sbrw__slrp">Desde</label>
+       </div>
+       <div class="srpc__sbrw">
+           <input type="number" class="filtro-precio sbrw__sirp"  min="0" placeholder="" />
+           <label for="" class="sbrw__slrp">Hasta</label>
+       </div>
+   </div>
+```
+</TabItem>
+<TabItem label="JavaScrip">
+ ```JavaScript
+// Seleccionamos el input y los botones
+const inputCantidad = document.getElementById('cantidad');
+    const btnAumentar = document.getElementById('aumentar');
+    const btnDisminuir = document.getElementById('disminuir');
+
+    // Función para aumentar la cantidad
+    btnAumentar.addEventListener('click', () => {
+      let valorActual = parseInt(inputCantidad.value, 10);
+      inputCantidad.value = valorActual + 1;
+    });
+
+    // Función para disminuir la cantidad
+    btnDisminuir.addEventListener('click', () => {
+      let valorActual = parseInt(inputCantidad.value, 10);
+      if (valorActual > 1) { // Evita que disminuya por debajo de 1
+        inputCantidad.value = valorActual - 1;
+      }
+    });
+    // Restablecer el valor del input a 1 si está vacío al perder el foco
+    inputCantidad.addEventListener('blur', () => {
+      if (inputCantidad.value.trim() === '') {
+        inputCantidad.value = 1;
+      }
+    });
+```
+</TabItem>
+ </Tabs>
+</div>
+
+  </Card>
+
+</div>
+<div class="inputs">
+:::caution[¡IMPORTANTE!]
+    Para poder visualizar el input number cantidad de forma correcta, es requerido importar la hoja de estilos llamada <Badge text="buscador-v1.css" variant="note" />
+    <FileTree>
+        - public
+            - css
+                - buscador-v1.css
         - index.astro
     </FileTree>
    

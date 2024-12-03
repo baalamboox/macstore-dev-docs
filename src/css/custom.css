@@ -14,12 +14,11 @@
 
 .right-sidebar-container:where(.astro-67yu43on) {
     width: 100%;
-    max-width: 320px;
+    max-width: 250px;
 }
 
 .sl-container:where(.astro-7nkwcw3z) {
     margin-inline: auto;
-    max-width: 55rem;
 }
 
 .expressive-code pre > code {
@@ -291,4 +290,64 @@ div#menu-ms {
 
 .modals .modal-content {
     margin-top: 0;
+}
+
+/* :::::::::: icons formas de pago :::::::::: */
+.myIcon{
+    width: 65px !important;
+    max-width: initial !important;
+}
+
+@media screen and (min-width: 1480px) {
+    .sl-container:where(.astro-7nkwcw3z) {
+        max-width: 55rem;
+    }
+}
+
+/* :::::::::: BTN MAS ADMINSITRADOR :::::::::: */
+.btnadd {
+    position: initial !important;
+    cursor: pointer;
+}
+
+/* :::::::::: DataTables :::::::::: */
+
+.datatables .datatables-title,
+.datatables .datatables-search-icon,
+.datatables .cdgcf__cib--floating {
+    margin-top: 0;
+}
+
+.datatables #table_id tr {
+    height: auto;
+}
+
+.datatables #table_id tr > th {
+    font-size: 14px;
+    padding-inline: 50px;
+}
+
+.datatables #table_id th, #table_id td {
+    text-wrap: nowrap;
+}
+
+.datatables-highligtht .highlight {
+    background-color: var(--sl-color-text-accent) !important;
+}
+
+.datatables-highligtht .highlight.mark {
+    background-color: var(--tmLineBgCol) !important;
+}
+/* :::::::::: borde color blanco :::::::::: */
+.bg-wwhite.border {
+    border: 1px solid #d0d0d0;
+}
+.sl-markdown-content :not(a, strong, em, del, span, input, code, br) + :not(a, strong, em, del, span, input, code, br, :where(.not-content *)) {
+    margin-top: 0;
+}
+.fn {
+    margin-left: 10px;
+}
+.fn2 {
+    margin-left: 10px;
 }

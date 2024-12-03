@@ -1,0 +1,433 @@
+#acerca-de {
+    height: 400px;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    background-image: url(https://webonline.macstore.mx/img/lp/acerca-de/header-ms.png);
+    background-position: center;
+    background-size: cover;
+}
+
+    #acerca-de .container {
+        height: 100%;
+    }
+
+    #acerca-de .row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+        #acerca-de .row h1 {
+            color: white;
+            font-weight: 500;
+            font-size: 50px;
+        }
+
+            #acerca-de .row h1 img {
+                width: 60%;
+            }
+
+#textoBlack {
+    color: #121212bf;
+    padding: 60px 80px;
+}
+
+    #textoBlack p {
+        font-size: 18px;
+        text-align: justify;
+        letter-spacing: 1px;
+        font-family: 'sf-pro-display-light';
+        padding: 2px 50px;
+    }
+
+.bloquesIma {
+    height: 585px;
+    width: 100%;
+    padding: 0px;
+}
+
+    .bloquesIma #img1 {
+        height: 100%;
+        padding: 0px;
+        margin: 0px;
+        background-image: url(https://webonline.macstore.mx/img/lp/acerca-de/servicio.png);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .bloquesIma #img2 {
+        height: 100%;
+        padding: 0px;
+        margin: 0px;
+        background-image: url(https://webonline.macstore.mx/img/lp/acerca-de/atencion.png);
+        background-position: center;
+        background-size: cover;
+    }
+
+
+    .bloquesIma:hover #img1 {
+        transition: all .3s;
+        -webkit-filter: grayscale(10%);
+        filter: grayscale(10%);
+    }
+
+    .bloquesIma:hover #img2 {
+        transition: all .3s;
+        -webkit-filter: grayscale(10%);
+        filter: grayscale(10%);
+    }
+
+
+.container-fluid.bloquesIma .row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.bloquesIma .row .textoB {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+    .bloquesIma .row .textoB p {
+        font-size: 18px;
+    }
+
+.bloquesIma .row #black p {
+    color: #121212bf;
+}
+
+.bloquesIma .row #black {
+    background-color: #f2f2f2;
+}
+
+
+
+    #silverB img {
+        width: 50%;
+        margin: auto;
+    }
+
+div#silverB .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    div#silverB .row p {
+        font-size: 18px;
+        padding: 30px;
+    }
+
+.container-fluid.espaciosB {
+    padding: 40px 0px;
+}
+
+
+#galeria {
+    padding: 0px;
+    margin: 0px;
+    transition: all .3s;
+}
+
+    #galeria .row {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    #galeria .imgG {
+        height: 500px;
+        padding: 0px;
+        margin: 0px;
+        background-position: center;
+        background-size: cover;
+        border: solid 3px white;
+    }
+
+        #galeria .imgG .cortina {
+            transition: all .3s;
+            height: 0%;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            background: #00000024;
+            color: transparent;
+        }
+        h4.text-center {
+            color: transparent;
+        }
+            #galeria .imgG .cortina h4 {
+                font-size: 20px;
+                font-family: 'sf-pro-display-light-Redonder';
+            }
+
+    #galeria #g1 {
+        background-image: url(https://webonline.macstore.mx/img/lp/acerca-de/galeria-1.png);
+    }
+
+    #galeria #g2 {
+        background-image: url(https://webonline.macstore.mx/img/lp/acerca-de/galeria-2.png);
+    }
+
+    #galeria #g3 {
+        background-image: url(https://webonline.macstore.mx/img/lp/acerca-de/galeria-3.png);
+    }
+
+    #galeria #g4 {
+        background-image: url(https://webonline.macstore.mx/img/lp/acerca-de/galeria-4.png);
+    }
+
+    #galeria #g5 {
+        background-image: url(https://webonline.macstore.mx/img/lp/acerca-de/galeria-5.png);
+    }
+
+    #galeria #g6 {
+        background-image: url(https://webonline.macstore.mx/img/lp/acerca-de/galeria-6.png);
+    }
+
+    #galeria #g7 {
+        background-image: url(https://webonline.macstore.mx/img/lp/acerca-de/galeria-7.png);
+    }
+
+    #galeria #g8 {
+        background-image: url(https://webonline.macstore.mx/img/lp/acerca-de/galeria-8.png);
+    }
+
+
+    #galeria #g1:hover .cortina {
+        background: #000000c7;
+        cursor: default;
+        transition: all .3s;
+        height: 100%;
+        color: white;
+    }
+
+    #galeria #g2:hover .cortina {
+        background: #000000c7;
+        cursor: default;
+        transition: all .3s;
+        height: 100%;
+        color: white;
+    }
+
+
+    #galeria #g3:hover .cortina {
+        background: #000000c7;
+        cursor: default;
+        transition: all .3s;
+        height: 100%;
+        color: white;
+    }
+
+    #galeria #g4:hover .cortina {
+        background: #000000c7;
+        cursor: default;
+        transition: all .3s;
+        height: 100%;
+        color: white;
+    }
+
+    #galeria #g5:hover .cortina {
+        background: #000000c7;
+        cursor: default;
+        transition: all .3s;
+        height: 100%;
+        color: white;
+    }
+
+    #galeria #g6:hover .cortina {
+        background: #000000c7;
+        cursor: default;
+        transition: all .3s;
+        height: 100%;
+        color: white;
+    }
+
+    #galeria #g7:hover .cortina {
+        background: #000000c7;
+        cursor: default;
+        transition: all .3s;
+        height: 100%;
+        color: white;
+    }
+
+    #galeria #g8:hover .cortina {
+        background: #000000c7;
+        cursor: default;
+        transition: all .3s;
+        height: 100%;
+        color: white;
+    }
+
+.aa {
+    margin-top: 10px;
+}
+
+
+
+.container-fluid.espaciosB i {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #767575;
+}
+
+#iconShop {
+    margin-top: 380px;
+}
+.textoB {
+    padding: 2px 117px;
+}
+
+.container-fluid.bloquesIma .row {
+    margin-left: 0px;
+    margin-right: 0px;
+    height: 100%;
+}
+.contamos-1 {
+    font-family: 'sf-pro-display-light';
+    letter-spacing: 1px;
+    color: #121212bf;
+}
+.boton {
+    text-transform: initial;
+}
+.faq-header {
+    display: flex;
+    align-items: center;
+    background-image: url(https://webonline.macstore.mx/img//lp/recoge/header.png);
+    background-position: center;
+    background-size: cover;
+    box-shadow: inset 0 0 1000px var(--bblack);
+    height: 400px;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+.faq-title {
+    font-family: "sf-pro-display-bold";
+    font-size: clamp(24px, 48px, 10vw);
+    color: white !important;
+    margin: 0;
+    text-align: center;
+}
+#cabeceraApplerCare {
+    background-image: url(https://www.macstoreonline.com.mx/img/LP/AppleCare/fondo.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250px;
+    align-items: center;
+}
+#A22, #cabeceraApplerCare {
+    display: flex
+;
+    align-content: center;
+}
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+#cabeceraApplerCare img, #espacioAC img, #pleca1 img, #pleca2 #imgPleca2, #txtCare ul {
+    margin: auto;
+}
+.d-block{
+    display: block !important;
+}
+@media (max-width:991px) {
+
+    #galeria {
+        height: 300px;
+    }
+
+    #iconShop {
+        margin-top: 280px;
+    }
+
+    #iconShop {
+        margin-top: 280px;
+        padding: 50px;
+    }
+}
+
+@media (max-width:768px) {
+
+    #galeria {
+        height: 250px;
+    }
+
+    #iconShop {
+        margin-top: 250px;
+    }
+
+    #textoBlack p {
+        font-size: 16px;
+    }
+
+    .bloquesIma .row .textoB p {
+        font-size: 16px;
+    }
+
+    div#silverB .row p {
+        font-size: 16px;
+    }
+
+    #silverB img {
+        width: 65%;
+    }
+
+    #acerca-de .row h1 {
+        font-size: 35px;
+    }
+
+    .container-fluid.espaciosB h3 {
+        font-size: 20px;
+    }
+    .textoB {
+        padding: 10px 30px;
+    }
+}
+
+@media (max-width:428px) {
+    #textoBlack {
+        color: #121212bf;
+        padding: 40px 30px;
+    }
+
+    .bloquesIma {
+        height: 400px;
+    }
+
+    div#silverB .row {
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container-fluid.espaciosB i {
+        font-size: 40px;
+    }
+
+    #iconShop {
+        margin-top: 720px;
+    }
+}
+
+@media (max-width:375px) {
+    #acerca-de .row h1 {
+        font-size: 25px;
+    }
+}
+#galeria #g4:hover .cortina h4{
+    color:white;
+}
