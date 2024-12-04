@@ -342,12 +342,14 @@ div#menu-ms {
 .bg-wwhite.border {
     border: 1px solid #d0d0d0;
 }
-.sl-markdown-content :not(a, strong, em, del, span, input, code, br) + :not(a, strong, em, del, span, input, code, br, :where(.not-content *)) {
-    margin-top: 0;
-}
+
 .fn {
     margin-left: 10px;
 }
 .fn2 {
     margin-left: 10px;
+}
+.carwhite{
+    background-color: #fff;
+    padding: 30px;
 }
