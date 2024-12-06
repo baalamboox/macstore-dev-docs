@@ -1,7 +1,8 @@
 
 .divMac h3{
-    font-size: 25px !important;
+    font-size: 22px !important;
     font-weight: 600 !important;
+    color: grey;
 }
 .divMac h4{
     font-size: 16px !important;
@@ -9,4 +10,12 @@
 }
 .d-block{
     display: block !important;
+}
+.linksw .card img {
+    margin-bottom: 20px;
+    border: 1px solid var(--gray3);
+    border-radius: 10px;
+}
+.linksw p.title.sl-flex.astro-v5tidmuc {
+    display: none;
 }
