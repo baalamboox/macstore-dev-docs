@@ -32,6 +32,12 @@ export default defineConfig({
 					},
 				},
 				{
+					label: 'Mapa del sitio',
+					autogenerate: {
+						directory: 'mapa-del-sitio',
+					},
+				},
+				{
 					label: 'Componentes',
 					autogenerate: {
 						directory: 'componentes',

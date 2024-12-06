@@ -237,6 +237,18 @@ span.ns-btn a {
 .number-spinner {
     background: white;
 }
+div.linksw .card{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+}
+.linksw .card p{
+    margin-bottom: 15px;
+}
+.linksw .card  span{
+font-weight: 600;
+}
+
 
 @media (max-width: 1024px) {
     .-bgcollapse {
