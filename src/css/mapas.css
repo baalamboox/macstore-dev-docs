@@ -19,3 +19,6 @@
 .linksw p.title.sl-flex.astro-v5tidmuc {
     display: none;
 }
+nav {
+    padding-right: 20px;
+}
