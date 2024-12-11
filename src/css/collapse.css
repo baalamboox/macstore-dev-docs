@@ -42,6 +42,9 @@
 }
 
 .legal-arrow > path {
+    fill: #121212;
+}
+.cbs__cbsir:checked ~ .cbs__cbslh .legal-arrow > path {
     fill: var(--bblue);
 }
 
