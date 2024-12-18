@@ -1,0 +1,138 @@
+---
+title: "Bento Box"
+---
+
+import { FileTree, Card } from '@astrojs/starlight/components';
+
+import BentoBox from '/src/components/bento-box/BentoBox.astro';
+
+Los bento grids son diseños que dividen el contenido en áreas distintas, creando una presentación visualmente atractiva y organizada.
+Facilita la segmentación del contenido, lo que mejora la accesibilidad y la navegación del usuario.
+
+## Implementación
+<hr />
+
+Para realizar la Implementación de los Bento Box se tiene que tener en cuenta el uso de los siguientes archivos de css
+para su correcto funcionamiento.
+
+:::caution[Importante]
+    <FileTree>
+        - public
+            - css
+                - root.css
+                - buttons.css
+                - bento-home.css
+        - index.html
+    </FileTree>
+    
+    En el archivo **index.html** o donde se desea usar los Bento Box se debe primero cargar el
+    archivo **root.css**, **buttons.css** y finalmente el archivo **bento-home.css**.
+
+    ```html
+    <!DOCTYPE>
+    <html>
+        <head>
+            <link rel="stylesheet" href="./public/css/root.css" />
+            <link rel="stylesheet" href="./public/css/buttons.css" />
+            <link rel="stylesheet" href="./public/css/bento-home.css" />
+        </head>
+    </html>
+    ```
+:::
+
+## Ejemplo
+<hr />
+
+A continuación se muestra un ejemplo de uso del Bento Box para diferentes productos, es importante respetar el
+número de elementos máximos que puede contener, en este caso solo tres artículos por Bento.
+
+<BentoBox />
+
+Copia el siguiente bloque de código para poder hacer uso del mismo, en donde más quieras.
+
+```html
+<section class="bb">
+    <div class="bb__bbc">
+        <div class="bbc__collage">
+            <div class="collage__card">
+                <div class="card__details">
+                    <p class="details__tags nuevo">NUEVO</p>
+                    <p class="details__title">iPhone 16 Pro</p>
+                    <div class="details__dp">
+                        <p class="dp__description">Hola, Apple intelligence</p>
+                        <p class="dp__price">Desde $25,999.00</p>
+                    </div>
+                    <div class="details__button">
+                        <a href="/productos/compra/iphone718" class="boton boton-primario">
+                            <span>Comprar</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="card__pc">
+                    <div class="pc__media">
+                        <picture>
+                            <img class="media__picture"
+                                srcset="https://webonline.macstore.mx/img/cx/media/bento-grid/bento_iphone.webp"
+                                src="https://webonline.macstore.mx/img/cx/media/bento-grid/bento_iphone.png"
+                                sizes="(min-width: 1220px) 750px, (min-width: 750px) 500px, calc(100vw - 30px)"
+                                alt="iPhone 16 Pro" loading="lazy" width="550" height="550" />
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="collage__card collage__card--reverse">
+                <div class="card__details card__details--small">
+                    <p class="details__tags nuevo">NUEVO</p>
+                    <p class="details__title">MacBook Pro M4</p>
+                    <div class="details__dp">
+                        <p class="dp__description">Más velocidad para hacer más de lo que te gusta.</p>
+                        <p class="dp__price">Desde $37,999.00</p>
+                    </div>
+                    <div class="details__button">
+                        <a href="/productos/compra/comapp1217" class="boton boton-primario">
+                            <span>Comprar</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="card__pc">
+                    <div class="pc__media pc__media--small">
+                        <picture>
+                            <img class="media__picture"
+                                srcset="https://webonline.macstore.mx/img/cx/media/bento-grid/bento_mac_m4.webp"
+                                src="https://webonline.macstore.mx/img/cx/media/bento-grid/bento_mac_m4.png"
+                                sizes="(min-width: 1220px) 750px, (min-width: 750px) 500px, calc(100vw - 30px)"
+                                alt="iPad Pro M4" loading="lazy" width="464" height="600" />
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="collage__card collage__card--reverse">
+                <div class="card__details card__details--small">
+                    <p class="details__tags nuevo">NUEVO</p>
+                    <p class="details__title">Mac mini M4</p>
+                    <div class="details__dp">
+                        <p class="dp__description">Es pequeña. Es enorme.</p>
+                        <p class="dp__price">Desde $14,499.00 </p>
+                    </div>
+                    <div class="details__button">
+                        <a href="/productos/compra/comapp1186" class="boton boton-primario">
+                            <span>Comprar</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="card__pc">
+                    <div class="pc__media pc__media--small">
+                        <picture>
+                            <img class="media__picture"
+                                srcset="https://webonline.macstore.mx/img/cx/media/bento-grid/bento_mac_mini_m4.webp"
+                                src="https://webonline.macstore.mx/img/cx/media/bento-grid/bento_mac_mini_m4.png"
+                                sizes="(min-width: 1220px) 750px, (min-width: 750px) 500px, calc(100vw - 30px)"
+                                alt="iPad Pro M4" loading="lazy" width="464" height="600" />
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+```

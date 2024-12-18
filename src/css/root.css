@@ -62,3 +62,96 @@
       --RojoCSP:#B40000;
       --VerdeF: #5B8374;
 }
+
+/* Colores para etiquetas */
+.blanco {
+  color: var(--wwhite);
+}
+
+.negro {
+  color: var(--bblack);
+}
+
+.gris1 {
+  color: var(--gray1);
+}
+
+.gris2 {
+  color: var(--gray2);
+}
+
+.gris3 {
+  color: var(--gray3);
+}
+
+.gris4 {
+  color: var(--gray4);
+}
+
+.naranja {
+  color: var(--oorange);
+}
+
+.azul {
+  color: var(--bblue);
+}
+
+.verde {
+  color: var(--ggreen);
+}
+
+.rojo {
+  color: var(--rred);
+}
+
+.nuevo {
+  text-transform: uppercase;
+  color: var(--oorange);
+}
+
+.notificacion {
+  text-transform: uppercase;
+  color: var(--order-related);
+}
+
+.promo-temporada {
+  text-transform: uppercase;
+  color: var(--special-offer);
+}
+
+.financiamiento {
+  text-transform: uppercase;
+  color: var(--affordability);
+}
+
+.promocion {
+  color: var(--sale);
+}
+
+.oferta-especial {
+  color: var(--special-offer);
+}
+
+.asequibilidad {
+  color: var(--affordability);
+}
+
+.orden-relacionada {
+  color: var(--order-related);
+}
+
+.en-stock {
+  color: var(--in-stock);
+}
+
+.tienda-relacionada {
+  color: var(--store-related);
+  text-transform: uppercase;
+  font-family: 'sf-pro-text-semibold';
+}
+
+.servicios-tienda-verde {
+  color: var(--ggreen);
+  text-transform: uppercase;
+  font-family: 'sf-pro-text-semibold';
+}

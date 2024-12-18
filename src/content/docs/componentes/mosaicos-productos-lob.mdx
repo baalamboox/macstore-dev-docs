@@ -1,0 +1,143 @@
+---
+title: "Mosaicos de productos (LOB)"
+---
+
+import { FileTree } from '@astrojs/starlight/components';
+
+import '/src/css/root.css';
+import '/src/css/colors.css';
+import '/src/css/buttons.css';
+import '/src/css/lob-tiles.css';
+
+Los LOB's (Line of business) es un tipo de lista sobre los productos
+
+## Implementación
+<hr />
+
+Para realizar la implementación de los LOB's se tiene que tener en cuenta el uso de los siguientes archivos de css
+para su correcto funcionamiento.
+
+:::caution[Importante]
+    <FileTree>
+        - public
+            - css
+                - root.css
+                - color.css
+                - buttons.css
+                - lob-tiles.css
+        - index.html
+    </FileTree>
+    
+    En el archivo **index.html** o donde se desea usar los LOB's se debe primero cargar el
+    archivo **root.css**, **color.css**, **buttons.css** y finalmente el archivo **lob-tiles.css**.
+
+    ```html
+    <!DOCTYPE>
+    <html>
+        <head>
+            <link rel="stylesheet" href="./public/css/root.css" />
+            <link rel="stylesheet" href="./public/css/color.css" />
+            <link rel="stylesheet" href="./public/css/buttons.css" />
+            <link rel="stylesheet" href="./public/css/lob-tiles.css" />
+        </head>
+    </html>
+    ```
+:::
+
+## Ejemplo
+<hr />
+
+A continuación se muestra un ejemplo del uso de los LOB's para los diferentes productos.
+
+<div class="lobs-container">
+    <div class="lob-tile">
+        <div class="lt-container">
+            <div class="lt-item">
+                <div class="lt-media">
+                    <div class="lt-media-container">
+                        <img class="lt-img" srcset="https://webonline.macstore.mx/img/cx/media/all-products/mac/MacBook_Pro_M3_16.webp" src="https://webonline.macstore.mx/img/cx/media/all-products/mac/MacBook_Pro_M3_16.jpg" sizes="(min-width: 1220px) 560px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)" alt="" width="4000" height="4000" loading="lazy" />
+                    </div>
+                </div>
+                <div class="lt-info">
+                    <div class="lt-info-container">
+                        <div class="lt-badges">
+                            <div class="lt-caption promo-temporada">
+                                <p class="lt-tag">Promoción</p>
+                            </div>
+                        </div>
+                        <div class="lt-heading">
+                            <p class="lt-title">MacBook Pro M4</p>
+                        </div>
+                        <div class="lt-description">
+                            <p class="lt-text">Más velocidad para hacer más de lo que te gusta.</p>
+                            <p class="lt-text">Desde $54,299.00 MXN</p>
+                        </div>
+                        <div class="lt-action">
+                            <a href="#" class="boton boton-secundario">Comprar ahora</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="lob-tile">
+        <div class="lt-container">
+            <div class="lt-item">
+                <div class="lt-media">
+                    <div class="lt-media-container">
+                        <img class="lt-img" srcset="https://webonline.macstore.mx/img/cx/media/all-products/ipad/ipad_pro_13_m4.webp" src="https://webonline.macstore.mx/img/cx/media/all-products/ipad/ipad_pro_13_m4.jpg" sizes="(min-width: 1220px) 560px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)" alt="" width="4000" height="4000" loading="lazy" />
+                    </div>
+                </div>
+                <div class="lt-info">
+                    <div class="lt-info-container">
+                        <div class="lt-badges">
+                            <div class="lt-caption">
+                                <p class="lt-tag nuevo">NUEVO</p>
+                            </div>
+                        </div>
+                        <div class="lt-heading">
+                            <p class="lt-title">iPad Pro M4</p>
+                        </div>
+                        <div class="lt-description">
+                            <p class="lt-text">Potencia afinada.</p>
+                            <p class="lt-text">Desde $32,499.00 MXN</p>
+                        </div>
+                        <div class="lt-action">
+                            <a href="#" class="boton boton-secundario">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="lob-tile">
+        <div class="lt-container">
+            <div class="lt-item">
+                <div class="lt-media">
+                    <div class="lt-media-container">
+                        <img class="lt-img" srcset="https://webonline.macstore.mx/img/cx/media/all-products/iPhone/iPhone_16_Pro_Max.webp" src="https://webonline.macstore.mx/img/cx/media/all-products/iPhone/iPhone_16_Pro_Max.jpg" sizes="(min-width: 1220px) 560px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)" alt="" width="4000" height="4000" loading="lazy" />
+                    </div>
+                </div>
+                <div class="lt-info">
+                    <div class="lt-info-container">
+                        <div class="lt-badges">
+                            <div class="lt-caption">
+                                <p class="lt-tag financiamiento">FINANCIAMIENTO</p>
+                            </div>
+                        </div>
+                        <div class="lt-heading">
+                            <p class="lt-title">iPhone 16 Pro</p>
+                        </div>
+                        <div class="lt-description">
+                            <p class="lt-text">Diseñado para Apple Intelligence.</p>
+                            <p class="lt-text">Desde $25,999.00</p>
+                        </div>
+                        <div class="lt-action">
+                            <a href="#" class="boton boton-secundario">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
