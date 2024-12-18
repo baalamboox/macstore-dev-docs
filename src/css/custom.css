@@ -2,6 +2,32 @@
     --sl-font: 'sf-pro';
 }
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+svg {
+    display: initial !important;
+}
+
+a.boton {
+    color: var(--bblue) !important; 
+}
+
+a.boton:hover {
+    color: var(--button-primary-hover) !important;
+}
+
+a.boton.boton-primario {
+    color: var(--wwhite) !important;
+}
+
+a.boton.boton-primario:hover {
+    background-color: var(--button-primary-hover) !important;
+}
+
 /* :::::::::: Starlight custum :::::::::: */
 
 .main-pane:where(.astro-67yu43on) {
